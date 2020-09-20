@@ -2,162 +2,162 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo Themes</title>
-    <link>https://example.com/tags/</link>
+    <link>https://knowledge-dragons.github.io/KM/articles/tags/</link>
     <description>Recent content in Tags on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OpenCV</title>
-      <link>https://example.com/tags/opencv/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/opencv/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/opencv/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/opencv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>https://example.com/tags/python/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/python/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/python/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>slack</title>
-      <link>https://example.com/tags/slack/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/slack/</link>
       <pubDate>Sun, 20 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/slack/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/slack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>flask</title>
-      <link>https://example.com/tags/flask/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/flask/</link>
       <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/flask/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/flask/</guid>
       <description></description>
     </item>
     
     <item>
       <title>JavaScript</title>
-      <link>https://example.com/tags/javascript/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/javascript/</link>
       <pubDate>Sat, 19 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/javascript/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://example.com/tags/css/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/css/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/css/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://example.com/tags/html/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/html/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/html/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://example.com/tags/markdown/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/markdown/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/markdown/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>module</title>
-      <link>https://example.com/tags/module/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/module/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/module/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/module/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://example.com/tags/themes/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/themes/</link>
       <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/themes/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gallery</title>
-      <link>https://example.com/tags/gallery/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/gallery/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/gallery/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/gallery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lightbox</title>
-      <link>https://example.com/tags/lightbox/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/lightbox/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/lightbox/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/lightbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://example.com/tags/privacy/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/privacy/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://example.com/tags/shortcodes/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/shortcodes/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://example.com/tags/text/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/text/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://example.com/tags/emoji/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/emoji/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/emoji/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>https://example.com/tags/index/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/index/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/index/</guid>
       <description></description>
     </item>
     
