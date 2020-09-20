@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>module on Hugo Themes</title>
+    <link>https://example.com/tags/module/</link>
+    <description>Recent content in module on Hugo Themes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/module/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Python Standard Library By Example</title>
+      <link>https://example.com/post/pythonstandardlibrary/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/pythonstandardlibrary/</guid>
+      <description>&lt;p&gt;PyMOTW-3 is a series of articles written by &lt;a href=&#34;http://doughellmann.com/&#34;&gt;Doug Hellmann&lt;/a&gt; to demonstrate how to use the modules of the &lt;a href=&#34;http://www.python.org/&#34;&gt;Python&lt;/a&gt; 3 standard library. It is based on the original &lt;a href=&#34;http://pymotw.com/2/&#34;&gt;PyMOTW&lt;/a&gt; series, which covered Python 2.7. See &lt;a href=&#34;https://pymotw.com/3/about.html&#34;&gt;About Python Module of the Week&lt;/a&gt; for details including the version of Python and tools used.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>โมดูล (Module) </title>
+      <link>https://example.com/post/modules/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/modules/</guid>
+      <description>&lt;p&gt;โมดูล (Module) คือไฟล์หรือส่วนของโปรแกรมที่ใช้สำหรับกำหนดตัวแปร ฟังก์ชัน หรือคลาสโดยแบ่งย่อยอีกหน่วยหนึ่งจากโปรแกรมหลัก และในโมดูลยังสามารถประกอบไปด้วย คำสั่งประมวลผลการทำงานได้&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

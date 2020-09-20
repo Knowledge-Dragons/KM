@@ -1,0 +1,2094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Python vs JavaScript for Pythonistas | 
+    Hugo Themes
+  
+</title><meta name="description" content="If you’re serious about  **[web development](https://realpython.com/learning-paths/become-python-web-developer/)**, then you’ll need to learn about  **JavaScript**  at some point. Year after year, numerous  [surveys](https://insights.stackoverflow.com/survey)  have shown that JavaScript is one of the most  [popular programming languages](https://octoverse.github.com/#top-languages)  in the world, with a large and growing community of developers. Just like Python, modern JavaScript can be used almost anywhere, including the front end, back end, desktop, mobile, and the  [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things)  (IoT). Sometimes it might not be an obvious choice between Python vs JavaScript."><meta name="author" content="Sarawut">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://example.com/post/pythonistas/"><meta property="og:title" content="Python vs JavaScript for Pythonistas" />
+<meta property="og:description" content="If you’re serious about  **[web development](https://realpython.com/learning-paths/become-python-web-developer/)**, then you’ll need to learn about  **JavaScript**  at some point. Year after year, numerous  [surveys](https://insights.stackoverflow.com/survey)  have shown that JavaScript is one of the most  [popular programming languages](https://octoverse.github.com/#top-languages)  in the world, with a large and growing community of developers. Just like Python, modern JavaScript can be used almost anywhere, including the front end, back end, desktop, mobile, and the  [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things)  (IoT). Sometimes it might not be an obvious choice between Python vs JavaScript." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/post/pythonistas/" />
+<meta property="og:image" content="https://example.com/pythonistas.png" />
+<meta property="article:published_time" content="2020-09-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-19T00:00:00+00:00" />
+
+<meta itemprop="name" content="Python vs JavaScript for Pythonistas">
+<meta itemprop="description" content="If you’re serious about  **[web development](https://realpython.com/learning-paths/become-python-web-developer/)**, then you’ll need to learn about  **JavaScript**  at some point. Year after year, numerous  [surveys](https://insights.stackoverflow.com/survey)  have shown that JavaScript is one of the most  [popular programming languages](https://octoverse.github.com/#top-languages)  in the world, with a large and growing community of developers. Just like Python, modern JavaScript can be used almost anywhere, including the front end, back end, desktop, mobile, and the  [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things)  (IoT). Sometimes it might not be an obvious choice between Python vs JavaScript.">
+<meta itemprop="datePublished" content="2020-09-19T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-09-19T00:00:00+00:00" />
+<meta itemprop="wordCount" content="16815">
+<meta itemprop="image" content="https://example.com/pythonistas.png">
+
+
+
+<meta itemprop="keywords" content="python,JavaScript," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/pythonistas.png"/>
+
+<meta name="twitter:title" content="Python vs JavaScript for Pythonistas"/>
+<meta name="twitter:description" content="If you’re serious about  **[web development](https://realpython.com/learning-paths/become-python-web-developer/)**, then you’ll need to learn about  **JavaScript**  at some point. Year after year, numerous  [surveys](https://insights.stackoverflow.com/survey)  have shown that JavaScript is one of the most  [popular programming languages](https://octoverse.github.com/#top-languages)  in the world, with a large and growing community of developers. Just like Python, modern JavaScript can be used almost anywhere, including the front end, back end, desktop, mobile, and the  [Internet of Things](https://en.wikipedia.org/wiki/Internet_of_things)  (IoT). Sometimes it might not be an obvious choice between Python vs JavaScript."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://example.com">Hugo Themes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">September 19, 2020</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>16815 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>79 mins read</span>
+                        </div>
+
+                        <h1>Python vs JavaScript for Pythonistas</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/sarawut/" class="small">Sarawut</a>
+                            </h5></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/pythonistas_huf295bbe1c561faa0761180c6a773ac0a_111654_900x500_fit_box_2.png" class="img-fluid rounded mx-auto d-block" alt="Python vs JavaScript for Pythonistas">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>If you’ve never used JavaScript before or have felt overwhelmed by the quick pace of its evolution in recent years, then this article will set you on the right path. You should already know the  <a href="https://realpython.com/products/python-basics-book/">basics of Python</a>  to benefit fully from the comparisons made between the two languages.</p>
+<p><strong>In this article, you’ll learn how to:</strong></p>
+<ul>
+<li>Compare  <strong>Python vs JavaScript</strong></li>
+<li>Choose the  <strong>right language</strong>  for the job</li>
+<li>Write a  <strong>shell script</strong>  in JavaScript</li>
+<li>Generate  <strong>dynamic content</strong>  on a web page</li>
+<li>Take advantage of the JavaScript  <strong>ecosystem</strong></li>
+<li>Avoid common  <strong>pitfalls</strong>  in JavaScript</li>
+</ul>
+<p><strong>Free Bonus:</strong>  <a href="https://realpython.com/bonus/python-mastery-course/">5 Thoughts On Python Mastery</a>, a free course for Python developers that shows you the roadmap and the mindset you&rsquo;ll need to take your Python skills to the next level.</p>
+<p><a href="https://realpython.com/account/join/">Remove ads</a></p>
+<h2 id="javascript-at-a-glancehttpsrealpythoncompython-vs-javascriptjavascript-at-a-glance-permanent-link">JavaScript at a Glance<a href="https://realpython.com/python-vs-javascript/#javascript-at-a-glance" title="Permanent link"></a></h2>
+<p>If you’re already familiar with the origins of JavaScript or just want to see the code in action, then feel free to jump ahead to the  <a href="https://realpython.com/python-vs-javascript/#javascript-starter-kit">next section</a>. Otherwise, prepare for a brief history lesson that will take you through the evolution of JavaScript.</p>
+<h3 id="its-not-javahttpsrealpythoncompython-vs-javascriptits-not-java-permanent-link">It’s Not Java<img src="https://realpython.com/python-vs-javascript/#its-not-java" alt="" title="Permanent link"></h3>
+<p>Many people, notably some IT recruiters, believe that JavaScript and  <strong>Java</strong>  are the same language. It’s hard to blame them, though, because inventing such a familiar-sounding name was a marketing trick.</p>
+<p>JavaScript was originally called  <strong>Mocha</strong>  before it was renamed to  <strong>LiveScript</strong>  and finally rebranded as  <strong>JavaScript</strong>  shortly before its release. At the time,  <a href="https://realpython.com/oop-in-python-vs-java/">Java</a>  was a promising web technology, but it was too difficult for nontechnical webmasters. JavaScript was intended as a somewhat similar but beginner-friendly language to supplement  <a href="https://en.wikipedia.org/wiki/Java_applet">Java applets</a>  in web browsers.</p>
+<p><strong>Fun Fact:</strong>  Both Java and JavaScript were released in 1995. Python was already five years old.</p>
+<p>To add to the confusion, Microsoft developed its own version of the language, which it called  <strong>JScript</strong>  due to a lack of licensing rights, for use with Internet Explorer 3.0. Today, people often refer to JavaScript as  <strong>JS</strong>.</p>
+<p>While Java and JavaScript share a few similarities in their  <strong>C-like syntax</strong>  as well as in their standard libraries, they’re used for different purposes. Java diverged from the client side into a more general-purpose language. JavaScript, despite its simplicity, was sufficient for validating HTML forms and adding little animations.</p>
+<h3 id="its-ecmascripthttpsrealpythoncompython-vs-javascriptits-ecmascript-permanent-link">It’s ECMAScript<a href="https://realpython.com/python-vs-javascript/#its-ecmascript" title="Permanent link"></a></h3>
+<p>JavaScript was developed in the early days of the Web by a relatively small company known as  <strong>Netscape</strong>. To win the market against Microsoft and mitigate the differences across web browsers, Netscape needed to standardize their language. After being turned down by the international  <strong>World Wide Web Consortium (W3C)</strong>, they asked a European standardization body called  <strong>ECMA</strong>  (today  <strong>Ecma International</strong>) for help.</p>
+<p>ECMA defined a formal specification for the language called  <strong>ECMAScript</strong>  because the name  <em>JavaScript</em>  had been trademarked by  <strong>Sun Microsystems</strong>. JavaScript became one of the implementations of the specification that it originally inspired.</p>
+<p><strong>Note:</strong>  In other words, JavaScript conforms to the  <a href="https://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMAScript specification</a>. Another notable member of the ECMAScript family is  <strong>ActionScript</strong>, which is used on the Flash platform.</p>
+<p>While individual implementations of the specification complied with ECMAScript to some extent, they also shipped with additional proprietary APIs. This led to web pages not displaying correctly across different browsers and the advent of libraries such as  <a href="https://jquery.com/">jQuery</a>.</p>
+<h3 id="are-there-other-scriptshttpsrealpythoncompython-vs-javascriptare-there-other-scripts-permanent-link">Are There Other Scripts?<a href="https://realpython.com/python-vs-javascript/#are-there-other-scripts" title="Permanent link"></a></h3>
+<p>To this day, JavaScript remains the only programming language natively supported by web browsers. It’s the  <strong>lingua franca</strong>  of the Web. Some people love it, while others don’t.</p>
+<p>There have been—and continue to be—many attempts to replace or supplant JavaScript with other technologies, including:</p>
+<ul>
+<li><strong>Rich Internet Applications:</strong>  Flash, Silverlight, JavaFX</li>
+<li><strong>Transpilers:</strong>  Haxe, Google Web Toolkit, pyjs</li>
+<li><strong>JavaScript dialects:</strong>  CoffeeScript, TypeScript</li>
+</ul>
+<p>These attempts were driven not only by personal preference but also by web browsers’ limitations before  <strong>HTML5</strong>  came onto the scene. In those days, you couldn’t use JavaScript for computationally intensive tasks such as drawing vector graphics or processing audio.</p>
+<p><strong>Rich Internet Applications (RIA)</strong>, on the other hand, offered an immersive desktop-like experience in the browser through plugins. They were great for games and processing media. Unfortunately, most of them were closed source. Some had security vulnerabilities or performance issues on certain platforms. To top it off, they all severely limited the ability of web search engines to index pages built with these plugins.</p>
+<p>Around the same time came  <strong>transpilers</strong>, which allowed for an automated translation of other languages into JavaScript. This made the entry barrier to front-end development much lower because suddenly back-end engineers could leverage their skills in a new field. However, the downsides were slower development time, limited support for web standards, and cumbersome debugging of the transpiled JavaScript code. To link it back to the original code, you’d need a  <a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map">source map</a>.</p>
+<p><strong>Note:</strong>  While a  <a href="https://en.wikipedia.org/wiki/Compiler">compiler</a>  translates human-readable code written in a high-level programming language straight into  <a href="https://en.wikipedia.org/wiki/Machine_code">machine code</a>, a transpiler translates one high-level language into another. That’s why transpilers are also known as  <strong>source-to-source</strong>  compilers. They’re not the same as  <a href="https://en.wikipedia.org/wiki/Cross_compiler">cross compilers</a>, though, which produce machine code for foreign hardware platforms.</p>
+<p>To write Python code for the browser, you can use one of the available transpilers, such as  <a href="https://www.transcrypt.org/">Transcrypt</a>  or  <a href="http://pyjs.org/">pyjs</a>. The latter is a port of Google Web Toolkit (GWT), which was a wildly popular Java-to-JavaScript transpiler. Another option is to use a tool like  <a href="https://brython.info/">Brython</a>, which runs a streamlined version of the Python interpreter in pure JavaScript. However, the benefits might be offset by poor performance and lack of compatibility.</p>
+<p>Transpiling allowed a ton of new languages to emerge with the intent of replacing JavaScript and addressing its shortcomings. Some of these languages were closely related  <strong>dialects</strong>  of JavaScript. Perhaps the first was  <a href="https://coffeescript.org/">CoffeeScript</a>, which was created about a decade ago. One of the latest was Google’s  <a href="https://dart.dev/">Dart</a>, which was the fastest-growing language in 2019  <a href="https://octoverse.github.com/#fastest-growing-languages">according to GitHub</a>. Many more languages followed, but most of them are now obsolete due to the recent advances in JavaScript.</p>
+<p>One glaring exception is Microsoft’s  <a href="https://www.typescriptlang.org/">TypeScript</a>, which has gained much popularity in recent years. It’s a fully compatible superset of JavaScript that adds optional  <strong>static type checking</strong>. If that sounds familiar to you, that’s because Python’s  <a href="https://realpython.com/lessons/type-hinting/">type hinting</a>  was inspired by TypeScript.</p>
+<p><a href="https://files.realpython.com/media/trends-chart.5cbb0e9a5be2.jpg"><img src="https://files.realpython.com/media/trends-chart.5cbb0e9a5be2.jpg" alt="Search Interest in TypeScript According to Google Trends"></a></p>
+<p>Search Interest in TypeScript According to Google Trends</p>
+<p>While modern JavaScript is mature and actively developed, transpiling is still a common approach to ensure backward compatibility with older browsers. Even if you’re not using TypeScript, which seems to be the language of choice for many new projects, you’re still going to need to transpile your shiny new JavaScript into an older version of the language. Otherwise, you run the risk of getting a  <strong>runtime error</strong>.</p>
+<p>Some transpilers also synthesize cutting-edge web APIs, which might be unavailable on certain browsers, with a so-called  <strong><a href="https://en.wikipedia.org/wiki/Polyfill_(programming)">polyfill</a></strong>.</p>
+<p>Today, JavaScript can be thought of as the  <strong>assembly language</strong>  of the Web. Many professional front-end engineers tend  <em>not</em>  to write it by hand anymore. In such a case, it’s generated from scratch through transpiling.</p>
+<p>However, even handwritten code often gets processed in some way. For example,  <a href="https://en.wikipedia.org/wiki/Minification_(programming)">minification</a>  removes whitespace and renames  <a href="https://realpython.com/python-variables/">variables</a>  to reduce the amount of data to transfer and to obfuscate the code so that it’s harder to reverse engineer. This is analogous to compiling the source code of a high-level programming language into native machine code.</p>
+<p>In addition to this, it’s worthwhile to mention that contemporary browsers support the  <a href="https://webassembly.org/">WebAssembly</a>  standard, which is a fairly new technology. It defines a binary format for code that can run with almost-native performance in the browser. It’s fast, portable, secure, and allows for cross compilation of code written in languages like C++ or Rust. With it, for example, you could take the decades-old code of your favorite video game and run it in the browser.</p>
+<p>At the moment, WebAssembly helps you optimize the performance of computationally critical parts of your code, but it comes with a price tag. To begin with, you need to know one of the  <a href="https://github.com/appcypher/awesome-wasm-langs">currently supported</a>  programming languages. You have to become familiar with low-level concepts such as memory management as there’s no garbage collector yet. The integration with JavaScript code is difficult and costly. Also, there’s no easy way to call web APIs from it.</p>
+<p>It seems that, after all these years, JavaScript isn’t going away anytime soon.</p>
+<h2 id="javascript-starter-kithttpsrealpythoncompython-vs-javascriptjavascript-starter-kit-permanent-link">JavaScript Starter Kit<a href="https://realpython.com/python-vs-javascript/#javascript-starter-kit" title="Permanent link"></a></h2>
+<p>One of the first similarities you’ll notice when comparing Python vs JavaScript is that the entry barriers for both are pretty low, making both languages very attractive to beginners who’d like to learn to code. For JavaScript, the only starting requirement is having a web browser. If you’re reading this, then you’ve already got that covered. This accessibility contributes to the language’s popularity.</p>
+<h3 id="the-address-barhttpsrealpythoncompython-vs-javascriptthe-address-bar-permanent-link">The Address Bar<a href="https://realpython.com/python-vs-javascript/#the-address-bar" title="Permanent link"></a></h3>
+<p>To get a taste of what it’s like to write JavaScript code, you can stop reading now and type the following text into the address bar before navigating to it:</p>
+<p><a href="https://files.realpython.com/media/javascript_alert.2f151dc202dd.gif"><img src="https://files.realpython.com/media/javascript_alert.2f151dc202dd.gif" alt="JavaScript in the Address Bar"></a></p>
+<p>The literal text is  <code>javascript:alert('hello world')</code>, but don’t just copy and paste it!</p>
+<p>That part after the  <code>javascript:</code>  prefix is a piece of JavaScript code. When confirmed, it should make your browser display a dialog box with the  <code>hello world</code>  message in it. Each browser renders this dialog slightly differently. For example, Google Chrome displays it like this:</p>
+<p><a href="https://files.realpython.com/media/javascript_alert.ffc4dd53a1db.png"><img src="https://files.realpython.com/media/javascript_alert.ffc4dd53a1db.png" alt="Alert Dialog Box in JavaScript"></a></p>
+<p>Copying and pasting such a snippet into the address bar will fail in most browsers, which filter out the  <code>javascript:</code>  prefix as a safety measure against injecting malicious code.</p>
+<p>Some browsers, such as Mozilla Firefox, take it one step further by blocking this kind of code execution entirely. In any case, this isn’t the most convenient way of working with JavaScript because you’re constrained to only one line and limited to a certain number of characters. There’s a better way.</p>
+<h3 id="web-developer-toolshttpsrealpythoncompython-vs-javascriptweb-developer-tools-permanent-link">Web Developer Tools<a href="https://realpython.com/python-vs-javascript/#web-developer-tools" title="Permanent link"></a></h3>
+<p>If you’re viewing this page on a desktop or a laptop computer, then you can take advantage of the  <strong>web developer tools</strong>, which provide comparable experience across competing web browsers.</p>
+<p><strong>Note:</strong>  The examples that follow use  <a href="https://www.google.com/chrome/">Google Chrome</a>  version  <code>80.0</code>. Keyboard shortcuts may vary for other browsers, but the interface should be largely the same.</p>
+<p>To toggle these tools, refer to your browser’s documentation or try one of these common keyboard shortcuts:</p>
+<ul>
+<li>
+<p>F12</p>
+</li>
+<li>
+<p>Ctrl+Shift+I</p>
+</li>
+<li>
+<p>Cmd+Option+I</p>
+</li>
+</ul>
+<p>This feature may be disabled by default if you’re using Apple Safari or Microsoft Edge, for example. Once the web developer tools are activated, you’ll see a myriad of tabs and toolbars with content similar to this:</p>
+<p><a href="https://files.realpython.com/media/javascript_devtools.09cdc989dc08.png"><img src="https://files.realpython.com/media/javascript_devtools.09cdc989dc08.png" alt="Web Developer Tools in Google Chrome"></a></p>
+<p>Web Developer Tools in Google Chrome</p>
+<p>Collectively, it’s a powerful development environment equipped with a JavaScript debugger, a performance and memory profiler, a network traffic manager, and much, much more. There’s even a remote debugger for physical devices connected over a USB cable!</p>
+<p>For the moment, however, just focus on the  <strong>console</strong>, which you can access by clicking a tab located at the top. Alternatively, you can quickly bring it to the front by pressing  Esc  at any time while using the web developer tools.</p>
+<p>The console is primarily used for inspecting  <strong>log messages</strong>  emitted by the current web page, but it can also be a great JavaScript learning aid. Just like with the  <a href="https://realpython.com/interacting-with-python/#using-the-python-interpreter-interactively">interactive Python interpreter</a>, you can type JavaScript code directly into the console to have it  <strong>executed</strong>  on the fly:</p>
+<p><a href="https://files.realpython.com/media/javascript_console.f15f9e136136.png"><img src="https://files.realpython.com/media/javascript_console.f15f9e136136.png" alt="JavaScript Console in Web Developer Tools"></a></p>
+<p>It has everything you’d expect from a typical  <strong><a href="https://en.wikipedia.org/wiki/Read-eval-print_loop">REPL</a></strong>  tool and more. In particular, the console comes with syntax highlighting, contextual autocomplete, command history, line editing similar to  <a href="https://en.wikipedia.org/wiki/GNU_Readline">GNU Readline</a>, and the ability to render interactive elements. Its rendering abilities can be especially useful for introspecting objects and tabular data, jumping to source code from a stack trace, or viewing HTML elements.</p>
+<p>You can log custom messages to the console using a predefined  <code>console</code>  object. JavaScript’s  <code>console.log()</code>  is the equivalent of  <a href="https://realpython.com/python-print/">Python’s  <code>print()</code></a>:</p>
+<pre><code class="language-js">console.log('hello world');
+</code></pre>
+<p>This will make the message appear in the console tab in the web developer tools. Apart from that, there are a few more  <a href="https://www.w3schools.com/jsref/obj_console.asp">useful methods</a>  available in the  <code>console</code>  object.</p>
+<h3 id="html-documenthttpsrealpythoncompython-vs-javascripthtml-document-permanent-link">HTML Document<a href="https://realpython.com/python-vs-javascript/#html-document" title="Permanent link"></a></h3>
+<p>By far the most natural place for the JavaScript code is somewhere near an  <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>  document, which it typically manipulates. You’ll learn more on that later. You can reference JavaScript from HTML in three different ways:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Code Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">HTML Element’s Attribute</td>
+<td align="left"><code>&lt;button onclick=&quot;alert('hello');&quot;&gt;Click&lt;/button&gt;</code></td>
+</tr>
+<tr>
+<td align="left">HTML <code>&lt;script&gt;</code> Tag</td>
+<td align="left"><code>&lt;script&gt;alert('hello');&lt;/script&gt;</code></td>
+</tr>
+<tr>
+<td align="left">External File</td>
+<td align="left"><code>&lt;script src=&quot;/path/to/file.js&quot;&gt;&lt;/script&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>You can have as many of these as you like. The first and second methods embed  <strong>inline</strong>  JavaScript directly within an HTML document. While this is convenient, you should try to keep imperative JavaScript separate from declarative HTML to promote readability.</p>
+<p>It’s more common to find one or more  <code>&lt;script&gt;</code>  tags referencing  <strong>external</strong>  files with JavaScript code. These files can be served by either a local or a remote web server.</p>
+<p>The  <code>&lt;script&gt;</code>  tag can appear anywhere in the document as long as it’s nested in either the  <code>&lt;head&gt;</code>  or the  <code>&lt;body&gt;</code>  tag:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Home Page&lt;/title&gt;
+  &lt;script src=&quot;https://server.com/library.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;local/assets/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    function add(a, b) {
+      return a + b;
+    }
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet (...)&lt;/p&gt;
+  &lt;script&gt;
+    console.log(add(2, 3));
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt; 
+</code></pre>
+<p>What’s important is how web browsers process HTML documents. A document is read top to bottom. Whenever a  <code>&lt;script&gt;</code>  tag is found, it gets immediately executed even before the page has been fully loaded. If your script tries to find HTML elements that haven’t been rendered yet, then you’ll get an error.</p>
+<p>To be safe, always put the  <code>&lt;script&gt;</code>  tags at the bottom of your document body:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Home Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet (...)&lt;/p&gt;
+  &lt;script src=&quot;https://server.com/library.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;local/assets/app.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    function add(a, b) {
+      return a + b;
+    }
+  &lt;/script&gt;
+  &lt;script&gt;
+    console.log(add(2, 3));
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Not only will this protect you against the said error, but it will also improve the overall user experience. By moving those tags down, you’re allowing the user to see the fully rendered page before the JavaScript files start to download. You could also  <a href="https://www.w3schools.com/tags/att_script_defer.asp"><code>defer</code></a>  the download of external JavaScript files until the page has loaded:</p>
+<pre><code class="language-js">&lt;script src=&quot;https://server.com/library.js&quot; defer&gt;&lt;/script&gt; 
+</code></pre>
+<p>If you want to find out more about mixing JavaScript with HTML, then take a look at a  <a href="https://www.w3schools.com/js/">JavaScript Tutorial</a>  by W3Schools.</p>
+<h3 id="nodejshttpsrealpythoncompython-vs-javascriptnodejs-permanent-link">Node.js<a href="https://realpython.com/python-vs-javascript/#nodejs" title="Permanent link"></a></h3>
+<p>You don’t need a web browser to execute JavaScript code anymore. There’s a tool called  <a href="https://nodejs.org/en/">Node.js</a>  that provides a  <strong>runtime environment</strong>  for server-side JavaScript.</p>
+<p>A runtime environment comprises the  <strong>JavaScript engine</strong>, which is the language interpreter or compiler, as well as an  <strong>API</strong>  for interacting with the world. There are several alternative engines that come with different web browsers:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Web Browser</th>
+<th align="left">JavaScript Engine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Apple Safari</td>
+<td align="left">JavaScriptCore</td>
+</tr>
+<tr>
+<td align="left">Microsoft Edge</td>
+<td align="left">V8</td>
+</tr>
+<tr>
+<td align="left">Microsoft IE</td>
+<td align="left">Chakra</td>
+</tr>
+<tr>
+<td align="left">Mozilla Firefox</td>
+<td align="left">SpiderMonkey</td>
+</tr>
+<tr>
+<td align="left">Google Chrome</td>
+<td align="left">V8</td>
+</tr>
+</tbody>
+</table>
+<p>Each of these is implemented and maintained by its vendor. For the end user, however, there’s no noticeable difference except for the performance of individual engines. Node.js uses the same V8 engine developed by Google for its Chrome browser.</p>
+<p>When running JavaScript inside a web browser, you typically want to be able to respond to mouse clicks, dynamically add HTML elements, or maybe get an image from the webcam. But that doesn’t make sense in a Node.js application, which runs outside of the browser.</p>
+<p>After you’ve  <a href="https://nodejs.org/en/download/package-manager/">installed Node.js</a>  for your platform, you can execute JavaScript code just like with the Python interpreter. To start an interactive session, go to your terminal and type  <code>node</code>:</p>
+<pre><code class="language-js">$ node
+&gt; 2 + 2
+4 
+</code></pre>
+<p>This is similar to the web developer console that you saw earlier. However, as soon as you try to refer to something browser related, you’ll get an error:</p>
+<pre><code class="language-js">&gt; alert('hello world');
+Thrown:
+ReferenceError: alert is not defined 
+</code></pre>
+<p>That’s because your runtime environment is missing the other component, which is the browser API. At the same time, Node.js provides a  <a href="https://nodejs.org/api/">set of APIs</a>  that are useful in a back-end application, such as the file system API:</p>
+<pre><code class="language-js">`&gt; const fs = require('fs');
+&gt; fs.existsSync('/path/to/file');
+false` 
+</code></pre>
+<p>For safety reasons, you won’t find these APIs in the browser. Imagine allowing some random website to have control over the files on your computer!</p>
+<p>If the standard library doesn’t satisfy your needs, then you can always install a third-party package with the  <strong>Node Package Manager</strong>  (<code>npm</code>) that comes with the Node.js environment. To browse or search for packages, go to the  <code>npm</code>  <a href="https://www.npmjs.com/">public registry</a>, which is like the  <a href="https://pypi.org/">Python Package Index</a>  (PyPI).</p>
+<p>Similar to the  <code>python</code>  command, you can run  <strong>scripts</strong>  with Node.js:</p>
+<pre><code class="language-js">`$ echo &quot;console.log('hello world');&quot; &gt; hello.js
+$ node hello.js
+hello world` 
+</code></pre>
+<p>By providing a path to a text file with the JavaScript code inside, you’re instructing Node.js to run that file instead of starting a new interactive session.</p>
+<p>On Unix-like systems, you can even indicate which program to run the file with using a  <strong><a href="https://en.wikipedia.org/wiki/Shebang_(Unix)">shebang</a></strong>  comment in the very first line of the file:</p>
+<pre><code class="language-js">`#!/usr/bin/env node
+console.log('hello world');` 
+</code></pre>
+<p>The comment has to be a path to the Node.js executable. However, to avoid hard-coding an absolute path, which may differ across installations, it’s best to let the  <a href="https://en.wikipedia.org/wiki/Env">env</a>  tool figure out where Node.js is installed on your machine.</p>
+<p>Then you have to make the file executable before you can run it as if it were a Python script:</p>
+<pre><code class="language-js">`$ chmod +x hello.js
+$ ./hello.js
+hello world` 
+</code></pre>
+<p>The road to building full-blown  <strong>web applications</strong>  with Node.js is long and winding, but so is the path to writing  <a href="https://realpython.com/django-setup/">Django</a>  or  <a href="https://realpython.com/python-web-applications-with-flask-part-i/">Flask</a>  applications in Python.</p>
+<h3 id="foreign-languagehttpsrealpythoncompython-vs-javascriptforeign-language-permanent-link">Foreign Language<a href="https://realpython.com/python-vs-javascript/#foreign-language" title="Permanent link"></a></h3>
+<p>Sometimes the runtime environment for JavaScript can be another programming language. This is typical of scripting languages in general. Python, for example, is widely used in  <strong>plugin</strong>  development. You’ll find it in the  <a href="https://www.sublimetext.com/">Sublime Text</a>  editor,  <a href="https://www.gimp.org/">GIMP</a>, and  <a href="https://www.blender.org/">Blender</a>.</p>
+<p>As long as the performance isn’t too bad, you could  <strong>reuse the code</strong>  of an existing JavaScript library instead of rewriting it in another language. Perhaps solving a problem, such as math expression evaluation, would be more  <strong>convenient</strong>  with JavaScript than your native language. Finally, using a scripting language for  <strong>behavior customization</strong>  at runtime, like data filtering or validation, could be the only way to go in a compiled language.</p>
+<h2 id="javascript-vs-pythonhttpsrealpythoncompython-vs-javascriptjavascript-vs-python-permanent-link">JavaScript vs Python<a href="https://realpython.com/python-vs-javascript/#javascript-vs-python" title="Permanent link"></a></h2>
+<p>In this section, you’ll compare Python vs JavaScript from a Pythonista’s perspective. There will be some new concepts ahead, but you’ll also discover a few similarities between the two languages.</p>
+<h3 id="use-caseshttpsrealpythoncompython-vs-javascriptuse-cases-permanent-link">Use Cases<a href="https://realpython.com/python-vs-javascript/#use-cases" title="Permanent link"></a></h3>
+<p>Python is a  <strong>general-purpose</strong>, multi-paradigm, high-level, cross-platform, interpreted programming language with a rich standard library and an approachable syntax.</p>
+<p>As such, it’s used across a wide range of disciplines, including computer science education,  <a href="https://realpython.com/run-python-scripts/">scripting</a>  and  <a href="https://realpython.com/modern-web-automation-with-python-and-selenium/">automation</a>, prototyping,  <a href="https://realpython.com/python-testing/">software testing</a>,  <a href="https://realpython.com/learning-paths/become-python-web-developer/">web development</a>, programming  <a href="https://realpython.com/micropython/">embedded devices</a>, and  <a href="https://realpython.com/python-scipy-cluster-optimize/">scientific computing</a>. Although it’s doable, you probably wouldn’t choose Python as the primary technology for video game or mobile app development.</p>
+<p>JavaScript, on the other hand, originated solely as a  <strong>client-side</strong>  scripting language for making HTML documents a little more interactive. It’s intentionally simple and has a singular focus: adding behavior to user interfaces. This is still true today despite its improved capabilities. With Javascript, you can build not only web applications but also desktop programs and mobile apps. Tailor-made runtime environments let you execute JavaScript on the server or even on IoT devices.</p>
+<h3 id="philosophyhttpsrealpythoncompython-vs-javascriptphilosophy-permanent-link">Philosophy<a href="https://realpython.com/python-vs-javascript/#philosophy" title="Permanent link"></a></h3>
+<p>Python emphasizes code  <strong>readability</strong>  and  <strong>maintainability</strong>  at the price of its expressiveness. After all, you can’t even format your code too much without breaking it. You also won’t find esoteric operators like you would in C++ or Perl since most of the Python  <a href="https://realpython.com/python-operators-expressions/">operators</a>  are English words. Some people joke that Python is executable  <a href="https://en.wikipedia.org/wiki/Pseudocode">pseudocode</a>  thanks to its straightforward syntax.</p>
+<p>As you’ll find out later, JavaScript offers much more  <strong>flexibility</strong>  but also more ways to cause trouble. For example, there’s no one right way of creating custom data types in JavaScript. Besides, the language needs to remain backward compatible with older browsers even when new syntax fixes a problem.</p>
+<h3 id="versionshttpsrealpythoncompython-vs-javascriptversions-permanent-link">Versions<a href="https://realpython.com/python-vs-javascript/#versions" title="Permanent link"></a></h3>
+<p>Up until recently, you would find two largely incompatible versions of Python available for download on its  <a href="https://www.python.org/">official website</a>. This divide between  <strong>Python 2.7</strong>  and  <strong>Python 3.x</strong>  was confusing to beginners and was a major factor in slowing down the adoption of the latest development branch.</p>
+<p>In January 2020, after years of delaying the deadline, the support for Python 2.7 was finally dropped. However, despite the looming lack of security updates and warnings issued by some government agencies, there are still a lot of projects that haven’t migrated yet:</p>
+<p><a href="https://files.realpython.com/media/version-chart2.606423be16c4.png"><img src="https://files.realpython.com/media/version-chart2.606423be16c4.png" alt="Timeline of JavaScript and Python Versions"></a></p>
+<p>Timeline of JavaScript and Python Versions</p>
+<p><strong>Brendan Eich</strong>  created JavaScript in 1995, but the ECMAScript we know today was standardized two years later. Since then, there have been only a handful of releases, which looks stagnant compared to the multiple new versions of Python released each year during the same period.</p>
+<p>Notice the gap between ES3 and ES5, which lasted an entire decade! Due to political conflicts and disagreements in the technical committee,  <strong>ES4</strong>  never made its way to web browsers, but it was used by Macromedia (later Adobe) as a base for ActionScript.</p>
+<p>The first major overhaul to JavaScript came in 2015 with the introduction of ES6, also known as ES2015 or  <strong>ECMAScript Harmony</strong>. It brought a lot of new syntactical constructs, which made the language more mature, safe, and convenient for the programmer. It also marked a turning point in the ECMAScript release schedule, which now promises a new version every year.</p>
+<p>Such a fast pace means that you can’t assume the latest language version has been adopted by all major web browsers since it takes time to roll out updates. That’s why  <strong>transpiling</strong>  and  <strong>polyfills</strong>  prevail. Today, pretty much any modern web browser can support ES5, which is the default target for the transpilers.</p>
+<h3 id="runtimehttpsrealpythoncompython-vs-javascriptruntime-permanent-link">Runtime<a href="https://realpython.com/python-vs-javascript/#runtime" title="Permanent link"></a></h3>
+<p>To run a Python program, you first need to download, install, and possibly configure its  <strong>interpreter</strong>  for your platform. Some operating systems provide an interpreter out of the box, but it may not be the version that you’re looking to use. There are alternative Python implementations, including  <a href="https://realpython.com/cpython-source-code-guide/">CPython</a>,  <a href="https://www.pypy.org/">PyPy</a>,  <a href="https://www.jython.org/">Jython</a>,  <a href="https://ironpython.net/">IronPython</a>, or  <a href="https://github.com/stackless-dev/stackless/wiki">Stackless Python</a>. You can also choose from multiple Python  <strong>distributions</strong>, such as  <a href="https://www.anaconda.com/">Anaconda</a>, that come with preinstalled third-party packages.</p>
+<p>JavaScript is different. There’s no stand-alone program to download. Instead, every major web browser ships with some kind of  <strong>JavaScript engine</strong>  and an API, which together make the runtime environment. In the previous section, you learned about Node.js, which allows for running JavaScript code outside of the browser. You also know about the possibility to embed JavaScript in other programming languages.</p>
+<h3 id="ecosystemhttpsrealpythoncompython-vs-javascriptecosystem-permanent-link">Ecosystem<a href="https://realpython.com/python-vs-javascript/#ecosystem" title="Permanent link"></a></h3>
+<p>A language ecosystem consists of its runtime environment, frameworks, libraries, tools, and dialects as well as its best practices and unwritten rules. Which combination you choose will depend on your particular use case.</p>
+<p>In the old days, you didn’t need much more than a good code editor to write JavaScript. You’d download a few libraries like  <a href="https://jquery.com/">jQuery</a>,  <a href="https://underscorejs.org/">Underscore.js</a>, or  <a href="https://backbonejs.org/">Backbone.js</a>, or rely on a Content Delivery Network (CDN) to provide them for your clients. Today, the number of  <a href="https://hackernoon.com/how-it-feels-to-learn-javascript-in-2016-d3a717dd577f">questions</a>  you need to answer and the tools you need to acquire to start building even the simplest website can be daunting.</p>
+<p>The build process for a front-end app is as complicated as it is for a back-end app, if not more so. Your web project goes through linting, transpilation, polyfilling, bundling, minification, and more. Heck, even the CSS style sheets are no longer sufficient and need to be compiled from an extension language by a preprocessor such as  <a href="https://sass-lang.com/">Sass</a>  or  <a href="http://lesscss.org/">Less</a>.</p>
+<p>To alleviate that, some frameworks offer utilities that set up the default project structure, generate configuration files, and download dependencies for you. As an example, you can create a new  <a href="https://reactjs.org/">React</a>  app with this short command, provided that you already have the latest Node.js on your computer:</p>
+<pre><code class="language-js">`$ npx create-react-app todo` 
+</code></pre>
+<p>At the time of writing, this command took several minutes to finish and installed a whopping 166 MB in 1,815 packages! Compare this to  <a href="https://realpython.com/django-setup/">starting a Django project</a>  in Python, which is instantaneous:</p>
+<pre><code class="language-js">`$ django-admin startproject blog` 
+</code></pre>
+<p>The modern JavaScript ecosystem is enormous and keeps evolving, which makes it impossible to give a thorough overview of its elements. You’ll encounter plenty of foreign tools as you’re learning JavaScript. However, the concepts behind some of them will sound familiar. Here’s how you can map them back to Python:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Description</th>
+<th align="left">Python</th>
+<th align="left">JavaScript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Code Editor / IDE</td>
+<td align="left">PyCharm, VS Code</td>
+<td align="left">Atom, VS Code, WebStorm</td>
+</tr>
+<tr>
+<td align="left">Code Formatter</td>
+<td align="left">black</td>
+<td align="left">Prettier</td>
+</tr>
+<tr>
+<td align="left">Dependency Manager</td>
+<td align="left">Pipenv, poetry</td>
+<td align="left">bower, npm, yarn</td>
+</tr>
+<tr>
+<td align="left">Documentation Tool</td>
+<td align="left">Sphinx</td>
+<td align="left">JSDoc, sphinx-js</td>
+</tr>
+<tr>
+<td align="left">Interpreter</td>
+<td align="left">bpython, ipython, python</td>
+<td align="left">node</td>
+</tr>
+<tr>
+<td align="left">Library</td>
+<td align="left">requests, dateutil</td>
+<td align="left">axios, moment</td>
+</tr>
+<tr>
+<td align="left">Linter</td>
+<td align="left">flake8, pyflakes, pylint</td>
+<td align="left">eslint, tslint</td>
+</tr>
+<tr>
+<td align="left">Package Manager</td>
+<td align="left">pip, twine</td>
+<td align="left">bower, npm, yarn</td>
+</tr>
+<tr>
+<td align="left">Package Registry</td>
+<td align="left">PyPI</td>
+<td align="left">npm</td>
+</tr>
+<tr>
+<td align="left">Package Runner</td>
+<td align="left">pipx</td>
+<td align="left">npx</td>
+</tr>
+<tr>
+<td align="left">Runtime Manager</td>
+<td align="left">pyenv</td>
+<td align="left">nvm</td>
+</tr>
+<tr>
+<td align="left">Scaffolding Tool</td>
+<td align="left">cookiecutter</td>
+<td align="left">cookiecutter, Yeoman</td>
+</tr>
+<tr>
+<td align="left">Test Framework</td>
+<td align="left">doctest, nose, pytest</td>
+<td align="left">Jasmine, Jest, Mocha</td>
+</tr>
+<tr>
+<td align="left">Web Framework</td>
+<td align="left">Django, Flask, Tornado</td>
+<td align="left">Angular, React, Vue.js</td>
+</tr>
+</tbody>
+</table>
+<p>This list isn’t exhaustive. Besides, some of the tools mentioned above have overlapping capabilities, so it’s hard to make an apples-to-apples comparison in each category.</p>
+<p>Sometimes there isn’t a direct analogy between Python vs JavaScript. For example, while you may be used to creating isolated  <a href="https://realpython.com/python-virtual-environments-a-primer/">virtual environments</a>  for your Python projects, Node.js handles that out of the box by installing dependencies into a local folder.</p>
+<p>Conversely, JavaScript projects may require additional tools that are unique to front-end development. One such tool is  <a href="https://babeljs.io/">Babel</a>, which  <strong>transpiles</strong>  your code according to various plugins grouped into presets. It can handle experimental ECMAScript features as well as TypeScript and even React’s  <a href="https://reactjs.org/docs/introducing-jsx.html">JSX</a>  extension syntax.</p>
+<p>Another category of tool is the  <strong>module bundler</strong>, whose role is to consolidate multiple independent source files into one that can be easily consumed by a web browser.</p>
+<p>During development, you want to break down your code into reusable, testable, and self-contained  <a href="https://realpython.com/python-modules-packages/">modules</a>. That’s reasonable for an experienced Python programmer. Unfortunately, JavaScript didn’t originally come with support for modularity. You still need to use a separate tool for that, although this requirement is changing. Popular choices for module bundlers are  <a href="https://webpack.js.org/">webpack</a>,  <a href="https://parceljs.org/">Parcel</a>, and  <a href="http://browserify.org/">Browserify</a>, which can also handle static assets.</p>
+<p>Then you have  <strong>build automation</strong>  tools such as  <a href="https://gruntjs.com/">Grunt</a>  and  <a href="https://gulpjs.com/">gulp</a>. They are vaguely similar to  <a href="http://www.fabfile.org/">Fabric</a>  and  <a href="https://www.ansible.com/">Ansible</a>  in Python, although they’re used locally. These tools automate boring tasks such as copying files or running the transpiler.</p>
+<p>In a large-scale single-page application (SPA) with a lot of interactive UI elements, you may need a specialized library such as  <a href="https://redux.js.org/">Redux</a>  or  <a href="https://mobx.js.org/">MobX</a>  for  <strong>state management</strong>. These libraries aren’t tied to any particular front-end framework but can be quickly hooked up.</p>
+<p>As you can see, learning the JavaScript ecosystem is an endless journey.</p>
+<h3 id="memory-modelhttpsrealpythoncompython-vs-javascriptmemory-model-permanent-link">Memory Model<a href="https://realpython.com/python-vs-javascript/#memory-model" title="Permanent link"></a></h3>
+<p>Both languages take advantage of automatic heap  <a href="https://realpython.com/python-memory-management/">memory management</a>  to eliminate human error and to reduce cognitive load. Nevertheless, this doesn’t completely free you from the risk of getting a  <strong>memory leak</strong>, and it adds some performance overhead.</p>
+<p><strong>Note:</strong>  A memory leak occurs when a piece of memory that is no longer needed remains unnecessarily occupied and there is no way to deallocate it since it’s no longer reachable from your code. A common source of memory leaks in JavaScript are global variables and  <a href="https://realpython.com/inner-functions-what-are-they-good-for/">closures</a>  that hold strong references to defunct objects.</p>
+<p>The orthodox CPython implementation uses  <strong>reference counting</strong>  as well as non-deterministic  <strong>garbage collection</strong>  (GC) to deal with reference cycles. Occasionally, you may be forced to manually allocate and reclaim the memory when you venture into writing a custom  <a href="https://realpython.com/build-python-c-extension-module/">C extension module</a>.</p>
+<p>In JavaScript, the actual implementation of memory management is also left to your particular engine and version since it’s not a part of the language specification. The basic strategy for garbage collection is usually the  <strong>mark-and-sweep</strong>  algorithm, but various optimization techniques exist.</p>
+<p>For example, the heap can be organized into generations that separate short-lived objects from long-lived ones. Garbage collection can run concurrently to offload the main thread of execution. Taking an incremental approach can help avoid bringing the program to a complete stop while the memory is cleaned up.</p>
+<h2 id="javascript-type-systemhttpsrealpythoncompython-vs-javascriptjavascript-type-system-permanent-link">JavaScript Type System<a href="https://realpython.com/python-vs-javascript/#javascript-type-system" title="Permanent link"></a></h2>
+<p>You must be itching to learn about the JavaScript syntax, but first let’s take a quick look at its  <a href="https://realpython.com/python-type-checking/#type-systems">type system</a>. It’s one of the most important components that define any programming language.</p>
+<h3 id="type-checkinghttpsrealpythoncompython-vs-javascripttype-checking-permanent-link">Type Checking<a href="https://realpython.com/python-vs-javascript/#type-checking" title="Permanent link"></a></h3>
+<p>Both Python and JavaScript are  <strong>dynamically typed</strong>  because they  <a href="https://realpython.com/python-type-checking/">check types</a>  at runtime, when the application is executing, rather than at compile time. It’s convenient because you aren’t forced to declare a variable’s type such as  <code>int</code>  or  <code>str</code>:</p>
+<pre><code class="language-js">&gt;&gt;&gt; data = 42
+&gt;&gt;&gt; data = 'This is a string' 
+</code></pre>
+<p>Here, you reuse the same variable name for two different kinds of entities that have distinct representations in computer memory. First it’s an integer number, and then it’s a piece of text.</p>
+<p><strong>Note:</strong>  It’s worth noting that some statically typed languages, such as Scala, also don’t require an explicit type declaration as long as it can be  <strong>inferred</strong>  from the context.</p>
+<p>Dynamic typing is often misunderstood as not having any types whatsoever. This is coming from languages in which a variable works like a box that can only fit a certain type of object. In both Python and JavaScript, the type information is tied not to the variable but to the object it points to. Such a variable is merely an alias, a label, or a pointer to some object in memory.</p>
+<p>A lack of type declarations is great for prototyping, but in larger projects it quickly becomes a bottleneck from the maintenance point of view. Dynamic typing is less secure due to a higher risk of bugs going undetected inside of infrequently exercised code execution paths.</p>
+<p>Moreover, it makes reasoning about the code much more difficult both for humans and for  <a href="https://realpython.com/python-ides-code-editors-guide/">code editors</a>. Python addressed this problem by introducing  <a href="https://realpython.com/lessons/type-hinting/">type hinting</a>, which you can sprinkle variables with:</p>
+<pre><code class="language-js">data: str = 'This is a string'
+</code></pre>
+<p>By default, type hints provide only informative value since the Python interpreter doesn’t care about them at runtime. However, you can add a separate utility, such as a  <a href="http://mypy-lang.org/">static type checker</a>, to your tool chain to get an early warning about mismatched types. The type hints are completely optional, which makes it possible to combine dynamically typed code with statically typed code. This approach is known as  <strong>gradual typing</strong>.</p>
+<p>The idea of gradual typing was borrowed from TypeScript, which is essentially JavaScript with types that you can transpile back to plain old JavaScript.</p>
+<p>Another common feature of both languages is the use of  <strong><a href="https://realpython.com/lessons/duck-typing/">duck typing</a></strong>  for testing type compatibility. However, an area where Python vs JavaScript are significantly different is the strength of their type-checking mechanisms.</p>
+<p>Python demonstrates  <strong>strong typing</strong>  by refusing to act upon objects with incompatible types. For example, you can use the plus (<code>+</code>) operator to add numbers or to  <a href="https://realpython.com/lessons/concatenating-joining-strings-python/">concatenate strings</a>, but you can’t mix the two:</p>
+<pre><code class="language-js">&gt;&gt;&gt; '3' + 2
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: can only concatenate str (not &quot;int&quot;) to str 
+</code></pre>
+<p>The interpreter won’t implicitly promote one type to another. You have to decide for yourself and make a suitable type casting manually. If you wanted an algebraic sum, then you’d do this:</p>
+<pre><code class="language-py">`&gt;&gt;&gt; int('3') + 2
+5` 
+</code></pre>
+<p>To join the two strings together, you’d cast the second operand accordingly:</p>
+<pre><code class="language-py">`&gt;&gt;&gt; '3' + str(2)
+&gt;&gt;&gt; '32'` 
+</code></pre>
+<p>JavaScript, on the other hand, uses  <strong>weak typing</strong>, which automatically coerces types according to a set of rules. Unfortunately, these rules are inconsistent and hard to remember as they depend on  <a href="https://realpython.com/python-operators-expressions/#operator-precedence">operator precedence</a>.</p>
+<p>Taking the same example as before, JavaScript will implicitly convert numbers to strings when you use the plus (<code>+</code>) operator:</p>
+<pre><code class="language-py">`&gt; '3' + 2
+'32'` 
+</code></pre>
+<p>That’s great as long as it’s the desired behavior. Otherwise, you’ll be pulling your hair out trying to find the root cause of a logical error. But it gets even more funky than that. Let’s see what happens if you change the operator to something else:</p>
+<pre><code class="language-py">`&gt; '3' - 2
+1` 
+</code></pre>
+<p>Now it’s the other operand that gets converted to a number so the end result isn’t a string. As you can see, weak typing can be quite surprising.</p>
+<p>The strength of type checking isn’t just black and white. Python lies somewhere in the middle of this spectrum. For instance, it’ll happily add an integer to a floating-point number, whereas the  <a href="https://developer.apple.com/swift/">Swift programming language</a>  would raise an error in such a situation.</p>
+<p><strong>Note:</strong>  Strong vs weak typing is independent from static vs dynamic typing. For instance, the  <a href="https://realpython.com/build-python-c-extension-module/">C programming language</a>  is statically and weakly typed at the same time.</p>
+<p>To recap, JavaScript is dynamically as well as weakly typed and supports duck typing.</p>
+<h3 id="javascript-typeshttpsrealpythoncompython-vs-javascriptjavascript-types-permanent-link">JavaScript Types<a href="https://realpython.com/python-vs-javascript/#javascript-types" title="Permanent link"></a></h3>
+<p>In Python, everything is an  <a href="https://realpython.com/python3-object-oriented-programming/">object</a>, whereas JavaScript makes a distinction between  <strong>primitive</strong>  and  <strong>reference</strong>  types. They differ in a couple of ways.</p>
+<p>First, there are only a few predefined primitive types that you need to care about because you can’t make your own. The majority of built-in data types that come with JavaScript are reference types.</p>
+<p>These are the only  <strong>primitive types</strong>  available in JavaScript:</p>
+<ul>
+<li><code>boolean</code></li>
+<li><code>null</code></li>
+<li><code>number</code></li>
+<li><code>string</code></li>
+<li><code>symbol</code>  (since ES6)</li>
+<li><code>undefined</code></li>
+</ul>
+<p>On the other hand, here are a handful of  <strong>reference types</strong>  that come with JavaScript off the shelf:</p>
+<ul>
+<li><code>Array</code></li>
+<li><code>Boolean</code></li>
+<li><code>Date</code></li>
+<li><code>Map</code></li>
+<li><code>Number</code></li>
+<li><code>Object</code></li>
+<li><code>RegExp</code></li>
+<li><code>Set</code></li>
+<li><code>String</code></li>
+<li><code>Symbol</code></li>
+<li>(…)</li>
+</ul>
+<p>There’s also a  <a href="https://github.com/tc39/proposal-bigint">proposal</a>  to include a new  <code>BigInt</code>  numeric type, which some browsers already support, in ES11. Other than that, any custom data types that you might define are going to be reference types.</p>
+<p>Variables of primitive types are stored in a special memory area called the  <a href="https://realpython.com/how-to-implement-python-stack/">stack</a>, which is fast but has a limited size and is short-lived. Conversely, objects with reference types are allocated on the heap, which is only restricted by the amount of physical memory available on your computer. Such objects have a much longer life cycle but are slightly slower to access.</p>
+<p>Primitive types are bare values without any attributes or methods to call. However, as soon as you try to access one using dot notation, the JavaScript engine will instantly wrap a primitive value in the corresponding wrapper object:</p>
+<pre><code class="language-js">&gt; 'Lorem ipsum'.length
+11 
+</code></pre>
+<p>Even though a string literal in JavaScript is a primitive data type, you can check its  <code>.length</code>  attribute. What happens under the hood is that your code is replaced with a call to the  <code>String</code>  object’s  <strong>constructor</strong>:</p>
+<pre><code class="language-js">`&gt; new String('Lorem ipsum').length
+11` 
+</code></pre>
+<p>A constructor is a special function that creates a new instance of a given type. You can see that the  <code>.length</code>  attribute is defined by the  <code>String</code>  object. This wrapping mechanism is known as  <strong>autoboxing</strong>  and was copied directly from the Java programming language.</p>
+<p>The other and more tangible difference between primitive and reference types is how they’re passed around. Specifically, whenever you assign or pass a value of a primitive type, you actually create a copy of that value in memory. Here’s an example:</p>
+<pre><code class="language-js">`&gt; x = 42
+&gt; y = x
+&gt; x++  // This is short for x += 1
+&gt; console.log(x, y)
+43 42` 
+</code></pre>
+<p>The assignment  <code>y = x</code>  creates a new value in memory. Now you have two distinct copies of the number  <code>42</code>  referenced by  <code>x</code>  and  <code>y</code>, so incrementing one doesn’t affect the other.</p>
+<p>However, when you pass a reference to an object literal, then both variables point to the same entity in memory:</p>
+<pre><code class="language-js">`&gt; x = {name: 'Person1'}
+&gt; y = x
+&gt; x.name = 'Person2'
+&gt; console.log(y)
+{name: 'Person2'}` 
+</code></pre>
+<p><code>Object</code>  is a reference type in JavaScript. Here, you’ve got two variables,  <code>x</code>  and  <code>y</code>, referring to the same instance of a  <code>Person</code>  object. The change made to one of the variables is reflected in the other variable.</p>
+<p>Last but not least, primitive types are  <strong><a href="https://realpython.com/courses/immutability-python/">immutable</a></strong>, which means that you can’t change their state once they are initialized. Every modification, such as incrementing a number or making text uppercase, results in a brand-new copy of the original value. While this is a bit wasteful, there are plenty of good reasons to use immutable values, including  <a href="https://realpython.com/intro-to-python-threading/">thread safety</a>, simpler design, and consistent state management.</p>
+<p><strong>Note:</strong>  To be fair, this is almost identical to how Python deals with passing objects despite its lack of primitive types. Mutable types such as  <code>list</code>  and  <code>dict</code>  don’t create copies, whereas immutable types such as  <code>int</code>  and  <code>str</code>  do.</p>
+<p>To check if a variable is a primitive type or a reference type in JavaScript, you can use the built-in  <code>typeof</code>  operator:</p>
+<pre><code class="language-js">`&gt; typeof 'Lorem ipsum'
+'string'
+&gt; typeof new String('Lorem ipsum')
+'object'` 
+</code></pre>
+<p>For reference types, the  <code>typeof</code>  operator always returns a generic  <code>&quot;object&quot;</code>  string.</p>
+<p><strong>Note:</strong>  Always use the  <code>typeof</code>  operator to check if a variable is  <code>undefined</code>. Otherwise, you may find yourself in trouble:</p>
+<pre><code class="language-js">&gt; typeof noSuchVariable === 'undefined'
+true
+&gt; noSuchVariable === undefined
+ReferenceError: noSuchVariable is not defined 
+</code></pre>
+<p>Comparing a non-existing variable to any value will throw an exception!</p>
+<p>If you want to obtain a more detailed information about a particular type, then you have a couple of options:</p>
+<pre><code class="language-js">&gt; today = new Date()
+&gt; today.constructor.name
+'Date'
+&gt; today instanceof Date
+true
+&gt; Date.prototype.isPrototypeOf(today)
+true 
+</code></pre>
+<p>You can try checking an object’s constructor name using the  <code>instanceof</code>  operator, or you can test if it’s derived from a particular parent type with the  <code>.prototype</code>  property.</p>
+<h3 id="type-hierarchyhttpsrealpythoncompython-vs-javascripttype-hierarchy-permanent-link">Type Hierarchy<a href="https://realpython.com/python-vs-javascript/#type-hierarchy" title="Permanent link"></a></h3>
+<p>Python and JavaScript are  <a href="https://realpython.com/python3-object-oriented-programming/">object-oriented</a>  programming languages. They both allow you to express code in terms of objects that encapsulate identity, state, and behavior. While most programming languages, including Python, use  <a href="https://realpython.com/inheritance-composition-python/">class-based inheritance</a>, JavaScript is one of a few that don’t.</p>
+<p><strong>Note:</strong>  A class is a template for objects. You can think of classes like cookie cutters or object factories.</p>
+<p>To create hierarchies of custom types in JavaScript, you need to become familiar with  <strong>prototypal inheritance</strong>. That is often one the most challenging concepts to understand when you make a switch from a more classical inheritance model. If you have twenty minutes, then you can watch a great  <a href="https://www.youtube.com/watch?v=YkoelSTUy7A">video on prototypes</a>  that clearly explains the concept.</p>
+<p><strong>Note:</strong>  Contrary to Python,  <a href="https://realpython.com/lessons/multiple-inheritance-python/">multiple inheritance</a>  isn’t possible in JavaScript because any given object can have only one prototype. That said, you can use  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy">proxy objects</a>, which were introduced in ES6, to mitigate that.</p>
+<p>The gist of the story is that there are no classes in JavaScript. Well, technically, you can use the  <code>class</code>  keyword that was introduced in ES6, but it’s purely a  <a href="https://en.wikipedia.org/wiki/Syntactic_sugar">syntactic sugar</a>  to make things easier for newcomers. Prototypes are still used behind the scenes, so it’s worthwhile to get a closer look at them, which you’ll have a chance to do later on.</p>
+<h3 id="function-typehttpsrealpythoncompython-vs-javascriptfunction-type-permanent-link">Function Type<a href="https://realpython.com/python-vs-javascript/#function-type" title="Permanent link"></a></h3>
+<p>Lastly,  <strong>functions</strong>  are an interesting part of the JavaScript and Python type systems. In both languages, they’re often referred to as  <a href="https://realpython.com/lessons/functions-are-first-class-citizens-python/">first-class citizens</a>  or  <a href="https://realpython.com/lessons/functions-first-class-objects-python/">first-class objects</a>  because the interpreter doesn’t treat them any differently than other data types. You can pass a function as an argument, return it from another function, or store it in a variable just like a regular value.</p>
+<p>This is a very powerful feature that allows you to define  <a href="https://realpython.com/lessons/returning-functions-functions/">higher-order</a>  functions and to take full advantage of the  <a href="https://realpython.com/courses/functional-programming-python/">functional paradigm</a>. For languages in which functions are special entities, you can work around this with the help of design patterns such as the  <a href="https://sourcemaking.com/design_patterns/strategy">strategy pattern</a>.</p>
+<p>JavaScript is even more flexible than Python in regard to functions. You can define an anonymous  <strong>function expression</strong>  full of statements with side effects, whereas Python’s  <a href="https://realpython.com/courses/python-lambda-functions/">lambda function</a>  must contain exactly one expression and no statements:</p>
+<pre><code class="language-py">``let countdown = 5;
+const id = setInterval(function() {
+  if (countdown &gt; 0) {
+    console.log(`${countdown--}...`);
+  } else if (countdown === 0) {
+    console.log('Go!');
+    clearInterval(id);
+  }
+}, 1000);`` 
+</code></pre>
+<p>The built-in  <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp"><code>setInterval()</code></a>  lets you execute a given function periodically in time intervals expressed in milliseconds until you call  <code>clearInterval()</code>  with the corresponding ID. Notice the use of a  <a href="https://realpython.com/python-conditional-statements/">conditional statement</a>  and the mutation of a variable from the outer scope of the function expression.</p>
+<h2 id="javascript-syntaxhttpsrealpythoncompython-vs-javascriptjavascript-syntax-permanent-link">JavaScript Syntax<a href="https://realpython.com/python-vs-javascript/#javascript-syntax" title="Permanent link"></a></h2>
+<p>JavaScript and Python are both high-level scripting languages that share a fair bit of syntactical similarities. This is especially true of their latest versions. That said, JavaScript was designed to resemble Java, whereas Python was modeled after the  <a href="https://en.wikipedia.org/wiki/ABC_(programming_language)">ABC</a>  and  <a href="https://en.wikipedia.org/wiki/Modula-3">Modula-3</a>  languages.</p>
+<h3 id="code-blockshttpsrealpythoncompython-vs-javascriptcode-blocks-permanent-link">Code Blocks<a href="https://realpython.com/python-vs-javascript/#code-blocks" title="Permanent link"></a></h3>
+<p>One of the hallmarks of Python is the use of mandatory  <a href="https://realpython.com/lessons/getting-python-code-indentation-right/">indentation</a>  to denote a block of code, which is quite unusual and frowned upon by new Python converts. Many popular programming languages, including JavaScript, use  <strong>curly brackets</strong>  or special keywords instead:</p>
+<pre><code class="language-js">function fib(n)
+{
+  if (n &gt; 1) {
+    return fib(n-2) + fib(n-1);
+  }
+  return 1;
+} 
+</code></pre>
+<p>In JavaScript, every block of code consisting of more than one line needs an opening  <code>{</code>  and a closing  <code>}</code>, which gives you the freedom to format your code however you like. You can mix tabs with spaces and don’t need to pay attention to your bracket placement.</p>
+<p>Unfortunately, this can result in messy code and sectarian conflicts between developers with different style preferences. This makes code reviews problematic. Therefore, you should always establish coding standards for your team and use them consistently, preferably in an automated way.</p>
+<p><strong>Note:</strong>  You could simplify the function body above by taking advantage of the  <strong>ternary if</strong>  (<code>?:</code>), which is sometimes called the  <a href="https://en.wikipedia.org/wiki/Elvis_operator">Elvis operator</a>  because it looks like the hairstyle of the famous singer:</p>
+<pre><code class="language-py">`return (n &gt; 1) ? fib(n-2) + fib(n-1) : 1;` 
+</code></pre>
+<p>This is equivalent to a  <a href="https://realpython.com/python-conditional-statements/">conditional expression</a>  in Python.</p>
+<p>Speaking of indentation, it’s customary for JavaScript code to be formatted using  <strong>two spaces</strong>  per indentation level instead of the  <a href="https://www.python.org/dev/peps/pep-0008/#indentation">recommended</a>  four in Python.</p>
+<h3 id="statementshttpsrealpythoncompython-vs-javascriptstatements-permanent-link">Statements<a href="https://realpython.com/python-vs-javascript/#statements" title="Permanent link"></a></h3>
+<p>To reduce friction for those making a switch from Java or another  <a href="https://en.wikipedia.org/wiki/List_of_C-family_programming_languages">C-family programming language</a>, JavaScript terminates statements with a familiar  <strong>semicolon</strong>  (<code>;</code>). If you’ve ever programmed in one of those languages, then you’ll know that putting a semicolon after an instruction becomes muscle memory:</p>
+<pre><code class="language-js">alert('hello world'); 
+</code></pre>
+<p>Semicolons aren’t required in JavaScript, though, because the interpreter will take a guess and insert one for you automatically. In most cases, it’ll be right, but sometimes it may lead to peculiar results.</p>
+<p><strong>Note:</strong>  You can use semicolons in Python, too! Although they’re not very popular, they help isolate multiple statements on a single line:</p>
+<pre><code class="language-py">`import pdb; pdb.set_trace()` 
+</code></pre>
+<p>People have strong opinions on whether to use the semicolon explicitly or not. While there are a few corner cases in which it matters, it’s largely just a convention.</p>
+<h3 id="identifiershttpsrealpythoncompython-vs-javascriptidentifiers-permanent-link">Identifiers<a href="https://realpython.com/python-vs-javascript/#identifiers" title="Permanent link"></a></h3>
+<p>Identifiers, such as variable or function names, must be  <strong>alphanumeric</strong>  in JavaScript and Python. In other words, they can only contain letters, digits, and a few special characters. At the same time, they can’t start with a digit. While non-Latin characters are allowed, you should generally avoid them:</p>
+<ul>
+<li><strong>Legal:</strong>  <code>foo</code>,  <code>foo42</code>,  <code>_foo</code>,  <code>$foo</code>,  <code>fößar</code></li>
+<li><strong>Illegal:</strong>  <code>42foo</code></li>
+</ul>
+<p>Names in both languages are  <strong>case sensitive</strong>, so variables like  <code>foo</code>  and  <code>Foo</code>  are distinct. Nonetheless, the naming conventions in JavaScript are slightly different than in Python:</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">Python</th>
+<th align="left">JavaScript</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Type</td>
+<td align="left">ProjectMember</td>
+<td align="left">ProjectMember</td>
+</tr>
+<tr>
+<td align="left">Variable, Attribute, or Function</td>
+<td align="left">first_name</td>
+<td align="left">firstName</td>
+</tr>
+</tbody>
+</table>
+<p>In general, Python recommends using lower_case_with_underscores, also known as  <a href="https://en.wikipedia.org/wiki/Snake_case">snake_case</a>, for compound names, so that individual words get separated with an underscore character (<code>_</code>). The only exception to that rule is classes, whose names should follow the CapitalizedWords, or Pascal case, style. JavaScript also uses CapitalizedWords for types but mixedCase, or  <a href="https://en.wikipedia.org/wiki/Camel_case">lower camelCase</a>, for everything else.</p>
+<h3 id="commentshttpsrealpythoncompython-vs-javascriptcomments-permanent-link">Comments<a href="https://realpython.com/python-vs-javascript/#comments" title="Permanent link"></a></h3>
+<p>JavaScript has single-line as well as multiline  <strong>comments</strong>:</p>
+<pre><code class="language-js">x++;  // This is a single-line comment
+
+/*
+ This whole paragraph
+ is a comment and will
+ be ignored.
+*/` 
+</code></pre>
+<p>You can start a comment anywhere on a line using a double slash (<code>//</code>), which is similar to Python’s hash sign (<code>#</code>). While there are no multiline comments in Python, you can simulate them by enclosing a fragment of code within a triple quote (<code>'''</code>) to create a  <a href="https://realpython.com/lessons/triple-quoted-strings/">multiline string</a>. Alternatively, you can wrap it in an  <code>if</code>  statement that never evaluates to  <code>True</code>:</p>
+<pre><code class="language-py">`if False:
+    ...` 
+</code></pre>
+<p>You can use this trick, for example, to temporarily disable an existing block of code during debugging.</p>
+<h3 id="string-literalshttpsrealpythoncompython-vs-javascriptstring-literals-permanent-link">String Literals<a href="https://realpython.com/python-vs-javascript/#string-literals" title="Permanent link"></a></h3>
+<p>To define string literals in JavaScript, you can use a pair of single quotes (<code>'</code>) or double quotes (<code>&quot;</code>) interchangeably, just like in Python. However, for a long time, there was no way to define multiline strings in JavaScript. Only ES6 in 2015 brought  <strong>template literals</strong>, which look like a hybrid of  <a href="https://realpython.com/python-f-strings/">f-strings</a>  and multiline strings borrowed from Python:</p>
+<pre><code class="language-js">``var name = 'John Doe';
+var message = `Hi ${name.split(' ')[0]},
+
+We're writing to you regarding...
+
+Kind regards,
+Xyz
+`;`` 
+</code></pre>
+<p>A template starts with a backtick (<code>), also known as the grave accent, instead of regular quotes. To  **interpolate**  a variable or any legal expression, you have to use the dollar sign followed by a pair of matching curly brackets:  </code>${&hellip;}`. This is different from Python’s f-strings, which don’t require the dollar sign.</p>
+<h3 id="variable-scopeshttpsrealpythoncompython-vs-javascriptvariable-scopes-permanent-link">Variable Scopes<a href="https://realpython.com/python-vs-javascript/#variable-scopes" title="Permanent link"></a></h3>
+<p>When you define a variable in JavaScript the same way that you would normally do in Python, you’re implicitly creating a  <strong>global variable</strong>. Since global variables break encapsulation, you should rarely need them! The correct way to declare variables in JavaScript has always been through the  <code>var</code>  keyword:</p>
+<pre><code class="language-js">x = 42;     // This is a global variable. Did you really mean that?
+var y = 15; // This is global only when declared in a global context. 
+</code></pre>
+<p>Unfortunately, this doesn’t declare a truly local variable, and it has its own problems that you’ll find out about in the upcoming section. Since ES6, there’s been a better way to declare  <strong>variables</strong>  and  <strong>constants</strong>  with the  <code>let</code>  and  <code>const</code>  keywords, respectively:</p>
+<pre><code class="language-js">&gt; let name = 'John Doe';
+&gt; const PI = 3.14;
+&gt; PI = 3.1415;
+TypeError: Assignment to constant variable. 
+</code></pre>
+<p>Unlike constants, variables in JavaScript don’t need an initial value. You can provide one later:</p>
+<pre><code class="language-js">`let name;
+name = 'John Doe';
+</code></pre>
+<p>When you leave off the initial value, you create what’s called a variable  <strong>declaration</strong>  rather than a variable  <strong>definition</strong>. Such variables automatically receive a special value of  <code>undefined</code>, which is one of the primitive types in JavaScript. This is different in Python, where you always define variables except for  <a href="https://www.python.org/dev/peps/pep-0526/">variable annotations</a>. But even then, these variables aren’t technically declared:</p>
+<pre><code class="language-js">`name: str
+name = 'John Doe' 
+</code></pre>
+<p>Such an annotation doesn’t affect the variable life cycle. If you referred to  <code>name</code>  before the assignment, then you’d receive a  <code>NameError</code>  exception.</p>
+<h3 id="switch-statementshttpsrealpythoncompython-vs-javascriptswitch-statements-permanent-link">Switch Statements<a href="https://realpython.com/python-vs-javascript/#switch-statements" title="Permanent link"></a></h3>
+<p>If you’ve been complaining about Python not having a proper  <strong>switch statement</strong>, then you’ll be happy to learn that JavaScript does:</p>
+<pre><code class="language-js">``// As with C, clauses will fall through unless you break out of them.
+switch (expression) {
+  case 'kilo':
+    value = bytes / 2**10;
+    break;
+  case 'mega':
+    value = bytes / 2**20;
+    break;
+  case 'giga':
+    value = bytes / 2**30;
+    break;
+  default:
+    console.log(`Unknown unit: &quot;${expression}&quot;`);
+}`` 
+</code></pre>
+<p>The expression can evaluate to any type, including a string, which wasn’t always the case in the older Java versions that influenced JavaScript. By the way, did you notice the familiar  <strong>exponentiation operator</strong>  (<code>**</code>) in the code snippet above? It wasn’t available in JavaScript until ES7 in 2016.</p>
+<h3 id="enumerationshttpsrealpythoncompython-vs-javascriptenumerations-permanent-link">Enumerations<a href="https://realpython.com/python-vs-javascript/#enumerations" title="Permanent link"></a></h3>
+<p>There’s no native  <strong>enumeration</strong>  type in pure JavaScript, but you can use the  <code>enum</code>  type in TypeScript or emulate one with something similar to this:</p>
+<pre><code class="language-js">const Sauce = Object.freeze({
+  BBQ: Symbol('bbq'),
+  CHILI: Symbol('chili'),
+  GARLIC: Symbol('garlic'),
+  KETCHUP: Symbol('ketchup'),
+  MUSTARD: Symbol('mustard')
+}); 
+</code></pre>
+<p>Freezing an object prevents you from adding or removing its attributes. This is different from a constant, which can be mutable! A constant will always point to the same object, but the object itself might change its value:</p>
+<pre><code class="language-js">&gt; const fruits = ['apple', 'banana'];
+&gt; fruits.push('orange'); // ['apple', 'banana', 'orange']
+&gt; fruits = [];
+TypeError: Assignment to constant variable.` 
+</code></pre>
+<p>You can add an  <code>orange</code>  to the array, which is mutable, but you can’t modify the constant that is pointing to it.</p>
+<h3 id="arrow-functionshttpsrealpythoncompython-vs-javascriptarrow-functions-permanent-link">Arrow Functions<a href="https://realpython.com/python-vs-javascript/#arrow-functions" title="Permanent link"></a></h3>
+<p>Until ES6, you could only define a  <strong>function</strong>  or an anonymous  <strong>function expression</strong>  using the  <code>function</code>  keyword:</p>
+<pre><code class="language-js">function add(a, b) {
+  return a + b;
+}
+
+let add = function(a, b) {
+  return a + b;
+};` 
+</code></pre>
+<p>However, to reduce the boilerplate code and to fix a slight problem with binding functions to objects, you can now use the  <strong>arrow function</strong>  in addition to the regular syntax:</p>
+<pre><code class="language-js">`let add = (a, b) =&gt; a + b;
+</code></pre>
+<p>Notice that there’s no  <code>function</code>  keyword anymore, and the return statement is implicit. The arrow symbol (<code>=&gt;</code>) separates the function’s arguments from its body. People sometimes call it the  <em>fat</em>  arrow function because it was originally borrowed from CoffeeScript, which also has a  <em>thin</em>  arrow (<code>-&gt;</code>) counterpart.</p>
+<p>Arrow functions are most suitable for small, anonymous expressions like  <a href="https://realpython.com/python-lambda/">lambdas</a>  in Python, but they can contain multiple statements with side effects if needed:</p>
+<pre><code class="language-js">`let add = (a, b) =&gt; {
+  const result = a + b;
+  return result;
+} 
+</code></pre>
+<p>When you want to return an  <strong>object literal</strong>  from an arrow function, you need to wrap it in parentheses to avoid ambiguity with a block of code:</p>
+<pre><code class="language-js">`let add = (a, b) =&gt; ({
+  result: a + b
+}); 
+</code></pre>
+<p>Otherwise, the function body would be confused for a block of code without any  <code>return</code>  statements, and the colon would create a  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/label">labeled statement</a>  rather than a key-value pair.</p>
+<h3 id="default-argumentshttpsrealpythoncompython-vs-javascriptdefault-arguments-permanent-link">Default Arguments<a href="https://realpython.com/python-vs-javascript/#default-arguments" title="Permanent link"></a></h3>
+<p>Starting with ES6, function arguments can have  <strong>default values</strong>  like in Python:</p>
+<pre><code class="language-js">`&gt; function greet(name = 'John') {
+…   console.log('Hello', name);
+… }
+&gt; greet();
+Hello John 
+</code></pre>
+<p>Unlike Python, however, the default values are resolved every time the function is called instead of only when it’s defined. This makes it possible to safely use mutable types as well as to dynamically refer to other arguments passed at runtime:</p>
+<pre><code class="language-js">&gt; function foo(a, b=a+1, c=[]) {
+…   c.push(a);
+…   c.push(b);
+…   console.log(c);
+… }
+&gt; foo(1);
+[1, 2]
+&gt; foo(5);
+[5, 6]` 
+</code></pre>
+<p>Every time you call  <code>foo()</code>, its default arguments are derived from the actual values passed to the function.</p>
+<h3 id="variadic-functionshttpsrealpythoncompython-vs-javascriptvariadic-functions-permanent-link">Variadic Functions<a href="https://realpython.com/python-vs-javascript/#variadic-functions" title="Permanent link"></a></h3>
+<p>When you want to declare a function with  <a href="https://realpython.com/python-kwargs-and-args/">variable number of parameters</a>  in Python, you take advantage of the special  <code>*args</code>  syntax. The JavaScript equivalent would be the  <strong>rest parameter</strong>  defined with the  <strong>spread</strong>  (<code>...</code>) operator:</p>
+<pre><code class="language-js">&gt; function average(...numbers) {
+…   if (numbers.length &gt; 0) {
+…     const sum = numbers.reduce((a, x) =&gt; a + x);
+…     return sum / numbers.length;
+…   }
+…   return 0;
+… }
+&gt; average();
+0
+&gt; average(1);
+1
+&gt; average(1, 2);
+1.5
+&gt; average(1, 2, 3);
+2` 
+</code></pre>
+<p>The spread operator can also be used to combine iterable sequences. For example, you can extract the elements of one array into another:</p>
+<pre><code class="language-js">const redFruits = ['apple', 'cherry'];
+const fruits = ['banana', ...redFruits];` 
+</code></pre>
+<p>Depending on where you place the spread operator in the target list, you may prepend or append elements or insert them somewhere in the middle.</p>
+<h3 id="destructuring-assignmentshttpsrealpythoncompython-vs-javascriptdestructuring-assignments-permanent-link">Destructuring Assignments<a href="https://realpython.com/python-vs-javascript/#destructuring-assignments" title="Permanent link"></a></h3>
+<p>To unpack an iterable into individual variables or constants, you can use the  <strong>destructuring</strong>  assignment:</p>
+<pre><code class="language-js">&gt; const fruits = ['apple', 'banana', 'orange'];
+&gt; const [a, b, c] = fruits;
+&gt; console.log(b);
+banana` 
+</code></pre>
+<p>Similarly, you can destructure and even  <strong>rename</strong>  object attributes:</p>
+<pre><code class="language-js">``const person = {name: 'John Doe', age: 42, married: true};
+const {name: fullName, age} = person;
+console.log(`${fullName} is ${age} years old.`);`` 
+</code></pre>
+<p>This helps avoid name collisions for variables defined within one scope.</p>
+<h3 id="with--statementshttpsrealpythoncompython-vs-javascriptwith-statements-permanent-link"><code>with</code>  Statements<a href="https://realpython.com/python-vs-javascript/#with-statements" title="Permanent link"></a></h3>
+<p>There’s an alternative way to drill down to an object’s attributes using the slightly old  <code>with</code>  statement:</p>
+<pre><code class="language-js">``const person = {name: 'John Doe', age: 42, married: true};
+with (person) {
+  console.log(`${name} is ${age} years old.`);
+}`` 
+</code></pre>
+<p>It works like a construct in  <a href="https://en.wikipedia.org/wiki/Object_Pascal">Object Pascal</a>, in which a local scope gets temporarily augmented with attributes of the given object.</p>
+<p><strong>Note:</strong>  The  <code>with</code>  statements in Python vs JavaScript are  <a href="https://en.wikipedia.org/wiki/False_friend">false friends</a>. In Python, you use a  <code>with</code>  statement to manage resources through  <a href="https://realpython.com/courses/python-context-managers-and-with-statement/">context managers</a>.</p>
+<p>Since this might be obscure, the  <code>with</code>  statement is generally discouraged and is even unavailable in  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode">strict mode</a>.</p>
+<h3 id="iterables-iterators-and-generatorshttpsrealpythoncompython-vs-javascriptiterables-iterators-and-generators-permanent-link">Iterables, Iterators, and Generators<a href="https://realpython.com/python-vs-javascript/#iterables-iterators-and-generators" title="Permanent link"></a></h3>
+<p>Since ES6, JavaScript has had the  <strong>iterable</strong>  and  <strong>iterator</strong>  protocols as well as  <strong>generator functions</strong>, which look almost identical to Python’s  <a href="https://realpython.com/lessons/looping-over-iterables/">iterables, iterators</a>, and  <a href="https://realpython.com/introduction-to-python-generators/">generators</a>. To turn a regular function into a generator function, you need to add an asterisk (<code>*</code>) after the  <code>function</code>  keyword:</p>
+<pre><code class="language-js">`function* makeGenerator() {} 
+</code></pre>
+<p>You can’t make  <a href="https://realpython.com/courses/python-generators/">generator functions</a>  out of arrow functions, though.</p>
+<p>When you call a generator function, it won’t execute the body of that function. Instead, it returns a suspended  <strong>generator object</strong>  that conforms to the iterator protocol. To advance your generator, you can call  <code>.next()</code>, which is similar to Python’s built-in  <code>next()</code>:</p>
+<pre><code class="language-js">&gt; const generator = makeGenerator();
+&gt; const {value, done} = generator.next();
+&gt; console.log(value);
+undefined
+&gt; console.log(done);
+true` 
+</code></pre>
+<p>As a result, you’ll always get a status object with two attributes: the subsequent value and a flag that indicates if the generator has been exhausted. Python throws the  <code>StopIteration</code>  exception when there are no more values in the generator.</p>
+<p>To return some value from your generator function, you can use either the  <a href="https://realpython.com/introduction-to-python-generators/"><code>yield</code></a>  keyword or the  <code>return</code>  keyword. The generator will keep feeding values until there are no more  <code>yield</code>  statements, or until you  <code>return</code>  prematurely:</p>
+<pre><code class="language-js">let shouldStopImmediately = false;
+
+function* randomNumberGenerator(maxTries=3) {
+  let tries = 0;
+  while (tries++ &lt; maxTries) {
+    if (shouldStopImmediately) {
+      return 42; // The value is optional
+    }
+    yield Math.random();
+  }
+}` 
+</code></pre>
+<p>The above generator will keep yielding random numbers until it reaches the maximum number of tries or you set a flag to make it terminate early.</p>
+<p>The equivalent of the  <code>yield from</code>  expression in Python, which  <strong>delegates the iteration</strong>  to another iterator or an iterable object, is the  <code>yield*</code>  expression:</p>
+<pre><code class="language-js">&gt; function* makeGenerator() {
+…   yield 1;
+…   yield* [2, 3, 4];
+…   yield 5;
+… }
+&gt; const generator = makeGenerator()
+&gt; generator.next();
+{value: 1, done: false}
+&gt; generator.next();
+{value: 2, done: false}
+&gt; generator.next();
+{value: 3, done: false}
+&gt; generator.next();
+{value: 4, done: false}
+&gt; generator.next();
+{value: 5, done: false}
+&gt; generator.next();
+{value: undefined, done: true}` 
+</code></pre>
+<p>Interestingly, it’s legal to  <code>return</code>  and  <code>yield</code>  at the same time:</p>
+<pre><code class="language-js">`function* makeGenerator() {
+  return yield 42;
+} 
+</code></pre>
+<p>However, due to a grammar limitation, you’d have to use parentheses to achieve the same effect in Python:</p>
+<pre><code class="language-py">def make_generator():
+    return (yield 42)` 
+</code></pre>
+<p>To explain what’s going on, you can rewrite that example by introducing a helper constant:</p>
+<pre><code class="language-js">function* makeGenerator() {
+  const message = yield 42;
+  return message;
+}` 
+</code></pre>
+<p>If you know  <a href="https://realpython.com/lessons/what-are-python-coroutines/">coroutines</a>  in Python, then you’ll remember that generator objects can be both  <strong>producers</strong>  and  <strong>consumers</strong>. You can send arbitrary values into a suspended generator by providing an optional argument to  <code>.next()</code>:</p>
+<pre><code class="language-js">&gt; function* makeGenerator() {
+…   const message = yield 'ping';
+…   return message;
+… }
+&gt; const generator = makeGenerator();
+&gt; generator.next();
+{value: &quot;ping&quot;, done: false}
+&gt; generator.next('pong');
+{value: &quot;pong&quot;, done: true}` 
+</code></pre>
+<p>The first call to  <code>.next()</code>  runs the generator until the first  <code>yield</code>  expression, which happens to return  <code>&quot;ping&quot;</code>. The second call passes a  <code>&quot;pong&quot;</code>  that is stored in the constant and immediately returned from the generator.</p>
+<h3 id="asynchronous-functionshttpsrealpythoncompython-vs-javascriptasynchronous-functions-permanent-link">Asynchronous Functions<a href="https://realpython.com/python-vs-javascript/#asynchronous-functions" title="Permanent link"></a></h3>
+<p>The nifty mechanism explored above was the basis for  <a href="https://realpython.com/async-io-python/">asynchronous programming</a>  and the adoption of the  <code>async</code>  and  <code>await</code>  keywords in Python. JavaScript followed the same path by bringing in  <strong>asynchronous functions</strong>  with ES8 in 2017.</p>
+<p>While a generator function returns a special kind of iterator, the generator object, asynchronous functions always return a  <strong>promise</strong>, which was first introduced in ES6. A promise represents the future result of an asynchronous call such as  <code>fetch()</code>  from the  <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch API</a>.</p>
+<p>When you return any value from an asynchronous function, it’s automatically wrapped in a promise object that can be awaited in another asynchronous function:</p>
+<pre><code class="language-js">``async function greet(name) {
+  return `Hello ${name}`;
+}
+
+async function main() {
+  const promise = greet('John');
+  const greeting = await promise;
+  console.log(greeting); // &quot;Hello John&quot;
+}
+
+main();`` 
+</code></pre>
+<p>Typically, you’d  <code>await</code>  and assign the result in one go:</p>
+<pre><code class="language-js">const greeting = await greet('John');` 
+</code></pre>
+<p>Although you can’t completely get rid of promises with asynchronous functions, they significantly improve your code readability. It starts to look like synchronous code even though your functions can be paused and resumed multiple times.</p>
+<p>One notable difference from the asynchronous code in Python is that, in JavaScript, you don’t need to manually set up the  <strong>event loop</strong>, which runs in the background implicitly. JavaScript is inherently asynchronous.</p>
+<h3 id="objects-and-constructorshttpsrealpythoncompython-vs-javascriptobjects-and-constructors-permanent-link">Objects and Constructors<a href="https://realpython.com/python-vs-javascript/#objects-and-constructors" title="Permanent link"></a></h3>
+<p>You know from an earlier part of this article that JavaScript doesn’t have a concept of classes. Instead, it knows about objects. You can create new objects using  <strong>object literals</strong>, which look like  <a href="https://realpython.com/python-dicts/">Python dictionaries</a>:</p>
+<pre><code class="language-js">let person = {
+  name: 'John Doe',
+  age: 42,
+  married: true
+};` 
+</code></pre>
+<p>It behaves like a dictionary in that you can access individual attributes using dot syntax or square brackets:</p>
+<pre><code class="language-js">&gt; person.age++;
+&gt; person['age'];
+43` 
+</code></pre>
+<p>Object attributes don’t need to be enclosed in quotes unless they contain spaces, but that isn’t a common practice:</p>
+<pre><code class="language-js">&gt; let person = {
+…   'full name': 'John Doe'
+… };
+&gt; person['full name'];
+'John Doe'
+&gt; person.full name;
+SyntaxError: Unexpected identifier` 
+</code></pre>
+<p>Just like a dictionary and some objects in Python, objects in JavaScript have  <strong>dynamic attributes</strong>. That means you can add new attributes or delete existing ones from an object:</p>
+<pre><code class="language-js">&gt; let person = {name: 'John Doe'};
+&gt; person.age = 42;
+&gt; console.log(person);
+{name: &quot;John Doe&quot;, age: 42}
+&gt; delete person.name;
+true
+&gt; console.log(person);
+{age: 42}` 
+</code></pre>
+<p>Starting from ES6, objects can have attributes with  <strong>computed names</strong>:</p>
+<pre><code class="language-js">&gt; let person = {
+…   ['full' + 'Name']: 'John Doe'
+… };
+&gt; person.fullName;
+'John Doe'` 
+</code></pre>
+<p>Python dictionaries and JavaScript objects are allowed to contain functions as their keys and attributes. There are ways to bind such functions to their owner so that they behave like class methods. For example, you can use a circular reference:</p>
+<pre><code class="language-js">``&gt; let person = {
+…   name: 'John Doe',
+…   sayHi: function() {
+…     console.log(`Hi, my name is ${person.name}.`);
+…  }
+… };
+&gt; person.sayHi();
+Hi, my name is John Doe.`` 
+</code></pre>
+<p><code>sayHi()</code>  is tightly coupled to the object it belongs to because it refers to the  <code>person</code>  variable by name. If you were to rename that variable at some point, then you’d have to go through the whole object and make sure to update all occurrences of that variable name.</p>
+<p>A slightly better approach takes advantage of the implicit  <code>this</code>  variable that is exposed to functions. The value of  <code>this</code>  can be different depending on who’s calling the function:</p>
+<pre><code class="language-js">``&gt; let jdoe = {
+…   name: 'John Doe',
+…   sayHi: function() {
+…     console.log(`Hi, my name is ${this.name}.`); …   }
+… };
+&gt; jdoe.sayHi();
+Hi, my name is John Doe.`` 
+</code></pre>
+<p>After replacing a hard-coded  <code>person</code>  with  <code>this</code>, which is similar to Python’s  <code>self</code>, it won’t matter what the variable name is, and the result will be the same as before.</p>
+<p><strong>Note:</strong>  The example above won’t work if you replace the function expression with an arrow function, because the latter has different scoping rules for the  <code>this</code>  variable.</p>
+<p>That’s great, but as soon as you decide to introduce more objects of the same  <code>Person</code>  kind, you’ll have to repeat all attributes and redefine all functions in each object. What you’d rather have is a template for  <code>Person</code>  objects.</p>
+<p>The canonical way of creating custom data types in JavaScript is to define a  <strong>constructor</strong>, which is an ordinary function:</p>
+<pre><code class="language-js">function Person() {
+  console.log('Calling the constructor');
+}` 
+</code></pre>
+<p>As a convention, to denote that such a function has a special meaning, you’d capitalize the first letter to follow CapitalizedWords instead of the usual mixedCase.</p>
+<p>On the syntactical level, however, it’s just a function that you can call normally:</p>
+<pre><code class="language-js">&gt; Person();
+Calling the constructor
+undefined` 
+</code></pre>
+<p>What makes it special is  <em>how</em>  you call it:</p>
+<pre><code class="language-js">&gt; new Person();
+Calling the constructor
+Person {}` 
+</code></pre>
+<p>When you add the  <code>new</code>  keyword in front of the function call, it’ll implicitly return a brand-new instance of a JavaScript object. That means your constructor shouldn’t contain the  <code>return</code>  statement.</p>
+<p>While the interpreter is responsible for allocating memory for and scaffolding a new object, the role of a constructor is to give the object an initial state. You can use the previously mentioned  <code>this</code>  keyword to refer to a new instance under construction:</p>
+<pre><code class="language-js">``function Person(name) {
+  this.name = name;
+  this.sayHi = function() {
+    console.log(`Hi, my name is ${this.name}.`);
+  }
+}`` 
+</code></pre>
+<p>Now you can create multiple distinct  <code>Person</code>  entities:</p>
+<pre><code class="language-js">const jdoe = new Person('John Doe');
+const jsmith = new Person('John Smith');` 
+</code></pre>
+<p>Alright, but you’re still duplicating function definitions across all instances of the  <code>Person</code>  type. The constructor is just a factory that hooks the same values to individual objects. It’s wasteful and could lead to inconsistent behavior if you were to change it at some point. Consider this:</p>
+<pre><code class="language-js">&gt; const jdoe = new Person('John Doe');
+&gt; const jsmith = new Person('John Smith');
+&gt; jsmith.sayHi = _ =&gt; console.log('What?');
+&gt; jdoe.sayHi();
+Hi, my name is John Doe.
+&gt; jsmith.sayHi();
+What?` 
+</code></pre>
+<p>Since every object gets a copy of its attributes, including functions, you must carefully update all instances to keep a uniform behavior. Otherwise, they’ll do different things, which typically isn’t what you want. Objects might have a different state, but their behavior usually won’t change.</p>
+<h3 id="prototypeshttpsrealpythoncompython-vs-javascriptprototypes-permanent-link">Prototypes<a href="https://realpython.com/python-vs-javascript/#prototypes" title="Permanent link"></a></h3>
+<p>As a rule of thumb, you should move the business logic from the constructor, which is concerned about data, to the  <strong>prototype</strong>  object:</p>
+<pre><code class="language-js">``function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHi = function() {
+  console.log(`Hi, my name is ${this.name}.`);
+};`` 
+</code></pre>
+<p>Every object has a prototype. You can access your custom data type’s prototype by referring to the  <code>.prototype</code>  attribute of your constructor. It’ll already have a few predefined attributes, such as  <code>.toString()</code>, that are common to all objects in JavaScript. You can add more attributes with your custom methods and values.</p>
+<p>When JavaScript is looking for an object’s attribute, it begins by trying to find it in that object. Upon failure, it moves on to the respective prototype. Therefore, attributes defined in a prototype are shared across all instances of the corresponding type.</p>
+<p>Prototypes are chained, so the attribute lookup continues until there are no more prototypes in the chain. This is analogous to type hierarchy through inheritance.</p>
+<p>Not only can you create methods in one place thanks to the prototypes, but you can also create  <a href="https://realpython.com/instance-class-and-static-methods-demystified/">static attributes</a>  by attaching them to one:</p>
+<pre><code class="language-js">&gt; Person.prototype.PI = 3.14;
+&gt; new Person('John Doe').PI;
+3.14
+&gt; new Person('John Smith').PI;
+3.14` 
+</code></pre>
+<p>To illustrate the power of prototypes, you may try to extend the behavior of existing objects, or even a built-in data type. Let’s add a new method to the  <code>string</code>  type in JavaScript by specifying it in the prototype object:</p>
+<pre><code class="language-js">String.prototype.toSnakeCase = function() {
+  return this.replace(/\s+/g, '')
+             .split(/(?&lt;=[a-z])(?=[A-Z])/g)
+             .map(x =&gt; x.toLowerCase())
+             .join('_');
+};` 
+</code></pre>
+<p>It uses  <a href="https://realpython.com/regex-python/">regular expressions</a>  to transform the text into snake_case. Suddenly, string variables, constants, and even string literals can benefit from it:</p>
+<p><code>&gt; &quot;loremIpsumDolorSit&quot;.toSnakeCase(); 'lorem_ipsum_dolor_sit'</code></p>
+<p>However, this is a double-edged sword. In a similar way, someone could override one of the existing methods in a prototype of a popular type, which would break the assumptions made elsewhere. Such  <a href="https://en.wikipedia.org/wiki/Monkey_patch">monkey patching</a>  can be useful in  <a href="https://realpython.com/learning-paths/test-your-python-apps/">testing</a>  but is otherwise very dangerous.</p>
+<h3 id="classeshttpsrealpythoncompython-vs-javascriptclasses-permanent-link">Classes<a href="https://realpython.com/python-vs-javascript/#classes" title="Permanent link"></a></h3>
+<p>Since ES6, there’s been an alternative way to define prototypes that uses a much more familiar syntax:</p>
+<pre><code class="language-js">``class Person {
+  constructor(name) {
+    this.name = name;
+  }
+  sayHi() {
+    console.log(`Hi, my name is ${this.name}.`);
+  }
+}`` 
+</code></pre>
+<p>Even though this looks like you’re defining a  <strong>class</strong>, it’s only a convenient high-level metaphor for specifying custom data types in JavaScript. Behind the scenes, there are no real classes! For that reason, some people go so far as to advocate against using this new syntax at all.</p>
+<p>You can have  <strong>getters</strong>  and  <strong>setters</strong>  in your class, which are similar to the Python’s  <a href="https://docs.python.org/3/howto/descriptor.html?#properties">class properties</a>:</p>
+<pre><code class="language-js">&gt; class Square {
+…   constructor(size) {
+…     this.size = size; // Triggers the setter
+…   }
+…   set size(value) {
+…     this._size = value; // Sets the private field
+…   }
+…   get area() {
+…     return this._size**2;
+…   }
+… }
+&gt; const box = new Square(3);
+&gt; console.log(box.area);
+9
+&gt; box.size = 5;
+&gt; console.log(box.area);
+25` 
+</code></pre>
+<p>When you omit the setter, you create a read-only property. That’s misleading, however, because you can still access the underlying  <code>private</code>  field like you can in Python.</p>
+<p>A common pattern to encapsulate internal implementation in JavaScript is an  <strong>Immediately Invoked Function Expression (IIFE)</strong>, which can look like this:</p>
+<pre><code class="language-js">&gt; const odometer = (function(initial) {
+…   let mileage = initial;
+…   return {
+…     get: function() { return mileage; },
+…     put: function(miles) { mileage += miles; }
+…   };
+… })(33000);
+&gt; odometer.put(65);
+&gt; odometer.put(12);
+&gt; odometer.get();
+33077` 
+</code></pre>
+<p>In other words, it’s an anonymous function that calls itself. You can use the newer arrow function to create an IIFE too:</p>
+<pre><code class="language-js">const odometer = ((initial) =&gt; {
+  let mileage = initial;
+  return {
+    get: _ =&gt; mileage,
+    put: (miles) =&gt; mileage += miles
+  };
+})(33000);` 
+</code></pre>
+<p>This is how JavaScript historically emulated  <strong>modules</strong>  to avoid name collisions in the global  <a href="https://realpython.com/python-namespaces-scope/">namespace</a>. Without an IIFE, which uses closures and function scope to expose only a limited public-facing API, everything would be accessible from the calling code.</p>
+<p>Sometimes you want to define a factory or a utility function that logically belongs to your class. In Python, you have the  <code>@classmethod</code>  and  <code>@staticmethod</code>  decorators, which allow you to associate  <strong>static methods</strong>  with the class. To achieve the same result in JavaScript, you need to use the  <code>static</code>  method modifier:</p>
+<pre><code class="language-js">class Color {
+  static brown() {
+    return new Color(244, 164, 96);
+  }
+  static mix(color1, color2) {
+    return new Color(...color1.channels.map(
+      (x, i) =&gt; (x + color2.channels[i]) / 2
+    ));
+  }
+  constructor(r, g, b) {
+    this.channels = [r, g, b];
+  }
+}
+const color1 = Color.brown();
+const color2 = new Color(128, 0, 128);
+const blended = Color.mix(color1, color2);` 
+</code></pre>
+<p>Note that there’s no way of defining static class attributes at the moment, at least not without additional transpiler plugins.</p>
+<p>Chaining prototypes can resemble  <strong>class inheritance</strong>  when you  <code>extend</code>  one class from another:</p>
+<pre><code class="language-js">``class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  fullName() {
+    return `${this.firstName}  ${this.lastName}`;
+  }
+}
+
+class Gentleman extends Person {
+  signature() {
+    return 'Mr. ' + super.fullName()
+  }
+}`` 
+</code></pre>
+<p>In Python, you could extend more than one class, but that it isn’t possible in JavaScript. To reference attributes from the  <strong>parent class</strong>, you can use  <a href="https://realpython.com/python-super/"><code>super()</code></a>, which has to be called in the constructor to pass arguments up the chain.</p>
+<h3 id="decoratorshttpsrealpythoncompython-vs-javascriptdecorators-permanent-link">Decorators<a href="https://realpython.com/python-vs-javascript/#decorators" title="Permanent link"></a></h3>
+<p><a href="https://realpython.com/primer-on-python-decorators/">Decorators</a>  are yet another feature that JavaScript copied from Python. They’re still technically a  <a href="https://github.com/tc39/proposal-decorators">proposal</a>  that is subject to change, but you can test them out using an  <a href="https://babeljs.io/repl">online playground</a>  or a local transpiler. Be warned, however, that they require a bit of configuration. Depending on the chosen plugin and its options, you’ll get different syntax and behavior.</p>
+<p>Several frameworks already use a custom syntax for decorators, which need to be transpiled into plain JavaScript. If you opt for the  <a href="https://tc39.es/">TC-39</a>  proposal, then you’ll be able to decorate only classes and their members. It seems there won’t be any special syntax for function decorators in JavaScript.</p>
+<h2 id="javascript-quirkshttpsrealpythoncompython-vs-javascriptjavascript-quirks-permanent-link">JavaScript Quirks<a href="https://realpython.com/python-vs-javascript/#javascript-quirks" title="Permanent link"></a></h2>
+<p>It took ten days for Brendan Eich to create a prototype of what later became JavaScript. After it was presented to the stakeholders at a business meeting, the language was considered production ready and didn’t go through a lot of changes for many years.</p>
+<p>Unfortunately, that made the language infamous for its oddities. Some people didn’t even regard JavaScript as a “real” programming language, which made it a victim of many jokes and memes.</p>
+<p>Today, the language is much friendlier than it used to be. Nevertheless, it’s worth knowing what to avoid, since a lot of legacy JavaScript is still out there waiting to bite you.</p>
+<h3 id="bogus-arrayhttpsrealpythoncompython-vs-javascriptbogus-array-permanent-link">Bogus Array<a href="https://realpython.com/python-vs-javascript/#bogus-array" title="Permanent link"></a></h3>
+<p>Python’s  <a href="https://realpython.com/python-lists-tuples/">lists and tuples</a>  are implemented as arrays in the  <a href="https://en.wikipedia.org/wiki/Array_data_structure">traditional sense</a>, whereas JavaScript’s  <code>Array</code>  type has more in common with Python’s  <a href="https://realpython.com/python-dicts/">dictionary</a>. What’s an array, then?</p>
+<p>In computer science, an array is a data structure that occupies a contiguous block of memory, and whose elements are ordered and have homogeneous sizes. This way, you can access them randomly with a numerical index.</p>
+<p>In Python, a list is an array of  <a href="https://realpython.com/pointers-in-python/">pointers</a>  that are typically integer numbers, which reference heterogeneous objects scattered around in various regions of memory.</p>
+<p><strong>Note:</strong>  For low-level arrays in Python, you might be interested in checking out the built-in  <a href="https://docs.python.org/3/library/array.html"><code>array</code></a>  module.</p>
+<p>JavaScript’s array is an object whose attributes happen to be numbers. They’re not necessarily stored next to each other. However, they keep the right order during iteration.</p>
+<p>When you delete an element from an array in JavaScript, you make a gap:</p>
+<pre><code class="language-js">&gt; const fruits = ['apple', 'banana', 'orange'];
+&gt; delete fruits[1];
+true
+&gt; console.log(fruits);
+['apple', empty, 'orange']
+&gt; fruits[1];
+undefined` 
+</code></pre>
+<p>The array doesn’t change its size after the removal of one of its elements:</p>
+<pre><code class="language-js">&gt; console.log(fruits.length);
+3` 
+</code></pre>
+<p>Conversely, you can put a new element at a distant index even though the array is much shorter:</p>
+<pre><code class="language-js">&gt; fruits[10] = 'watermelon';
+&gt; console.log(fruits.length);
+11
+&gt; console.log(fruits);
+['apple', empty, 'orange', empty × 7, 'watermelon']` 
+</code></pre>
+<p>This wouldn’t work in Python.</p>
+<h3 id="array-sortinghttpsrealpythoncompython-vs-javascriptarray-sorting-permanent-link">Array Sorting<a href="https://realpython.com/python-vs-javascript/#array-sorting" title="Permanent link"></a></h3>
+<p>Python is clever about  <a href="https://realpython.com/courses/python-sorting-data/">sorting data</a>  because it can tell the difference between element types. When you sort a list of numbers, for example, it’ll put them in ascending order by default:</p>
+<pre><code class="language-js">&gt;&gt;&gt; sorted([53, 2020, 42, 1918, 7])
+[7, 42, 53, 1918, 2020]` 
+</code></pre>
+<p>However, if you wanted to sort a list of strings, then it would magically know how to compare the elements so that they appear in  <a href="https://en.wikipedia.org/wiki/Lexicographical_order">lexicographical order</a>:</p>
+<pre><code class="language-js">&gt;&gt;&gt; sorted(['lorem', 'ipsum', 'dolor', 'sit', 'amet'])
+['amet', 'dolor', 'ipsum', 'lorem', 'sit']` 
+</code></pre>
+<p>Things get complicated when you start to mix different types:</p>
+<pre><code class="language-js">&gt;&gt;&gt; sorted([42, 'not a number'])
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: '&lt;' not supported between instances of 'str' and 'int'` 
+</code></pre>
+<p>By now, you know that Python is a strongly typed language and doesn’t like mixing types. JavaScript, on the other hand, is the opposite. It’ll eagerly convert elements of incompatible types according to some obscure rules.</p>
+<p>You can use  <code>.sort()</code>  to do the sorting in JavaScript:</p>
+<pre><code class="language-js">&gt; ['lorem', 'ipsum', 'dolor', 'sit', 'amet'].sort();
+['amet', 'dolor', 'ipsum', 'lorem', 'sit']` 
+</code></pre>
+<p>It turns out that sorting strings works as expected. Let’s see how it copes with numbers:</p>
+<pre><code class="language-js">&gt; [53, 2020, 42, 1918, 7].sort();
+[1918, 2020, 42, 53, 7]` 
+</code></pre>
+<p>What happened here is that the array elements got implicitly converted to strings and were sorted lexicographically. To prevent that, you have to provide your custom sorting  <strong>strategy</strong>  as a function of two elements to compare, for example:</p>
+<pre><code class="language-js">&gt; [53, 2020, 42, 1918, 7].sort((a, b) =&gt; a - b);
+[7, 42, 53, 1918, 2020]` 
+</code></pre>
+<p>The contract between your strategy and the sorting method is that your function should return one of three values:</p>
+<ol>
+<li><strong>Zero</strong>  when the two elements are equal</li>
+<li><strong>A positive number</strong>  when elements need to be swapped</li>
+<li><strong>A negative number</strong>  when the elements are in the right order</li>
+</ol>
+<p>This is a common pattern present in other languages, and it was also the  <a href="https://docs.python.org/3.3/howto/sorting.html#the-old-way-using-the-cmp-parameter">old way of sorting</a>  in Python.</p>
+<h3 id="automatic-semicolon-insertionhttpsrealpythoncompython-vs-javascriptautomatic-semicolon-insertion-permanent-link">Automatic Semicolon Insertion<a href="https://realpython.com/python-vs-javascript/#automatic-semicolon-insertion" title="Permanent link"></a></h3>
+<p>At this point, you know that semicolons in JavaScript are optional because the interpreter will insert them automatically at the end of each instruction if you don’t do so yourself.</p>
+<p>This can lead to surprising results under some circumstances:</p>
+<pre><code class="language-js">function makePerson(name) {
+  return
+    ({
+      fullName: name,
+      createdAt: new Date()
+    })
+}` 
+</code></pre>
+<p>In this example, you might expect the JavaScript engine to insert a missing semicolon at the very end of your function, right after the closing parenthesis of the object literal. However, when you call the function, this happens:</p>
+<pre><code class="language-js">&gt; const jdoe = makePerson('John Doe');
+&gt; console.log(jdoe);
+undefined` 
+</code></pre>
+<p>Your function changed the intended action by returning an  <code>undefined</code>  because  <em>two</em>  semicolons were inserted instead of one:</p>
+<pre><code class="language-js">function makePerson(name) {
+ return;    ({
+      fullName: name,
+      createdAt: new Date()
+ }); }` 
+</code></pre>
+<p>As you can see, relying on the fact that semicolons are optional introduces some risk of errors in your code. On the other hand, it won’t help if you start putting semicolons everywhere.</p>
+<p>To fix this example, you need to change your code formatting so that the returned value begins on the same line as the  <code>return</code>  statement:</p>
+<pre><code class="language-js">function makePerson(name) {
+  return {
+    fullName: name,
+    createdAt: new Date()
+  };
+} 
+</code></pre>
+<p>In some situations, you can’t rely on automatic semicolon insertion and you need to put one explicitly instead. For example, you can’t leave out the semicolon when you start a new line with a parenthesis:</p>
+<pre><code class="language-js">const total = 2 + 3
+(4 + 5).toString()` 
+</code></pre>
+<p>This produces a runtime error due to the lack of a semicolon, which makes the two lines collapse into one:</p>
+<pre><code class="language-js">const total = 2 + 3(4 + 5).toString();` 
+</code></pre>
+<p>A numeric literal can’t be called like a function.</p>
+<h3 id="confusing-loopshttpsrealpythoncompython-vs-javascriptconfusing-loops-permanent-link">Confusing Loops<a href="https://realpython.com/python-vs-javascript/#confusing-loops" title="Permanent link"></a></h3>
+<p>Loops in JavaScript are particularly confusing because there are so many of them and they look alike, whereas Python has just two. The primary type of loop in JavaScript is the  <strong><code>for</code>  loop</strong>, which was transplanted from Java:</p>
+<pre><code class="language-js">const fruits = ['apple', 'banana', 'orange'];
+for (let i = 0; i &lt; fruits.length; i++) {
+  console.log(fruits[i]);
+}` 
+</code></pre>
+<p>It has three parts, all of which are optional:</p>
+<ol>
+<li><strong>Initialization:</strong>  <code>let i = 0</code></li>
+<li><strong>Condition:</strong>  <code>i &lt; fruits.length</code></li>
+<li><strong>Cleanup:</strong>  <code>i++</code></li>
+</ol>
+<p>The first part executes only once before the loop starts, and it typically sets the initial value for the counter. Then, after each iteration, the cleanup part runs to update the counter. Right after that, the condition is evaluated to determine if the loop should continue. This is roughly equivalent to iterating over a list of indices in Python:</p>
+<pre><code class="language-js">fruits = ['apple', 'banana', 'orange']
+for i in range(len(fruits)):
+    print(fruits[i])` 
+</code></pre>
+<p>Notice how much work Python does for you. On the other hand, having the loop internals exposed gives you a lot of flexibility. This type of loop is generally  <strong>deterministic</strong>  because you know how many times it’ll iterate from the beginning.</p>
+<p>In JavaScript, you can make the conventional  <code>for</code>  loop non-deterministic and even  <strong>infinite</strong>  by omitting one or more of its parts:</p>
+<pre><code class="language-js">for (;;) {
+  // An infinite loop
+}` 
+</code></pre>
+<p>However, a more idiomatic way to make such an iteration would involve the  <strong><a href="https://realpython.com/python-while-loop/"><code>while</code></a>  loop</strong>, which is quite similar to the one you’d find in Python:</p>
+<pre><code class="language-js">while (true) {
+  const age = prompt('How old are you?');
+  if (age &gt;= 18) {
+    break;
+  }
+}` 
+</code></pre>
+<p>In addition to this, JavaScript has a  <strong><code>do...while</code>  loop</strong>, which is guaranteed to run at least once because it checks the condition after its body. You can rewrite this example in the following way:</p>
+<pre><code class="language-js">let age;
+do {
+  age = prompt('How old are you?');
+} while (age &lt; 18);` 
+</code></pre>
+<p>Apart from stopping an iteration midway with the  <code>break</code>  keyword, you can skip to the next iteration using the  <code>continue</code>  keyword as you would in Python:</p>
+<pre><code class="language-js">for (let i = 0; i &lt; 10; i++) {
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log(i);
+}` 
+</code></pre>
+<p>What you can’t do, though, is use the  <a href="https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements-and-else-clauses-on-loops"><code>else</code>  clause on loops</a>.</p>
+<p>You might be tempted to try out the  <strong><code>for...in</code>  loop</strong>  in JavaScript, thinking it would iterate over values like a Python  <code>for</code>  loop. Although it looks similar and has a similar name, it actually behaves very differently!</p>
+<p>A  <code>for...in</code>  loop in JavaScript iterates over attributes of the given object, including the ones found in the prototype chain:</p>
+<pre><code class="language-js">``&gt; const object = {name: 'John Doe', age: 42};
+&gt; for (const attribute in object) {
+…   console.log(`${attribute} = ${object[attribute]}`);
+… }
+name = John Doe
+age = 42`` 
+</code></pre>
+<p>Should you want to exclude attributes attached to the prototype, you can call  <code>hasOwnProperty()</code>. It will test whether a given attribute belongs to an object instance.</p>
+<p>When you feed the  <code>for...in</code>  loop with an array, it’ll iterate over the array’s numeric indices. As you know by now, arrays in JavaScript are just glorified dictionaries:</p>
+<pre><code class="language-js">&gt; const fruits = ['apple', 'banana', 'orange'];
+… for (const fruit in fruits) {
+…   console.log(fruit);
+… }
+0
+1
+2` 
+</code></pre>
+<p>On the other hand, arrays expose  <code>.forEach()</code>, which can substitute for a loop:</p>
+<pre><code class="language-js">const fruits = ['apple', 'banana', 'orange'];
+fruits.forEach(fruit =&gt; console.log(fruit));` 
+</code></pre>
+<p>This is a  <a href="https://en.wikipedia.org/wiki/Higher-order_function">higher-order function</a>  that accepts a callback that will run for every element in the array. This pattern fits a bigger picture since JavaScript takes a functional approach to iteration in general.</p>
+<p><strong>Note:</strong>  To test if a single attribute is defined in an object, use the  <code>in</code>  operator:</p>
+<pre><code class="language-js">&gt; 'toString' in [1, 2, 3];
+true
+&gt; '__str__' in [1, 2, 3];
+false` 
+</code></pre>
+<p>Finally, when the ES6 specification introduced the iterable and iterator protocols, it allowed the implementation of a long-awaited loop that would iterate over sequences. However, since the  <code>for...in</code>  name was already taken, they had to come up with a different one.</p>
+<p>The  <strong><code>for...of</code>  loop</strong>  is the closest relative to the  <a href="https://realpython.com/python-for-loop/"><code>for</code></a>  loop in Python. With it, you can iterate over any iterable object, including strings and arrays:</p>
+<pre><code class="language-js">const fruits = ['apple', 'banana', 'orange'];
+for (const fruit of fruits) {
+  console.log(fruit);
+}` 
+</code></pre>
+<p>This is probably the most intuitive way for a Python programmer to iterate in JavaScript.</p>
+<h3 id="constructor-without--newhttpsrealpythoncompython-vs-javascriptconstructor-without-new-permanent-link">Constructor Without  <code>new</code><a href="https://realpython.com/python-vs-javascript/#constructor-without-new" title="Permanent link"></a></h3>
+<p>Let’s go back to the  <code>Person</code>  type defined earlier:</p>
+<pre><code class="language-js">``function Person(name) {
+  this.name = name;
+  this.sayHi = function() {
+    console.log(`Hi, my name is ${this.name}.`);
+  }
+}`` 
+</code></pre>
+<p>If you forget to call that constructor correctly, with the  <code>new</code>  keyword in front of it, then it’ll fail silently and leave you with an  <code>undefined</code>  variable:</p>
+<pre><code class="language-js">&gt; let bob = Person('Bob');
+&gt; console.log(bob);
+undefined` 
+</code></pre>
+<p>There’s a trick to protect yourself against this mistake. When you omit the  <code>new</code>  keyword, there won’t be any object to bind to, so the  <code>this</code>  variable inside the constructor will point to the  <a href="https://developer.mozilla.org/en-US/docs/Glossary/Global_object">global object</a>, such as the  <code>window</code>  object in the web browser. You can detect that and delegate to a valid constructor invocation:</p>
+<pre><code class="language-js">``&gt; function Person(name) {
+…   if (this === window) {
+…     return new Person(name);
+…   }
+…   this.name = name;
+…   this.sayHi = function() {
+…     console.log(`Hi, my name is ${this.name}.`);
+…   }
+… }
+&gt; let person = Person('John Doe');
+&gt; console.log(person);
+Person {name: 'John Doe', sayHi: ƒ}`` 
+</code></pre>
+<p>This is the only reason you might want to include a  <code>return</code>  statement in your constructor.</p>
+<p><strong>Note:</strong>  The triple equals sign (<code>===</code>) is intentional and has to do with the weak typing in JavaScript. You’ll learn more about it  <a href="https://realpython.com/python-vs-javascript/#implicit-type-coercion">below</a>.</p>
+<h3 id="global-scope-by-defaulthttpsrealpythoncompython-vs-javascriptglobal-scope-by-default-permanent-link">Global Scope by Default<a href="https://realpython.com/python-vs-javascript/#global-scope-by-default" title="Permanent link"></a></h3>
+<p>Unless you’re already at the global scope, your variables automatically become global when you don’t precede their declarations with one of these keywords:</p>
+<ul>
+<li><code>var</code></li>
+<li><code>let</code></li>
+<li><code>const</code></li>
+</ul>
+<p>It’s easy to fall into this trap, especially when you’re coming from Python. For example, such a variable defined in a function will become visible outside of it:</p>
+<pre><code class="language-js">&gt; function call() {
+…   global = 42;
+…   let local = 3.14
+… }
+&gt; call();
+&gt; console.log(global);
+42
+&gt; console.log(local);
+ReferenceError: local is not defined` 
+</code></pre>
+<p>Interestingly, the rules determining whether you declare a local or a global variable in Python are  <a href="https://docs.python.org/3/faq/programming.html#what-are-the-rules-for-local-and-global-variables-in-python">much more complicated</a>  than this. There are also  <a href="https://realpython.com/python-scope-legb-rule/#conclusion">other kinds</a>  of variable scope in Python.</p>
+<h3 id="function-scopehttpsrealpythoncompython-vs-javascriptfunction-scope-permanent-link">Function Scope<a href="https://realpython.com/python-vs-javascript/#function-scope" title="Permanent link"></a></h3>
+<p>This quirk is only present in legacy code, which uses the  <code>var</code>  keyword for variable declaration. You’ve learned that when a variable is declared like that, it won’t be global. But it isn’t going to have a local scope either.</p>
+<p>No matter how deep in the function a variable is defined, it’ll be scoped to the entire function:</p>
+<pre><code class="language-js">&gt; function call() {
+…   if (true) {
+…     for (let i = 0; i &lt; 10; i++) {
+…       var notGlobalNorLocal = 42 + i;
+…     }
+…   }
+…   notGlobalNorLocal--;
+…   console.log(notGlobalNorLocal);
+… }
+&gt; call();
+50` 
+</code></pre>
+<p>The variable is visible and still alive at the top level of the function right before exiting. However, nested functions don’t expose their variables to the outer scope:</p>
+<pre><code class="language-js">&gt; function call() {
+…   function inner() {
+…     var notGlobalNorLocal = 42;
+…   }
+…   inner();
+…   console.log(notGlobalNorLocal);
+… }
+&gt; call();
+ReferenceError: notGlobalNorLocal is not defined` 
+</code></pre>
+<p>It works the other way around, though. Inner functions can see the variables from the outer scope, but it gets even more interesting when you return the inner function for later use. This creates a  <a href="https://realpython.com/inner-functions-what-are-they-good-for/">closure</a>.</p>
+<h3 id="hoistinghttpsrealpythoncompython-vs-javascripthoisting-permanent-link">Hoisting<a href="https://realpython.com/python-vs-javascript/#hoisting" title="Permanent link"></a></h3>
+<p>This one is related to the  <a href="https://realpython.com/python-vs-javascript/#function-scope">previous quirk</a>  and, again, applies to variables declared with the infamous  <code>var</code>  keyword.</p>
+<p>Let’s begin with a little riddle:</p>
+<pre><code class="language-js">var x = 42;
+
+function call() {
+  console.log(x); // A = ???
+  var x = 24;
+  console.log(x); // B = ???
+}
+
+call();
+console.log(x); // C = ???` 
+</code></pre>
+<p>Consider what the result will be:</p>
+<pre><code class="language-js">1.  A =  `42`, B =  `24`, C =  `42`
+2.  A =  `42`, B =  `24`, C =  `24`
+3.  A =  `24`, B =  `24`, C =  `42`
+4.  A =  `24`, B =  `24`, C =  `24`
+5.  `SyntaxError: Identifier 'x' has already been declared`
+</code></pre>
+<p>While you’re thinking about your answer, let’s take a closer look at what hoisting is. In short, it’s an implicit mechanism in JavaScript that moves variable declarations to the top of the function, but only those that use the  <code>var</code>  keyword. Keep in mind that it moves  <em>declarations</em>  rather than definitions.</p>
+<p>In some programming languages, like C, all variables must be declared at the beginning of a function. Other languages, such as Pascal, go even further by dedicating a special section for variable declarations. JavaScript tried to mimic that.</p>
+<p>Alright, ready? The correct answer is none of the above! It’ll print the following:</p>
+<ul>
+<li>A =  <code>undefined</code></li>
+<li>B =  <code>24</code></li>
+<li>C =  <code>42</code></li>
+</ul>
+<p>To clarify the reasoning behind these results, you can manually perform the hoisting that JavaScript would do in this situation:</p>
+<pre><code class="language-js">var x = 42;
+
+function call() {
+ var x;  console.log(x); // A = undefined
+  x = 24;
+  console.log(x); // B = 24
+}
+
+call();
+console.log(x); // C = 42` 
+</code></pre>
+<p>The global variable is temporarily masked by the local variable because the name lookup goes outward. The declaration of  <code>x</code>  inside the function is moved up. When a variable is declared but not initialized, it has the  <code>undefined</code>  value.</p>
+<p>Variables aren’t the only construct that is affected by hoisting. Normally, when you define a function in JavaScript, you can call it even before its definition:</p>
+<pre><code class="language-js">call(); // Prints &quot;hello&quot;
+
+function call() {
+  console.log('hello');
+}` 
+</code></pre>
+<p>This won’t work in an interactive shell where individual pieces of code are evaluated immediately.</p>
+<p>Now, when you declare a variable using the  <code>var</code>  keyword and assign a function  <em>expression</em>  to that variable, it’ll be hoisted:</p>
+<pre><code class="language-js">call(); // TypeError: call is not a function
+
+var call = function() {
+  console.log('hello');
+};` 
+</code></pre>
+<p>As a result, your variable will remain  <code>undefined</code>  until you initialize it.</p>
+<h3 id="illusory-function-signatureshttpsrealpythoncompython-vs-javascriptillusory-function-signatures-permanent-link">Illusory Function Signatures<a href="https://realpython.com/python-vs-javascript/#illusory-function-signatures" title="Permanent link"></a></h3>
+<p>Function signatures don’t exist in JavaScript. Whichever formal parameters you declare, they have no impact on function invocation.</p>
+<p>Specifically, you can pass any number of arguments to a function that doesn’t expect anything, and they’ll just be ignored:</p>
+<pre><code class="language-js">&gt; function currentYear() {
+…   return new Date().getFullYear();
+… }
+&gt; currentYear(42, 'foobar');
+2020` 
+</code></pre>
+<p>You can also refrain from passing arguments that are seemingly required:</p>
+<pre><code class="language-js">&gt; function truthy(expression) {
+…   return !!expression;
+… }
+&gt; truthy();
+false` 
+</code></pre>
+<p>Formal parameters serve as a documentation and allow you to refer to arguments by name. Otherwise, they’re not needed. Within any function, you have access to a special  <code>arguments</code>  variable, which represents the actual parameters that were passed:</p>
+<pre><code class="language-js">&gt; function sum() {
+…   return [...arguments].reduce((a, x) =&gt; a + x);
+… }
+&gt; sum(1, 2, 3, 4);
+10` 
+</code></pre>
+<p><code>arguments</code>  is an array-like object that is iterable and has numeric indices, but unfortunately it doesn’t come with  <code>.forEach()</code>. To wrap it in an array, you can use the spread operator.</p>
+<p>This used to be the only way of defining  <a href="https://en.wikipedia.org/wiki/Variadic_function">variadic functions</a>  in JavaScript before the rest parameter in ES6.</p>
+<h3 id="implicit-type-coercionhttpsrealpythoncompython-vs-javascriptimplicit-type-coercion-permanent-link">Implicit Type Coercion<a href="https://realpython.com/python-vs-javascript/#implicit-type-coercion" title="Permanent link"></a></h3>
+<p>JavaScript is a weakly typed programming language, which is manifested in its ability to cast incompatible types implicitly.</p>
+<p>This can give false positives when you compare two values:</p>
+<pre><code class="language-js">if ('2' == 2) { // Evaluates to true` 
+</code></pre>
+<p>In general, you should prefer the  <strong>strict comparison</strong>  operator (<code>===</code>) to be safe:</p>
+<pre><code class="language-js">&gt; '2' === 2;
+false
+&gt; '2' !== 2;
+true` 
+</code></pre>
+<p>This operator compares both the values and the  <em>types</em>  of their operands.</p>
+<h3 id="no-integer-typehttpsrealpythoncompython-vs-javascriptno-integer-type-permanent-link">No Integer Type<a href="https://realpython.com/python-vs-javascript/#no-integer-type" title="Permanent link"></a></h3>
+<p>Python has a few  <a href="https://realpython.com/courses/python-data-types/">data types</a>  to represent numbers:</p>
+<ul>
+<li><code>int</code></li>
+<li><code>float</code></li>
+<li><code>complex</code></li>
+</ul>
+<p>The previous Python generation also had the  <code>long</code>  type, which was eventually merged into  <code>int</code>.</p>
+<p>Other programming languages are even more generous, giving you fine-grained control over memory consumption, value range, floating-point precision, and the treatment of  <a href="https://en.wikipedia.org/wiki/Signed_number_representations">sign</a>.</p>
+<p>JavaScript has just one numeric type: the  <code>Number</code>, which corresponds to Python’s  <code>float</code>  data type. Under the hood, it’s a 64-bit double-precision number that conforms to the  <a href="https://standards.ieee.org/standard/754-2019.html">IEEE 754</a>  specification. This was simple and sufficient for early web development, but it can cause a few problems today.</p>
+<p><strong>Note:</strong>  To get the integer part of a floating-point number in JavaScript, you can use the built-in  <code>parseInt()</code>.</p>
+<p>First of all, it’s remarkably  <strong>wasteful</strong>  in most situations. If you were to represent pixels of a single FHD video frame with JavaScript’s  <code>Number</code>, then you’d have to allocate about 50 MB of memory. In a programming language with support for a stream of  <a href="https://realpython.com/lessons/defining-bytes-objects-bytes/">bytes</a>, such as Python, you’d need a fraction of that amount of memory.</p>
+<p>Secondly, floating-point numbers suffer from a  <a href="https://realpython.com/python-rounding/">rounding error</a>  due to how they’re represented in computer memory. As such, they’re unsuitable for applications requiring  <strong>high precision</strong>, such as monetary calculations:</p>
+<pre><code class="language-js">&gt; 0.1 + 0.2;
+0.30000000000000004` 
+</code></pre>
+<p>They’re  <strong>unsafe</strong>  in representing very big and very small numbers:</p>
+<pre><code class="language-js">&gt; const x = Number.MAX_SAFE_INTEGER + 1;
+&gt; const y = Number.MAX_SAFE_INTEGER + 2;
+&gt; x === y;
+true` 
+</code></pre>
+<p>But that’s not the worst part. After all, computer memory is getting cheaper by the day, and there are ways to circumvent the rounding error.</p>
+<p>When Node.js became popular, people started using it to write back-end applications. They needed a way of accessing the local file system. Some operating systems identify files by arbitrary integer numbers. Occasionally, these numbers wouldn’t have an exact representation in JavaScript, so you  <a href="https://github.com/nodejs/node/issues/12115">couldn’t open the file</a>, or you’d read some random file without knowing.</p>
+<p>To address the problem of handling  <strong>big numbers</strong>  in JavaScript, there’s going to be another primitive type that can reliably represent integer numbers of any size. Some web browsers already support this  <a href="https://github.com/tc39/proposal-bigint">proposal</a>:</p>
+<pre><code class="language-js">&gt; const x = BigInt(Number.MAX_SAFE_INTEGER) + 1n;
+&gt; const y = BigInt(Number.MAX_SAFE_INTEGER) + 2n;
+&gt; x === y;
+false` 
+</code></pre>
+<p>Since you can’t mix the new  <code>BigInt</code>  data type with regular numbers, you have to either wrap them or use a special literal:</p>
+<pre><code class="language-js">&gt; typeof 42;
+'number'
+&gt; typeof 42n;
+'bigint'
+&gt; typeof BigInt(42);
+'bigint'` 
+</code></pre>
+<p>Apart from that, the  <code>BigInt</code>  number will be compatible with two somewhat-related typed arrays for signed and unsigned integers:</p>
+<ol>
+<li><code>BigInt64Array</code></li>
+<li><code>BigUint64Array</code></li>
+</ol>
+<p>While a regular  <code>BigInt</code>  can store arbitrarily large numbers, the elements of these two arrays are limited to just 64 bits.</p>
+<h3 id="null--vs--undefinedhttpsrealpythoncompython-vs-javascriptnull-vs-undefined-permanent-link"><code>null</code>  vs  <code>undefined</code><a href="https://realpython.com/python-vs-javascript/#null-vs-undefined" title="Permanent link"></a></h3>
+<p>Programming languages provide ways to represent the absence of a value. Python has  <a href="https://realpython.com/null-in-python/"><code>None</code></a>, Java has  <code>null</code>, and Pascal has  <code>nil</code>, for example. In JavaScript, you get not only  <code>null</code>  but also  <code>undefined</code>.</p>
+<p>It may seem odd to have more than one way to represent missing values when one is already too much:</p>
+<blockquote>
+<p>I call it my billion-dollar mistake. It was the invention of the null reference in 1965. (…) This has led to innumerable errors, vulnerabilities, and system crashes, which have probably caused a billion dollars of pain and damage in the last forty years.</p>
+<p>—  <em>Tony Hoare</em></p>
+</blockquote>
+<p>The difference between  <code>null</code>  and  <code>undefined</code>  is quite subtle. Variables that are declared but uninitialized will implicitly get the value of  <code>undefined</code>. The  <code>null</code>  value, on the other hand, is never assigned automatically:</p>
+<pre><code class="language-js">let x; // undefined
+let y = null;` 
+</code></pre>
+<p>At any time, you can manually assign the  <code>undefined</code>  value to a variable:</p>
+<pre><code class="language-js">let z = undefined;` 
+</code></pre>
+<p>This distinction between  <code>null</code>  and  <code>undefined</code>  was often used to implement default function arguments before ES6. One of the possible implementations was this:</p>
+<pre><code class="language-js">function fn(required, optional) {
+  if (typeof optional === 'undefined') {
+    optional = 'default';
+  }
+  // ...
+}` 
+</code></pre>
+<p>If—for whatever reason—you wanted to keep an empty value for the optional parameter, then you couldn’t pass  <code>undefined</code>  explicitly because it would get overwritten by the default value again.</p>
+<p>To differentiate between these two scenarios, you would pass a  <code>null</code>  value instead:</p>
+<pre><code class="language-js">fn(42);            // optional = &quot;default&quot;
+fn(42, undefined); // optional = &quot;default&quot;
+fn(42, null);      // optional = null` 
+</code></pre>
+<p>Apart from having to deal with  <code>null</code>  and  <code>undefined</code>, you may sometimes experience a  <code>ReferenceError</code>  exception:</p>
+<pre><code class="language-js">&gt; foobar;
+ReferenceError: foobar is not defined` 
+</code></pre>
+<p>This indicates that you’re trying to refer to a variable that hasn’t been declared in the current scope, whereas  <code>undefined</code>  means declared but uninitialized, and  <code>null</code>  means declared and initialized but with an empty value.</p>
+<h3 id="scope-of--thishttpsrealpythoncompython-vs-javascriptscope-of-this-permanent-link">Scope of  <code>this</code><a href="https://realpython.com/python-vs-javascript/#scope-of-this" title="Permanent link"></a></h3>
+<p>Methods in Python must declare a special  <code>self</code>  parameter unless they’re  <a href="https://realpython.com/courses/staticmethod-vs-classmethod-python/">static or class methods</a>. The parameter holds a reference to a particular instance of the class. Its name can be anything because it’s always passed as the first positional argument.</p>
+<p>In JavaScript, like in Java, you can take advantage of a special  <code>this</code>  keyword, which corresponds to the current instance. But what does  <em>current</em>  instance mean? It depends on how you invoke your function.</p>
+<p>Recall the syntax for object literals:</p>
+<pre><code class="language-js">&gt; let jdoe = {
+…   name: 'John Doe',
+…   whoami: function() {
+…     console.log(this);
+…   }
+… };
+&gt; jdoe.whoami();
+{name: &quot;John Doe&quot;, whoami: ƒ}` 
+</code></pre>
+<p>Using  <code>this</code>  in a function lets you refer to a particular object that owns that function without hard-coding a variable name. It doesn’t matter if the function is defined in place as an anonymous expression or if it’s a regular function like this one:</p>
+<pre><code class="language-js">&gt; function whoami() {
+…   console.log(this);
+… }
+&gt; let jdoe = {name: 'John Doe', whoami};
+&gt; jdoe.whoami();
+{name: &quot;John Doe&quot;, whoami: ƒ}` 
+</code></pre>
+<p>What matters is the object that you’re calling the function on:</p>
+<pre><code class="language-js">&gt; jdoe.whoami();
+{name: &quot;John Doe&quot;, whoami: ƒ}
+&gt; whoami();
+Window {…}` 
+</code></pre>
+<p>In the first line, you call  <code>whoami()</code>  through an attribute of the  <code>jdoe</code>  object. The value of  <code>this</code>  is the same as the  <code>jdoe</code>  variable in that case. However, when you call that same function directly,  <code>this</code>  becomes the  <a href="https://developer.mozilla.org/en-US/docs/Glossary/Global_object">global object</a>  instead.</p>
+<p><strong>Note:</strong>  This rule doesn’t apply to a constructor function invoked with the  <code>new</code>  keyword. In such a case, the function’s  <code>this</code>  reference will point to the newly created object.</p>
+<p>You can think of JavaScript functions as methods attached to the global object. In a web browser,  <code>window</code>  is the global object, so in reality, the code snippet above is short for this:</p>
+<pre><code class="language-js">&gt; jdoe.whoami();
+{name: &quot;John Doe&quot;, whoami: ƒ}
+&gt; window.whoami();
+Window {…}` 
+</code></pre>
+<p>Do you see a pattern here?</p>
+<p>By default, the value of  <code>this</code>  inside a function depends on the object sitting in front of the dot operator. As long as you control how your function gets called, everything will be fine. It becomes a problem only when you don’t call the function yourself, which is a common case for callbacks.</p>
+<p>Let’s define another object literal to demonstrate this:</p>
+<pre><code class="language-js">``const collection = {
+  items: ['apple', 'banana', 'orange'],
+  type: 'fruit',
+  show: function() {
+    this.items.forEach(function(item) {
+      console.log(`${item} is a ${this.type}`);
+    });
+  }
+};`` 
+</code></pre>
+<p><code>collection</code>  is a collection of elements that have a common type. Currently,  <code>.show()</code>  doesn’t work as expected because it doesn’t reveal an element type:</p>
+<pre><code class="language-js">&gt; collection.show();
+apple is a undefined
+banana is a undefined
+orange is a undefined` 
+</code></pre>
+<p>Although  <code>this.items</code>  correctly refers to the array of fruits, the callback function seems to have received a different  <code>this</code>  reference. That’s because the callback isn’t tied to the object literal. It’s as if it were defined elsewhere:</p>
+<pre><code class="language-js">``function callback(item) {
+  console.log(`${item} is a ${this.type}`);
+}
+
+const collection = {
+  items: ['apple', 'banana', 'orange'],
+  type: 'fruit',
+  show: function() {
+    this.items.forEach(callback);
+  }
+};`` 
+</code></pre>
+<p>The most straightforward way to work around this would be to replace  <code>this</code>  in the callback with a custom variable or a constant:</p>
+<pre><code class="language-js">``const collection = {
+  items: ['apple', 'banana', 'orange'],
+  type: 'fruit',
+  show: function() {
+ const that = this;    this.items.forEach(function(item) {
+ console.log(`${item} is a ${that.type}`);    });
+  }
+};`` 
+</code></pre>
+<p>You persist the value of  <code>this</code>  in a local constant, which the callback then refers to. Since the callback is defined as an inner function, it can access variables and constants from the outer scope. This wouldn’t have been possible with a stand-alone function.</p>
+<p>Now the result is correct:</p>
+<pre><code class="language-js">&gt; collection.show();
+apple is a fruit
+banana is a fruit
+orange is a fruit` 
+</code></pre>
+<p>This pattern is so common that  <code>.forEach()</code>  accepts an optional parameter for substituting  <code>this</code>  in the callback:</p>
+<pre><code class="language-js">``const collection = {
+  items: ['apple', 'banana', 'orange'],
+  type: 'fruit',
+  show: function() {
+    this.items.forEach(function(item) {
+      console.log(`${item} is a ${this.type}`);
+ }, this);  }
+};
+collection.show();`` 
+</code></pre>
+<p>This is more elegant than the custom hack that you saw before, and it’s also more universal because it lets you pass a regular function. While not every built-in method in JavaScript is so gracious, there are three more ways to tinker with the  <code>this</code>  reference:</p>
+<ol>
+<li><code>.apply()</code></li>
+<li><code>.bind()</code></li>
+<li><code>.call()</code></li>
+</ol>
+<p>These are methods available on function objects. With  <code>.apply()</code>  and  <code>.call()</code>, you can invoke a function while injecting arbitrary context to it. They both work the same way but pass arguments using different syntaxes:</p>
+<pre><code class="language-js">&gt; function whoami(x, y) {
+…   console.log(this, x, y);
+… }
+&gt; let jdoe = {name: 'John Doe'};
+&gt; whoami.apply(jdoe, [1, 2]);
+{name: &quot;John Doe&quot;} 1 2
+&gt; whoami.call(jdoe, 1, 2);
+{name: &quot;John Doe&quot;} 1 2` 
+</code></pre>
+<p>Of the three,  <code>.bind()</code>  is the most powerful because it allows you to permanently change the value of  <code>this</code>  for future invocations. It works a bit differently as it returns a new function that is bound to the given context:</p>
+<pre><code class="language-js">&gt; const newFunction = whoami.bind(jdoe);
+&gt; newFunction(1, 2);
+{name: &quot;John Doe&quot;} 1 2
+&gt; newFunction(3, 4);
+{name: &quot;John Doe&quot;} 3 4` 
+</code></pre>
+<p>This can be useful in solving the earlier problem of the unbound callback:</p>
+<pre><code class="language-js">const collection = {
+  items: ['apple', 'banana', 'orange'],
+  type: 'fruit',
+  show: function() {
+ this.items.forEach(callback.bind(this));  }
+};` 
+</code></pre>
+<p>Nothing that you’ve just read about  <code>this</code>  in JavaScript applies to arrow functions in ES6. That’s good, by the way, because it removes a lot of ambiguity. There’s no context binding in arrow functions, nor is there an implicit  <code>this</code>  reference available. Instead,  <code>this</code>  is treated as an ordinary variable and is subject to lexical scoping rules.</p>
+<p>Let’s rewrite one of the previous examples using arrow functions:</p>
+<pre><code class="language-js">``&gt; const collection = {
+…   items: ['apple', 'banana', 'orange'],
+…   type: 'fruit',
+…   show: () =&gt; {
+…     this.items.forEach((item) =&gt; {
+…       console.log(`${item} is a ${this.type}`);
+…     });
+…   }
+… };
+&gt; collection.show();
+TypeError: Cannot read property 'forEach' of undefined`` 
+</code></pre>
+<p>If you trade both functions for their arrow counterparts, then you’ll get an exception because there’s no  <code>this</code>  variable in the scope anymore. You might keep the outer function so that its  <code>this</code>  reference can be picked up by the callback:</p>
+<pre><code class="language-js">``const collection = {
+  items: ['apple', 'banana', 'orange'],
+  type: 'fruit',
+ show: function() {    this.items.forEach((item) =&gt; {
+      console.log(`${item} is a ${this.type}`);
+    });
+  }
+};
+collection.show();`` 
+</code></pre>
+<p>As you can see, arrow functions aren’t a complete replacement for traditional functions.</p>
+<p>This section was merely the tip of the iceberg. To find out more about quirky JavaScript behaviors, take a look at  <a href="https://github.com/denysdovhan/wtfjs">tricky code examples</a>, which are also available as an installable Node.js module. Another great source of wisdom is Douglas Crockford’s book  <a href="https://realpython.com/asins/0596517742/"><em>JavaScript: The Good Parts</em></a>, which has a section devoted to the bad and awful parts as well.</p>
+<h2 id="whats-nexthttpsrealpythoncompython-vs-javascriptwhats-next-permanent-link">What’s Next?<a href="https://realpython.com/python-vs-javascript/#whats-next" title="Permanent link"></a></h2>
+<p>As a Pythonista, you know that mastering a programming language and its ecosystem is only the beginning of your path to success. There are more abstract concepts to grasp along the way.</p>
+<h3 id="document-object-model-domhttpsrealpythoncompython-vs-javascriptdocument-object-model-dom-permanent-link">Document Object Model (DOM)<a href="https://realpython.com/python-vs-javascript/#document-object-model-dom" title="Permanent link"></a></h3>
+<p>If you’re planning to do any sort of client-side development, then you can’t escape getting familiar with the  <a href="https://www.w3schools.com/js/js_htmldom.asp">DOM</a>.</p>
+<p><strong>Note:</strong>  You might have used the same DOM interface before to handle XML documents in Python.</p>
+<p>To allow for  <strong>manipulating</strong>  HTML documents in JavaScript, web browsers expose a standard interface called the DOM, which comprises various objects and methods. When a page loads, your script can gain access to the internal representation of the document through a predefined  <code>document</code>  instance:</p>
+<pre><code class="language-js">const body = document.body;` 
+</code></pre>
+<p>It’s a global variable available to you anywhere in your code.</p>
+<p>Every document is a tree of elements. To  <strong>traverse</strong>  this hierarchy, you can start at the root and use the following attributes to move in different directions:</p>
+<ul>
+<li><strong>Up:</strong>  <code>.parentElement</code></li>
+<li><strong>Left:</strong>  <code>.previousElementSibling</code></li>
+<li><strong>Right:</strong>  <code>.nextElementSibling</code></li>
+<li><strong>Down:</strong>  <code>.children</code>,  <code>.firstElementChild</code>,  <code>.lastElementChild</code></li>
+</ul>
+<p>These attributes are conveniently available on all elements in the DOM tree, which would be perfect for recursive traversal:</p>
+<pre><code class="language-js">const html = document.firstElementChild;
+const body = html.lastElementChild;
+const element = body.children[2].nextElementSibling;` 
+</code></pre>
+<p>Most attributes will be  <code>null</code>  if they don’t lead to an element in the tree. The only exception is the  <code>.children</code>  property, which always returns an array-like object that can be empty.</p>
+<p>Frequently, you won’t know where an element is. The  <code>document</code>  object, as well as every other element in the tree, has a few methods for  <strong>element lookup</strong>. You can search elements by tag name, ID attribute, CSS class name, or even using a complex  <a href="https://www.w3schools.com/css/css_selectors.asp">CSS selector</a>.</p>
+<p>You can look for one element at a time or multiple elements at once. For example, to match elements against a CSS selector, you’d call one of these two methods:</p>
+<ol>
+<li><code>.querySelector(selector)</code></li>
+<li><code>.querySelectorAll(selector)</code></li>
+</ol>
+<p>The first one returns the first occurrence of the matching element or  <code>null</code>, while the second method always returns an array-like object with all the matching elements. Calling these methods on the  <code>document</code>  object will cause the entire document to be searched. You can restrict the scope of the search by calling the same methods on a previously found element:</p>
+<p><code>const div = document.querySelector('div'); // The 1st div in the whole document div.querySelectorAll('p'); // All paragraphs inside that div</code></p>
+<p>Once you have a reference to an HTML element, you can do a bunch of things with it, such as:</p>
+<ul>
+<li>Attach data to it</li>
+<li>Change its style</li>
+<li>Change its content</li>
+<li>Change its placement</li>
+<li>Make it interactive</li>
+<li>Remove it altogether</li>
+</ul>
+<p>You can also  <strong>create new elements</strong>  and add them to the DOM tree:</p>
+<p><code>const parent = document.querySelector('.content'); const child = document.createElement('div'); parent.appendChild(child);</code></p>
+<p>The most challenging part about using DOM is getting skilled at building accurate CSS selectors. You can practice and learn using one of many  <a href="https://flukeout.github.io/">interactive playgrounds</a>  available online.</p>
+<h3 id="javascript-frameworkshttpsrealpythoncompython-vs-javascriptjavascript-frameworks-permanent-link">JavaScript Frameworks<a href="https://realpython.com/python-vs-javascript/#javascript-frameworks" title="Permanent link"></a></h3>
+<p>The DOM interface is a set of primitive building blocks for creating interactive user interfaces. It gets the job done, but as your client-side code grows, it becomes increasingly difficult to maintain. The business logic and the presentation layer start to intersect, violating the  <a href="https://en.wikipedia.org/wiki/Separation_of_concerns">separation of concerns</a>  principle, while code duplication piles up.</p>
+<p>Web browsers add fuel to the fire by not having a unified interface across the board. Sometimes, a feature that you  <a href="https://caniuse.com/">seek to use</a>  isn’t available on all major browsers or is implemented in different ways. To ensure consistent behavior, you need to include an appropriate  <strong>boilerplate code</strong>  that hides the implementation details.</p>
+<p>To deal with these problems, people started sharing JavaScript  <strong>libraries</strong>  that encapsulated common patterns and made the browser API a little less jarring. The most popular library of all time by far is  <a href="https://jquery.com/">jQuery</a>, which until recently dwarfed today’s front-end  <strong>frameworks</strong>  in popularity:</p>
+<p><a href="https://files.realpython.com/media/frameworks.e9b8825c5ac0.png"><img src="https://files.realpython.com/media/frameworks.e9b8825c5ac0.png" alt="Search Interest in JavaScript Frameworks According to Google Trends"></a></p>
+<p>Search Interest in JavaScript Frameworks According to Google Trends</p>
+<p>Although this isn’t a completely honest apples-and-oranges comparison, it shows just how popular jQuery used to be. In peak time, it had more hits than all the other major frameworks and libraries combined. Despite being slightly old and unfashionable, it’s still used in a lot of legacy projects and sometimes even in recent ones.</p>
+<p><strong>Note:</strong>  A library contains low-level utility functions that you can call, whereas a framework has total control over your code life cycle. A framework also imposes a certain application structure and is heavyweight in comparison with a library.</p>
+<p>jQuery has good documentation and a minimal API as there’s only one function to remember, the versatile  <code>$()</code>. You can use that function to create and search for elements, change their style, handle events, and much more.</p>
+<p>Modern web browsers are  <em>much</em>  better in terms of consistency and support for emerging web standards. So much so, in fact, that some people choose to develop client-side code in  <strong>vanilla JavaScript</strong>  without the help of any front-end framework.</p>
+<p>So why do most people tend to use a front-end framework, anyway?</p>
+<p>There are pros and cons to using frameworks, but the biggest advantage seems to be that they allow you to operate on a higher level of abstraction. Instead of thinking in terms of document elements, you can build self-contained and reusable  <strong>components</strong>, which increases your productivity as a programmer.</p>
+<p>That, combined with declarative  <strong>state management</strong>  provided by the framework, allows you to tackle the complexity of a highly interactive client-side JavaScript application. If you insist on not using a JavaScript framework for long enough, then you typically end up unwittingly building your own.</p>
+<p>As for which popular framework to choose, that depends on your goal. To stay relevant, you should invest time into learning pure JavaScript first since front-end frameworks come and go notoriously fast.</p>
+<p>If you’re looking to land a job as a front-end developer or even as a full-stack engineer, then you should take a look at the job descriptions. Chances are they’ll expect someone with experience in one of these frameworks:</p>
+<ul>
+<li><a href="https://angular.io/">Angular</a></li>
+<li><a href="https://reactjs.org/">React</a>  with  <a href="https://redux.js.org/">Redux</a></li>
+<li><a href="https://vuejs.org/">Vue.js</a></li>
+</ul>
+<p>At the time of writing this article, these were arguably the most popular JavaScript frameworks.</p>
+<h2 id="conclusionhttpsrealpythoncompython-vs-javascriptconclusion-permanent-link">Conclusion<a href="https://realpython.com/python-vs-javascript/#conclusion" title="Permanent link"></a></h2>
+<p>In this tutorial, you learned about JavaScript’s  <strong>origins</strong>, its alternatives, and where the language is headed. You compared Python vs JavaScript by taking a closer look at their similarities and differences in syntax, runtime environments, associated tools, and jargon. Finally, you learned how to avoid fatal  <strong>mistakes</strong>  in JavaScript.</p>
+<p><strong>You’re now able to:</strong></p>
+<ul>
+<li>Compare  <strong>Python vs JavaScript</strong></li>
+<li>Choose the  <strong>right language</strong>  for the job</li>
+<li>Write a  <strong>shell script</strong>  in JavaScript</li>
+<li>Generate  <strong>dynamic content</strong>  on a web page</li>
+<li>Take advantage of the JavaScript  <strong>ecosystem</strong></li>
+<li>Avoid common  <strong>pitfalls</strong>  in JavaScript</li>
+</ul>
+<p>Try using  <strong>Node.js</strong>  for your next scripting project or building an interactive client-side application in the web browser. When you combine what you’ve just learned with your existing Python knowledge, the sky’s the limit.</p>
+<blockquote>
+<p>Reference : <a href="https://realpython.com/python-vs-javascript/">https://realpython.com/python-vs-javascript/</a></p>
+</blockquote>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/python">
+                                    <i class="fas fa-tag mr-2"></i>python
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/javascript">
+                                    <i class="fas fa-tag mr-2"></i>JavaScript
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fexample.com%2fpost%2fpythonistas%2f&text=Python%20vs%20JavaScript%20for%20Pythonistas">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fexample.com%2fpost%2fpythonistas%2f&title=Python%20vs%20JavaScript%20for%20Pythonistas">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fexample.com%2fpost%2fpythonistas%2f&t=Python%20vs%20JavaScript%20for%20Pythonistas">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fexample.com%2fpost%2fpythonistas%2f&title=Python%20vs%20JavaScript%20for%20Pythonistas">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/example/flask_news_web/" class="d-block"><img data-src="/images/standard_library_hua29810533695b710113d443a4109745d_520035_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Python Flask Create News Web Application"><div class="card-body">
+            <h4 class="card-title">Python Flask Create News Web Application</h4>
+            <p class="card-text text-muted text-uppercase">September 19, 2020</p>
+            <div class="card-text">
+                Python Flask Create News Web Application by Parwiz
+In this Python Flask article iam going to show you how to Create News Web Application, basically we are using News API website for getting our API Key. so simply you can open News API website after that create a New Account and get your API Key, for more information you can check the video for this article in the below.
+Also you can check How To Build News Web Application In Django
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/flask_news_web/" class="d-block"><img data-src="/images/flask_hubb76a263656408f5650ae339ca204544_166385_700x350_resize_box_2.png" class="card-img-top mx-auto d-block" alt="Python Flask Create News Web Application"><div class="card-body">
+            <h4 class="card-title">Python Flask Create News Web Application</h4>
+            <p class="card-text text-muted text-uppercase">September 18, 2020</p>
+            <div class="card-text">
+                by Parwiz
+In this Python Flask article iam going to show you how to Create News Web Application, basically we are using News API website for getting our API Key. so simply you can open News API website after that create a New Account and get your API Key, for more information you can check the video for this article in the below.
+Also you can check How To Build News Web Application In Django
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/pythonstandardlibrary/" class="d-block"><img data-src="/images/standard_library_hua29810533695b710113d443a4109745d_520035_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="The Python Standard Library By Example"><div class="card-body">
+            <h4 class="card-title">The Python Standard Library By Example</h4>
+            <p class="card-text text-muted text-uppercase">September 1, 2020</p>
+            <div class="card-text">
+                PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to use the modules of the Python 3 standard library. It is based on the original PyMOTW series, which covered Python 2.7. See About Python Module of the Week for details including the version of Python and tools used.
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:example@example.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://keybase.io/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-keybase fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://medium.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://pinterest.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://reddit.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.weibo.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

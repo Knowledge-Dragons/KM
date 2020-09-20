@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DocPort Documentation</title>
+    <link>/</link>
+    <description>Recent content on DocPort Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2020 16:42:11 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whoops! Page not found</title>
+      <link>/404.html</link>
+      <pubDate>Tue, 08 Sep 2020 20:40:23 +0000</pubDate>
+      
+      <guid>/404.html</guid>
+      <description>That page can&amp;rsquo;t be found.
+Our latest content is on the homepage.
+Photo by Aron Visuals on Unsplash</description>
+    </item>
+    
+  </channel>
+</rss>

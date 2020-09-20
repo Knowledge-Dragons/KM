@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Footer on DocPort Documentation</title>
+    <link>/_layout/footer/</link>
+    <description>Recent content in Footer on DocPort Documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2020 15:41:15 +0000</lastBuildDate><atom:link href="/_layout/footer/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

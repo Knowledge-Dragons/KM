@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     Started With the Slack API | 
+    Hugo Themes
+  
+</title><meta name="description" content="The slick hosted chat application  [Slack](https://slack.com/)  is all the rage this year. The tool’s adoption isn’t empty hype - it’s incredibly useful for communicating with and learning from fellow developers. For example, software developer communities such as  [DC Python](https://pythoncommunity.herokuapp.com/),  [Dallas-Forth Worth Devs](http://dfwdevs.org/), and  [Denver Devs](http://denverdevs.org/)  set up their own Slack channels."><meta name="author" content="Sarawut">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://example.com/post/slackapi/"><meta property="og:title" content="Started With the Slack API" />
+<meta property="og:description" content="The slick hosted chat application  [Slack](https://slack.com/)  is all the rage this year. The tool’s adoption isn’t empty hype - it’s incredibly useful for communicating with and learning from fellow developers. For example, software developer communities such as  [DC Python](https://pythoncommunity.herokuapp.com/),  [Dallas-Forth Worth Devs](http://dfwdevs.org/), and  [Denver Devs](http://denverdevs.org/)  set up their own Slack channels." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/post/slackapi/" />
+<meta property="og:image" content="https://example.com/slack.jpg" />
+<meta property="article:published_time" content="2020-09-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-20T00:00:00+00:00" />
+
+<meta itemprop="name" content="Started With the Slack API">
+<meta itemprop="description" content="The slick hosted chat application  [Slack](https://slack.com/)  is all the rage this year. The tool’s adoption isn’t empty hype - it’s incredibly useful for communicating with and learning from fellow developers. For example, software developer communities such as  [DC Python](https://pythoncommunity.herokuapp.com/),  [Dallas-Forth Worth Devs](http://dfwdevs.org/), and  [Denver Devs](http://denverdevs.org/)  set up their own Slack channels.">
+<meta itemprop="datePublished" content="2020-09-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-09-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2245">
+<meta itemprop="image" content="https://example.com/slack.jpg">
+
+
+
+<meta itemprop="keywords" content="python,slack," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/slack.jpg"/>
+
+<meta name="twitter:title" content="Started With the Slack API"/>
+<meta name="twitter:description" content="The slick hosted chat application  [Slack](https://slack.com/)  is all the rage this year. The tool’s adoption isn’t empty hype - it’s incredibly useful for communicating with and learning from fellow developers. For example, software developer communities such as  [DC Python](https://pythoncommunity.herokuapp.com/),  [Dallas-Forth Worth Devs](http://dfwdevs.org/), and  [Denver Devs](http://denverdevs.org/)  set up their own Slack channels."/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://example.com">Hugo Themes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">September 20, 2020</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>2245 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>11 mins read</span>
+                        </div>
+
+                        <h1>Started With the Slack API</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/sarawut/" class="small">Sarawut</a>
+                            </h5></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/slack_hu539ed08165be1db91c0a670b30ce839d_17430_900x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Started With the Slack API">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>However, Slack wouldn’t be that useful if it was just a glorified AOL Instant Messenger. It’s the  <a href="https://realpython.com/api-integration-in-python/">programmatic access to retrieve and send messages</a>  with the Slack web application programming interface (API) where the power really kicks in.</p>
+<p><strong>In this post, we’ll see how to work with Slack via the API and the official SlackClient Python helper library.</strong>  We will grab an API access token and write some Python code to list, retrieve and send data through the API. Let’s dig in now!</p>
+<p><strong>Free Bonus:</strong>  <a href="https://realpython.com/bonus/discover-flask-video-tutorial/">Click here to get access to a free Flask + Python video tutorial</a>  that shows you how to build Flask web app, step-by-step.</p>
+<p><em>This is a guest blog post by  <a href="http://www.mattmakai.com/">Matt Makai</a>, Developer Evangelist at  <a href="https://www.twilio.com/">Twilio</a>  and author of  <a href="http://www.fullstackpython.com/">Full Stack Python</a>.</em></p>
+<h2 id="tools-well-needhttpsrealpythoncomgetting-started-with-the-slack-api-using-python-and-flasktools-well-need-permanent-link">Tools We’ll Need<a href="https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/#tools-well-need" title="Permanent link"></a></h2>
+<p>Several tools will be used to run the code in this blog post, including:</p>
+<ul>
+<li>A  <a href="https://slack.com/">free Slack account with a team on which you have API access</a>  or sign up for the  <a href="http://dev4slack.xoxco.com/">Slack Developer Hangout team</a></li>
+<li>Either Python 2 or 3</li>
+<li>Official Python  <a href="https://github.com/slackhq/python-slackclient">slackclient</a>  code library built by the Slack team</li>
+<li>Slack API  <a href="https://api.slack.com/docs/oauth-test-tokens">testing token</a></li>
+<li><a href="http://flask.pocoo.org/">Flask web micro-framework</a>; if you’re unfamiliar with it, check out the  <a href="https://realpython.com/courses/">Real Python course</a>, the  <a href="https://realpython.com/flask-by-example-part-1-project-setup/">Flask by Example series</a>, or  <a href="https://www.fullstackpython.com/flask.html">Full Stack Python’s Flask page</a></li>
+</ul>
+<p>It’s also handy to have the  <a href="https://api.slack.com/web">Slack API docs</a>  open for reference. You can follow along by writing the code in this post or  <a href="https://github.com/makaimc/slack-api-python-examples">clone the companion GitHub repository with the finished project</a>.</p>
+<p>Now that we know what tools we need to use, let’s begin by creating a new  <a href="https://realpython.com/python-virtual-environments-a-primer/">virtualenv</a>  to isolate our application dependencies from other Python projects you’re working on:</p>
+<p><code>$ mkdir slackapi $ virtualenv venv</code></p>
+<p>Activate the virtualenv:</p>
+<p><code>$ source venv/bin/activate</code></p>
+<p>Depending on how your virtualenv and shell are set up, your prompt should now look something like this:</p>
+<p><code>(venv)$</code></p>
+<p>Keep the shell open for now as we get our Slack access established via the official slackclient API helper library built by Slack.</p>
+<blockquote>
+<p>There are also other fantastic Python helper libraries created by the community. For simplicity, we’re only going to install and use slackclient, but you can also try out libraries like  <a href="https://github.com/os/slacker">slacker</a>,  <a href="https://github.com/kn/slack">slack</a>  and  <a href="https://github.com/loisaidasam/pyslack">pyslack</a>  once we’re done here.</p>
+</blockquote>
+<p>Install the slackclient helper library into your virtualenv with  <a href="https://realpython.com/what-is-pip/">pip</a>:</p>
+<p><code>$ pip install slackclient==1.0.0</code></p>
+<p>Now that we have the helper library installed, we need to obtain a Slack access token for our team and account.</p>
+<h2 id="the-slack-web-apihttpsrealpythoncomgetting-started-with-the-slack-api-using-python-and-flaskthe-slack-web-api-permanent-link">The Slack Web API<a href="https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/#the-slack-web-api" title="Permanent link"></a></h2>
+<p>Head to the  <a href="https://api.slack.com/web">landing page for the Slack Web API</a>:</p>
+<p><a href="https://files.realpython.com/media/slack-sign-in.900deaeb59ca.png"><img src="https://files.realpython.com/media/slack-sign-in.900deaeb59ca.png" alt="Slack: sign in"></a></p>
+<p>Once you’ve signed in you can scroll down on the web API page where you’ll see a button to generate test tokens:</p>
+<p><a href="https://files.realpython.com/media/slack-generate-test-token.ff3aaeb706b8.png"><img src="https://files.realpython.com/media/slack-generate-test-token.ff3aaeb706b8.png" alt="Slack: generate test token page"></a></p>
+<p>Generate a test token for a Slack team on which you have administrative privileges. This token will serve fine for our development purposes in this blog post, but you can also  <a href="https://api.slack.com/docs/oauth-test-tokens">create an OAuth flow</a>  where other users can generate tokens for authentication through their own accounts.</p>
+<p>We’ll need that test token in just a moment, so keep it handy. Let’s switch into our Python environment set up so we can try out the API. With your virtualenv still active, fire up the Python REPL:</p>
+<pre><code class="language-py">(venv)$ python
+Python 3.5.0 (v3.5.0:374f501f4567, Sep 12 2015, 11:00:19)
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+</code></pre>
+<p>Let’s test our API token with a test call; type the following code at the REPL prompt:</p>
+<pre><code class="language-py">&gt;&gt;&gt; from slackclient import SlackClient
+&gt;&gt;&gt; slack_client = SlackClient('your test token here')
+&gt;&gt;&gt; slack_client.api_call(&quot;api.test&quot;)` 
+</code></pre>
+<p>The REPL should return back something like the following dictionary if your API test with the token was successful:</p>
+<pre><code class="language-py">{u'args': {u'token': u'xoxp-361113305843-7621238052-8691112296227-d0d4824abe'}, u'ok': True}` 
+</code></pre>
+<p>If you get back  <code>{u'ok': False, u'error': u'invalid_auth'}</code>  then double-check that you copied the Slack token correctly into the second line entered on the REPL.</p>
+<p>Enter one more quick test for our authentication with another line of code in the REPL:</p>
+<pre><code class="language-py">&gt;&gt;&gt; slack_client.api_call(&quot;auth.test&quot;)` 
+</code></pre>
+<p>You should see another dictionary similar to this one:</p>
+<pre><code class="language-py">{u'user_id': u'U0S77S29J', u'url': u'https://fullstackguides.slack.com/', u'team_id': u'T0S8V1ZQA', u'user': u'matt', u'team': u'Full Stack Guides, u'ok': True}` 
+</code></pre>
+<p>Awesome! We’re authorized to start using the Slack API through our account. Now the fun begins as we can start programmatically obtaining Slack data and handling messages!</p>
+<h2 id="slack-api-basicshttpsrealpythoncomgetting-started-with-the-slack-api-using-python-and-flaskslack-api-basics-permanent-link">Slack API Basics<a href="https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/#slack-api-basics" title="Permanent link"></a></h2>
+<p>Exit out of the REPL with a quick  Ctrl+D  or  <code>exit()</code>  command. Back on the command line, export the Slack token as an environment variable:</p>
+<pre><code class="language-py">(venv)$ export SLACK_TOKEN='your slack token pasted here'` 
+</code></pre>
+<p>We’ll snag the environment variable in our Python script using the  <code>os</code>  module instead of hardcoding it into the source code.</p>
+<p>Dive into your favorite text editor such as  <a href="https://realpython.com/vim-and-python-a-match-made-in-heaven/">Vim</a>,  <a href="https://realpython.com/emacs-the-best-python-editor/">Emacs</a>, or  <a href="https://realpython.com/setting-up-sublime-text-3-for-full-stack-python-development/">Sublime Text</a>  so we can cut some new Python code. Create a new file named  <em>app.py</em>  and start filling it out with the following imports:</p>
+<pre><code class="language-py">import os
+from slackclient import SlackClient` 
+</code></pre>
+<p>Again, the  <code>os</code>  module will be used to pull the  <code>SLACK_TOKEN</code>  environment variable we just exported. The SlackClient import should look familiar, as it is the same line we wrote earlier on the REPL:</p>
+<pre><code class="language-py">SLACK_TOKEN = os.environ.get('SLACK_TOKEN')
+
+slack_client = SlackClient(SLACK_TOKEN)` 
+</code></pre>
+<p>In the above two lines, we snag the  <code>SLACK_TOKEN</code>  environment variable value and instantiate the SlackClient helper library. Next let’s create a function to list channels via an API call. Slack returns back the results in a dictionary with two keys:  <code>ok</code>  and  <code>channels</code>.  <code>ok</code>  allows us to know if the API call was successful, and if its value is  <code>True</code>  then  <code>channels</code>  contains the data we need on the list of channels.</p>
+<pre><code class="language-py">def list_channels():
+    channels_call = slack_client.api_call(&quot;channels.list&quot;)
+    if channels_call.get('ok'):
+        return channels_call['channels']
+    return None` 
+</code></pre>
+<p>Finally, let’s add a convenience  <a href="https://realpython.com/python-main-function/">main function</a>  that will allow us to print all the channels when we invoke the Python file with  <code>python app.py</code>  on the command line:</p>
+<pre><code class="language-py">if __name__ == '__main__':
+    channels = list_channels()
+    if channels:
+        print(&quot;Channels: &quot;)
+        for c in channels:
+            print(c['name'] + &quot; (&quot; + c['id'] + &quot;)&quot;)
+    else:
+        print(&quot;Unable to authenticate.&quot;)` 
+</code></pre>
+<p>That’s all the code we need for the moment. Time to give it a try. Execute the script from the command line with  <code>python app.py</code>. You’ll see output like the following channels list:</p>
+<pre><code class="language-py">Channels:
+general (C0S82S5RS)
+python (C0S8HABL3)
+random (C0S8F4432)` 
+</code></pre>
+<p>What is the channel ID that we printed out in parentheses next the the channel name for? Slack’s API needs a unique reference for channels, so we use the ID, not the name, as an identifier instead of the human-readable channel name.</p>
+<p>We can write some code that uses the  <a href="https://api.slack.com/methods/channels.info">channel.info API method</a>  to obtain data for a specific channel based on its ID.</p>
+<p>Add a new function along with a few new lines in main to output the latest message from each channel, which is only available in the more detailed  <code>channel.info</code>  API call.</p>
+<p>Updated code:</p>
+<pre><code class="language-py">import os
+from slackclient import SlackClient
+
+SLACK_TOKEN = os.environ.get('SLACK_TOKEN', None)
+
+slack_client = SlackClient(SLACK_TOKEN)
+
+def list_channels():
+    channels_call = slack_client.api_call(&quot;channels.list&quot;)
+    if channels_call['ok']:
+        return channels_call['channels']
+    return None
+
+def channel_info(channel_id):
+    channel_info = slack_client.api_call(&quot;channels.info&quot;, channel=channel_id)
+    if channel_info:
+        return channel_info['channel']
+    return None
+
+if __name__ == '__main__':
+    channels = list_channels()
+    if channels:
+        print(&quot;Channels: &quot;)
+        for c in channels:
+            print(c['name'] + &quot; (&quot; + c['id'] + &quot;)&quot;)
+            detailed_info = channel_info(c['id'])
+            if detailed_info:
+                print(detailed_info['latest']['text'])
+    else:
+        print(&quot;Unable to authenticate.&quot;)` 
+</code></pre>
+<blockquote>
+<p>Note that with this code we’re greatly increasing the API calls the script executes, from one to N+1, where N is the number of channels returned back by Slack.</p>
+</blockquote>
+<p>Run the new script again by executing  <code>python app.py</code>:</p>
+<pre><code class="language-py">Channels:
+general (C0S82S5RS)
+yada yada yada.
+python (C0S8HABL3)
+This is posted to #python and comes from a bot named webhookbot.
+random (C0S8F4432)
+&lt;@U0SAEJ99T|samb&gt; has joined the channel` 
+</code></pre>
+<p>Nice! Now we have both the list of channels as well as a way to get detailed information on each channel with its ID. Next let’s interact with other users in one of our channels by sending and receiving messages.</p>
+<h2 id="sending-messageshttpsrealpythoncomgetting-started-with-the-slack-api-using-python-and-flasksending-messages-permanent-link">Sending Messages<a href="https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/#sending-messages" title="Permanent link"></a></h2>
+<p>We can go even further into the Slack API now that we know our API calls are working and have the channel ID. Let’s send a message to the #general channel.</p>
+<p>Add a new function under  <code>channel_info</code>  named  <code>send_message</code>:</p>
+<pre><code class="language-py">def send_message(channel_id, message):
+    slack_client.api_call(
+        &quot;chat.postMessage&quot;,
+        channel=channel_id,
+        text=message,
+        username='pythonbot',
+        icon_emoji=':robot_face:'
+    )` 
+</code></pre>
+<p><code>send_message</code>  takes in the ID for a channel, then posts a message from our “Python bot” to that channel. In addition, modify the  <code>main</code>  function so that when we run this file,  <code>main</code>  will call our new  <code>send_message</code>  function:</p>
+<pre><code class="language-py">if __name__ == '__main__':
+    channels = list_channels()
+    if channels:
+        print(&quot;Channels: &quot;)
+        for channel in channels:
+            print(channel['name'] + &quot; (&quot; + channel['id'] + &quot;)&quot;)
+            detailed_info = channel_info(channel['id'])
+            if detailed_info:
+                print('Latest text from ' + channel['name'] + &quot;:&quot;)
+                print(detailed_info['latest']['text'])
+            if channel['name'] == 'general':
+                send_message(channel['id'], &quot;Hello &quot; +
+                             channel['name'] + &quot;! It worked!&quot;)
+        print('-----')
+    else:
+        print(&quot;Unable to authenticate.&quot;)` 
+</code></pre>
+<p>Save the changes and run  <code>python app.py</code>. Open the #general channel for your Slack team. You should see your Python bot post a new message to the channel:</p>
+<p><a href="https://files.realpython.com/media/slack-send-message.40d559dd2ed9.png"><img src="https://files.realpython.com/media/slack-send-message.40d559dd2ed9.png" alt="Slack API: send message"></a></p>
+<p>Awesome! So we can send messages, but what about if we want to see what users in the #general channel are saying?</p>
+<h2 id="receiving-messageshttpsrealpythoncomgetting-started-with-the-slack-api-using-python-and-flaskreceiving-messages-permanent-link">Receiving Messages<a href="https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/#receiving-messages" title="Permanent link"></a></h2>
+<p>We can set up an outgoing webhook that will alert our Python application via an HTTP POST request. This part is a bit more complicated than sending messages because we need to receive one or more POST requests.</p>
+<p>First we’ll need a simple web server that can handle an inbound POST request from the Slack webhook. Create a new file named  <em>receive.py</em>  with the following code:</p>
+<pre><code class="language-py">import os
+from flask import Flask, request, Response
+
+app = Flask(__name__)
+
+SLACK_WEBHOOK_SECRET = os.environ.get('SLACK_WEBHOOK_SECRET')
+
+@app.route('/slack', methods=['POST'])
+def inbound():
+    if request.form.get('token') == SLACK_WEBHOOK_SECRET:
+        channel = request.form.get('channel_name')
+        username = request.form.get('user_name')
+        text = request.form.get('text')
+        inbound_message = username + &quot; in &quot; + channel + &quot; says: &quot; + text
+        print(inbound_message)
+    return Response(), 200
+
+@app.route('/', methods=['GET'])
+def test():
+    return Response('It works!')
+
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)` 
+</code></pre>
+<p>In the above Python file, we:</p>
+<ol>
+<li>Import Flask</li>
+<li>Instantiate a new Flask application context</li>
+<li>Pull in the  <code>SLACK_WEBHOOK_SECRET</code>  environment variable, which we’ll get in just a moment from the Slack console</li>
+<li>Establish a route that can receive an HTTP POST request from Slack that prints the output to the command line as long as the webhook secret key sent to us matches the one from our environment variable</li>
+<li>Create another route for  <a href="https://realpython.com/python-testing/">testing purposes</a>  that responds to a GET request</li>
+<li>Set our Flask app to run when we run this script with Python</li>
+</ol>
+<p>Install Flask (<code>pip install flask</code>), and then start the Flask app with the  <code>python receive.py</code>  command and we’ll see some debugging output indicating the development server is running.</p>
+<ul>
+<li>Running on http://127.0.0.1:5000/ (Press  Ctrl+C  to quit)</li>
+<li>Restarting with stat</li>
+<li>Debugger is active!</li>
+<li>Debugger pin code: 144-609-426</li>
+</ul>
+<p>We’re set to receive our POST request webhook, except that most development environments do not expose routes beyond localhost. We need a localhost tunnel that will give us an externally-accessible domain name while we’re developing our code. I typically use  <a href="https://ngrok.com/">ngrok</a>  since it’s  <a href="https://www.twilio.com/blog/2015/09/6-awesome-reasons-to-use-ngrok-when-testing-webhooks.html">easy, free and awesome</a>. There are also other options such as  <a href="https://localtunnel.me/">localtunnel</a>  and  <a href="https://forwardhq.com/">forward</a>.</p>
+<p>After downloading and running ngrok (or another localhost tunneling tool) in a new terminal window, you’ll get a subdomain that forwards requests sent to that subdomain over to your localhost server. Here is what ngrok looks like in the console when it’s started with the  <code>./ngrok http 5000</code>  command:</p>
+<p><a href="https://files.realpython.com/media/ngrok.1b717f68fa09.png"><img src="https://files.realpython.com/media/ngrok.1b717f68fa09.png" alt="Terminal session running ngrok"></a></p>
+<p>Take note of your Forwarding URL, in this case  <code>https://6940e7da.ngrok.io</code>, as we’ll need that for Slack to set up our outgoing webhook. Then test that our ngrok forwarding URL is properly connected to our Flask app by opening your web browser and going to the Forwarding URL. We should see the “It works!” message.</p>
+<p>Now we can use that ngrok Forwarding URL in our Slack configuration. Go to the  <a href="https://api.slack.com/outgoing-webhooks">Slack Outgoing Webhooks page</a>, then click the “outgoing webhook integration” link as shown below:</p>
+<p><a href="https://files.realpython.com/media/slack-outgoing-webhooks.2cc1ffcbafdd.png"><img src="https://files.realpython.com/media/slack-outgoing-webhooks.2cc1ffcbafdd.png" alt="Slack: outgoing webhooks settings page"></a></p>
+<p>Scroll down to the Integration Settings section. Select “#general” as the channel to listen on. Copy your ngrok Forwarding URL plus “/slack” into the URL(s) text box:</p>
+<p><a href="https://files.realpython.com/media/slack-outgoing-webhooks-settings.95c74c1d8027.png"><img src="https://files.realpython.com/media/slack-outgoing-webhooks-settings.95c74c1d8027.png" alt="Slack outgoing webhooks settings page"></a></p>
+<p>Copy the generated Token. Scroll down and press the “Save Settings” button.</p>
+<p>Stop your Flask server for just a moment. As we did earlier with the Slack token, use the  <code>export</code>  command to expose the outgoing webhook token as an environment variable:</p>
+<pre><code class="language-py">(venv)$ export SLACK_WEBHOOK_SECRET='generated outgoing webhook token here'` 
+</code></pre>
+<p>Then restart your Flask server so it can grab the generated  <code>SLACK_WEBHOOK_SECRET</code>. Finally, it’s time to test out receiving messages!</p>
+<p>Go to your Slack #general channel. You should see that the outgoing webhook integration has been added to the channel:</p>
+<p><a href="https://files.realpython.com/media/slack-webhook-added.23083d66b742.png"><img src="https://files.realpython.com/media/slack-webhook-added.23083d66b742.png" alt="Slack webhook added"></a></p>
+<p>Within Slack, type in a message like “testing” and hit enter. Go back to the command line where your Flask app is running. You should see the message output printed from the POST request:</p>
+<pre><code class="language-py">matt in general says: testing
+127.0.0.1 - - [21/May/2016 12:39:56] &quot;POST /slack HTTP/1.1&quot; 200 -` 
+</code></pre>
+<p>Now we’ve got a way to receive messages from one or more channels and can add whatever Python code we want to handle the input. This is a great hook for building a bot or sending messages to another service for processing.</p>
+<h2 id="wrapping-it-uphttpsrealpythoncomgetting-started-with-the-slack-api-using-python-and-flaskwrapping-it-up-permanent-link">Wrapping it up<a href="https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/#wrapping-it-up" title="Permanent link"></a></h2>
+<p>Woohoo! All done! Well actually, there’s a whole lot more you can do with the Slack API. Here are several more ideas to try out now that you’ve got the basics down:</p>
+<ol>
+<li>Combine the  <a href="https://www.twilio.com/blog/2016/05/build-sms-slack-bot-python.html">Twilio API to communicate with Slack channels via text messages</a></li>
+<li>Try a different Slack client or ditch the helper library entirely and use the  <a href="https://realpython.com/caching-external-api-requests/">Requests library to implement retry logic</a></li>
+<li><a href="https://medium.com/@julianmartinez/how-to-write-a-slack-bot-with-python-code-examples-4ed354407b98#.gdc0pkni0">Write and customize a full Slack bot</a></li>
+</ol>
+<p><strong>Free Bonus:</strong>  <a href="https://realpython.com/bonus/discover-flask-video-tutorial/">Click here to get access to a free Flask + Python video tutorial</a>  that shows you how to build Flask web app, step-by-step.</p>
+<blockquote>
+<p>Source :<a href="https://realpython.com/getting-started-with-the-slack-api-using-python-and-flask/">https://realpython.com</a></p>
+</blockquote>
+
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/python">
+                                    <i class="fas fa-tag mr-2"></i>python
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/slack">
+                                    <i class="fas fa-tag mr-2"></i>slack
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fexample.com%2fpost%2fslackapi%2f&text=Started%20With%20the%20Slack%20API">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fexample.com%2fpost%2fslackapi%2f&title=Started%20With%20the%20Slack%20API">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fexample.com%2fpost%2fslackapi%2f&t=Started%20With%20the%20Slack%20API">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fexample.com%2fpost%2fslackapi%2f&title=Started%20With%20the%20Slack%20API">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/opencv-color-spaces/" class="d-block"><img data-src="/images/opencv_hu464a470a20805ac855c0d7713790e259_106370_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Color Spaces in OpenCV"><div class="card-body">
+            <h4 class="card-title">Color Spaces in OpenCV</h4>
+            <p class="card-text text-muted text-uppercase">September 20, 2020</p>
+            <div class="card-text">
+                Image Segmentation Using Color Spaces in OpenCV &#43; Python
+In this article, you will learn how to simply segment an object from an image based on color in Python using OpenCV. A popular computer vision library written in C/C&#43;&#43; with bindings for Python, OpenCV provides easy ways of manipulating color spaces.
+While you don’t need to be already familiar with OpenCV or the other helper packages used in this article, it is assumed that you have at least a basic understanding of coding in Python.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/example/flask_news_web/" class="d-block"><img data-src="/images/standard_library_hua29810533695b710113d443a4109745d_520035_700x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Python Flask Create News Web Application"><div class="card-body">
+            <h4 class="card-title">Python Flask Create News Web Application</h4>
+            <p class="card-text text-muted text-uppercase">September 19, 2020</p>
+            <div class="card-text">
+                Python Flask Create News Web Application by Parwiz
+In this Python Flask article iam going to show you how to Create News Web Application, basically we are using News API website for getting our API Key. so simply you can open News API website after that create a New Account and get your API Key, for more information you can check the video for this article in the below.
+Also you can check How To Build News Web Application In Django
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/post/pythonistas/" class="d-block"><img data-src="/images/pythonistas_huf295bbe1c561faa0761180c6a773ac0a_111654_700x350_resize_box_2.png" class="card-img-top mx-auto d-block" alt="Python vs JavaScript for Pythonistas"><div class="card-body">
+            <h4 class="card-title">Python vs JavaScript for Pythonistas</h4>
+            <p class="card-text text-muted text-uppercase">September 19, 2020</p>
+            <div class="card-text">
+                If you’ve never used JavaScript before or have felt overwhelmed by the quick pace of its evolution in recent years, then this article will set you on the right path. You should already know the basics of Python to benefit fully from the comparisons made between the two languages.
+In this article, you’ll learn how to:
+ Compare Python vs JavaScript Choose the right language for the job Write a shell script in JavaScript Generate dynamic content on a web page Take advantage of the JavaScript ecosystem Avoid common pitfalls in JavaScript  Free Bonus: 5 Thoughts On Python Mastery, a free course for Python developers that shows you the roadmap and the mindset you&amp;rsquo;ll need to take your Python skills to the next level.
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:example@example.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://keybase.io/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-keybase fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://medium.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://pinterest.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://reddit.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.weibo.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>
