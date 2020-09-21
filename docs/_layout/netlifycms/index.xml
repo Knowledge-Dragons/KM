@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials</title>
+    <link>/_layout/netlifycms/</link>
+    <description>Recent content on Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/_layout/netlifycms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/config.yml</guid>
+      <description>backend: name: &amp;ldquo;github&amp;rdquo; repo: &amp;ldquo;vjeantet/hugo-theme-docport&amp;rdquo; branch: &amp;ldquo;master&amp;rdquo; open_authoring: true
+media_folder: &amp;ldquo;static/images/uploads&amp;rdquo; # Media files will be stored in the repo under images/uploads public_folder: &amp;ldquo;/images/uploads&amp;rdquo; # The src attribute for uploaded media will begin with /images/uploads publish_mode: editorial_workflow</description>
+    </item>
+    
+    <item>
+      <title>Content Manager</title>
+      <link>/admin/index.html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/admin/index.html/</guid>
+      <description> --</description>
+    </item>
+    
+  </channel>
+</rss>
