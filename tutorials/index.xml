@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DocPort Documentation</title>
-    <link>https://example.com/</link>
-    <description>Recent content on DocPort Documentation</description>
+    <title>Tutorials</title>
+    <link>/</link>
+    <description>Recent content on Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2020 16:42:11 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Aug 2020 16:42:11 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Whoops! Page not found</title>
-      <link>https://example.com/404.html</link>
+      <link>/404.html</link>
       <pubDate>Tue, 08 Sep 2020 20:40:23 +0000</pubDate>
       
-      <guid>https://example.com/404.html</guid>
+      <guid>/404.html</guid>
       <description>That page can&amp;rsquo;t be found.
 Our latest content is on the homepage.
 Photo by Aron Visuals on Unsplash</description>
@@ -20,20 +20,20 @@ Photo by Aron Visuals on Unsplash</description>
     
     <item>
       <title></title>
-      <link>https://example.com/admin/config.yml</link>
+      <link>/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/admin/config.yml</guid>
+      <guid>/admin/config.yml</guid>
       <description>backend: name: &amp;ldquo;github&amp;rdquo; repo: &amp;ldquo;vjeantet/hugo-theme-docport&amp;rdquo; branch: &amp;ldquo;master&amp;rdquo; open_authoring: true
 media_folder: &amp;ldquo;static/images/uploads&amp;rdquo; # Media files will be stored in the repo under images/uploads public_folder: &amp;ldquo;/images/uploads&amp;rdquo; # The src attribute for uploaded media will begin with /images/uploads publish_mode: editorial_workflow</description>
     </item>
     
     <item>
       <title>Content Manager</title>
-      <link>https://example.com/admin/index.html/</link>
+      <link>/admin/index.html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/admin/index.html/</guid>
+      <guid>/admin/index.html/</guid>
       <description> --</description>
     </item>
     

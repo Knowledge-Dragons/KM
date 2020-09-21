@@ -3,360 +3,360 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/python/</loc>
+    <loc>/python/</loc>
     <lastmod>2020-08-20T16:42:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/short_introduction/10-minutes/</loc>
+    <loc>/pandas/short_introduction/10-minutes/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/short_introduction/essential_snippets/</loc>
+    <loc>/pandas/short_introduction/essential_snippets/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/basic_syntax/</loc>
+    <loc>/python/tutorials/basic_syntax/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/short_introduction/basic-to-beyond/</loc>
+    <loc>/pandas/short_introduction/basic-to-beyond/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/dictionary/dict_beginner/</loc>
+    <loc>/python/tutorials/dictionary/dict_beginner/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/short_introduction/cheatsheet-pandas/</loc>
+    <loc>/pandas/short_introduction/cheatsheet-pandas/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/date-time/</loc>
+    <loc>/python/tutorials/date-time/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/datetime/datetime_module/</loc>
+    <loc>/python/learn_python/datetime/datetime_module/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/tutorial-geeksforgeeks/selection/dealing-with-rows-and-columns/</loc>
+    <loc>/pandas/tutorial-geeksforgeeks/selection/dealing-with-rows-and-columns/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/function/function_arguments/</loc>
+    <loc>/python/learn_python/function/function_arguments/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/advance_topic/iterators/</loc>
+    <loc>/python/learn_python/advance_topic/iterators/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/</loc>
+    <loc>/python/learn_python/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/objects_class/oop/</loc>
+    <loc>/python/learn_python/objects_class/oop/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/files/intro/</loc>
+    <loc>/python/learn_python/files/intro/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/cookbook/</loc>
+    <loc>/pandas/cookbook/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/date-time/pendulum/</loc>
+    <loc>/python/tutorials/date-time/pendulum/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/</loc>
+    <loc>/python/phyblas/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/files/file_operations/</loc>
+    <loc>/python/learn_python/files/file_operations/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/resources/quick_reference_cards/</loc>
+    <loc>/python/resources/quick_reference_cards/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/resources/</loc>
+    <loc>/python/resources/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/short_introduction/</loc>
+    <loc>/pandas/short_introduction/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/pythonstandardlibrary/</loc>
+    <loc>/python/pythonstandardlibrary/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/pythonstandardlibrary/text/string/</loc>
+    <loc>/python/pythonstandardlibrary/text/string/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/pythonstandardlibrary/text/</loc>
+    <loc>/python/pythonstandardlibrary/text/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/tutorial-geeksforgeeks/</loc>
+    <loc>/pandas/tutorial-geeksforgeeks/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/date-time/overview/</loc>
+    <loc>/python/tutorials/date-time/overview/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/beginer/</loc>
+    <loc>/python/phyblas/beginer/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/</loc>
+    <loc>/python/tutorials/</loc>
     <lastmod>2020-08-20T16:42:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/date-time/center/</loc>
+    <loc>/python/tutorials/date-time/center/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-loc/</loc>
+    <loc>/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-loc/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/advance_topic/generators/</loc>
+    <loc>/python/learn_python/advance_topic/generators/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/list/</loc>
+    <loc>/python/tutorials/list/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/dictionary/merge-two-dictionaries/</loc>
+    <loc>/python/tutorials/dictionary/merge-two-dictionaries/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/objects_class/class/</loc>
+    <loc>/python/learn_python/objects_class/class/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/</loc>
+    <loc>/pandas/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/files/directory/</loc>
+    <loc>/python/learn_python/files/directory/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/datetime/strftime/</loc>
+    <loc>/python/learn_python/datetime/strftime/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/intermediate/</loc>
+    <loc>/python/phyblas/intermediate/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/dictionary/</loc>
+    <loc>/python/tutorials/dictionary/</loc>
     <lastmod>2020-08-20T16:42:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-pandas-iloc/</loc>
+    <loc>/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-pandas-iloc/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/function/</loc>
+    <loc>/python/learn_python/function/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/files/exceptions/</loc>
+    <loc>/python/learn_python/files/exceptions/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/objects_class/inheritance/</loc>
+    <loc>/python/learn_python/objects_class/inheritance/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/data_type/list/</loc>
+    <loc>/python/learn_python/data_type/list/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/data_type/tuble/</loc>
+    <loc>/python/learn_python/data_type/tuble/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/datetime/strptime/</loc>
+    <loc>/python/learn_python/datetime/strptime/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/date-time/time-delta-striftime/</loc>
+    <loc>/python/tutorials/date-time/time-delta-striftime/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/advance/</loc>
+    <loc>/python/phyblas/advance/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/function/lambda_functions/</loc>
+    <loc>/python/learn_python/function/lambda_functions/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/data_type/</loc>
+    <loc>/python/learn_python/data_type/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/beginner/</loc>
+    <loc>/python/beginner/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/data_type/string/</loc>
+    <loc>/python/learn_python/data_type/string/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/pandas/tutorial-geeksforgeeks/selection/</loc>
+    <loc>/pandas/tutorial-geeksforgeeks/selection/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/beginer/basic_functin/</loc>
+    <loc>/python/phyblas/beginer/basic_functin/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/files/exception-handling/</loc>
+    <loc>/python/learn_python/files/exception-handling/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/files/</loc>
+    <loc>/python/learn_python/files/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/function/global_variables/</loc>
+    <loc>/python/learn_python/function/global_variables/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/data_type/set/</loc>
+    <loc>/python/learn_python/data_type/set/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/files/user-defined-exception/</loc>
+    <loc>/python/learn_python/files/user-defined-exception/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/objects_class/</loc>
+    <loc>/python/learn_python/objects_class/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/data_type/dictionary/</loc>
+    <loc>/python/learn_python/data_type/dictionary/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/advance_topic/</loc>
+    <loc>/python/learn_python/advance_topic/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/learn_python/datetime/</loc>
+    <loc>/python/learn_python/datetime/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/tutorials/date-time/time-module/</loc>
+    <loc>/python/tutorials/date-time/time-module/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/beginer/string_output/</loc>
+    <loc>/python/phyblas/beginer/string_output/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/beginer/string_format/</loc>
+    <loc>/python/phyblas/beginer/string_format/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/beginer/list/</loc>
+    <loc>/python/phyblas/beginer/list/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/beginer/dictionary/</loc>
+    <loc>/python/phyblas/beginer/dictionary/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/beginer/module/</loc>
+    <loc>/python/phyblas/beginer/module/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/intermediate/read_files/</loc>
+    <loc>/python/phyblas/intermediate/read_files/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/intermediate/write_files/</loc>
+    <loc>/python/phyblas/intermediate/write_files/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/intermediate/create_function/</loc>
+    <loc>/python/phyblas/intermediate/create_function/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/intermediate/recursive_function/</loc>
+    <loc>/python/phyblas/intermediate/recursive_function/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/intermediate/lambda/</loc>
+    <loc>/python/phyblas/intermediate/lambda/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/python/phyblas/intermediate/inheritance/</loc>
+    <loc>/python/phyblas/intermediate/inheritance/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/404.html</loc>
+    <loc>/404.html</loc>
     <lastmod>2020-09-08T20:40:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>/</loc>
     <lastmod>2020-08-20T16:42:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/_layout/</loc>
+    <loc>/_layout/</loc>
     <lastmod>2020-08-20T15:41:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/_layout/footer/</loc>
+    <loc>/_layout/footer/</loc>
     <lastmod>2020-08-20T15:41:15+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/_layout/sidebar-before/</loc>
+    <loc>/_layout/sidebar-before/</loc>
     <lastmod>2020-08-20T11:08:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/_layout/sidebar-after/</loc>
+    <loc>/_layout/sidebar-after/</loc>
     <lastmod>2020-08-20T11:07:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/_layout/netlifycms/</loc>
+    <loc>/_layout/netlifycms/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/admin/config.yml</loc>
+    <loc>/admin/config.yml</loc>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/admin/index.html/</loc>
+    <loc>/admin/index.html/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

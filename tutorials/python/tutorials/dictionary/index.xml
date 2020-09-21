@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dictionary on DocPort Documentation</title>
-    <link>https://example.com/python/tutorials/dictionary/</link>
-    <description>Recent content in Dictionary on DocPort Documentation</description>
+    <title>Dictionary on Tutorials</title>
+    <link>/python/tutorials/dictionary/</link>
+    <description>Recent content in Dictionary on Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2020 16:42:11 +0000</lastBuildDate><atom:link href="https://example.com/python/tutorials/dictionary/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Aug 2020 16:42:11 +0000</lastBuildDate><atom:link href="/python/tutorials/dictionary/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
