@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Merge two Dictionaries on DocPort Documentation</title>
-    <link>/python/tutorials/dictionary/merge-two-dictionaries/</link>
+    <link>https://example.com/python/tutorials/dictionary/merge-two-dictionaries/</link>
     <description>Recent content in Merge two Dictionaries on DocPort Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/python/tutorials/dictionary/merge-two-dictionaries/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.com/python/tutorials/dictionary/merge-two-dictionaries/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

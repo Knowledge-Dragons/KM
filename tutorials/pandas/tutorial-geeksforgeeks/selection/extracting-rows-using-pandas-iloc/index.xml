@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Extracting rows using .iloc[] on DocPort Documentation</title>
-    <link>/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-pandas-iloc/</link>
+    <link>https://example.com/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-pandas-iloc/</link>
     <description>Recent content in Extracting rows using .iloc[] on DocPort Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-pandas-iloc/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.com/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-pandas-iloc/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

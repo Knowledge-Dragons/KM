@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resources on DocPort Documentation</title>
-    <link>/python/resources/</link>
+    <link>https://example.com/python/resources/</link>
     <description>Recent content in Resources on DocPort Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/python/resources/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.com/python/resources/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

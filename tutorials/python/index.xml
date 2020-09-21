@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on DocPort Documentation</title>
-    <link>/python/</link>
+    <link>https://example.com/python/</link>
     <description>Recent content in Python on DocPort Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2020 16:42:11 +0000</lastBuildDate><atom:link href="/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Aug 2020 16:42:11 +0000</lastBuildDate><atom:link href="https://example.com/python/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

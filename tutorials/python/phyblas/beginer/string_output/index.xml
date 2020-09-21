@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>การแสดงผลตัวอักษร on DocPort Documentation</title>
-    <link>/python/phyblas/beginer/string_output/</link>
+    <link>https://example.com/python/phyblas/beginer/string_output/</link>
     <description>Recent content in การแสดงผลตัวอักษร on DocPort Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/python/phyblas/beginer/string_output/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.com/python/phyblas/beginer/string_output/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

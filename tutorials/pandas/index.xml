@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pandas on DocPort Documentation</title>
-    <link>/pandas/</link>
+    <link>https://example.com/pandas/</link>
     <description>Recent content in Pandas on DocPort Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://example.com/pandas/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
