@@ -4,16 +4,16 @@
 <html>
   <head>
     <title>
-	Advance Topics :: Tutorials
+	icon :: Tutorials
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="revised" content="2020-09-22T20:59:58 &#43;07">
-<meta name="description" content="">
+<meta name="description" content="Display an icon.">
 
 
 
-<title>Advance Topics :: Tutorials</title>
+<title>icon :: Tutorials</title>
 
 <link rel="shortcut icon" href='/images/favicon.png' type="image/x-icon" />
 
@@ -42,7 +42,7 @@
     
   </head>
 
-  <body data-url="/python/learn_python/advance_topic/"
+  <body data-url="/python/icon/"
 
   class="">
 
@@ -160,7 +160,7 @@
         <ul>
               
 
-    <li data-nav-id="/python/learn_python/" class="dd-item parent haschildren
+    <li data-nav-id="/python/learn_python/" class="dd-item haschildren
         item_level_$level
         ">
 
@@ -169,8 +169,7 @@
       
       
           <a href="/python/learn_python/">Learn Python</a>
-      
-          <i class="fas fa-chevron-down ddexp"></i>
+      <i class="fas fa-chevron-right ddexp"></i>
         
       
         <ul>
@@ -499,7 +498,7 @@
     </li>
               
 
-    <li data-nav-id="/python/learn_python/advance_topic/" class="dd-item parent active haschildren
+    <li data-nav-id="/python/learn_python/advance_topic/" class="dd-item haschildren
         item_level_$level
         ">
 
@@ -508,8 +507,7 @@
       
       
           <a href="/python/learn_python/advance_topic/">Advance Topics</a>
-      
-          <i class="fas fa-chevron-down ddexp"></i>
+      <i class="fas fa-chevron-right ddexp"></i>
         
       
         <ul>
@@ -1140,7 +1138,7 @@
     </li>
               
 
-    <li data-nav-id="/python/icon/" class="dd-item
+    <li data-nav-id="/python/icon/" class="dd-item parent active
         item_level_$level
         ">
 
@@ -1394,9 +1392,6 @@
 		
   
   	
-		
-  
-  	
 	<li class="breadcrumb-item ">
       <a class="text-link" href="/">
         Home
@@ -1412,17 +1407,9 @@
 	
   	
   
-    <li class="breadcrumb-item ">
-      <a class="text-link" href="/python/learn_python/">
-        Learn Python
-      </a>
-    </li>
-	
-  	
-  
     <li class="breadcrumb-item active">
       
-        Advance Topics
+        icon
       
     </li>
 
@@ -1443,7 +1430,7 @@
 		
 
 		
-			<h1>Advance Topics</h1>
+			<h1>icon</h1>
         
 
 		
@@ -1463,23 +1450,88 @@
   			Jump to Section
   			<i style=";" class="fas fa-chevron-right"></i>
 		</span>
-		<nav id="TableOfContents"></nav>
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#icons-available">icons available</a></li>
+  </ul>
+</nav>
 	</div>
 	
 	
 
-	<div class="content"><blockquote>
-<p>Source : <a href="https://www.programiz.com/python-programming/iterator">https://www.programiz.com/python-programming/iterator</a></p>
-</blockquote>
+	<div class="content"><p>Display one of the 2 298 icons like 
+<i class="fas fa-address-card" style="font-size:64px"></i>
+<i class="fas fa-bell" style="font-size:32px"></i> 
+<i class="fab fa-apple"></i></p>
+<p>It uses :</p>
+<ul>
+<li>font-awesome 5 free icons library .<a href="https://fontawesome.com/icons?d=gallery&amp;s=brands,solid&amp;m=free/">more info here</a></li>
+</ul>
+<p>This <code>icon</code> shortcode will display an icon in your page.</p>
+<h2>Usage</h2><a class="anchor" id="usage"></a>
+<table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Default</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">name</td>
+<td align="left"><strong>required</strong></td>
+<td align="left">name of icon (see bellow)</td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="left">none</td>
+<td align="left">size of icon, medium, xx-small, x-small, small, large, x-large, xx-large, 11px, 2em, 20%&hellip;.</td>
+</tr>
+<tr>
+<td align="left">style</td>
+<td align="left"><code>fas</code></td>
+<td align="left">use <code>fas</code> for solid or <code>fab</code> for brands <a href="https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use">see here</a></td>
+</tr>
+</tbody>
+</table>
+
+<link rel="stylesheet" type="text/css" href='/sass/shortcodes/alert.css'>
+<div class="alert info" role="alert"><p><strong>Tips :</strong>
+setting only the name as argument works too : 
+<code>{{&lt;icon fa-film&gt;}}` instead of `{{&lt;icon name=&quot;fa-film&quot;&gt;}}</code></p>
+<p>Type a <code>b</code> letter after the name to use the brand version of FontAwesome
+<code>{{&lt;icon fa-facebook b&gt;}}` instead of `{{&lt;icon name=&quot;fa-film&quot;&gt;}}</code></p>
+</div>
+
+<h2>Demo</h2><a class="anchor" id="demo"></a>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">	{{&lt; icon name=&#34;fa-save&#34; size=&#34;64px&#34; &gt;}}
+	{{&lt; icon name=&#34;fa-save&#34; size=&#34;32px&#34; &gt;}}
+	{{&lt; icon fa-save &gt;}}
+</code></pre></div><p><i class="fas fa-save" style="font-size:64px"></i>
+<i class="fas fa-save" style="font-size:32px"></i>
+<i class="fas fa-save"></i></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-fallback" data-lang="fallback">	{{&lt; icon name=&#34;fa-github&#34; style=&#34;fab&#34; size=&#34;64px&#34; &gt;}}
+	{{&lt; icon name=&#34;fa-github&#34; style=&#34;fab&#34; size=&#34;32px&#34; &gt;}}
+	{{&lt; icon fa-github b &gt;}}
+</code></pre></div><p><i class="fab fa-github" style="font-size:64px"></i>
+<i class="fab fa-github" style="font-size:32px"></i>
+<i class="fab fa-github"></i></p>
+<h2>icons available</h2><a class="anchor" id="icons-available"></a>
+<ul>
+<li><a href="https://fontawesome.com/icons?d=gallery&amp;s=brands,solid&amp;m=free/">https://fontawesome.com/icons?d=gallery&amp;s=brands,solid&amp;m=free/</a></li>
+</ul>
 </div>
 
 
 	 
 	<div class="chevrons ">
-		<a class="next" href="/python/learn_python/advance_topic/iterators/" title="Iterators" style="margin-right: 0px;">
+		<a class="next" href="/python/tabs/" title="tabs" style="margin-right: 0px;">
             <div>
                 <p>Next page</p>
-                <label>Iterators</label>
+                <label>tabs</label>
             </div>
             <i class="fas fa-arrow-right" style="font-size: 1.7em"></i></a>
 	</div>
@@ -1501,10 +1553,16 @@
     <label>What&#39;s on this page</label>
     <nav>
         <ul >
-            <li><a href="/python/learn_python/advance_topic/">Advance Topics</a></li>
+            <li><a href="/python/icon/">icon</a></li>
         </ul>
     </nav>
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#icons-available">icons available</a></li>
+  </ul>
+</nav>
 </div>
 	
 		
@@ -1518,12 +1576,17 @@
 		    
 		    <li>
 		    	
-		        <a href="/admin/#/collections/pages/entries/python/learn_python/advance_topic/_index" target="blank">
+		        <a href="/admin/#/collections/pages/entries/python/icon/_index" target="blank">
 		        <i class="fab fa-github"></i>
 		        Improve this page</a>
 		    </li>
 		    
 			
+		      <li>
+		          <i class='fas fa-calendar'></i>
+		          Last update on 08 September 2020
+		      </li>
+		    
 		    
 
     	</ul>
