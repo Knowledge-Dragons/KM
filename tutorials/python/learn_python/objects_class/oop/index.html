@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:15 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1549,33 +1549,33 @@
 <p>An object (instance) is an instantiation of a class. When class is defined, only the description for the object is defined. Therefore, no memory or storage is allocated.</p>
 
 <p>The example for object of parrot class can be:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">obj <span style="color:#f92672">=</span> Parrot()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">obj <span style="color:#000;font-weight:bold">=</span> Parrot()</code></pre></div>
 <p>Here,  obj  is an object of class  <code>Parrot</code>.</p>
 
 <p>Suppose we have details of parrots. Now, we are going to show how to build the class and objects of parrots.</p>
 
 <h3 ref="example-1-creating-class-and-object-in-python" >Example 1: Creating Class and Object in Python</h3><a class="anchor" id="example-1-creating-class-and-object-in-python"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parrot</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Parrot</span>:
 
-    <span style="color:#75715e"># class attribute</span>
-    species <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;bird&#34;</span>
+    <span style="color:#998;font-style:italic"># class attribute</span>
+    species <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;bird&#34;</span>
 
-    <span style="color:#75715e"># instance attribute</span>
-    <span style="color:#66d9ef">def</span> __init__(self, name, age):
-        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
-        self<span style="color:#f92672">.</span>age <span style="color:#f92672">=</span> age
+    <span style="color:#998;font-style:italic"># instance attribute</span>
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name, age):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>age <span style="color:#000;font-weight:bold">=</span> age
 
-<span style="color:#75715e"># instantiate the Parrot class</span>
-blu <span style="color:#f92672">=</span> Parrot(<span style="color:#e6db74">&#34;Blu&#34;</span>, <span style="color:#ae81ff">10</span>)
-woo <span style="color:#f92672">=</span> Parrot(<span style="color:#e6db74">&#34;Woo&#34;</span>, <span style="color:#ae81ff">15</span>)
+<span style="color:#998;font-style:italic"># instantiate the Parrot class</span>
+blu <span style="color:#000;font-weight:bold">=</span> Parrot(<span style="color:#d14">&#34;Blu&#34;</span>, <span style="color:#099">10</span>)
+woo <span style="color:#000;font-weight:bold">=</span> Parrot(<span style="color:#d14">&#34;Woo&#34;</span>, <span style="color:#099">15</span>)
 
-<span style="color:#75715e"># access the class attributes</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Blu is a {}&#34;</span><span style="color:#f92672">.</span>format(blu<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>species))
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Woo is also a {}&#34;</span><span style="color:#f92672">.</span>format(woo<span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>species))
+<span style="color:#998;font-style:italic"># access the class attributes</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Blu is a {}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(blu<span style="color:#000;font-weight:bold">.</span>__class__<span style="color:#000;font-weight:bold">.</span>species))
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Woo is also a {}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(woo<span style="color:#000;font-weight:bold">.</span>__class__<span style="color:#000;font-weight:bold">.</span>species))
 
-<span style="color:#75715e"># access the instance attributes</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;{} is {} years old&#34;</span><span style="color:#f92672">.</span>format( blu<span style="color:#f92672">.</span>name, blu<span style="color:#f92672">.</span>age))
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;{} is {} years old&#34;</span><span style="color:#f92672">.</span>format( woo<span style="color:#f92672">.</span>name, woo<span style="color:#f92672">.</span>age))</code></pre></div>
+<span style="color:#998;font-style:italic"># access the instance attributes</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;{} is {} years old&#34;</span><span style="color:#000;font-weight:bold">.</span>format( blu<span style="color:#000;font-weight:bold">.</span>name, blu<span style="color:#000;font-weight:bold">.</span>age))
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;{} is {} years old&#34;</span><span style="color:#000;font-weight:bold">.</span>format( woo<span style="color:#000;font-weight:bold">.</span>name, woo<span style="color:#000;font-weight:bold">.</span>age))</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Blu is a bird
@@ -1601,26 +1601,26 @@ Woo is 15 years old
 <p>Methods are functions defined inside the body of a class. They are used to define the behaviors of an object.</p>
 
 <h3 ref="example-2-creating-methods-in-python" >Example 2 : Creating Methods in Python</h3><a class="anchor" id="example-2-creating-methods-in-python"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parrot</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Parrot</span>:
     
-    <span style="color:#75715e"># instance attributes</span>
-    <span style="color:#66d9ef">def</span> __init__(self, name, age):
-        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
-        self<span style="color:#f92672">.</span>age <span style="color:#f92672">=</span> age
+    <span style="color:#998;font-style:italic"># instance attributes</span>
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, name, age):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name <span style="color:#000;font-weight:bold">=</span> name
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>age <span style="color:#000;font-weight:bold">=</span> age
     
-    <span style="color:#75715e"># instance method</span>
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sing</span>(self, song):
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;{} sings {}&#34;</span><span style="color:#f92672">.</span>format(self<span style="color:#f92672">.</span>name, song)
+    <span style="color:#998;font-style:italic"># instance method</span>
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">sing</span>(<span style="color:#999">self</span>, song):
+        <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#34;{} sings {}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name, song)
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dance</span>(self):
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;{} is now dancing&#34;</span><span style="color:#f92672">.</span>format(self<span style="color:#f92672">.</span>name)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">dance</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#34;{} is now dancing&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>name)
 
-<span style="color:#75715e"># instantiate the object</span>
-blu <span style="color:#f92672">=</span> Parrot(<span style="color:#e6db74">&#34;Blu&#34;</span>, <span style="color:#ae81ff">10</span>)
+<span style="color:#998;font-style:italic"># instantiate the object</span>
+blu <span style="color:#000;font-weight:bold">=</span> Parrot(<span style="color:#d14">&#34;Blu&#34;</span>, <span style="color:#099">10</span>)
 
-<span style="color:#75715e"># call our instance methods</span>
-<span style="color:#66d9ef">print</span>(blu<span style="color:#f92672">.</span>sing(<span style="color:#e6db74">&#34;&#39;Happy&#39;&#34;</span>))
-<span style="color:#66d9ef">print</span>(blu<span style="color:#f92672">.</span>dance())</code></pre></div>
+<span style="color:#998;font-style:italic"># call our instance methods</span>
+<span style="color:#000;font-weight:bold">print</span>(blu<span style="color:#000;font-weight:bold">.</span>sing(<span style="color:#d14">&#34;&#39;Happy&#39;&#34;</span>))
+<span style="color:#000;font-weight:bold">print</span>(blu<span style="color:#000;font-weight:bold">.</span>dance())</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Blu sings 'Happy'
@@ -1636,36 +1636,36 @@ Blu is now dancing
 <p>Inheritance is a way of creating a new class for using details of an existing class without modifying it. The newly formed class is a derived class (or child class). Similarly, the existing class is a base class (or parent class).</p>
 
 <h3 ref="example-3-use-of-inheritance-in-python" >Example 3: Use of Inheritance in Python</h3><a class="anchor" id="example-3-use-of-inheritance-in-python"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># parent class</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Bird</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># parent class</span>
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Bird</span>:
     
-    <span style="color:#66d9ef">def</span> __init__(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Bird is ready&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Bird is ready&#34;</span>)
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">whoisThis</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Bird&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">whoisThis</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Bird&#34;</span>)
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">swim</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Swim faster&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">swim</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Swim faster&#34;</span>)
 
-<span style="color:#75715e"># child class</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Penguin</span>(Bird):
+<span style="color:#998;font-style:italic"># child class</span>
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Penguin</span>(Bird):
 
-    <span style="color:#66d9ef">def</span> __init__(self):
-        <span style="color:#75715e"># call super() function</span>
-        super()<span style="color:#f92672">.</span>__init__()
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Penguin is ready&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>):
+        <span style="color:#998;font-style:italic"># call super() function</span>
+        <span style="color:#0086b3">super</span>()<span style="color:#000;font-weight:bold">.</span>__init__()
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Penguin is ready&#34;</span>)
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">whoisThis</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Penguin&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">whoisThis</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Penguin&#34;</span>)
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">run</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Run faster&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">run</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Run faster&#34;</span>)
 
-peggy <span style="color:#f92672">=</span> Penguin()
-peggy<span style="color:#f92672">.</span>whoisThis()
-peggy<span style="color:#f92672">.</span>swim()
-peggy<span style="color:#f92672">.</span>run()</code></pre></div>
+peggy <span style="color:#000;font-weight:bold">=</span> Penguin()
+peggy<span style="color:#000;font-weight:bold">.</span>whoisThis()
+peggy<span style="color:#000;font-weight:bold">.</span>swim()
+peggy<span style="color:#000;font-weight:bold">.</span>run()</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Bird is ready
@@ -1688,27 +1688,27 @@ Run faster
 <p>Using OOP in Python, we can restrict access to methods and variables. This prevents data from direct modification which is called encapsulation. In Python, we denote private attributes using underscore as the prefix i.e single  <code>_</code>  or double  <code>__</code>.</p>
 
 <h3 ref="example-4-data-encapsulation-in-python" >Example 4: Data Encapsulation in Python</h3><a class="anchor" id="example-4-data-encapsulation-in-python"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Computer</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Computer</span>:
 
-    <span style="color:#66d9ef">def</span> __init__(self):
-        self<span style="color:#f92672">.</span>__maxprice <span style="color:#f92672">=</span> <span style="color:#ae81ff">900</span>
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>__maxprice <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">900</span>
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">sell</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Selling Price: {}&#34;</span><span style="color:#f92672">.</span>format(self<span style="color:#f92672">.</span>__maxprice))
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">sell</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Selling Price: {}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>__maxprice))
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setMaxPrice</span>(self, price):
-        self<span style="color:#f92672">.</span>__maxprice <span style="color:#f92672">=</span> price
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">setMaxPrice</span>(<span style="color:#999">self</span>, price):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>__maxprice <span style="color:#000;font-weight:bold">=</span> price
 
-c <span style="color:#f92672">=</span> Computer()
-c<span style="color:#f92672">.</span>sell()
+c <span style="color:#000;font-weight:bold">=</span> Computer()
+c<span style="color:#000;font-weight:bold">.</span>sell()
 
-<span style="color:#75715e"># change the price</span>
-c<span style="color:#f92672">.</span>__maxprice <span style="color:#f92672">=</span> <span style="color:#ae81ff">1000</span>
-c<span style="color:#f92672">.</span>sell()
+<span style="color:#998;font-style:italic"># change the price</span>
+c<span style="color:#000;font-weight:bold">.</span>__maxprice <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1000</span>
+c<span style="color:#000;font-weight:bold">.</span>sell()
 
-<span style="color:#75715e"># using setter function</span>
-c<span style="color:#f92672">.</span>setMaxPrice(<span style="color:#ae81ff">1000</span>)
-c<span style="color:#f92672">.</span>sell()</code></pre></div>
+<span style="color:#998;font-style:italic"># using setter function</span>
+c<span style="color:#000;font-weight:bold">.</span>setMaxPrice(<span style="color:#099">1000</span>)
+c<span style="color:#000;font-weight:bold">.</span>sell()</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Selling Price: 900
@@ -1731,31 +1731,31 @@ Selling Price: 1000
 <p>Suppose, we need to color a shape, there are multiple shape options (rectangle, square, circle). However we could use the same method to color any shape. This concept is called Polymorphism.</p>
 
 <h3 ref="example-5-using-polymorphism-in-python" >Example 5: Using Polymorphism in Python</h3><a class="anchor" id="example-5-using-polymorphism-in-python"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Parrot</span>:
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Parrot</span>:
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fly</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Parrot can fly&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">fly</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Parrot can fly&#34;</span>)
     
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">swim</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Parrot can&#39;t swim&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">swim</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Parrot can&#39;t swim&#34;</span>)
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Penguin</span>:
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Penguin</span>:
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fly</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Penguin can&#39;t fly&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">fly</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Penguin can&#39;t fly&#34;</span>)
     
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">swim</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Penguin can swim&#34;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">swim</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Penguin can swim&#34;</span>)
 
-<span style="color:#75715e"># common interface</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">flying_test</span>(bird):
-    bird<span style="color:#f92672">.</span>fly()
+<span style="color:#998;font-style:italic"># common interface</span>
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">flying_test</span>(bird):
+    bird<span style="color:#000;font-weight:bold">.</span>fly()
 
-<span style="color:#75715e">#instantiate objects</span>
-blu <span style="color:#f92672">=</span> Parrot()
-peggy <span style="color:#f92672">=</span> Penguin()
+<span style="color:#998;font-style:italic">#instantiate objects</span>
+blu <span style="color:#000;font-weight:bold">=</span> Parrot()
+peggy <span style="color:#000;font-weight:bold">=</span> Penguin()
 
-<span style="color:#75715e"># passing the object</span>
+<span style="color:#998;font-style:italic"># passing the object</span>
 flying_test(blu)
 flying_test(peggy)</code></pre></div>
 <p><strong>Output</strong></p>

@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1514,15 +1514,15 @@
 <h2 ref="problem-introduction" >Problem Introduction</h2><a class="anchor" id="problem-introduction"></a>
 
 <p>Earlier in this series, I covered a similar problem where  <a href="https://therenegadecoder.com/code/how-to-convert-two-lists-into-a-dictionary-in-python/">I wanted to convert two lists into a dictionary</a>. In that article, I covered various methods for mapping one list onto the other. This time around I want to convert two dictionaries into a single dictionary like so:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
 
-<span style="color:#ae81ff">4.</span>  <span style="color:#75715e"># Insert merge code here</span>
+<span style="color:#099">4.</span>  <span style="color:#998;font-style:italic"># Insert merge code here</span>
 
-<span style="color:#ae81ff">6.</span>  powers <span style="color:#f92672">=</span> {
-<span style="color:#ae81ff">7.</span>  <span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>,
-<span style="color:#ae81ff">8.</span>  <span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>
-<span style="color:#ae81ff">9.</span>  }</code></pre></div>
+<span style="color:#099">6.</span>  powers <span style="color:#000;font-weight:bold">=</span> {
+<span style="color:#099">7.</span>  <span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>,
+<span style="color:#099">8.</span>  <span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>
+<span style="color:#099">9.</span>  }</code></pre></div>
 <p>Here, we have two dictionaries:  <code>yusuke_power</code>  and  <code>hiei_power</code>. Each dictionary maps  <a href="https://myanimelist.net/anime/392/Yuu%E2%98%86Yuu%E2%98%86Hakusho">a YuYu Hakasho character</a>  to one of their abilities. In this case, I chose Yusuke and his Spirit Gun as well as Hiei and his Jagan Eye. Ultimately, we want to be able to merge these dictionaries, so we have a collection of characters and their powers. Let’s see if we can accomplish that below.</p>
 
 <h2 ref="solutions" >Solutions</h2><a class="anchor" id="solutions"></a>
@@ -1532,62 +1532,62 @@
 <h3 ref="merge-two-dictionaries-with-brute-force" >Merge Two Dictionaries with Brute Force</h3><a class="anchor" id="merge-two-dictionaries-with-brute-force"></a>
 
 <p>As is tradition in this series, I always like to kick things off with a roll-your-own solution. In this case, we’re looking to iterate over one dictionary and add its items to the other dictionary:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
 
-<span style="color:#ae81ff">4.</span>  <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> hiei_power<span style="color:#f92672">.</span>items():
-<span style="color:#ae81ff">5.</span>  yusuke_power[key] <span style="color:#f92672">=</span> value</code></pre></div>
+<span style="color:#099">4.</span>  <span style="color:#000;font-weight:bold">for</span> key, value <span style="color:#000;font-weight:bold">in</span> hiei_power<span style="color:#000;font-weight:bold">.</span>items():
+<span style="color:#099">5.</span>  yusuke_power[key] <span style="color:#000;font-weight:bold">=</span> value</code></pre></div>
 <p>Naturally, this solution leaves a lot to be desired, but it gets the job done. At the end of the day,  <code>yusuke_power</code>  should look like the  <code>powers</code>  dictionary we want.</p>
 
 <p>To accomplish something closer to what we want, we would have to iterate over both dictionaries separately:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
-<span style="color:#ae81ff">3.</span>  powers <span style="color:#f92672">=</span> dict()
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
+<span style="color:#099">3.</span>  powers <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">dict</span>()
 
-<span style="color:#ae81ff">5.</span>  <span style="color:#66d9ef">for</span> dictionary <span style="color:#f92672">in</span>  (yusuke_power, hiei_power):
-<span style="color:#ae81ff">6.</span>  <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> dictionary<span style="color:#f92672">.</span>items():
-<span style="color:#ae81ff">7.</span>  powers[key] <span style="color:#f92672">=</span> value</code></pre></div>
+<span style="color:#099">5.</span>  <span style="color:#000;font-weight:bold">for</span> dictionary <span style="color:#000;font-weight:bold">in</span>  (yusuke_power, hiei_power):
+<span style="color:#099">6.</span>  <span style="color:#000;font-weight:bold">for</span> key, value <span style="color:#000;font-weight:bold">in</span> dictionary<span style="color:#000;font-weight:bold">.</span>items():
+<span style="color:#099">7.</span>  powers[key] <span style="color:#000;font-weight:bold">=</span> value</code></pre></div>
 <p>Unfortunately, this solution doesn’t scale very well. That said, there are better ways to solve this problem.</p>
 
 <h3 ref="merge-two-dictionaries-with-a-dictionary-comprehension" >Merge Two Dictionaries with a Dictionary Comprehension</h3><a class="anchor" id="merge-two-dictionaries-with-a-dictionary-comprehension"></a>
 
 <p>Since I’m a big fan of comprehensions, I think it’s worth mentioning that the solution above can be written in a single line with a dictionary comprehension:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
 
-<span style="color:#ae81ff">4.</span>  powers <span style="color:#f92672">=</span> {key: value <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span>  (yusuke_power, hiei_power)  <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> d<span style="color:#f92672">.</span>items()}</code></pre></div>
+<span style="color:#099">4.</span>  powers <span style="color:#000;font-weight:bold">=</span> {key: value <span style="color:#000;font-weight:bold">for</span> d <span style="color:#000;font-weight:bold">in</span>  (yusuke_power, hiei_power)  <span style="color:#000;font-weight:bold">for</span> key, value <span style="color:#000;font-weight:bold">in</span> d<span style="color:#000;font-weight:bold">.</span>items()}</code></pre></div>
 <p>Here, we have written a dictionary comprehension that iterates over both dictionaries and copies each item into a new dictionary. Naturally, it works just like the brute force solution.</p>
 
 <h3 ref="merge-two-dictionaries-with-copy-and-update" >Merge Two Dictionaries with Copy and Update</h3><a class="anchor" id="merge-two-dictionaries-with-copy-and-update"></a>
 
 <p>As with many of the collections in Python, they have a builtin copy function associated with them. As a result, we can leverage that copy function to generate a new dictionary which includes all the items of the original dictionary. In addition, dictionaries have an update function which can be used to add all the items from one dictionary into another:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
 
-<span style="color:#ae81ff">4.</span>  powers <span style="color:#f92672">=</span> yusuke_power<span style="color:#f92672">.</span>copy()
-<span style="color:#ae81ff">5.</span>  powers<span style="color:#f92672">.</span>update(hiei_power)</code></pre></div>
+<span style="color:#099">4.</span>  powers <span style="color:#000;font-weight:bold">=</span> yusuke_power<span style="color:#000;font-weight:bold">.</span>copy()
+<span style="color:#099">5.</span>  powers<span style="color:#000;font-weight:bold">.</span>update(hiei_power)</code></pre></div>
 <p>With this solution, we’re able to generate that  <code>powers</code>  dictionary which contains all the items from the original two dictionaries. As an added benefit,  <code>copy</code>  and  <code>update</code>  are backwards compatible, so Python 2 users won’t feel left out.</p>
 
 <p>It’s worth noting that we can extend this solution to merge any number of dictionaries with a custom function:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">merge_dicts</span>(<span style="color:#f92672">*</span>dicts: dict):
-<span style="color:#ae81ff">2.</span>  merged_dict <span style="color:#f92672">=</span> dict()
-<span style="color:#ae81ff">3.</span>  <span style="color:#66d9ef">for</span> dictionary <span style="color:#f92672">in</span> dicts:
-<span style="color:#ae81ff">4.</span>  merge_dict<span style="color:#f92672">.</span>update(dictionary)
-<span style="color:#ae81ff">5.</span>  <span style="color:#66d9ef">return</span> merged_dict</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">merge_dicts</span>(<span style="color:#000;font-weight:bold">*</span>dicts: <span style="color:#0086b3">dict</span>):
+<span style="color:#099">2.</span>  merged_dict <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">dict</span>()
+<span style="color:#099">3.</span>  <span style="color:#000;font-weight:bold">for</span> dictionary <span style="color:#000;font-weight:bold">in</span> dicts:
+<span style="color:#099">4.</span>  merge_dict<span style="color:#000;font-weight:bold">.</span>update(dictionary)
+<span style="color:#099">5.</span>  <span style="color:#000;font-weight:bold">return</span> merged_dict</code></pre></div>
 <p>Now, we can generate a new dictionary which contains all the items in any number of dictionaries.</p>
 
 <h3 ref="merge-two-dictionaries-with-dictionary-unpacking" >Merge Two Dictionaries with Dictionary Unpacking</h3><a class="anchor" id="merge-two-dictionaries-with-dictionary-unpacking"></a>
 
 <p>When Python 3.5 rolled out, it introduced a dictionary unpacking syntax which allows us to merge dictionaries with a new operator:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
 
-<span style="color:#ae81ff">4.</span>  powers <span style="color:#f92672">=</span> {<span style="color:#f92672">**</span>yusuke_power, <span style="color:#f92672">**</span>hiei_power}</code></pre></div>
+<span style="color:#099">4.</span>  powers <span style="color:#000;font-weight:bold">=</span> {<span style="color:#000;font-weight:bold">**</span>yusuke_power, <span style="color:#000;font-weight:bold">**</span>hiei_power}</code></pre></div>
 <p>Naturally, this solution scales for any number of arguments:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
 
-<span style="color:#ae81ff">4.</span>  powers <span style="color:#f92672">=</span> {<span style="color:#f92672">**</span>yusuke_power, <span style="color:#f92672">**</span>hiei_power, <span style="color:#e6db74">&#34;Yoko Kurama&#34;</span>: <span style="color:#e6db74">&#34;Rose Whip&#34;</span>}</code></pre></div>
+<span style="color:#099">4.</span>  powers <span style="color:#000;font-weight:bold">=</span> {<span style="color:#000;font-weight:bold">**</span>yusuke_power, <span style="color:#000;font-weight:bold">**</span>hiei_power, <span style="color:#d14">&#34;Yoko Kurama&#34;</span>: <span style="color:#d14">&#34;Rose Whip&#34;</span>}</code></pre></div>
 <p>Of course, the drawback is backwards compatibility. If you’re still rocking Python 2 or even older versions of Python 3, this feature may not be available to you. Regardless, I think it’s a pretty clever piece of syntax, and I like how it looks.</p>
 
 <h2 ref="performance" >Performance</h2><a class="anchor" id="performance"></a>
@@ -1595,40 +1595,40 @@
 <p>For the first time in this series, I thought it would be beneficial to take a look at the performance of each of the methods above (if you’re lucky, I might update the old articles to include performance as well). To do that, I’m going to use the builtin  <code>timeit</code>  library.</p>
 
 <p>To use the  <code>timeit</code>  library, we have to set up some strings for testing:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  setup <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span><span style="color:#e6db74">2.  yusuke_power = {&#34;Yusuke Urameshi&#34;: &#34;Spirit Gun&#34;};
-</span><span style="color:#e6db74">3.  hiei_power = {&#34;Hiei&#34;: &#34;Jagan Eye&#34;};
-</span><span style="color:#e6db74">4.  powers = dict()
-</span><span style="color:#e6db74">5.  &#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  setup <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14">\
+</span><span style="color:#d14"></span><span style="color:#d14">2.  yusuke_power = {&#34;Yusuke Urameshi&#34;: &#34;Spirit Gun&#34;};
+</span><span style="color:#d14">3.  hiei_power = {&#34;Hiei&#34;: &#34;Jagan Eye&#34;};
+</span><span style="color:#d14">4.  powers = dict()
+</span><span style="color:#d14">5.  &#34;&#34;&#34;</span>
 
-<span style="color:#ae81ff">7.</span>  brute_force <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span><span style="color:#e6db74">8.  for dictionary in (yusuke_power, hiei_power):
-</span><span style="color:#e6db74">9.  for key, value in dictionary.items():
-</span><span style="color:#e6db74">10.  powers[key] = value
-</span><span style="color:#e6db74">11.  &#34;&#34;&#34;</span>
+<span style="color:#099">7.</span>  brute_force <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14">\
+</span><span style="color:#d14"></span><span style="color:#d14">8.  for dictionary in (yusuke_power, hiei_power):
+</span><span style="color:#d14">9.  for key, value in dictionary.items():
+</span><span style="color:#d14">10.  powers[key] = value
+</span><span style="color:#d14">11.  &#34;&#34;&#34;</span>
 
-<span style="color:#ae81ff">13.</span>  dict_comprehension <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span><span style="color:#e6db74">14.  powers = {key: value for d in (yusuke_power, hiei_power) for key, value in d.items()}
-</span><span style="color:#e6db74">15.  &#34;&#34;&#34;</span>
+<span style="color:#099">13.</span>  dict_comprehension <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14">\
+</span><span style="color:#d14"></span><span style="color:#d14">14.  powers = {key: value for d in (yusuke_power, hiei_power) for key, value in d.items()}
+</span><span style="color:#d14">15.  &#34;&#34;&#34;</span>
 
-<span style="color:#ae81ff">17.</span>  copy_and_update <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span><span style="color:#e6db74">18.  powers = yusuke_power.copy()
-</span><span style="color:#e6db74">19.  powers.update(hiei_power)
-</span><span style="color:#e6db74">20.  &#34;&#34;&#34;</span>
+<span style="color:#099">17.</span>  copy_and_update <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14">\
+</span><span style="color:#d14"></span><span style="color:#d14">18.  powers = yusuke_power.copy()
+</span><span style="color:#d14">19.  powers.update(hiei_power)
+</span><span style="color:#d14">20.  &#34;&#34;&#34;</span>
 
-<span style="color:#ae81ff">22.</span>  dict_unpacking <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;</span><span style="color:#ae81ff">\
-</span><span style="color:#ae81ff"></span><span style="color:#e6db74">23.  powers = {**yusuke_power, **hiei_power}
-</span><span style="color:#e6db74">24.  &#34;&#34;&#34;</span></code></pre></div>
+<span style="color:#099">22.</span>  dict_unpacking <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14">\
+</span><span style="color:#d14"></span><span style="color:#d14">23.  powers = {**yusuke_power, **hiei_power}
+</span><span style="color:#d14">24.  &#34;&#34;&#34;</span></code></pre></div>
 <p>With our strings setup, we can begin our performance test:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#f92672">import</span> timeit
-<span style="color:#ae81ff">2.</span>  <span style="color:#f92672">&gt;&gt;&gt;</span> timeit<span style="color:#f92672">.</span>timeit(stmt<span style="color:#f92672">=</span>brute_force, setup<span style="color:#f92672">=</span>setup)
-<span style="color:#ae81ff">3.</span>  <span style="color:#ae81ff">1.517404469999974</span>
-<span style="color:#ae81ff">4.</span>  <span style="color:#f92672">&gt;&gt;&gt;</span> timeit<span style="color:#f92672">.</span>timeit(stmt<span style="color:#f92672">=</span>dict_comprehension, setup<span style="color:#f92672">=</span>setup)
-<span style="color:#ae81ff">5.</span>  <span style="color:#ae81ff">1.6243454339999062</span>
-<span style="color:#ae81ff">6.</span>  <span style="color:#f92672">&gt;&gt;&gt;</span> timeit<span style="color:#f92672">.</span>timeit(stmt<span style="color:#f92672">=</span>copy_and_update, setup<span style="color:#f92672">=</span>setup)
-<span style="color:#ae81ff">7.</span>  <span style="color:#ae81ff">0.7273476979999032</span>
-<span style="color:#ae81ff">8.</span>  <span style="color:#f92672">&gt;&gt;&gt;</span> timeit<span style="color:#f92672">.</span>timeit(stmt<span style="color:#f92672">=</span>dict_unpacking, setup<span style="color:#f92672">=</span>setup)
-<span style="color:#ae81ff">9.</span>  <span style="color:#ae81ff">0.2897768919999635</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  <span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">timeit</span>
+<span style="color:#099">2.</span>  <span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> timeit<span style="color:#000;font-weight:bold">.</span>timeit(stmt<span style="color:#000;font-weight:bold">=</span>brute_force, setup<span style="color:#000;font-weight:bold">=</span>setup)
+<span style="color:#099">3.</span>  <span style="color:#099">1.517404469999974</span>
+<span style="color:#099">4.</span>  <span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> timeit<span style="color:#000;font-weight:bold">.</span>timeit(stmt<span style="color:#000;font-weight:bold">=</span>dict_comprehension, setup<span style="color:#000;font-weight:bold">=</span>setup)
+<span style="color:#099">5.</span>  <span style="color:#099">1.6243454339999062</span>
+<span style="color:#099">6.</span>  <span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> timeit<span style="color:#000;font-weight:bold">.</span>timeit(stmt<span style="color:#000;font-weight:bold">=</span>copy_and_update, setup<span style="color:#000;font-weight:bold">=</span>setup)
+<span style="color:#099">7.</span>  <span style="color:#099">0.7273476979999032</span>
+<span style="color:#099">8.</span>  <span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> timeit<span style="color:#000;font-weight:bold">.</span>timeit(stmt<span style="color:#000;font-weight:bold">=</span>dict_unpacking, setup<span style="color:#000;font-weight:bold">=</span>setup)
+<span style="color:#099">9.</span>  <span style="color:#099">0.2897768919999635</span></code></pre></div>
 <p>As it turns out, dictionary unpacking is very fast. For reference, I performed the testing on a Surface Go with Windows 10 and Python 3.7.1.</p>
 
 <h2 ref="a-little-recap" >A Little Recap</h2><a class="anchor" id="a-little-recap"></a>
@@ -1638,31 +1638,31 @@
 <p>Also, it’s worth noting that all of these solutions perform  <a href="https://therenegadecoder.com/code/be-careful-when-copying-mutable-data-types/">a shallow copy</a>  of the dictionaries. As a result, dictionaries that may be nested or store objects will only have their references copied, not the actual values. If that’s a constraint in your application, you may need to write your own recursive copy function.</p>
 
 <p>At any rate, here are all the solutions:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">1.</span>  yusuke_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#e6db74">&#34;Spirit Gun&#34;</span>}
-<span style="color:#ae81ff">2.</span>  hiei_power <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;Hiei&#34;</span>: <span style="color:#e6db74">&#34;Jagan Eye&#34;</span>}
-<span style="color:#ae81ff">3.</span>  powers <span style="color:#f92672">=</span> dict()
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">1.</span>  yusuke_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Yusuke Urameshi&#34;</span>: <span style="color:#d14">&#34;Spirit Gun&#34;</span>}
+<span style="color:#099">2.</span>  hiei_power <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#34;Hiei&#34;</span>: <span style="color:#d14">&#34;Jagan Eye&#34;</span>}
+<span style="color:#099">3.</span>  powers <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">dict</span>()
 
-<span style="color:#ae81ff">5.</span>  <span style="color:#75715e"># Brute force</span>
-<span style="color:#ae81ff">6.</span>  <span style="color:#66d9ef">for</span> dictionary <span style="color:#f92672">in</span>  (yusuke_power, hiei_power):
-<span style="color:#ae81ff">7.</span>  <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> dictionary<span style="color:#f92672">.</span>items():
-<span style="color:#ae81ff">8.</span>  powers[key] <span style="color:#f92672">=</span> value
+<span style="color:#099">5.</span>  <span style="color:#998;font-style:italic"># Brute force</span>
+<span style="color:#099">6.</span>  <span style="color:#000;font-weight:bold">for</span> dictionary <span style="color:#000;font-weight:bold">in</span>  (yusuke_power, hiei_power):
+<span style="color:#099">7.</span>  <span style="color:#000;font-weight:bold">for</span> key, value <span style="color:#000;font-weight:bold">in</span> dictionary<span style="color:#000;font-weight:bold">.</span>items():
+<span style="color:#099">8.</span>  powers[key] <span style="color:#000;font-weight:bold">=</span> value
 
-<span style="color:#ae81ff">10.</span>  <span style="color:#75715e"># Dictionary Comprehension</span>
-<span style="color:#ae81ff">11.</span>  powers <span style="color:#f92672">=</span> {key: value <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span>  (yusuke_power, hiei_power)  <span style="color:#66d9ef">for</span> key, value <span style="color:#f92672">in</span> d<span style="color:#f92672">.</span>items()}
+<span style="color:#099">10.</span>  <span style="color:#998;font-style:italic"># Dictionary Comprehension</span>
+<span style="color:#099">11.</span>  powers <span style="color:#000;font-weight:bold">=</span> {key: value <span style="color:#000;font-weight:bold">for</span> d <span style="color:#000;font-weight:bold">in</span>  (yusuke_power, hiei_power)  <span style="color:#000;font-weight:bold">for</span> key, value <span style="color:#000;font-weight:bold">in</span> d<span style="color:#000;font-weight:bold">.</span>items()}
 
-<span style="color:#ae81ff">13.</span>  <span style="color:#75715e"># Copy and update</span>
-<span style="color:#ae81ff">14.</span>  powers <span style="color:#f92672">=</span> yusuke_power<span style="color:#f92672">.</span>copy()
-<span style="color:#ae81ff">15.</span>  powers<span style="color:#f92672">.</span>update(hiei_power)
+<span style="color:#099">13.</span>  <span style="color:#998;font-style:italic"># Copy and update</span>
+<span style="color:#099">14.</span>  powers <span style="color:#000;font-weight:bold">=</span> yusuke_power<span style="color:#000;font-weight:bold">.</span>copy()
+<span style="color:#099">15.</span>  powers<span style="color:#000;font-weight:bold">.</span>update(hiei_power)
 
-<span style="color:#ae81ff">17.</span>  <span style="color:#75715e"># Dictionary unpacking (Python 3.5+)</span>
-<span style="color:#ae81ff">18.</span>  powers <span style="color:#f92672">=</span> {<span style="color:#f92672">**</span>yusuke_power, <span style="color:#f92672">**</span>hiei_power}
+<span style="color:#099">17.</span>  <span style="color:#998;font-style:italic"># Dictionary unpacking (Python 3.5+)</span>
+<span style="color:#099">18.</span>  powers <span style="color:#000;font-weight:bold">=</span> {<span style="color:#000;font-weight:bold">**</span>yusuke_power, <span style="color:#000;font-weight:bold">**</span>hiei_power}
 
-<span style="color:#ae81ff">20.</span>  <span style="color:#75715e"># Backwards compatible function for any number of dicts</span>
-<span style="color:#ae81ff">21.</span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">merge_dicts</span>(<span style="color:#f92672">*</span>dicts: dict):
-<span style="color:#ae81ff">22.</span>  merged_dict <span style="color:#f92672">=</span> dict()
-<span style="color:#ae81ff">23.</span>  <span style="color:#66d9ef">for</span> dictionary <span style="color:#f92672">in</span> dicts:
-<span style="color:#ae81ff">24.</span>  merge_dict<span style="color:#f92672">.</span>update(dictionary)
-<span style="color:#ae81ff">25.</span>  <span style="color:#66d9ef">return</span> merged_dict</code></pre></div>
+<span style="color:#099">20.</span>  <span style="color:#998;font-style:italic"># Backwards compatible function for any number of dicts</span>
+<span style="color:#099">21.</span>  <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">merge_dicts</span>(<span style="color:#000;font-weight:bold">*</span>dicts: <span style="color:#0086b3">dict</span>):
+<span style="color:#099">22.</span>  merged_dict <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">dict</span>()
+<span style="color:#099">23.</span>  <span style="color:#000;font-weight:bold">for</span> dictionary <span style="color:#000;font-weight:bold">in</span> dicts:
+<span style="color:#099">24.</span>  merge_dict<span style="color:#000;font-weight:bold">.</span>update(dictionary)
+<span style="color:#099">25.</span>  <span style="color:#000;font-weight:bold">return</span> merged_dict</code></pre></div>
 <p>And, that’s it! As always, I appreciate the support. If you liked this article, do me a favor and share it with someone. For those feeling extra generous,  <a href="https://www.patreon.com/TheRenegadeCoder">consider becoming a member of The Renegade Coder</a>. If you’re not convinced, check out some of these other Python articles:</p>
 
 <ul>

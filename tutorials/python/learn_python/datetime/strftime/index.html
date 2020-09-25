@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1489,24 +1489,24 @@
 <h2 ref="example-1-datetime-to-string-using-strftime" >Example 1: datetime to string using strftime()</h2><a class="anchor" id="example-1-datetime-to-string-using-strftime"></a>
 
 <p>The program below converts a <code>datetime</code>  object containing current date and time to different string formats.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-now <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now() <span style="color:#75715e"># current date and time</span>
+now <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>now() <span style="color:#998;font-style:italic"># current date and time</span>
 
-year <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%Y&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;year:&#34;</span>, year)
+year <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%Y&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;year:&#34;</span>, year)
 
-month <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;month:&#34;</span>, month)
+month <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%m&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;month:&#34;</span>, month)
 
-day <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;day:&#34;</span>, day)
+day <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14">&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;day:&#34;</span>, day)
 
-time <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%H:%M:%S&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;time:&#34;</span>, time)
+time <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%H:%M:%S&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;time:&#34;</span>, time)
 
-date_time <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y, %H:%M:%S&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;date and time:&#34;</span>,date_time)	</code></pre></div>
+date_time <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y, %H:%M:%S&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;date and time:&#34;</span>,date_time)	</code></pre></div>
 <p>When you run the program, the output will something like be:</p>
 
 <pre><code> year: 2018
@@ -1545,24 +1545,24 @@ date and time: 12/24/2018, 04:59:31
 <hr />
 
 <h2 ref="example-2-creating-string-from-a-timestamp" >Example 2: Creating string from a timestamp</h2><a class="anchor" id="example-2-creating-string-from-a-timestamp"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-timestamp <span style="color:#f92672">=</span> <span style="color:#ae81ff">1528797322</span>
-date_time <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>fromtimestamp(timestamp)
+timestamp <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1528797322</span>
+date_time <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>fromtimestamp(timestamp)
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Date time object:&#34;</span>, date_time)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Date time object:&#34;</span>, date_time)
 
-d <span style="color:#f92672">=</span> date_time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y, %H:%M:%S&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Output 2:&#34;</span>, d)	
+d <span style="color:#000;font-weight:bold">=</span> date_time<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y, %H:%M:%S&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Output 2:&#34;</span>, d)	
 
-d <span style="color:#f92672">=</span> date_time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %b, %Y&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Output 3:&#34;</span>, d)
+d <span style="color:#000;font-weight:bold">=</span> date_time<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14"> %b, %Y&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Output 3:&#34;</span>, d)
 
-d <span style="color:#f92672">=</span> date_time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %B, %Y&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Output 4:&#34;</span>, d)
+d <span style="color:#000;font-weight:bold">=</span> date_time<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14"> %B, %Y&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Output 4:&#34;</span>, d)
 
-d <span style="color:#f92672">=</span> date_time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%I%p&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Output 5:&#34;</span>, d)</code></pre></div>
+d <span style="color:#000;font-weight:bold">=</span> date_time<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%I%p&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Output 5:&#34;</span>, d)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>Date time object: 2018-06-12 09:55:22
@@ -1785,19 +1785,19 @@ Output 5: 09AM
 <hr />
 
 <h2 ref="example-3-locale-s-appropriate-date-and-time" >Example 3: Locale&rsquo;s appropriate date and time</h2><a class="anchor" id="example-3-locale-s-appropriate-date-and-time"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-timestamp <span style="color:#f92672">=</span> <span style="color:#ae81ff">1528797322</span>
-date_time <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>fromtimestamp(timestamp)
+timestamp <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1528797322</span>
+date_time <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>fromtimestamp(timestamp)
 
-d <span style="color:#f92672">=</span> date_time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%c</span><span style="color:#e6db74">&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Output 1:&#34;</span>, d)	
+d <span style="color:#000;font-weight:bold">=</span> date_time<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%c</span><span style="color:#d14">&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Output 1:&#34;</span>, d)	
 
-d <span style="color:#f92672">=</span> date_time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%x</span><span style="color:#e6db74">&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Output 2:&#34;</span>, d)
+d <span style="color:#000;font-weight:bold">=</span> date_time<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%x</span><span style="color:#d14">&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Output 2:&#34;</span>, d)
 
-d <span style="color:#f92672">=</span> date_time<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%X</span><span style="color:#e6db74">&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Output 3:&#34;</span>, d)</code></pre></div>
+d <span style="color:#000;font-weight:bold">=</span> date_time<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%X</span><span style="color:#d14">&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Output 3:&#34;</span>, d)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code> Output 1: Tue Jun 12 09:55:22 2018

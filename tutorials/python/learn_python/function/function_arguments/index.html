@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:15 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1487,12 +1487,12 @@
 <h2 ref="arguments" >Arguments</h2><a class="anchor" id="arguments"></a>
 
 <p>In the  <a href="https://www.programiz.com/python-programming/user-defined-function">user-defined function</a>  topic, we learned about defining a function and calling it. Otherwise, the function call will result in an error. Here is an example.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(name, msg):
-    <span style="color:#e6db74">&#34;&#34;&#34;This function greets to
-</span><span style="color:#e6db74">    the person with the provided message&#34;&#34;&#34;</span>
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>, name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;, &#39;</span> <span style="color:#f92672">+</span> msg)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(name, msg):
+    <span style="color:#d14">&#34;&#34;&#34;This function greets to
+</span><span style="color:#d14">    the person with the provided message&#34;&#34;&#34;</span>
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Hello&#34;</span>, name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;, &#39;</span> <span style="color:#000;font-weight:bold">+</span> msg)
 
-greet(<span style="color:#e6db74">&#34;Monica&#34;</span>, <span style="color:#e6db74">&#34;Good morning!&#34;</span>)</code></pre></div>
+greet(<span style="color:#d14">&#34;Monica&#34;</span>, <span style="color:#d14">&#34;Good morning!&#34;</span>)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Hello Monica, Good morning!
@@ -1503,9 +1503,9 @@ greet(<span style="color:#e6db74">&#34;Monica&#34;</span>, <span style="color:#e
 <p>Since we have called this function with two arguments, it runs smoothly and we do not get any error.</p>
 
 <p>If we call it with a different number of arguments, the interpreter will show an error message. Below is a call to this function with one and no arguments along with their respective error messages.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> greet(<span style="color:#e6db74">&#34;Monica&#34;</span>)    <span style="color:#75715e"># only one argument</span>
-<span style="color:#a6e22e">TypeError</span>: greet() missing <span style="color:#ae81ff">1</span> required positional argument: <span style="color:#e6db74">&#39;msg&#39;</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> greet()    <span style="color:#75715e"># no arguments</span>
-<span style="color:#a6e22e">TypeError</span>: greet() missing <span style="color:#ae81ff">2</span> required positional arguments: <span style="color:#e6db74">&#39;name&#39;</span> <span style="color:#f92672">and</span> <span style="color:#e6db74">&#39;msg&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> greet(<span style="color:#d14">&#34;Monica&#34;</span>)    <span style="color:#998;font-style:italic"># only one argument</span>
+<span style="color:#900;font-weight:bold">TypeError</span>: greet() missing <span style="color:#099">1</span> required positional argument: <span style="color:#d14">&#39;msg&#39;</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> greet()    <span style="color:#998;font-style:italic"># no arguments</span>
+<span style="color:#900;font-weight:bold">TypeError</span>: greet() missing <span style="color:#099">2</span> required positional arguments: <span style="color:#d14">&#39;name&#39;</span> <span style="color:#000;font-weight:bold">and</span> <span style="color:#d14">&#39;msg&#39;</span></code></pre></div>
 <hr />
 
 <h2 ref="variable-function-arguments" >Variable Function Arguments</h2><a class="anchor" id="variable-function-arguments"></a>
@@ -1519,22 +1519,22 @@ greet(<span style="color:#e6db74">&#34;Monica&#34;</span>, <span style="color:#e
 <p>Function arguments can have default values in Python.</p>
 
 <p>We can provide a default value to an argument by using the assignment operator (=). Here is an example.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(name, msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Good morning!&#34;</span>):
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    This function greets to
-</span><span style="color:#e6db74">    the person with the
-</span><span style="color:#e6db74">    provided message.
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">    If the message is not provided,
-</span><span style="color:#e6db74">    it defaults to &#34;Good
-</span><span style="color:#e6db74">    morning!&#34;
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(name, msg<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Good morning!&#34;</span>):
+    <span style="color:#d14">&#34;&#34;&#34;
+</span><span style="color:#d14">    This function greets to
+</span><span style="color:#d14">    the person with the
+</span><span style="color:#d14">    provided message.
+</span><span style="color:#d14">
+</span><span style="color:#d14">    If the message is not provided,
+</span><span style="color:#d14">    it defaults to &#34;Good
+</span><span style="color:#d14">    morning!&#34;
+</span><span style="color:#d14">    &#34;&#34;&#34;</span>
 
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>, name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;, &#39;</span> <span style="color:#f92672">+</span> msg)
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Hello&#34;</span>, name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;, &#39;</span> <span style="color:#000;font-weight:bold">+</span> msg)
 
 
-greet(<span style="color:#e6db74">&#34;Kate&#34;</span>)
-greet(<span style="color:#e6db74">&#34;Bruce&#34;</span>, <span style="color:#e6db74">&#34;How do you do?&#34;</span>)</code></pre></div>
+greet(<span style="color:#d14">&#34;Kate&#34;</span>)
+greet(<span style="color:#d14">&#34;Bruce&#34;</span>, <span style="color:#d14">&#34;How do you do?&#34;</span>)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Hello Kate, Good morning!
@@ -1548,9 +1548,9 @@ Hello Bruce, How do you do?
 <p>Any number of arguments in a function can have a default value. But once we have a default argument, all the arguments to its right must also have default values.</p>
 
 <p>This means to say, non-default arguments cannot follow default arguments. For example, if we had defined the function header above as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Good morning!&#34;</span>, name):</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(msg <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Good morning!&#34;</span>, name):</code></pre></div>
 <p>We would get an error as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#a6e22e">SyntaxError</span>: non<span style="color:#f92672">-</span>default argument follows default argument</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#900;font-weight:bold">SyntaxError</span>: non<span style="color:#000;font-weight:bold">-</span>default argument follows default argument</code></pre></div>
 <hr />
 
 <h3 ref="python-keyword-arguments" >Python Keyword Arguments</h3><a class="anchor" id="python-keyword-arguments"></a>
@@ -1560,20 +1560,20 @@ Hello Bruce, How do you do?
 <p>For example, in the above function  <code>greet()</code>, when we called it as  <code>greet(&quot;Bruce&quot;, &quot;How do you do?&quot;)</code>, the value  <code>&quot;Bruce&quot;</code>  gets assigned to the argument  name  and similarly  <code>&quot;How do you do?&quot;</code>  to  msg.</p>
 
 <p>Python allows functions to be called using keyword arguments. When we call functions in this way, the order (position) of the arguments can be changed. Following calls to the above function are all valid and produce the same result.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># 2 keyword arguments</span>
-greet(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bruce&#34;</span>,msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;How do you do?&#34;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># 2 keyword arguments</span>
+greet(name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Bruce&#34;</span>,msg <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;How do you do?&#34;</span>)
 
-<span style="color:#75715e"># 2 keyword arguments (out of order)</span>
-greet(msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;How do you do?&#34;</span>,name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Bruce&#34;</span>) 
+<span style="color:#998;font-style:italic"># 2 keyword arguments (out of order)</span>
+greet(msg <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;How do you do?&#34;</span>,name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Bruce&#34;</span>) 
 
-<span style="color:#ae81ff">1</span> positional, <span style="color:#ae81ff">1</span> keyword argument
-greet(<span style="color:#e6db74">&#34;Bruce&#34;</span>, msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;How do you do?&#34;</span>)           </code></pre></div>
+<span style="color:#099">1</span> positional, <span style="color:#099">1</span> keyword argument
+greet(<span style="color:#d14">&#34;Bruce&#34;</span>, msg <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;How do you do?&#34;</span>)           </code></pre></div>
 <p>As we can see, we can mix positional arguments with keyword arguments during a function call. But we must keep in mind that keyword arguments must follow positional arguments.</p>
 
 <p>Having a positional argument after keyword arguments will result in errors. For example, the function call as follows:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">greet(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Bruce&#34;</span>,<span style="color:#e6db74">&#34;How do you do?&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">greet(name<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Bruce&#34;</span>,<span style="color:#d14">&#34;How do you do?&#34;</span>)</code></pre></div>
 <p>Will result in an error:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#a6e22e">SyntaxError</span>: non<span style="color:#f92672">-</span>keyword arg after keyword arg</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#900;font-weight:bold">SyntaxError</span>: non<span style="color:#000;font-weight:bold">-</span>keyword arg after keyword arg</code></pre></div>
 <hr />
 
 <h3 ref="python-arbitrary-arguments" >Python Arbitrary Arguments</h3><a class="anchor" id="python-arbitrary-arguments"></a>
@@ -1581,16 +1581,16 @@ greet(<span style="color:#e6db74">&#34;Bruce&#34;</span>, msg <span style="color
 <p>Sometimes, we do not know in advance the number of arguments that will be passed into a function. Python allows us to handle this kind of situation through function calls with an arbitrary number of arguments.</p>
 
 <p>In the function definition, we use an asterisk (*) before the parameter name to denote this kind of argument. Here is an example.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(<span style="color:#f92672">*</span>names):
-    <span style="color:#e6db74">&#34;&#34;&#34;This function greets all
-</span><span style="color:#e6db74">    the person in the names tuple.&#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(<span style="color:#000;font-weight:bold">*</span>names):
+    <span style="color:#d14">&#34;&#34;&#34;This function greets all
+</span><span style="color:#d14">    the person in the names tuple.&#34;&#34;&#34;</span>
 
-    <span style="color:#75715e"># names is a tuple with arguments</span>
-    <span style="color:#66d9ef">for</span> name <span style="color:#f92672">in</span> names:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>, name)
+    <span style="color:#998;font-style:italic"># names is a tuple with arguments</span>
+    <span style="color:#000;font-weight:bold">for</span> name <span style="color:#000;font-weight:bold">in</span> names:
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Hello&#34;</span>, name)
 
 
-greet(<span style="color:#e6db74">&#34;Monica&#34;</span>, <span style="color:#e6db74">&#34;Luke&#34;</span>, <span style="color:#e6db74">&#34;Steve&#34;</span>, <span style="color:#e6db74">&#34;John&#34;</span>)</code></pre></div>
+greet(<span style="color:#d14">&#34;Monica&#34;</span>, <span style="color:#d14">&#34;Luke&#34;</span>, <span style="color:#d14">&#34;Steve&#34;</span>, <span style="color:#d14">&#34;John&#34;</span>)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Hello Monica

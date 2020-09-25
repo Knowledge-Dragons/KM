@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:37 &#43;07">
 <meta name="description" content="">
 
 
@@ -1508,70 +1508,61 @@
 <p>A set is created by placing all the items (elements) inside curly braces  <code>{}</code>, separated by comma, or by using the built-in  <code>set()</code>  function.</p>
 
 <p>It can have any number of items and they may be of different types (integer, float, tuple, string etc.). But a set cannot have mutable elements like  <a href="https://www.programiz.com/python-programming/list">lists</a>, sets or  <a href="https://www.programiz.com/python-programming/dictionary">dictionaries</a>  as its elements.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Different types of sets in Python</span>
-<span style="color:#75715e"># set of integers</span>
-my_set <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>}
-<span style="color:#66d9ef">print</span>(my_set)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Different types of sets in Python</span>
+<span style="color:#998;font-style:italic"># set of integers</span>
+my_set <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>}
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># set of mixed datatypes</span>
-my_set <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1.0</span>, <span style="color:#e6db74">&#34;Hello&#34;</span>, (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)}
-<span style="color:#66d9ef">print</span>(my_set)</code></pre></div>
+<span style="color:#998;font-style:italic"># set of mixed datatypes</span>
+my_set <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1.0</span>, <span style="color:#d14">&#34;Hello&#34;</span>, (<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>)}
+<span style="color:#000;font-weight:bold">print</span>(my_set)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{1, 2, 3}
-{1.0, (1, 2, 3), 'Hello'}
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>.0, <span style="color:#000;font-weight:bold">(</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span><span style="color:#000;font-weight:bold">)</span>, <span style="color:#d14">&#39;Hello&#39;</span><span style="color:#000;font-weight:bold">}</span></code></pre></div>
 <p>Try the following examples as well.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># set cannot have duplicates</span>
-<span style="color:#75715e"># Output: {1, 2, 3, 4}</span>
-my_set <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>}
-<span style="color:#66d9ef">print</span>(my_set)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># set cannot have duplicates</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3, 4}</span>
+my_set <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">3</span>, <span style="color:#099">2</span>}
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># we can make set from a list</span>
-<span style="color:#75715e"># Output: {1, 2, 3}</span>
-my_set <span style="color:#f92672">=</span> set([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>])
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># we can make set from a list</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3}</span>
+my_set <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">set</span>([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">2</span>])
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># set cannot have mutable items</span>
-<span style="color:#75715e"># here [3, 4] is a mutable list</span>
-<span style="color:#75715e"># this will cause an error.</span>
+<span style="color:#998;font-style:italic"># set cannot have mutable items</span>
+<span style="color:#998;font-style:italic"># here [3, 4] is a mutable list</span>
+<span style="color:#998;font-style:italic"># this will cause an error.</span>
 
-my_set <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>]}</code></pre></div>
+my_set <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, [<span style="color:#099">3</span>, <span style="color:#099">4</span>]}</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{1, 2, 3, 4}
-{1, 2, 3}
-Traceback (most recent call last):
-  File &quot;&lt;string&gt;&quot;, line 15, in &lt;module&gt;
-    my_set = {1, 2, [3, 4]}
-TypeError: unhashable type: 'list'
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span><span style="color:#000;font-weight:bold">}</span>
+Traceback <span style="color:#000;font-weight:bold">(</span>most recent call last<span style="color:#000;font-weight:bold">)</span>:
+  File <span style="color:#d14">&#34;&lt;string&gt;&#34;</span>, line <span style="color:#099">15</span>, in &lt;module&gt;
+    <span style="color:#008080">my_set</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#000;font-weight:bold">[</span><span style="color:#099">3</span>, <span style="color:#099">4</span><span style="color:#000;font-weight:bold">]}</span>
+TypeError: unhashable type: <span style="color:#d14">&#39;list&#39;</span></code></pre></div>
 <hr />
 
 <p>Creating an empty set is a bit tricky.</p>
 
 <p>Empty curly braces  <code>{}</code>  will make an empty dictionary in Python. To make a set without any elements, we use the  <code>set()</code>  function without any argument.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Distinguish set and dictionary while creating empty set</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Distinguish set and dictionary while creating empty set</span>
 
-<span style="color:#75715e"># initialize a with {}</span>
-a <span style="color:#f92672">=</span> {}
+<span style="color:#998;font-style:italic"># initialize a with {}</span>
+a <span style="color:#000;font-weight:bold">=</span> {}
 
-<span style="color:#75715e"># check data type of a</span>
-<span style="color:#66d9ef">print</span>(type(a))
+<span style="color:#998;font-style:italic"># check data type of a</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#0086b3">type</span>(a))
 
-<span style="color:#75715e"># initialize a with set()</span>
-a <span style="color:#f92672">=</span> set()
+<span style="color:#998;font-style:italic"># initialize a with set()</span>
+a <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">set</span>()
 
-<span style="color:#75715e"># check data type of a</span>
-<span style="color:#66d9ef">print</span>(type(a))</code></pre></div>
+<span style="color:#998;font-style:italic"># check data type of a</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#0086b3">type</span>(a))</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>&lt;class 'dict'&gt;
-&lt;class 'set'&gt;
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&lt;class <span style="color:#d14">&#39;dict&#39;</span>&gt;
+&lt;class <span style="color:#d14">&#39;set&#39;</span>&gt;</code></pre></div>
 <hr />
 
 <h2 ref="modifying-a-set-in-python" >Modifying a set in Python</h2><a class="anchor" id="modifying-a-set-in-python"></a>
@@ -1581,38 +1572,35 @@ a <span style="color:#f92672">=</span> set()
 <p>We cannot access or change an element of a set using indexing or slicing. Set data type does not support it.</p>
 
 <p>We can add a single element using the  <code>add()</code>  method, and multiple elements using the  <code>update()</code>  method. The  <code>update()</code>  method can take  <a href="https://www.programiz.com/python-programming/tuple">tuples</a>, lists,  <a href="https://www.programiz.com/python-programming/string">strings</a>  or other sets as its argument. In all cases, duplicates are avoided.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># initialize my_set</span>
-my_set <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>}
-<span style="color:#66d9ef">print</span>(my_set)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># initialize my_set</span>
+my_set <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">3</span>}
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># if you uncomment line 9,</span>
-<span style="color:#75715e"># you will get an error</span>
-<span style="color:#75715e"># TypeError: &#39;set&#39; object does not support indexing</span>
+<span style="color:#998;font-style:italic"># if you uncomment line 9,</span>
+<span style="color:#998;font-style:italic"># you will get an error</span>
+<span style="color:#998;font-style:italic"># TypeError: &#39;set&#39; object does not support indexing</span>
 
-<span style="color:#75715e"># my_set[0]</span>
+<span style="color:#998;font-style:italic"># my_set[0]</span>
 
-<span style="color:#75715e"># add an element</span>
-<span style="color:#75715e"># Output: {1, 2, 3}</span>
-my_set<span style="color:#f92672">.</span>add(<span style="color:#ae81ff">2</span>)
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># add an element</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3}</span>
+my_set<span style="color:#000;font-weight:bold">.</span>add(<span style="color:#099">2</span>)
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># add multiple elements</span>
-<span style="color:#75715e"># Output: {1, 2, 3, 4}</span>
-my_set<span style="color:#f92672">.</span>update([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># add multiple elements</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3, 4}</span>
+my_set<span style="color:#000;font-weight:bold">.</span>update([<span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>])
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># add list and set</span>
-<span style="color:#75715e"># Output: {1, 2, 3, 4, 5, 6, 8}</span>
-my_set<span style="color:#f92672">.</span>update([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>], {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>})
-<span style="color:#66d9ef">print</span>(my_set)</code></pre></div>
+<span style="color:#998;font-style:italic"># add list and set</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3, 4, 5, 6, 8}</span>
+my_set<span style="color:#000;font-weight:bold">.</span>update([<span style="color:#099">4</span>, <span style="color:#099">5</span>], {<span style="color:#099">1</span>, <span style="color:#099">6</span>, <span style="color:#099">8</span>})
+<span style="color:#000;font-weight:bold">print</span>(my_set)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{1, 3}
-{1, 2, 3}
-{1, 2, 3, 4}
-{1, 2, 3, 4, 5, 6, 8}
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">3</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">8</span><span style="color:#000;font-weight:bold">}</span></code></pre></div>
 <hr />
 
 <h2 ref="removing-elements-from-a-set" >Removing elements from a set</h2><a class="anchor" id="removing-elements-from-a-set"></a>
@@ -1622,77 +1610,71 @@ my_set<span style="color:#f92672">.</span>update([<span style="color:#ae81ff">4<
 <p>The only difference between the two is that the  <code>discard()</code>  function leaves a set unchanged if the element is not present in the set. On the other hand, the  <code>remove()</code>  function will raise an error in such a condition (if element is not present in the set).</p>
 
 <p>The following example will illustrate this.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Difference between discard() and remove()</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Difference between discard() and remove()</span>
 
-<span style="color:#75715e"># initialize my_set</span>
-my_set <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>}
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># initialize my_set</span>
+my_set <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>}
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># discard an element</span>
-<span style="color:#75715e"># Output: {1, 3, 5, 6}</span>
-my_set<span style="color:#f92672">.</span>discard(<span style="color:#ae81ff">4</span>)
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># discard an element</span>
+<span style="color:#998;font-style:italic"># Output: {1, 3, 5, 6}</span>
+my_set<span style="color:#000;font-weight:bold">.</span>discard(<span style="color:#099">4</span>)
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># remove an element</span>
-<span style="color:#75715e"># Output: {1, 3, 5}</span>
-my_set<span style="color:#f92672">.</span>remove(<span style="color:#ae81ff">6</span>)
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># remove an element</span>
+<span style="color:#998;font-style:italic"># Output: {1, 3, 5}</span>
+my_set<span style="color:#000;font-weight:bold">.</span>remove(<span style="color:#099">6</span>)
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># discard an element</span>
-<span style="color:#75715e"># not present in my_set</span>
-<span style="color:#75715e"># Output: {1, 3, 5}</span>
-my_set<span style="color:#f92672">.</span>discard(<span style="color:#ae81ff">2</span>)
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># discard an element</span>
+<span style="color:#998;font-style:italic"># not present in my_set</span>
+<span style="color:#998;font-style:italic"># Output: {1, 3, 5}</span>
+my_set<span style="color:#000;font-weight:bold">.</span>discard(<span style="color:#099">2</span>)
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># remove an element</span>
-<span style="color:#75715e"># not present in my_set</span>
-<span style="color:#75715e"># you will get an error.</span>
-<span style="color:#75715e"># Output: KeyError</span>
+<span style="color:#998;font-style:italic"># remove an element</span>
+<span style="color:#998;font-style:italic"># not present in my_set</span>
+<span style="color:#998;font-style:italic"># you will get an error.</span>
+<span style="color:#998;font-style:italic"># Output: KeyError</span>
 
-my_set<span style="color:#f92672">.</span>remove(<span style="color:#ae81ff">2</span>)</code></pre></div>
+my_set<span style="color:#000;font-weight:bold">.</span>remove(<span style="color:#099">2</span>)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{1, 3, 4, 5, 6}
-{1, 3, 5, 6}
-{1, 3, 5}
-{1, 3, 5}
-Traceback (most recent call last):
-  File &quot;&lt;string&gt;&quot;, line 28, in &lt;module&gt;
-KeyError: 2
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span><span style="color:#000;font-weight:bold">}</span>
+<span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span><span style="color:#000;font-weight:bold">}</span>
+Traceback <span style="color:#000;font-weight:bold">(</span>most recent call last<span style="color:#000;font-weight:bold">)</span>:
+  File <span style="color:#d14">&#34;&lt;string&gt;&#34;</span>, line <span style="color:#099">28</span>, in &lt;module&gt;
+KeyError: <span style="color:#099">2</span></code></pre></div>
 <p>Similarly, we can remove and return an item using the  <code>pop()</code>  method.</p>
 
 <p>Since set is an unordered data type, there is no way of determining which item will be popped. It is completely arbitrary.</p>
 
 <p>We can also remove all the items from a set using the  <code>clear()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># initialize my_set</span>
-<span style="color:#75715e"># Output: set of unique elements</span>
-my_set <span style="color:#f92672">=</span> set(<span style="color:#e6db74">&#34;HelloWorld&#34;</span>)
-<span style="color:#66d9ef">print</span>(my_set)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># initialize my_set</span>
+<span style="color:#998;font-style:italic"># Output: set of unique elements</span>
+my_set <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">set</span>(<span style="color:#d14">&#34;HelloWorld&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># pop an element</span>
-<span style="color:#75715e"># Output: random element</span>
-<span style="color:#66d9ef">print</span>(my_set<span style="color:#f92672">.</span>pop())
+<span style="color:#998;font-style:italic"># pop an element</span>
+<span style="color:#998;font-style:italic"># Output: random element</span>
+<span style="color:#000;font-weight:bold">print</span>(my_set<span style="color:#000;font-weight:bold">.</span>pop())
 
-<span style="color:#75715e"># pop another element</span>
-my_set<span style="color:#f92672">.</span>pop()
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># pop another element</span>
+my_set<span style="color:#000;font-weight:bold">.</span>pop()
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#75715e"># clear my_set</span>
-<span style="color:#75715e"># Output: set()</span>
-my_set<span style="color:#f92672">.</span>clear()
-<span style="color:#66d9ef">print</span>(my_set)
+<span style="color:#998;font-style:italic"># clear my_set</span>
+<span style="color:#998;font-style:italic"># Output: set()</span>
+my_set<span style="color:#000;font-weight:bold">.</span>clear()
+<span style="color:#000;font-weight:bold">print</span>(my_set)
 
-<span style="color:#66d9ef">print</span>(my_set)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(my_set)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{'H', 'l', 'r', 'W', 'o', 'd', 'e'}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#d14">&#39;H&#39;</span>, <span style="color:#d14">&#39;l&#39;</span>, <span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;W&#39;</span>, <span style="color:#d14">&#39;o&#39;</span>, <span style="color:#d14">&#39;d&#39;</span>, <span style="color:#d14">&#39;e&#39;</span><span style="color:#000;font-weight:bold">}</span>
 H
-{'r', 'W', 'o', 'd', 'e'}
-set()
-</code></pre>
-
+<span style="color:#000;font-weight:bold">{</span><span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;W&#39;</span>, <span style="color:#d14">&#39;o&#39;</span>, <span style="color:#d14">&#39;d&#39;</span>, <span style="color:#d14">&#39;e&#39;</span><span style="color:#000;font-weight:bold">}</span>
+set<span style="color:#000;font-weight:bold">()</span></code></pre></div>
 <hr />
 
 <h2 ref="python-set-operations" >Python Set Operations</h2><a class="anchor" id="python-set-operations"></a>
@@ -1700,8 +1682,8 @@ set()
 <p>Sets can be used to carry out mathematical set operations like union, intersection, difference and symmetric difference. We can do this with operators or methods.</p>
 
 <p>Let us consider the following two sets for the following operations.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> A <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
- B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> A <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>}
+ B <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}</code></pre></div>
 <h3 ref="set-union" >Set Union</h3><a class="anchor" id="set-union"></a>
 
 <p><img src="https://cdn.programiz.com/sites/tutorial2program/files/set-union.jpg" alt="Set Union in Python" title="Set Union" /></p>
@@ -1711,27 +1693,24 @@ set()
 <p>Union of  A  and  B  is a set of all elements from both sets.</p>
 
 <p>Union is performed using  <code>|</code>  operator. Same can be accomplished using the  <code>union()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Set union method</span>
-<span style="color:#75715e"># initialize A and B</span>
-A <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
-B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Set union method</span>
+<span style="color:#998;font-style:italic"># initialize A and B</span>
+A <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>}
+B <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}
 
-<span style="color:#75715e"># use | operator</span>
-<span style="color:#75715e"># Output: {1, 2, 3, 4, 5, 6, 7, 8}</span>
-<span style="color:#66d9ef">print</span>(A <span style="color:#f92672">|</span> B)</code></pre></div>
+<span style="color:#998;font-style:italic"># use | operator</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3, 4, 5, 6, 7, 8}</span>
+<span style="color:#000;font-weight:bold">print</span>(A <span style="color:#000;font-weight:bold">|</span> B)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{1, 2, 3, 4, 5, 6, 7, 8}
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span><span style="color:#000;font-weight:bold">}</span></code></pre></div>
 <p>Try the following examples on Python shell.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># use union function</span>
- A<span style="color:#f92672">.</span>union(B)
-{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># use union function</span>
+ A<span style="color:#000;font-weight:bold">.</span>union(B)
+{<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}
 
-<span style="color:#75715e"># use union function on B</span>
- B<span style="color:#f92672">.</span>union(A)
-{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}</code></pre></div>
+<span style="color:#998;font-style:italic"># use union function on B</span>
+ B<span style="color:#000;font-weight:bold">.</span>union(A)
+{<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}</code></pre></div>
 <hr />
 
 <h3 ref="set-intersection" >Set Intersection</h3><a class="anchor" id="set-intersection"></a>
@@ -1743,27 +1722,24 @@ B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <s
 <p>Intersection of  A  and  B  is a set of elements that are common in both the sets.</p>
 
 <p>Intersection is performed using  <code>&amp;</code>  operator. Same can be accomplished using the  <code>intersection()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Intersection of sets</span>
-<span style="color:#75715e"># initialize A and B</span>
-A <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
-B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Intersection of sets</span>
+<span style="color:#998;font-style:italic"># initialize A and B</span>
+A <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>}
+B <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}
 
-<span style="color:#75715e"># use &amp; operator</span>
-<span style="color:#75715e"># Output: {4, 5}</span>
-<span style="color:#66d9ef">print</span>(A <span style="color:#f92672">&amp;</span> B)</code></pre></div>
+<span style="color:#998;font-style:italic"># use &amp; operator</span>
+<span style="color:#998;font-style:italic"># Output: {4, 5}</span>
+<span style="color:#000;font-weight:bold">print</span>(A <span style="color:#000;font-weight:bold">&amp;</span> B)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{4, 5}
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">4</span>, <span style="color:#099">5</span><span style="color:#000;font-weight:bold">}</span></code></pre></div>
 <p>Try the following examples on Python shell.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># use intersection function on A</span>
- A<span style="color:#f92672">.</span>intersection(B)
-{<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># use intersection function on A</span>
+ A<span style="color:#000;font-weight:bold">.</span>intersection(B)
+{<span style="color:#099">4</span>, <span style="color:#099">5</span>}
 
-<span style="color:#75715e"># use intersection function on B</span>
- B<span style="color:#f92672">.</span>intersection(A)
-{<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}</code></pre></div>
+<span style="color:#998;font-style:italic"># use intersection function on B</span>
+ B<span style="color:#000;font-weight:bold">.</span>intersection(A)
+{<span style="color:#099">4</span>, <span style="color:#099">5</span>}</code></pre></div>
 <hr />
 
 <h3 ref="set-difference" >Set Difference</h3><a class="anchor" id="set-difference"></a>
@@ -1775,31 +1751,28 @@ B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <s
 <p>Difference of the set  B  from set  A(A  -  B) is a set of elements that are only in  A  but not in  B. Similarly,  B  -  A  is a set of elements in  B  but not in  A.</p>
 
 <p>Difference is performed using  <code>-</code>  operator. Same can be accomplished using the  <code>difference()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Difference of two sets</span>
-<span style="color:#75715e"># initialize A and B</span>
-A <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
-B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Difference of two sets</span>
+<span style="color:#998;font-style:italic"># initialize A and B</span>
+A <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>}
+B <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}
 
-<span style="color:#75715e"># use - operator on A</span>
-<span style="color:#75715e"># Output: {1, 2, 3}</span>
-<span style="color:#66d9ef">print</span>(A <span style="color:#f92672">-</span> B)</code></pre></div>
+<span style="color:#998;font-style:italic"># use - operator on A</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3}</span>
+<span style="color:#000;font-weight:bold">print</span>(A <span style="color:#000;font-weight:bold">-</span> B)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{1, 2, 3}
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span><span style="color:#000;font-weight:bold">}</span></code></pre></div>
 <p>Try the following examples on Python shell.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># use difference function on A</span>
- A<span style="color:#f92672">.</span>difference(B)
-{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># use difference function on A</span>
+ A<span style="color:#000;font-weight:bold">.</span>difference(B)
+{<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>}
 
-<span style="color:#75715e"># use - operator on B</span>
- B <span style="color:#f92672">-</span> A
-{<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>}
+<span style="color:#998;font-style:italic"># use - operator on B</span>
+ B <span style="color:#000;font-weight:bold">-</span> A
+{<span style="color:#099">8</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>}
 
-<span style="color:#75715e"># use difference function on B</span>
- B<span style="color:#f92672">.</span>difference(A)
-{<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>}</code></pre></div>
+<span style="color:#998;font-style:italic"># use difference function on B</span>
+ B<span style="color:#000;font-weight:bold">.</span>difference(A)
+{<span style="color:#099">8</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>}</code></pre></div>
 <hr />
 
 <h3 ref="set-symmetric-difference" >Set Symmetric Difference</h3><a class="anchor" id="set-symmetric-difference"></a>
@@ -1811,27 +1784,24 @@ B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <s
 <p>Symmetric Difference of  A  and  B  is a set of elements in  A  and  B  but not in both (excluding the intersection).</p>
 
 <p>Symmetric difference is performed using  <code>^</code>  operator. Same can be accomplished using the method  <code>symmetric_difference()</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Symmetric difference of two sets</span>
-<span style="color:#75715e"># initialize A and B</span>
-A <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>}
-B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Symmetric difference of two sets</span>
+<span style="color:#998;font-style:italic"># initialize A and B</span>
+A <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>}
+B <span style="color:#000;font-weight:bold">=</span> {<span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}
 
-<span style="color:#75715e"># use ^ operator</span>
-<span style="color:#75715e"># Output: {1, 2, 3, 6, 7, 8}</span>
-<span style="color:#66d9ef">print</span>(A <span style="color:#f92672">^</span> B)</code></pre></div>
+<span style="color:#998;font-style:italic"># use ^ operator</span>
+<span style="color:#998;font-style:italic"># Output: {1, 2, 3, 6, 7, 8}</span>
+<span style="color:#000;font-weight:bold">print</span>(A <span style="color:#000;font-weight:bold">^</span> B)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>{1, 2, 3, 6, 7, 8}
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">{</span><span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span><span style="color:#000;font-weight:bold">}</span></code></pre></div>
 <p>Try the following examples on Python shell.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># use symmetric_difference function on A</span>
- A<span style="color:#f92672">.</span>symmetric_difference(B)
-{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># use symmetric_difference function on A</span>
+ A<span style="color:#000;font-weight:bold">.</span>symmetric_difference(B)
+{<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}
 
-<span style="color:#75715e"># use symmetric_difference function on B</span>
- B<span style="color:#f92672">.</span>symmetric_difference(A)
-{<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>}</code></pre></div>
+<span style="color:#998;font-style:italic"># use symmetric_difference function on B</span>
+ B<span style="color:#000;font-weight:bold">.</span>symmetric_difference(A)
+{<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>, <span style="color:#099">8</span>}</code></pre></div>
 <hr />
 
 <h2 ref="other-python-set-methods" >Other Python Set Methods</h2><a class="anchor" id="other-python-set-methods"></a>
@@ -1941,31 +1911,28 @@ B <span style="color:#f92672">=</span> {<span style="color:#ae81ff">4</span>, <s
 <h3 ref="set-membership-test" >Set Membership Test</h3><a class="anchor" id="set-membership-test"></a>
 
 <p>We can test if an item exists in a set or not, using the  <code>in</code>  keyword.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># in keyword in a set</span>
-<span style="color:#75715e"># initialize my_set</span>
-my_set <span style="color:#f92672">=</span> set(<span style="color:#e6db74">&#34;apple&#34;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># in keyword in a set</span>
+<span style="color:#998;font-style:italic"># initialize my_set</span>
+my_set <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">set</span>(<span style="color:#d14">&#34;apple&#34;</span>)
 
-<span style="color:#75715e"># check if &#39;a&#39; is present</span>
-<span style="color:#75715e"># Output: True</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">in</span> my_set)
+<span style="color:#998;font-style:italic"># check if &#39;a&#39; is present</span>
+<span style="color:#998;font-style:italic"># Output: True</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;a&#39;</span> <span style="color:#000;font-weight:bold">in</span> my_set)
 
-<span style="color:#75715e"># check if &#39;p&#39; is present</span>
-<span style="color:#75715e"># Output: False</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;p&#39;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> my_set)</code></pre></div>
+<span style="color:#998;font-style:italic"># check if &#39;p&#39; is present</span>
+<span style="color:#998;font-style:italic"># Output: False</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;p&#39;</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">in</span> my_set)</code></pre></div>
 <p><strong>Output</strong></p>
-
-<pre><code>True
-False
-</code></pre>
-
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">True
+False</code></pre></div>
 <hr />
 
 <h3 ref="iterating-through-a-set" >Iterating Through a Set</h3><a class="anchor" id="iterating-through-a-set"></a>
 
 <p>We can iterate through each item in a set using a  <code>for</code>  loop.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#66d9ef">for</span> letter <span style="color:#f92672">in</span> set(<span style="color:#e6db74">&#34;apple&#34;</span>):
-<span style="color:#f92672">...</span>     <span style="color:#66d9ef">print</span>(letter)
-<span style="color:#f92672">...</span>    
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">for</span> letter <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">set</span>(<span style="color:#d14">&#34;apple&#34;</span>):
+<span style="color:#000;font-weight:bold">...</span>     <span style="color:#000;font-weight:bold">print</span>(letter)
+<span style="color:#000;font-weight:bold">...</span>    
 a
 p
 e
@@ -2038,20 +2005,20 @@ l</code></pre></div>
 <p>Frozensets can be created using the  <a href="https://www.programiz.com/python-programming/methods/built-in/frozenset">frozenset()</a>  function.</p>
 
 <p>This data type supports methods like  <code>copy()</code>,  <code>difference()</code>,  <code>intersection()</code>,  <code>isdisjoint()</code>,  <code>issubset()</code>,  <code>issuperset()</code>,  <code>symmetric_difference()</code>  and  <code>union()</code>. Being immutable, it does not have methods that add or remove elements.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Frozensets</span>
-<span style="color:#75715e"># initialize A and B</span>
-A <span style="color:#f92672">=</span> frozenset([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>])
-B <span style="color:#f92672">=</span> frozenset([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>])</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Frozensets</span>
+<span style="color:#998;font-style:italic"># initialize A and B</span>
+A <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">frozenset</span>([<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>])
+B <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">frozenset</span>([<span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>])</code></pre></div>
 <p>Try these examples on Python shell.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> A<span style="color:#f92672">.</span>isdisjoint(B)
-False
- A<span style="color:#f92672">.</span>difference(B)
-frozenset({<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>})
- A <span style="color:#f92672">|</span> B
-frozenset({<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>})
- A<span style="color:#f92672">.</span>add(<span style="color:#ae81ff">3</span>)
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">AttributeError</span>: <span style="color:#e6db74">&#39;frozenset&#39;</span> object has no attribute <span style="color:#e6db74">&#39;add&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> A<span style="color:#000;font-weight:bold">.</span>isdisjoint(B)
+<span style="color:#999">False</span>
+ A<span style="color:#000;font-weight:bold">.</span>difference(B)
+<span style="color:#0086b3">frozenset</span>({<span style="color:#099">1</span>, <span style="color:#099">2</span>})
+ A <span style="color:#000;font-weight:bold">|</span> B
+<span style="color:#0086b3">frozenset</span>({<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>})
+ A<span style="color:#000;font-weight:bold">.</span>add(<span style="color:#099">3</span>)
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">AttributeError</span>: <span style="color:#d14">&#39;frozenset&#39;</span> <span style="color:#0086b3">object</span> has no attribute <span style="color:#d14">&#39;add&#39;</span></code></pre></div>
 <blockquote>
 <p>Source : <a href="https://www.programiz.com/python-programming/set">https://www.programiz.com/python-programming/set</a></p>
 </blockquote>

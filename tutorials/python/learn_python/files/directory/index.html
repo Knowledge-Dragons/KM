@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1513,23 +1513,23 @@
 <h2 ref="how-to-create-a-string-in-python" >How to create a string in Python?</h2><a class="anchor" id="how-to-create-a-string-in-python"></a>
 
 <p>Strings can be created by enclosing characters inside a single quote or double-quotes. Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># defining strings in Python</span>
-<span style="color:#75715e"># all of the following are equivalent</span>
-my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hello&#39;</span>
-<span style="color:#66d9ef">print</span>(my_string)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># defining strings in Python</span>
+<span style="color:#998;font-style:italic"># all of the following are equivalent</span>
+my_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Hello&#39;</span>
+<span style="color:#000;font-weight:bold">print</span>(my_string)
 
-my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Hello&#34;</span>
-<span style="color:#66d9ef">print</span>(my_string)
+my_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Hello&#34;</span>
+<span style="color:#000;font-weight:bold">print</span>(my_string)
 
-my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;&#39;Hello&#39;&#39;&#39;</span>
-<span style="color:#66d9ef">print</span>(my_string)
+my_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;&#39;&#39;Hello&#39;&#39;&#39;</span>
+<span style="color:#000;font-weight:bold">print</span>(my_string)
 
-<span style="color:#75715e"># triple quotes string can extend multiple lines</span>
-my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;Hello, welcome to
-</span><span style="color:#e6db74">           the world of Python&#34;&#34;&#34;</span>
-<span style="color:#66d9ef">print</span>(my_string)</code></pre></div>
+<span style="color:#998;font-style:italic"># triple quotes string can extend multiple lines</span>
+my_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;&#34;Hello, welcome to
+</span><span style="color:#d14">           the world of Python&#34;&#34;&#34;</span>
+<span style="color:#000;font-weight:bold">print</span>(my_string)</code></pre></div>
 <p>When you run the program, the output will be:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">Hello
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">Hello
 Hello
 Hello
 Hello, welcome to
@@ -1543,21 +1543,21 @@ Hello, welcome to
 <p>Python allows negative indexing for its sequences.</p>
 
 <p>The index of  <code>-1</code>  refers to the last item,  <code>-2</code>  to the second last item and so on. We can access a range of items in a string by using the slicing operator  <code>:</code>(colon).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e">#Accessing string characters in Python</span>
-str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;programiz&#39;</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;str = &#39;</span>, str)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic">#Accessing string characters in Python</span>
+<span style="color:#0086b3">str</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;programiz&#39;</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;str = &#39;</span>, <span style="color:#0086b3">str</span>)
 
-<span style="color:#75715e">#first character</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;str[0] = &#39;</span>, str[<span style="color:#ae81ff">0</span>])
+<span style="color:#998;font-style:italic">#first character</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;str[0] = &#39;</span>, <span style="color:#0086b3">str</span>[<span style="color:#099">0</span>])
 
-<span style="color:#75715e">#last character</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;str[-1] = &#39;</span>, str[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+<span style="color:#998;font-style:italic">#last character</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;str[-1] = &#39;</span>, <span style="color:#0086b3">str</span>[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>])
 
-<span style="color:#75715e">#slicing 2nd to 5th character</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;str[1:5] = &#39;</span>, str[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">5</span>])
+<span style="color:#998;font-style:italic">#slicing 2nd to 5th character</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;str[1:5] = &#39;</span>, <span style="color:#0086b3">str</span>[<span style="color:#099">1</span>:<span style="color:#099">5</span>])
 
-<span style="color:#75715e">#slicing 6th to 2nd last character</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;str[5:-2] = &#39;</span>, str[<span style="color:#ae81ff">5</span>:<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>])</code></pre></div>
+<span style="color:#998;font-style:italic">#slicing 6th to 2nd last character</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;str[5:-2] = &#39;</span>, <span style="color:#0086b3">str</span>[<span style="color:#099">5</span>:<span style="color:#000;font-weight:bold">-</span><span style="color:#099">2</span>])</code></pre></div>
 <p>When we run the above program, we get the following output:</p>
 
 <pre><code>str =  programiz
@@ -1568,15 +1568,15 @@ str[5:-2] =  am
 </code></pre>
 
 <p>If we try to access an index out of the range or use numbers other than an integer, we will get errors.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># index must be in range</span>
-my_string[<span style="color:#ae81ff">15</span>]  
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">IndexError</span>: string index out of range
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># index must be in range</span>
+my_string[<span style="color:#099">15</span>]  
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">IndexError</span>: string index out of <span style="color:#0086b3">range</span>
 
-<span style="color:#75715e"># index must be an integer</span>
-my_string[<span style="color:#ae81ff">1.5</span>] 
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">TypeError</span>: string indices must be integers</code></pre></div>
+<span style="color:#998;font-style:italic"># index must be an integer</span>
+my_string[<span style="color:#099">1.5</span>] 
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">TypeError</span>: string indices must be integers</code></pre></div>
 <p>Slicing can be best visualized by considering the index to be between the elements as shown below.</p>
 
 <p>If we want to access a range, we need the index that will slice the portion from the string.</p>
@@ -1590,21 +1590,21 @@ my_string[<span style="color:#ae81ff">1.5</span>]
 <h2 ref="how-to-change-or-delete-a-string" >How to change or delete a string?</h2><a class="anchor" id="how-to-change-or-delete-a-string"></a>
 
 <p>Strings are immutable. This means that elements of a string cannot be changed once they have been assigned. We can simply reassign different strings to the same name.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;programiz&#39;</span>
-my_string[<span style="color:#ae81ff">5</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;a&#39;</span>
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">TypeError</span>: <span style="color:#e6db74">&#39;str&#39;</span> object does <span style="color:#f92672">not</span> support item assignment
-my_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Python&#39;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">my_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;programiz&#39;</span>
+my_string[<span style="color:#099">5</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;a&#39;</span>
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">TypeError</span>: <span style="color:#d14">&#39;str&#39;</span> <span style="color:#0086b3">object</span> does <span style="color:#000;font-weight:bold">not</span> support item assignment
+my_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Python&#39;</span>
 my_string
-<span style="color:#e6db74">&#39;Python&#39;</span></code></pre></div>
+<span style="color:#d14">&#39;Python&#39;</span></code></pre></div>
 <p>We cannot delete or remove characters from a string. But deleting the string entirely is possible using the  <code>del</code>  keyword.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">del</span> my_string[<span style="color:#ae81ff">1</span>]
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">TypeError</span>: <span style="color:#e6db74">&#39;str&#39;</span> object doesn<span style="color:#e6db74">&#39;t support item deletion</span>
-<span style="color:#66d9ef">del</span> my_string
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">del</span> my_string[<span style="color:#099">1</span>]
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">TypeError</span>: <span style="color:#d14">&#39;str&#39;</span> <span style="color:#0086b3">object</span> doesn<span style="color:#d14">&#39;t support item deletion</span>
+<span style="color:#000;font-weight:bold">del</span> my_string
 my_string
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">NameError</span>: name <span style="color:#e6db74">&#39;my_string&#39;</span> <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> defined</code></pre></div>
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">NameError</span>: name <span style="color:#d14">&#39;my_string&#39;</span> <span style="color:#000;font-weight:bold">is</span> <span style="color:#000;font-weight:bold">not</span> defined</code></pre></div>
 <hr />
 
 <h2 ref="python-string-operations" >Python String Operations</h2><a class="anchor" id="python-string-operations"></a>
@@ -1620,41 +1620,41 @@ my_string
 <p>The  <strong>+</strong>  operator does this in Python. Simply writing two string literals together also concatenates them.</p>
 
 <p>The  *****  operator can be used to repeat the string for a given number of times.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Python String Operations</span>
-str1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hello&#39;</span>
-str2 <span style="color:#f92672">=</span><span style="color:#e6db74">&#39;World!&#39;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Python String Operations</span>
+str1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;Hello&#39;</span>
+str2 <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;World!&#39;</span>
 
-<span style="color:#75715e"># using +</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;str1 + str2 = &#39;</span>, str1 <span style="color:#f92672">+</span> str2)
+<span style="color:#998;font-style:italic"># using +</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;str1 + str2 = &#39;</span>, str1 <span style="color:#000;font-weight:bold">+</span> str2)
 
-<span style="color:#75715e"># using *</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;str1 * 3 =&#39;</span>, str1 <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>)</code></pre></div>
+<span style="color:#998;font-style:italic"># using *</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;str1 * 3 =&#39;</span>, str1 <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">3</span>)</code></pre></div>
 <p>When we run the above program, we get the following output:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">str1 <span style="color:#f92672">+</span> str2 <span style="color:#f92672">=</span>  HelloWorld<span style="color:#960050;background-color:#1e0010">!</span>
-str1 <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">=</span> HelloHelloHello</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">str1 <span style="color:#000;font-weight:bold">+</span> str2 <span style="color:#000;font-weight:bold">=</span>  HelloWorld<span style="color:#a61717;background-color:#e3d2d2">!</span>
+str1 <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">=</span> HelloHelloHello</code></pre></div>
 <p>Writing two string literals together also concatenates them like  <strong>+</strong>  operator.</p>
 
 <p>If we want to concatenate strings in different lines, we can use parentheses.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># two string literals together</span>
-<span style="color:#e6db74">&#39;Hello &#39;&#39;World!&#39;</span>
-<span style="color:#e6db74">&#39;Hello World!&#39;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># two string literals together</span>
+<span style="color:#d14">&#39;Hello &#39;&#39;World!&#39;</span>
+<span style="color:#d14">&#39;Hello World!&#39;</span>
 
-<span style="color:#75715e"># using parentheses</span>
-s <span style="color:#f92672">=</span> (<span style="color:#e6db74">&#39;Hello &#39;</span>
-<span style="color:#f92672">...</span>      <span style="color:#e6db74">&#39;World&#39;</span>)
+<span style="color:#998;font-style:italic"># using parentheses</span>
+s <span style="color:#000;font-weight:bold">=</span> (<span style="color:#d14">&#39;Hello &#39;</span>
+<span style="color:#000;font-weight:bold">...</span>      <span style="color:#d14">&#39;World&#39;</span>)
 s
-<span style="color:#e6db74">&#39;Hello World&#39;</span></code></pre></div>
+<span style="color:#d14">&#39;Hello World&#39;</span></code></pre></div>
 <hr />
 
 <h3 ref="iterating-through-a-string" >Iterating Through a string</h3><a class="anchor" id="iterating-through-a-string"></a>
 
 <p>We can iterate through a string using a  <a href="https://www.programiz.com/python-programming/for-loop">for loop</a>. Here is an example to count the number of &lsquo;l&rsquo;s in a string.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Iterating through a string</span>
-count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">for</span> letter <span style="color:#f92672">in</span> <span style="color:#e6db74">&#39;Hello World&#39;</span>:
-    <span style="color:#66d9ef">if</span>(letter <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;l&#39;</span>):
-        count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
-<span style="color:#66d9ef">print</span>(count,<span style="color:#e6db74">&#39;letters found&#39;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Iterating through a string</span>
+count <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
+<span style="color:#000;font-weight:bold">for</span> letter <span style="color:#000;font-weight:bold">in</span> <span style="color:#d14">&#39;Hello World&#39;</span>:
+    <span style="color:#000;font-weight:bold">if</span>(letter <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#39;l&#39;</span>):
+        count <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>
+<span style="color:#000;font-weight:bold">print</span>(count,<span style="color:#d14">&#39;letters found&#39;</span>)</code></pre></div>
 <p>When we run the above program, we get the following output:</p>
 
 <pre><code>3 letters found
@@ -1665,10 +1665,10 @@ count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
 <h3 ref="string-membership-test" >String Membership Test</h3><a class="anchor" id="string-membership-test"></a>
 
 <p>We can test if a substring exists within a string or not, using the keyword  <code>in</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">in</span> <span style="color:#e6db74">&#39;program&#39;</span>
-True
-<span style="color:#e6db74">&#39;at&#39;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> <span style="color:#e6db74">&#39;battle&#39;</span>
-False</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#d14">&#39;a&#39;</span> <span style="color:#000;font-weight:bold">in</span> <span style="color:#d14">&#39;program&#39;</span>
+<span style="color:#999">True</span>
+<span style="color:#d14">&#39;at&#39;</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">in</span> <span style="color:#d14">&#39;battle&#39;</span>
+<span style="color:#999">False</span></code></pre></div>
 <hr />
 
 <h3 ref="built-in-functions-to-work-with-python" >Built-in functions to Work with Python</h3><a class="anchor" id="built-in-functions-to-work-with-python"></a>
@@ -1678,14 +1678,14 @@ False</code></pre></div>
 <p>Some of the commonly used ones are  <code>enumerate()</code>  and  <code>len()</code>. The  <code>enumerate()</code>  function returns an enumerate object. It contains the index and value of all the items in the string as pairs. This can be useful for iteration.</p>
 
 <p>Similarly,  <code>len()</code>  returns the length (number of characters) of the string.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">str <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;cold&#39;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#0086b3">str</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;cold&#39;</span>
 
-<span style="color:#75715e"># enumerate()</span>
-list_enumerate <span style="color:#f92672">=</span> list(enumerate(str))
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;list(enumerate(str) = &#39;</span>, list_enumerate)
+<span style="color:#998;font-style:italic"># enumerate()</span>
+list_enumerate <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">list</span>(<span style="color:#0086b3">enumerate</span>(<span style="color:#0086b3">str</span>))
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;list(enumerate(str) = &#39;</span>, list_enumerate)
 
-<span style="color:#75715e">#character count</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;len(str) = &#39;</span>, len(str))</code></pre></div>
+<span style="color:#998;font-style:italic">#character count</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;len(str) = &#39;</span>, <span style="color:#0086b3">len</span>(<span style="color:#0086b3">str</span>))</code></pre></div>
 <p>When we run the above program, we get the following output:</p>
 
 <pre><code>list(enumerate(str) =  [(0, 'c'), (1, 'o'), (2, 'l'), (3, 'd')]
@@ -1699,23 +1699,23 @@ len(str) =  4
 <h3 ref="escape-sequence" >Escape Sequence</h3><a class="anchor" id="escape-sequence"></a>
 
 <p>If we want to print a text like  He said, &ldquo;What&rsquo;s there?&rdquo;, we can neither use single quotes nor double quotes. This will result in a  <code>SyntaxError</code>  as the text itself contains both single and double quotes.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;He said, &#34;</span>What<span style="color:#e6db74">&#39;s there?&#34;&#34;)</span>
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">SyntaxError</span>: invalid syntax
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;He said, &#34;What&#39;</span>s there<span style="color:#960050;background-color:#1e0010">?</span><span style="color:#e6db74">&#34;&#39;)</span>
-<span style="color:#f92672">...</span>
-<span style="color:#a6e22e">SyntaxError</span>: invalid syntax</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;He said, &#34;</span>What<span style="color:#d14">&#39;s there?&#34;&#34;)</span>
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">SyntaxError</span>: invalid syntax
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;He said, &#34;What&#39;</span>s there<span style="color:#a61717;background-color:#e3d2d2">?</span><span style="color:#d14">&#34;&#39;)</span>
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#900;font-weight:bold">SyntaxError</span>: invalid syntax</code></pre></div>
 <p>One way to get around this problem is to use triple quotes. Alternatively, we can use escape sequences.</p>
 
 <p>An escape sequence starts with a backslash and is interpreted differently. If we use a single quote to represent a string, all the single quotes inside the string must be escaped. Similar is the case with double quotes. Here is how it can be done to represent the above text.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># using triple quotes</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;&#39;&#39;He said, &#34;What&#39;s there?&#34;&#39;&#39;&#39;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># using triple quotes</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;&#39;&#39;He said, &#34;What&#39;s there?&#34;&#39;&#39;&#39;</span>)
 
-<span style="color:#75715e"># escaping single quotes</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;He said, &#34;What</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">s there?&#34;&#39;</span>)
+<span style="color:#998;font-style:italic"># escaping single quotes</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;He said, &#34;What</span><span style="color:#d14">\&#39;</span><span style="color:#d14">s there?&#34;&#39;</span>)
 
-<span style="color:#75715e"># escaping double quotes</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;He said, </span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">What&#39;s there?</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">&#34;</span>)</code></pre></div>
+<span style="color:#998;font-style:italic"># escaping double quotes</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;He said, </span><span style="color:#d14">\&#34;</span><span style="color:#d14">What&#39;s there?</span><span style="color:#d14">\&#34;</span><span style="color:#d14">&#34;</span>)</code></pre></div>
 <p>When we run the above program, we get the following output:</p>
 
 <pre><code>He said, &quot;What's there?&quot;
@@ -1802,25 +1802,25 @@ He said, &quot;What's there?&quot;
 </table>
 
 <p>Here are some examples</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;C:</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">Python32</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">Lib&#34;</span>)
-<span style="color:#75715e"># C:\Python32\Lib</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;C:</span><span style="color:#d14">\\</span><span style="color:#d14">Python32</span><span style="color:#d14">\\</span><span style="color:#d14">Lib&#34;</span>)
+<span style="color:#998;font-style:italic"># C:\Python32\Lib</span>
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is printed</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">in two lines&#34;</span>)
-<span style="color:#75715e">#This is printed</span>
-<span style="color:#75715e"># in two lines</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;This is printed</span><span style="color:#d14">\n</span><span style="color:#d14">in two lines&#34;</span>)
+<span style="color:#998;font-style:italic">#This is printed</span>
+<span style="color:#998;font-style:italic"># in two lines</span>
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is </span><span style="color:#ae81ff">\x48\x45\x58</span><span style="color:#e6db74"> representation&#34;</span>)
-<span style="color:#75715e"># This is HEX representation</span></code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;This is </span><span style="color:#d14">\x48\x45\x58</span><span style="color:#d14"> representation&#34;</span>)
+<span style="color:#998;font-style:italic"># This is HEX representation</span></code></pre></div>
 <hr />
 
 <h3 ref="raw-string-to-ignore-escape-sequence" >Raw String to ignore escape sequence</h3><a class="anchor" id="raw-string-to-ignore-escape-sequence"></a>
 
 <p>Sometimes we may wish to ignore the escape sequences inside a string. To do this we can place  <code>r</code>  or  <code>R</code>  in front of the string. This will imply that it is a raw string and any escape sequence inside it will be ignored.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This is </span><span style="color:#ae81ff">\x61</span><span style="color:#e6db74"> </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">good example&#34;</span>)
-This <span style="color:#f92672">is</span> a
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;This is </span><span style="color:#d14">\x61</span><span style="color:#d14"> </span><span style="color:#d14">\n</span><span style="color:#d14">good example&#34;</span>)
+This <span style="color:#000;font-weight:bold">is</span> a
 good example
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#34;This is \x61 \ngood example&#34;</span>)
-This <span style="color:#f92672">is</span> \x61 \ngood example</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">r</span><span style="color:#d14">&#34;This is \x61 \ngood example&#34;</span>)
+This <span style="color:#000;font-weight:bold">is</span> \x61 \ngood example</code></pre></div>
 <hr />
 
 <h3 ref="the-format-method-for-formatting-strings" >The format() Method for Formatting Strings</h3><a class="anchor" id="the-format-method-for-formatting-strings"></a>
@@ -1828,22 +1828,22 @@ This <span style="color:#f92672">is</span> \x61 \ngood example</code></pre></div
 <p>The  <code>format()</code>  method that is available with the string object is very versatile and powerful in formatting strings. Format strings contain curly braces  <code>{}</code>  as placeholders or replacement fields which get replaced.</p>
 
 <p>We can use positional arguments or keyword arguments to specify the order.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Python string format() method</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Python string format() method</span>
 
-<span style="color:#75715e"># default(implicit) order</span>
-default_order <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{}, {} and {}&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;John&#39;</span>,<span style="color:#e6db74">&#39;Bill&#39;</span>,<span style="color:#e6db74">&#39;Sean&#39;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">--- Default Order ---&#39;</span>)
-<span style="color:#66d9ef">print</span>(default_order)
+<span style="color:#998;font-style:italic"># default(implicit) order</span>
+default_order <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;{}, {} and {}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#d14">&#39;John&#39;</span>,<span style="color:#d14">&#39;Bill&#39;</span>,<span style="color:#d14">&#39;Sean&#39;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;</span><span style="color:#d14">\n</span><span style="color:#d14">--- Default Order ---&#39;</span>)
+<span style="color:#000;font-weight:bold">print</span>(default_order)
 
-<span style="color:#75715e"># order using positional argument</span>
-positional_order <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{1}, {0} and {2}&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;John&#39;</span>,<span style="color:#e6db74">&#39;Bill&#39;</span>,<span style="color:#e6db74">&#39;Sean&#39;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">--- Positional Order ---&#39;</span>)
-<span style="color:#66d9ef">print</span>(positional_order)
+<span style="color:#998;font-style:italic"># order using positional argument</span>
+positional_order <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;{1}, {0} and {2}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#d14">&#39;John&#39;</span>,<span style="color:#d14">&#39;Bill&#39;</span>,<span style="color:#d14">&#39;Sean&#39;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;</span><span style="color:#d14">\n</span><span style="color:#d14">--- Positional Order ---&#39;</span>)
+<span style="color:#000;font-weight:bold">print</span>(positional_order)
 
-<span style="color:#75715e"># order using keyword argument</span>
-keyword_order <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{s}, {b} and {j}&#34;</span><span style="color:#f92672">.</span>format(j<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;John&#39;</span>,b<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Bill&#39;</span>,s<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Sean&#39;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">--- Keyword Order ---&#39;</span>)
-<span style="color:#66d9ef">print</span>(keyword_order)</code></pre></div>
+<span style="color:#998;font-style:italic"># order using keyword argument</span>
+keyword_order <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;{s}, {b} and {j}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(j<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;John&#39;</span>,b<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Bill&#39;</span>,s<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Sean&#39;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;</span><span style="color:#d14">\n</span><span style="color:#d14">--- Keyword Order ---&#39;</span>)
+<span style="color:#000;font-weight:bold">print</span>(keyword_order)</code></pre></div>
 <p>When we run the above program, we get the following output:</p>
 
 <pre><code>--- Default Order ---
@@ -1859,48 +1859,48 @@ Sean, Bill and John
 <p>The  <code>format()</code>  method can have optional format specifications. They are separated from the field name using colon. For example, we can left-justify  <code>&lt;</code>, right-justify  <code>&gt;</code>  or center  <code>^</code>  a string in the given space.</p>
 
 <p>We can also format integers as binary, hexadecimal, etc. and floats can be rounded or displayed in the exponent format. There are tons of formatting you can use. Visit here for all the  <a href="https://www.programiz.com/python-programming/methods/string/format">string formatting available with the</a>  <code>[format()](https://www.programiz.com/python-programming/methods/string/format)</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># formatting integers</span>
-<span style="color:#e6db74">&#34;Binary representation of {0} is {0:b}&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#ae81ff">12</span>)
-<span style="color:#e6db74">&#39;Binary representation of 12 is 1100&#39;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># formatting integers</span>
+<span style="color:#d14">&#34;Binary representation of {0} is {0:b}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#099">12</span>)
+<span style="color:#d14">&#39;Binary representation of 12 is 1100&#39;</span>
 
-<span style="color:#75715e"># formatting floats</span>
-<span style="color:#e6db74">&#34;Exponent representation: {0:e}&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#ae81ff">1566.345</span>)
-<span style="color:#e6db74">&#39;Exponent representation: 1.566345e+03&#39;</span>
+<span style="color:#998;font-style:italic"># formatting floats</span>
+<span style="color:#d14">&#34;Exponent representation: {0:e}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#099">1566.345</span>)
+<span style="color:#d14">&#39;Exponent representation: 1.566345e+03&#39;</span>
 
-<span style="color:#75715e"># round off</span>
-<span style="color:#e6db74">&#34;One third is: {0:.3f}&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>)
-<span style="color:#e6db74">&#39;One third is: 0.333&#39;</span>
+<span style="color:#998;font-style:italic"># round off</span>
+<span style="color:#d14">&#34;One third is: {0:.3f}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#099">1</span><span style="color:#000;font-weight:bold">/</span><span style="color:#099">3</span>)
+<span style="color:#d14">&#39;One third is: 0.333&#39;</span>
 
-<span style="color:#75715e"># string alignment</span>
-<span style="color:#e6db74">&#34;|{:&lt;10}|{:^10}|{:&gt;10}|&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;butter&#39;</span>,<span style="color:#e6db74">&#39;bread&#39;</span>,<span style="color:#e6db74">&#39;ham&#39;</span>)
-<span style="color:#e6db74">&#39;|butter    |  bread   |       ham|&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic"># string alignment</span>
+<span style="color:#d14">&#34;|{:&lt;10}|{:^10}|{:&gt;10}|&#34;</span><span style="color:#000;font-weight:bold">.</span>format(<span style="color:#d14">&#39;butter&#39;</span>,<span style="color:#d14">&#39;bread&#39;</span>,<span style="color:#d14">&#39;ham&#39;</span>)
+<span style="color:#d14">&#39;|butter    |  bread   |       ham|&#39;</span></code></pre></div>
 <hr />
 
 <h3 ref="old-style-formatting" >Old style formatting</h3><a class="anchor" id="old-style-formatting"></a>
 
 <p>We can even format strings like the old  <code>sprintf()</code>  style used in C programming language. We use the  <code>%</code>  operator to accomplish this.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">12.3456789</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;The value of x is </span><span style="color:#e6db74">%3.2f</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>x)
-The value of x <span style="color:#f92672">is</span> <span style="color:#ae81ff">12.35</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;The value of x is </span><span style="color:#e6db74">%3.4f</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>x)
-The value of x <span style="color:#f92672">is</span> <span style="color:#ae81ff">12.3457</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">12.3456789</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;The value of x is </span><span style="color:#d14">%3.2f</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span>x)
+The value of x <span style="color:#000;font-weight:bold">is</span> <span style="color:#099">12.35</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;The value of x is </span><span style="color:#d14">%3.4f</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span>x)
+The value of x <span style="color:#000;font-weight:bold">is</span> <span style="color:#099">12.3457</span></code></pre></div>
 <hr />
 
 <h2 ref="common-python-string-methods" >Common Python String Methods</h2><a class="anchor" id="common-python-string-methods"></a>
 
 <p>There are numerous methods available with the string object. The  <code>format()</code>  method that we mentioned above is one of them. Some of the commonly used methods are  <code>lower()</code>,  <code>upper()</code>,  <code>join()</code>,  <code>split()</code>,  <code>find()</code>,  <code>replace()</code>  etc. Here is a complete list of all the  <a href="https://www.programiz.com/python-programming/methods/string">built-in methods to work with strings in Python</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#e6db74">&#34;PrOgRaMiZ&#34;</span><span style="color:#f92672">.</span>lower()
-<span style="color:#e6db74">&#39;programiz&#39;</span>
-<span style="color:#e6db74">&#34;PrOgRaMiZ&#34;</span><span style="color:#f92672">.</span>upper()
-<span style="color:#e6db74">&#39;PROGRAMIZ&#39;</span>
-<span style="color:#e6db74">&#34;This will split all words into a list&#34;</span><span style="color:#f92672">.</span>split()
-[<span style="color:#e6db74">&#39;This&#39;</span>, <span style="color:#e6db74">&#39;will&#39;</span>, <span style="color:#e6db74">&#39;split&#39;</span>, <span style="color:#e6db74">&#39;all&#39;</span>, <span style="color:#e6db74">&#39;words&#39;</span>, <span style="color:#e6db74">&#39;into&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;list&#39;</span>]
-<span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">.</span>join([<span style="color:#e6db74">&#39;This&#39;</span>, <span style="color:#e6db74">&#39;will&#39;</span>, <span style="color:#e6db74">&#39;join&#39;</span>, <span style="color:#e6db74">&#39;all&#39;</span>, <span style="color:#e6db74">&#39;words&#39;</span>, <span style="color:#e6db74">&#39;into&#39;</span>, <span style="color:#e6db74">&#39;a&#39;</span>, <span style="color:#e6db74">&#39;string&#39;</span>])
-<span style="color:#e6db74">&#39;This will join all words into a string&#39;</span>
-<span style="color:#e6db74">&#39;Happy New Year&#39;</span><span style="color:#f92672">.</span>find(<span style="color:#e6db74">&#39;ew&#39;</span>)
-<span style="color:#ae81ff">7</span>
-<span style="color:#e6db74">&#39;Happy New Year&#39;</span><span style="color:#f92672">.</span>replace(<span style="color:#e6db74">&#39;Happy&#39;</span>,<span style="color:#e6db74">&#39;Brilliant&#39;</span>)
-<span style="color:#e6db74">&#39;Brilliant New Year&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#d14">&#34;PrOgRaMiZ&#34;</span><span style="color:#000;font-weight:bold">.</span>lower()
+<span style="color:#d14">&#39;programiz&#39;</span>
+<span style="color:#d14">&#34;PrOgRaMiZ&#34;</span><span style="color:#000;font-weight:bold">.</span>upper()
+<span style="color:#d14">&#39;PROGRAMIZ&#39;</span>
+<span style="color:#d14">&#34;This will split all words into a list&#34;</span><span style="color:#000;font-weight:bold">.</span>split()
+[<span style="color:#d14">&#39;This&#39;</span>, <span style="color:#d14">&#39;will&#39;</span>, <span style="color:#d14">&#39;split&#39;</span>, <span style="color:#d14">&#39;all&#39;</span>, <span style="color:#d14">&#39;words&#39;</span>, <span style="color:#d14">&#39;into&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;list&#39;</span>]
+<span style="color:#d14">&#39; &#39;</span><span style="color:#000;font-weight:bold">.</span>join([<span style="color:#d14">&#39;This&#39;</span>, <span style="color:#d14">&#39;will&#39;</span>, <span style="color:#d14">&#39;join&#39;</span>, <span style="color:#d14">&#39;all&#39;</span>, <span style="color:#d14">&#39;words&#39;</span>, <span style="color:#d14">&#39;into&#39;</span>, <span style="color:#d14">&#39;a&#39;</span>, <span style="color:#d14">&#39;string&#39;</span>])
+<span style="color:#d14">&#39;This will join all words into a string&#39;</span>
+<span style="color:#d14">&#39;Happy New Year&#39;</span><span style="color:#000;font-weight:bold">.</span>find(<span style="color:#d14">&#39;ew&#39;</span>)
+<span style="color:#099">7</span>
+<span style="color:#d14">&#39;Happy New Year&#39;</span><span style="color:#000;font-weight:bold">.</span>replace(<span style="color:#d14">&#39;Happy&#39;</span>,<span style="color:#d14">&#39;Brilliant&#39;</span>)
+<span style="color:#d14">&#39;Brilliant New Year&#39;</span></code></pre></div>
 <blockquote>
 <p>Source : <a href="https://www.programiz.com/python-programming/string">https://www.programiz.com/python-programming/string</a></p>
 </blockquote>

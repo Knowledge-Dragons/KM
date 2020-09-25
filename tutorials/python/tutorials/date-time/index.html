@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:15 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1542,7 +1542,7 @@
 	    
 
 <p>Installing  <code>pendulum</code>  is quite simple:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#960050;background-color:#1e0010">$</span> pip install pendulum</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#a61717;background-color:#e3d2d2">$</span> pip install pendulum</code></pre></div>
 <p>or, if you are using  <a href="https://poetry.eustace.io/">poetry</a>:</p>
 
 <pre><code>$ poetry add pendulum
@@ -1555,14 +1555,14 @@
 <p>It provides classes that are drop-in replacements for the native ones (they inherit from them).</p>
 
 <p>Special care has been taken to ensure timezones are handled correctly, and are based on the underlying  <code>tzinfo</code>  implementation. For example all comparisons are done in  <code>UTC</code>  or in the timezone of the datetime being used.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- dt_toronto <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">2012</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, tz<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;America/Toronto&#39;</span>)
- dt_vancouver <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">2012</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>, tz<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;America/Vancouver&#39;</span>)
+ dt_toronto <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2012</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, tz<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;America/Toronto&#39;</span>)
+ dt_vancouver <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2012</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>, tz<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;America/Vancouver&#39;</span>)
 
- <span style="color:#66d9ef">print</span>(dt_vancouver<span style="color:#f92672">.</span>diff(dt_toronto)<span style="color:#f92672">.</span>in_hours())
+ <span style="color:#000;font-weight:bold">print</span>(dt_vancouver<span style="color:#000;font-weight:bold">.</span>diff(dt_toronto)<span style="color:#000;font-weight:bold">.</span>in_hours())
 
-<span style="color:#75715e">#3</span></code></pre></div>
+<span style="color:#998;font-style:italic">#3</span></code></pre></div>
 <p>The default timezone, except when using the  <code>now()</code>, method will always be  <code>UTC</code>.</p>
 
 <h1 ref="instantiation-https-pendulum-eustace-io-docs-instantiation-permanent-link" >Instantiation[](<a href="https://pendulum.eustace.io/docs/#instantiation">https://pendulum.eustace.io/docs/#instantiation</a> &ldquo;Permanent link&rdquo;)</h1><a class="anchor" id="instantiation-https-pendulum-eustace-io-docs-instantiation-permanent-link"></a>
@@ -1570,20 +1570,20 @@
 <p>There are several different methods available to create a new  <code>DateTime</code>  instance.</p>
 
 <p>First there is the main  <code>datetime()</code>  helper.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">2015</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>)
- isinstance(dt, datetime)
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2015</span>, <span style="color:#099">2</span>, <span style="color:#099">5</span>)
+ <span style="color:#0086b3">isinstance</span>(dt, datetime)
 
-<span style="color:#75715e">#True</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt<span style="color:#f92672">.</span>timezone<span style="color:#f92672">.</span>name
+<span style="color:#998;font-style:italic">#True</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt<span style="color:#000;font-weight:bold">.</span>timezone<span style="color:#000;font-weight:bold">.</span>name
 
-<span style="color:#75715e">#&#39;UTC&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;UTC&#39;</span></code></pre></div>
 <p><code>datetime()</code>  sets the time to  <code>00:00:00</code>  if it&rsquo;s not specified, and the timezone (the  <code>tz</code>  keyword argument) to  <code>UTC</code>. It otherwise can be a  <code>Timezone</code>  instance or simply a string timezone value.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- pendulum<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">2015</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, tz<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Europe/Paris&#39;</span>)
- tz <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>timezone(<span style="color:#e6db74">&#39;Europe/Paris&#39;</span>)
- pendulum<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">2015</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, tz<span style="color:#f92672">=</span>tz)</code></pre></div>
+ pendulum<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2015</span>, <span style="color:#099">2</span>, <span style="color:#099">5</span>, tz<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Europe/Paris&#39;</span>)
+ tz <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>timezone(<span style="color:#d14">&#39;Europe/Paris&#39;</span>)
+ pendulum<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2015</span>, <span style="color:#099">2</span>, <span style="color:#099">5</span>, tz<span style="color:#000;font-weight:bold">=</span>tz)</code></pre></div>
 <p>Supported strings for timezones are the one provided by the  <a href="https://www.iana.org/time-zones%3E">IANA time zone database</a>.</p>
 
 <p>The special  <code>local</code>  string is also supported and will return your current timezone.</p>
@@ -1591,37 +1591,37 @@
 <p>The  <code>tz</code>  argument is keyword-only, unlike in version  <code>1.x</code></p>
 
 <p>The  <code>local()</code>  helper is similar to  <code>datetime()</code>  but automatically sets the timezone to the local timezone.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>local(<span style="color:#ae81ff">2015</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>)
- <span style="color:#66d9ef">print</span>(dt<span style="color:#f92672">.</span>timezone<span style="color:#f92672">.</span>name)
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>local(<span style="color:#099">2015</span>, <span style="color:#099">2</span>, <span style="color:#099">5</span>)
+ <span style="color:#000;font-weight:bold">print</span>(dt<span style="color:#000;font-weight:bold">.</span>timezone<span style="color:#000;font-weight:bold">.</span>name)
 
-<span style="color:#75715e">#&#39;America/Toronto&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;America/Toronto&#39;</span></code></pre></div>
 <p><code>local()</code>  is just an alias for  <code>datetime(..., tz='local')</code>.</p>
 
 <p>There is also the  <code>now()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- now <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>now()
+ now <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>now()
 
- now_in_london_tz <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>now(<span style="color:#e6db74">&#39;Europe/London&#39;</span>)
- now_in_london_tz<span style="color:#f92672">.</span>timezone_name
+ now_in_london_tz <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>now(<span style="color:#d14">&#39;Europe/London&#39;</span>)
+ now_in_london_tz<span style="color:#000;font-weight:bold">.</span>timezone_name
 
-<span style="color:#75715e">#&#39;Europe/London&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;Europe/London&#39;</span></code></pre></div>
 <p>To accompany  <code>now()</code>, a few other static instantiation helpers exist to create known instances. The only thing to really notice here is that  <code>today()</code>,  <code>tomorrow()</code>  and  <code>yesterday()</code>, besides behaving as expected, all accept a timezone parameter and each has their time value set to  <code>00:00:00</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> now <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>now()
- <span style="color:#66d9ef">print</span>(now)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> now <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>now()
+ <span style="color:#000;font-weight:bold">print</span>(now)
 
-<span style="color:#75715e">#2016-06-28T16:51:45.978473-05:00</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> today <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>today()
- <span style="color:#66d9ef">print</span>(today)
+<span style="color:#998;font-style:italic">#2016-06-28T16:51:45.978473-05:00</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> today <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>today()
+ <span style="color:#000;font-weight:bold">print</span>(today)
 
-<span style="color:#75715e">#&#39;2016-06-28T00:00:00-05:00&#39;</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> tomorrow <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>tomorrow(<span style="color:#e6db74">&#39;Europe/London&#39;</span>)
- <span style="color:#66d9ef">print</span>(tomorrow)
+<span style="color:#998;font-style:italic">#&#39;2016-06-28T00:00:00-05:00&#39;</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> tomorrow <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>tomorrow(<span style="color:#d14">&#39;Europe/London&#39;</span>)
+ <span style="color:#000;font-weight:bold">print</span>(tomorrow)
  
-<span style="color:#75715e">#&#39;2016-06-29T00:00:00+01:00&#39;</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> yesterday <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>yesterday()
- <span style="color:#66d9ef">print</span>(yesterday)
+<span style="color:#998;font-style:italic">#&#39;2016-06-29T00:00:00+01:00&#39;</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> yesterday <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>yesterday()
+ <span style="color:#000;font-weight:bold">print</span>(yesterday)
  
-<span style="color:#75715e">#&#39;2016-06-27T00:00:00-05:00&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;2016-06-27T00:00:00-05:00&#39;</span></code></pre></div>
 <p>Pendulum enforces timezone aware datetimes, and using them is the preferred and recommended way of using the library, however is you really need a  <strong>naive</strong>  <code>DateTime</code>  object, the  <code>naive()</code>  helper is there for you.</p>
 
 <pre><code> import pendulum
@@ -1633,59 +1633,59 @@
 </code></pre>
 
 <p>The next helper,  <code>from_format()</code>, is similar to the native  <code>datetime.strptime()</code>  function but uses custom tokens to create a  <code>DateTime</code>  instance.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>from_format(<span style="color:#e6db74">&#39;1975-05-21 22&#39;</span>, <span style="color:#e6db74">&#39;YYYY-MM-DD HH&#39;</span>)
- <span style="color:#66d9ef">print</span>(dt)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>from_format(<span style="color:#d14">&#39;1975-05-21 22&#39;</span>, <span style="color:#d14">&#39;YYYY-MM-DD HH&#39;</span>)
+ <span style="color:#000;font-weight:bold">print</span>(dt)
  
-<span style="color:#75715e">#&#39;1975-05-21T22:00:00+00:00&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;1975-05-21T22:00:00+00:00&#39;</span></code></pre></div>
 <p>To see all the available tokens, you can check the  <a href="https://pendulum.eustace.io/docs/#formatter">Formatter</a>  section.</p>
 
 <p>It also accepts a  <code>tz</code>  keyword argument to specify the timezone:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>from_format(<span style="color:#e6db74">&#39;1975-05-21 22&#39;</span>, <span style="color:#e6db74">&#39;YYYY-MM-DD HH&#39;</span>, tz<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Europe/London&#39;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>from_format(<span style="color:#d14">&#39;1975-05-21 22&#39;</span>, <span style="color:#d14">&#39;YYYY-MM-DD HH&#39;</span>, tz<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Europe/London&#39;</span>)
  
-<span style="color:#75715e">#&#39;1975-05-21T22:00:00+01:00&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;1975-05-21T22:00:00+01:00&#39;</span></code></pre></div>
 <p>The final helper is for working with unix timestamps.  <code>from_timestamp()</code>  will create a  <code>DateTime</code>  instance equal to the given timestamp and will set the timezone as well or default it to  <code>UTC</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>from_timestamp(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)
- <span style="color:#66d9ef">print</span>(dt)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>from_timestamp(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>)
+ <span style="color:#000;font-weight:bold">print</span>(dt)
  
-<span style="color:#75715e">#&#39;1969-12-31T23:59:59+00:00&#39;</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt  <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>from_timestamp(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, tz<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Europe/London&#39;</span>)
- <span style="color:#66d9ef">print</span>(dt)
+<span style="color:#998;font-style:italic">#&#39;1969-12-31T23:59:59+00:00&#39;</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt  <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>from_timestamp(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>, tz<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Europe/London&#39;</span>)
+ <span style="color:#000;font-weight:bold">print</span>(dt)
  
-<span style="color:#75715e">#&#39;1970-01-01T00:59:59+01:00&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;1970-01-01T00:59:59+01:00&#39;</span></code></pre></div>
 <p>Finally, if you find yourself inheriting a  <code>DateTime</code>  instance, you can create a  <code>DateTime</code>  instance via the  <code>instance()</code>  function.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#f92672">=</span> datetime(<span style="color:#ae81ff">2008</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
- p <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>instance(dt)
- <span style="color:#66d9ef">print</span>(p)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#000;font-weight:bold">=</span> datetime(<span style="color:#099">2008</span>, <span style="color:#099">1</span>, <span style="color:#099">1</span>)
+ p <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>instance(dt)
+ <span style="color:#000;font-weight:bold">print</span>(p)
  
-<span style="color:#75715e">#&#39;2008-01-01T00:00:00+00:00&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;2008-01-01T00:00:00+00:00&#39;</span></code></pre></div>
 <h1 ref="parsing-https-pendulum-eustace-io-docs-parsing-permanent-link" >Parsing[](<a href="https://pendulum.eustace.io/docs/#parsing">https://pendulum.eustace.io/docs/#parsing</a> &ldquo;Permanent link&rdquo;)</h1><a class="anchor" id="parsing-https-pendulum-eustace-io-docs-parsing-permanent-link"></a>
 
 <p>The library natively supports the RFC 3339 format, most ISO 8601 formats and some other common formats.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>parse(<span style="color:#e6db74">&#39;1975-05-21T22:00:00&#39;</span>)
- <span style="color:#66d9ef">print</span>(dt)
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>parse(<span style="color:#d14">&#39;1975-05-21T22:00:00&#39;</span>)
+ <span style="color:#000;font-weight:bold">print</span>(dt)
  
-<span style="color:#75715e">#&#39;1975-05-21T22:00:00+00:00</span>
+<span style="color:#998;font-style:italic">#&#39;1975-05-21T22:00:00+00:00</span>
 
-<span style="color:#75715e"># You can pass a tz keyword to specify the timezone</span>
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>parse(<span style="color:#e6db74">&#39;1975-05-21T22:00:00&#39;</span>, tz<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Europe/Paris&#39;</span>)
- <span style="color:#66d9ef">print</span>(dt)
-<span style="color:#75715e">#&#39;1975-05-21T22:00:00+01:00&#39;</span>
+<span style="color:#998;font-style:italic"># You can pass a tz keyword to specify the timezone</span>
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>parse(<span style="color:#d14">&#39;1975-05-21T22:00:00&#39;</span>, tz<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;Europe/Paris&#39;</span>)
+ <span style="color:#000;font-weight:bold">print</span>(dt)
+<span style="color:#998;font-style:italic">#&#39;1975-05-21T22:00:00+01:00&#39;</span>
 
-<span style="color:#75715e"># Not ISO 8601 compliant but common</span>
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>parse(<span style="color:#e6db74">&#39;1975-05-21 22:00:00&#39;</span>)</code></pre></div>
+<span style="color:#998;font-style:italic"># Not ISO 8601 compliant but common</span>
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>parse(<span style="color:#d14">&#39;1975-05-21 22:00:00&#39;</span>)</code></pre></div>
 <p>If you pass a non-standard or more complicated string, it will raise an exception so it is advised to use the  <code>from_format()</code>  helper instead.</p>
 
 <p>However, if you want the library to fallback on the  <a href="https://dateutil.readthedocs.io/">dateutil</a>  parser, you have to pass  <code>strict=False</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>parse(<span style="color:#e6db74">&#39;31-01-01&#39;</span>)
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>parse(<span style="color:#d14">&#39;31-01-01&#39;</span>)
 Traceback (most recent call last):
-<span style="color:#f92672">...</span>
-<span style="color:#75715e">#ParserError: Unable to parse string [31-01-01]</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>parse(<span style="color:#e6db74">&#39;31-01-01&#39;</span>, strict<span style="color:#f92672">=</span>False)
- <span style="color:#66d9ef">print</span>(dt)
+<span style="color:#000;font-weight:bold">...</span>
+<span style="color:#998;font-style:italic">#ParserError: Unable to parse string [31-01-01]</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>parse(<span style="color:#d14">&#39;31-01-01&#39;</span>, strict<span style="color:#000;font-weight:bold">=</span><span style="color:#999">False</span>)
+ <span style="color:#000;font-weight:bold">print</span>(dt)
  
-<span style="color:#75715e">#&#39;2031-01-01T00:00:00+00:00&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;2031-01-01T00:00:00+00:00&#39;</span></code></pre></div>
 <h2 ref="rfc-3339-https-pendulum-eustace-io-docs-rfc-3339-permanent-link" >RFC 3339[](<a href="https://pendulum.eustace.io/docs/#rfc-3339">https://pendulum.eustace.io/docs/#rfc-3339</a> &ldquo;Permanent link&rdquo;)</h2><a class="anchor" id="rfc-3339-https-pendulum-eustace-io-docs-rfc-3339-permanent-link"></a>
 
 <p>STRING</p>
@@ -1829,36 +1829,36 @@ Time(12, 04, 23)</p>
 <h1 ref="localization-https-pendulum-eustace-io-docs-localization-permanent-link" >Localization[](<a href="https://pendulum.eustace.io/docs/#localization">https://pendulum.eustace.io/docs/#localization</a> &ldquo;Permanent link&rdquo;)</h1><a class="anchor" id="localization-https-pendulum-eustace-io-docs-localization-permanent-link"></a>
 
 <p>Localization occurs when using the  <code>format()</code>  method which accepts a  <code>locale</code>  keyword.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">1975</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">21</span>)
- dt<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;dddd DD MMMM YYYY&#39;</span>, locale<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;de&#39;</span>)
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">1975</span>, <span style="color:#099">5</span>, <span style="color:#099">21</span>)
+ dt<span style="color:#000;font-weight:bold">.</span>format(<span style="color:#d14">&#39;dddd DD MMMM YYYY&#39;</span>, locale<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;de&#39;</span>)
 
-<span style="color:#75715e">#&#39;Mittwoch 21 Mai 1975&#39;</span>
+<span style="color:#998;font-style:italic">#&#39;Mittwoch 21 Mai 1975&#39;</span>
 
- dt<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;dddd DD MMMM YYYY&#39;</span>)
+ dt<span style="color:#000;font-weight:bold">.</span>format(<span style="color:#d14">&#39;dddd DD MMMM YYYY&#39;</span>)
 
-<span style="color:#75715e">#&#39;Wednesday 21 May 1975&#39;</span></code></pre></div>
+<span style="color:#998;font-style:italic">#&#39;Wednesday 21 May 1975&#39;</span></code></pre></div>
 <p><code>diff_for_humans()</code>  is also localized, you can set the locale by using  <code>pendulum.set_locale()</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- pendulum<span style="color:#f92672">.</span>set_locale(<span style="color:#e6db74">&#39;de&#39;</span>)
- pendulum<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>add(years<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">.</span>diff_for_humans()
-<span style="color:#75715e">#&#39;in 1 Jahr&#39;</span>
- pendulum<span style="color:#f92672">.</span>set_locale(<span style="color:#e6db74">&#39;en&#39;</span>)</code></pre></div>
+ pendulum<span style="color:#000;font-weight:bold">.</span>set_locale(<span style="color:#d14">&#39;de&#39;</span>)
+ pendulum<span style="color:#000;font-weight:bold">.</span>now()<span style="color:#000;font-weight:bold">.</span>add(years<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>)<span style="color:#000;font-weight:bold">.</span>diff_for_humans()
+<span style="color:#998;font-style:italic">#&#39;in 1 Jahr&#39;</span>
+ pendulum<span style="color:#000;font-weight:bold">.</span>set_locale(<span style="color:#d14">&#39;en&#39;</span>)</code></pre></div>
 <p>However, you might not want to set the locale globally. The  <code>diff_for_humans()</code>  method accept a  <code>locale</code>  keyword argument to use a locale for a specific call.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> pendulum<span style="color:#f92672">.</span>set_locale(<span style="color:#e6db74">&#39;de&#39;</span>)
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>now()<span style="color:#f92672">.</span>add(years<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
- dt<span style="color:#f92672">.</span>diff_for_humans(locale<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;fr&#39;</span>)
-<span style="color:#75715e">#&#39;dans 1 an&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> pendulum<span style="color:#000;font-weight:bold">.</span>set_locale(<span style="color:#d14">&#39;de&#39;</span>)
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>now()<span style="color:#000;font-weight:bold">.</span>add(years<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>)
+ dt<span style="color:#000;font-weight:bold">.</span>diff_for_humans(locale<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;fr&#39;</span>)
+<span style="color:#998;font-style:italic">#&#39;dans 1 an&#39;</span></code></pre></div>
 <h1 ref="attributes-and-properties-https-pendulum-eustace-io-docs-attributes-and-properties-permanent-link" >Attributes and Properties[](<a href="https://pendulum.eustace.io/docs/#attributes-and-properties">https://pendulum.eustace.io/docs/#attributes-and-properties</a> &ldquo;Permanent link&rdquo;)</h1><a class="anchor" id="attributes-and-properties-https-pendulum-eustace-io-docs-attributes-and-properties-permanent-link"></a>
 
 <p>Pendulum gives access to more attributes and properties than the default  <code>datetime</code>  class.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- dt <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>parse(<span style="color:#e6db74">&#39;2012-09-05T23:26:11.123789&#39;</span>)
+ dt <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>parse(<span style="color:#d14">&#39;2012-09-05T23:26:11.123789&#39;</span>)
 
-<span style="color:#75715e"># These properties specifically return integers</span></code></pre></div>
+<span style="color:#998;font-style:italic"># These properties specifically return integers</span></code></pre></div>
 <p>py
  dt.year
 2012
@@ -3263,57 +3263,57 @@ The testing methods allow you to set a  `DateTime`  instance (real or mock) to b
 &lsquo;2016-07-10T22:10:33.954851-05:00&rsquo;</p>
 
 <p>Related methods will also returned values mocked according to the <strong>now</strong> instance.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> <span style="color:#66d9ef">print</span>(pendulum<span style="color:#f92672">.</span>today())
-<span style="color:#e6db74">&#39;2001-05-21T00:00:00+00:00&#39;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> <span style="color:#000;font-weight:bold">print</span>(pendulum<span style="color:#000;font-weight:bold">.</span>today())
+<span style="color:#d14">&#39;2001-05-21T00:00:00+00:00&#39;</span>
 
- <span style="color:#66d9ef">print</span>(pendulum<span style="color:#f92672">.</span>tomorrow())
-<span style="color:#e6db74">&#39;2001-05-22T00:00:00+00:00&#39;</span>
+ <span style="color:#000;font-weight:bold">print</span>(pendulum<span style="color:#000;font-weight:bold">.</span>tomorrow())
+<span style="color:#d14">&#39;2001-05-22T00:00:00+00:00&#39;</span>
 
- <span style="color:#66d9ef">print</span>(pendulum<span style="color:#f92672">.</span>yesterday())
-<span style="color:#e6db74">&#39;2001-05-20T00:00:00+00:00&#39;</span></code></pre></div>
+ <span style="color:#000;font-weight:bold">print</span>(pendulum<span style="color:#000;font-weight:bold">.</span>yesterday())
+<span style="color:#d14">&#39;2001-05-20T00:00:00+00:00&#39;</span></code></pre></div>
 <p>If you don&rsquo;t want to manually clear the mock (or you are afraid of forgetting), you can use the provided  <code>test()</code>  contextmanager.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#f92672">import</span> pendulum
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
 
- known <span style="color:#f92672">=</span> pendulum<span style="color:#f92672">.</span>datetime(<span style="color:#ae81ff">2001</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">21</span>, <span style="color:#ae81ff">12</span>)
+ known <span style="color:#000;font-weight:bold">=</span> pendulum<span style="color:#000;font-weight:bold">.</span>datetime(<span style="color:#099">2001</span>, <span style="color:#099">5</span>, <span style="color:#099">21</span>, <span style="color:#099">12</span>)
 
- <span style="color:#66d9ef">with</span> pendulum<span style="color:#f92672">.</span>test(known):
-     <span style="color:#66d9ef">print</span>(pendulum<span style="color:#f92672">.</span>now())
-<span style="color:#e6db74">&#39;2001-05-21T12:00:00+00:00&#39;</span>
+ <span style="color:#000;font-weight:bold">with</span> pendulum<span style="color:#000;font-weight:bold">.</span>test(known):
+     <span style="color:#000;font-weight:bold">print</span>(pendulum<span style="color:#000;font-weight:bold">.</span>now())
+<span style="color:#d14">&#39;2001-05-21T12:00:00+00:00&#39;</span>
 
- <span style="color:#66d9ef">print</span>(pendulum<span style="color:#f92672">.</span>now())
-<span style="color:#e6db74">&#39;2016-07-10T22:10:33.954851-05:00&#39;</span></code></pre></div>
+ <span style="color:#000;font-weight:bold">print</span>(pendulum<span style="color:#000;font-weight:bold">.</span>now())
+<span style="color:#d14">&#39;2016-07-10T22:10:33.954851-05:00&#39;</span></code></pre></div>
 <h1 ref="limitations-https-pendulum-eustace-io-docs-limitations-permanent-link" >Limitations[](<a href="https://pendulum.eustace.io/docs/#limitations">https://pendulum.eustace.io/docs/#limitations</a> &ldquo;Permanent link&rdquo;)</h1><a class="anchor" id="limitations-https-pendulum-eustace-io-docs-limitations-permanent-link"></a>
 
 <p>Even though the  <code>DateTime</code>  class is a subclass of  <code>datetime</code>, there are some rare cases where it can&rsquo;t replace the native class directly. Here is a list (non-exhaustive) of the reported cases with a possible solution, if any:</p>
 
 <ul>
 <li><p><code>sqlite3</code>  will use the the  <code>type()</code>  function to determine the type of the object by default. To work around it you can register a new adapter:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> pendulum
-<span style="color:#f92672">from</span> sqlite3 <span style="color:#f92672">import</span> register_adapter
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">sqlite3</span> <span style="color:#000;font-weight:bold">import</span> register_adapter
     
-register_adapter(pendulum<span style="color:#f92672">.</span>DateTime, <span style="color:#66d9ef">lambda</span> val: val<span style="color:#f92672">.</span>isoformat(<span style="color:#e6db74">&#39; &#39;</span>))</code></pre></div></li>
+register_adapter(pendulum<span style="color:#000;font-weight:bold">.</span>DateTime, <span style="color:#000;font-weight:bold">lambda</span> val: val<span style="color:#000;font-weight:bold">.</span>isoformat(<span style="color:#d14">&#39; &#39;</span>))</code></pre></div></li>
 
 <li><p><code>mysqlclient</code>  (former  <code>MySQLdb</code>) and  <code>PyMySQL</code>  will use the the  <code>type()</code>  function to determine the type of the object by default. To work around it you can register a new adapter:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> pendulum
-<span style="color:#f92672">import</span> MySQLdb.converters
-<span style="color:#f92672">import</span> pymysql.converters
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">MySQLdb.converters</span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pymysql.converters</span>
     
-MySQLdb<span style="color:#f92672">.</span>converters<span style="color:#f92672">.</span>conversions[pendulum<span style="color:#f92672">.</span>DateTime] <span style="color:#f92672">=</span> MySQLdb<span style="color:#f92672">.</span>converters<span style="color:#f92672">.</span>DateTime2literal
-pymysql<span style="color:#f92672">.</span>converters<span style="color:#f92672">.</span>conversions[pendulum<span style="color:#f92672">.</span>DateTime] <span style="color:#f92672">=</span> pymysql<span style="color:#f92672">.</span>converters<span style="color:#f92672">.</span>escape_datetime</code></pre></div></li>
+MySQLdb<span style="color:#000;font-weight:bold">.</span>converters<span style="color:#000;font-weight:bold">.</span>conversions[pendulum<span style="color:#000;font-weight:bold">.</span>DateTime] <span style="color:#000;font-weight:bold">=</span> MySQLdb<span style="color:#000;font-weight:bold">.</span>converters<span style="color:#000;font-weight:bold">.</span>DateTime2literal
+pymysql<span style="color:#000;font-weight:bold">.</span>converters<span style="color:#000;font-weight:bold">.</span>conversions[pendulum<span style="color:#000;font-weight:bold">.</span>DateTime] <span style="color:#000;font-weight:bold">=</span> pymysql<span style="color:#000;font-weight:bold">.</span>converters<span style="color:#000;font-weight:bold">.</span>escape_datetime</code></pre></div></li>
 
 <li><p><code>django</code>  will use the  <code>isoformat()</code>  method to store datetimes in the database. However since  <code>pendulum</code>  is always timezone aware the offset information will always be returned by  <code>isoformat()</code>  raising an error, at least for MySQL databases. To work around it you can either create your own  <code>DateTimeField</code>  or use the previous workaround for  <code>MySQLdb</code>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> pendulum
-<span style="color:#f92672">from</span> django.db.models <span style="color:#f92672">import</span> DateTimeField <span style="color:#66d9ef">as</span> BaseDateTimeField
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pendulum</span>
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">django.db.models</span> <span style="color:#000;font-weight:bold">import</span> DateTimeField <span style="color:#000;font-weight:bold">as</span> BaseDateTimeField
     
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DateTimeField</span>(BaseDateTimeField):
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">DateTimeField</span>(BaseDateTimeField):
     
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">value_to_string</span>(self, obj):
-        val <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>value_from_object(obj)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">value_to_string</span>(<span style="color:#999">self</span>, obj):
+        val <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>value_from_object(obj)
     
-        <span style="color:#66d9ef">if</span> isinstance(value, pendulum<span style="color:#f92672">.</span>DateTime):
-            <span style="color:#66d9ef">return</span> value<span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;YYYY-MM-DD HH:mm:ss&#39;</span>)
+        <span style="color:#000;font-weight:bold">if</span> <span style="color:#0086b3">isinstance</span>(value, pendulum<span style="color:#000;font-weight:bold">.</span>DateTime):
+            <span style="color:#000;font-weight:bold">return</span> value<span style="color:#000;font-weight:bold">.</span>format(<span style="color:#d14">&#39;YYYY-MM-DD HH:mm:ss&#39;</span>)
     
-        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span> <span style="color:#66d9ef">if</span> val <span style="color:#f92672">is</span> None <span style="color:#66d9ef">else</span> val<span style="color:#f92672">.</span>isoformat()</code></pre></div></li>
+        <span style="color:#000;font-weight:bold">return</span> <span style="color:#d14">&#39;&#39;</span> <span style="color:#000;font-weight:bold">if</span> val <span style="color:#000;font-weight:bold">is</span> <span style="color:#999">None</span> <span style="color:#000;font-weight:bold">else</span> val<span style="color:#000;font-weight:bold">.</span>isoformat()</code></pre></div></li>
 </ul>
 
 <blockquote>

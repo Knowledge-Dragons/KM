@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1518,7 +1518,7 @@
 <p>These import statements are pre-defined pieces of functionality in the Python library that let you manipulates dates and times, without writing any code.</p>
 
 <p>Consider the following points before executing the datetime code</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date</code></pre></div>
 <p>This line tells the Python interpreter that from the datetime module import the date class We are not writing the code for this date functionality alas just importing it for our use</p>
 
 <p><strong>Step 2</strong>) Next, we create an instance of the date object.</p>
@@ -1604,7 +1604,7 @@
 <p><strong>Step 2)</strong>  With &ldquo;DATETIME OBJECT&rdquo;, you can also call time class.</p>
 
 <p>Suppose we want to print just the current time without the date.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">t <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>time(datetime<span style="color:#f92672">.</span>now())</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">t <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>time(datetime<span style="color:#000;font-weight:bold">.</span>now())</code></pre></div>
 <ul>
 <li>We had imported the time class. We will be assigning it the current value of time using datetime.now()</li>
 <li>We are assigning the value of the current time to the variable t.</li>
@@ -1628,25 +1628,25 @@
 <p>Here is the complete code to get current date and time using datetime now</p>
 
 <p><strong>Here is the complete code to get current date and time using datetime now</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> time
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
-    <span style="color:#75715e">##DATETIME OBJECTS</span>
-    <span style="color:#75715e">#Get today&#39;s date from datetime class</span>
-    today<span style="color:#f92672">=</span>datetime<span style="color:#f92672">.</span>now()
-    <span style="color:#75715e">#print (today)</span>
-    <span style="color:#75715e"># Get the current time</span>
-    <span style="color:#75715e">#t = datetime.time(datetime.now())</span>
-    <span style="color:#75715e">#print &#34;The current time is&#34;, t</span>
-    <span style="color:#75715e">#weekday returns 0 (monday) through 6 (sunday)</span>
-    wd<span style="color:#f92672">=</span>date<span style="color:#f92672">.</span>weekday(today)
-    <span style="color:#75715e">#Days start at 0 for monday</span>
-    days<span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;monday&#34;</span>,<span style="color:#e6db74">&#34;tuesday&#34;</span>,<span style="color:#e6db74">&#34;wednesday&#34;</span>,<span style="color:#e6db74">&#34;thursday&#34;</span>,<span style="color:#e6db74">&#34;friday&#34;</span>,<span style="color:#e6db74">&#34;saturday&#34;</span>,<span style="color:#e6db74">&#34;sunday&#34;</span>]
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Today is day number </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> wd)
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;which is a &#34;</span> <span style="color:#f92672">+</span> days[wd])
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> time
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">main</span>():
+    <span style="color:#998;font-style:italic">##DATETIME OBJECTS</span>
+    <span style="color:#998;font-style:italic">#Get today&#39;s date from datetime class</span>
+    today<span style="color:#000;font-weight:bold">=</span>datetime<span style="color:#000;font-weight:bold">.</span>now()
+    <span style="color:#998;font-style:italic">#print (today)</span>
+    <span style="color:#998;font-style:italic"># Get the current time</span>
+    <span style="color:#998;font-style:italic">#t = datetime.time(datetime.now())</span>
+    <span style="color:#998;font-style:italic">#print &#34;The current time is&#34;, t</span>
+    <span style="color:#998;font-style:italic">#weekday returns 0 (monday) through 6 (sunday)</span>
+    wd<span style="color:#000;font-weight:bold">=</span>date<span style="color:#000;font-weight:bold">.</span>weekday(today)
+    <span style="color:#998;font-style:italic">#Days start at 0 for monday</span>
+    days<span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;monday&#34;</span>,<span style="color:#d14">&#34;tuesday&#34;</span>,<span style="color:#d14">&#34;wednesday&#34;</span>,<span style="color:#d14">&#34;thursday&#34;</span>,<span style="color:#d14">&#34;friday&#34;</span>,<span style="color:#d14">&#34;saturday&#34;</span>,<span style="color:#d14">&#34;sunday&#34;</span>]
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Today is day number </span><span style="color:#d14">%d</span><span style="color:#d14">&#34;</span> <span style="color:#000;font-weight:bold">%</span> wd)
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;which is a &#34;</span> <span style="color:#000;font-weight:bold">+</span> days[wd])
 
-<span style="color:#66d9ef">if</span> __name__<span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+<span style="color:#000;font-weight:bold">if</span> __name__<span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;__main__&#34;</span>:
     main()</code></pre></div>
 <h2 ref="how-to-format-date-and-time-output-with-strftime" >How to Format Date and Time Output with Strftime()</h2><a class="anchor" id="how-to-format-date-and-time-output-with-strftime"></a>
 
@@ -1698,24 +1698,24 @@
 <p><strong>24 hours</strong> time is declared [print now.strftime(&ldquo;%H:%M&rdquo;)]</p>
 
 <p><strong>Here is the complete code to convert datetime to String object.</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e">#</span>
-<span style="color:#75715e">#Example file for formatting time and date output</span>
-<span style="color:#75715e">#</span>
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
-   <span style="color:#75715e">#Times and dates can be formatted using a set of predefined string</span>
-   <span style="color:#75715e">#Control codes</span>
-      now<span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now() <span style="color:#75715e">#get the current date and time</span>
-      <span style="color:#75715e">#%c - local date and time, %x-local&#39;s date, %X- local&#39;s time</span>
-      <span style="color:#66d9ef">print</span>(now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%c</span><span style="color:#e6db74">&#34;</span>))
-      <span style="color:#66d9ef">print</span>(now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%x</span><span style="color:#e6db74">&#34;</span>))
-      <span style="color:#66d9ef">print</span>(now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%X</span><span style="color:#e6db74">&#34;</span>))
-<span style="color:#75715e">##### Time Formatting ####</span>
-      <span style="color:#75715e">#%I/%H - 12/24 Hour, %M - minute, %S - second, %p - local&#39;s AM/PM</span>
-      <span style="color:#66d9ef">print</span>(now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%I:%M:%S %p&#34;</span>)) <span style="color:#75715e"># 12-Hour:Minute:Second:AM</span>
-      <span style="color:#66d9ef">print</span>(now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%H:%M&#34;</span>)) <span style="color:#75715e"># 24-Hour:Minute</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic">#</span>
+<span style="color:#998;font-style:italic">#Example file for formatting time and date output</span>
+<span style="color:#998;font-style:italic">#</span>
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">main</span>():
+   <span style="color:#998;font-style:italic">#Times and dates can be formatted using a set of predefined string</span>
+   <span style="color:#998;font-style:italic">#Control codes</span>
+      now<span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>now() <span style="color:#998;font-style:italic">#get the current date and time</span>
+      <span style="color:#998;font-style:italic">#%c - local date and time, %x-local&#39;s date, %X- local&#39;s time</span>
+      <span style="color:#000;font-weight:bold">print</span>(now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%c</span><span style="color:#d14">&#34;</span>))
+      <span style="color:#000;font-weight:bold">print</span>(now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%x</span><span style="color:#d14">&#34;</span>))
+      <span style="color:#000;font-weight:bold">print</span>(now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%X</span><span style="color:#d14">&#34;</span>))
+<span style="color:#998;font-style:italic">##### Time Formatting ####</span>
+      <span style="color:#998;font-style:italic">#%I/%H - 12/24 Hour, %M - minute, %S - second, %p - local&#39;s AM/PM</span>
+      <span style="color:#000;font-weight:bold">print</span>(now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%I:%M:%S %p&#34;</span>)) <span style="color:#998;font-style:italic"># 12-Hour:Minute:Second:AM</span>
+      <span style="color:#000;font-weight:bold">print</span>(now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%H:%M&#34;</span>)) <span style="color:#998;font-style:italic"># 24-Hour:Minute</span>
 
-<span style="color:#66d9ef">if</span> __name__<span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+<span style="color:#000;font-weight:bold">if</span> __name__<span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;__main__&#34;</span>:
     main()</code></pre></div>
 <h2 ref="how-to-use-timedelta-objects" >How to use Timedelta Objects</h2><a class="anchor" id="how-to-use-timedelta-objects"></a>
 
@@ -1761,90 +1761,90 @@
 <p>The output shows that &ldquo;New Year Day already went by 11 days ago.&rdquo;</p>
 
 <p><strong>Here is the complete working code</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e">#</span>
-<span style="color:#75715e"># Example file for working with timedelta objects</span>
-<span style="color:#75715e">#</span>
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> time
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> timedelta
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic">#</span>
+<span style="color:#998;font-style:italic"># Example file for working with timedelta objects</span>
+<span style="color:#998;font-style:italic">#</span>
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> time
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> timedelta
 
-<span style="color:#75715e"># construct a basic timedelta and print it</span>
-<span style="color:#66d9ef">print</span> (timedelta(days<span style="color:#f92672">=</span><span style="color:#ae81ff">365</span>, hours<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, minutes<span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>))
-<span style="color:#75715e"># print today&#39;s date</span>
-<span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;today is: &#34;</span> <span style="color:#f92672">+</span> str(datetime<span style="color:#f92672">.</span>now()))
-<span style="color:#75715e"># print today&#39;s date one year from now</span>
-<span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;one year from now it will be:&#34;</span> <span style="color:#f92672">+</span> str(datetime<span style="color:#f92672">.</span>now() <span style="color:#f92672">+</span> timedelta(days<span style="color:#f92672">=</span><span style="color:#ae81ff">365</span>)))
-<span style="color:#75715e"># create a timedelta that uses more than one argument</span>
-<span style="color:#75715e"># print (in one week and 4 days it will be &#34; + str(datetime.now() + timedelta(weeks=1, days=4)))</span>
-<span style="color:#75715e"># How many days until New Year&#39;s Day?</span>
-today <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>today()  <span style="color:#75715e"># get todays date</span>
-nyd <span style="color:#f92672">=</span> date(today<span style="color:#f92672">.</span>year, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)  <span style="color:#75715e"># get New Year Day for the same year</span>
-<span style="color:#75715e"># use date comparison to see if New Year Day has already gone for this year</span>
-<span style="color:#75715e"># if it has, use the replace() function to get the date for next year</span>
-<span style="color:#66d9ef">if</span> nyd <span style="color:#f92672">&lt;</span> today:
-    <span style="color:#66d9ef">print</span> (<span style="color:#e6db74">&#34;New Year day is already went by </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> days ago&#34;</span> <span style="color:#f92672">%</span> ((today <span style="color:#f92672">-</span> nyd)<span style="color:#f92672">.</span>days))</code></pre></div>
+<span style="color:#998;font-style:italic"># construct a basic timedelta and print it</span>
+<span style="color:#000;font-weight:bold">print</span> (timedelta(days<span style="color:#000;font-weight:bold">=</span><span style="color:#099">365</span>, hours<span style="color:#000;font-weight:bold">=</span><span style="color:#099">8</span>, minutes<span style="color:#000;font-weight:bold">=</span><span style="color:#099">15</span>))
+<span style="color:#998;font-style:italic"># print today&#39;s date</span>
+<span style="color:#000;font-weight:bold">print</span> (<span style="color:#d14">&#34;today is: &#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(datetime<span style="color:#000;font-weight:bold">.</span>now()))
+<span style="color:#998;font-style:italic"># print today&#39;s date one year from now</span>
+<span style="color:#000;font-weight:bold">print</span> (<span style="color:#d14">&#34;one year from now it will be:&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(datetime<span style="color:#000;font-weight:bold">.</span>now() <span style="color:#000;font-weight:bold">+</span> timedelta(days<span style="color:#000;font-weight:bold">=</span><span style="color:#099">365</span>)))
+<span style="color:#998;font-style:italic"># create a timedelta that uses more than one argument</span>
+<span style="color:#998;font-style:italic"># print (in one week and 4 days it will be &#34; + str(datetime.now() + timedelta(weeks=1, days=4)))</span>
+<span style="color:#998;font-style:italic"># How many days until New Year&#39;s Day?</span>
+today <span style="color:#000;font-weight:bold">=</span> date<span style="color:#000;font-weight:bold">.</span>today()  <span style="color:#998;font-style:italic"># get todays date</span>
+nyd <span style="color:#000;font-weight:bold">=</span> date(today<span style="color:#000;font-weight:bold">.</span>year, <span style="color:#099">1</span>, <span style="color:#099">1</span>)  <span style="color:#998;font-style:italic"># get New Year Day for the same year</span>
+<span style="color:#998;font-style:italic"># use date comparison to see if New Year Day has already gone for this year</span>
+<span style="color:#998;font-style:italic"># if it has, use the replace() function to get the date for next year</span>
+<span style="color:#000;font-weight:bold">if</span> nyd <span style="color:#000;font-weight:bold">&lt;</span> today:
+    <span style="color:#000;font-weight:bold">print</span> (<span style="color:#d14">&#34;New Year day is already went by </span><span style="color:#d14">%d</span><span style="color:#d14"> days ago&#34;</span> <span style="color:#000;font-weight:bold">%</span> ((today <span style="color:#000;font-weight:bold">-</span> nyd)<span style="color:#000;font-weight:bold">.</span>days))</code></pre></div>
 <h2 ref="python-2-example" >Python 2 Example</h2><a class="anchor" id="python-2-example"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> time
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
- 	<span style="color:#75715e">##DATETIME OBJECTS</span>
-    <span style="color:#75715e">#Get today&#39;s date from datetime class</span>
-	today<span style="color:#f92672">=</span>datetime<span style="color:#f92672">.</span>now()
-	<span style="color:#75715e">#print today</span>
-	<span style="color:#75715e"># Get the current time</span>
-	<span style="color:#75715e">#t = datetime.time(datetime.now())</span>
-	<span style="color:#75715e">#print &#34;The current time is&#34;, t</span>
-	<span style="color:#75715e">#weekday returns 0 (monday) through 6 (sunday)</span>
-        wd <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>weekday(today)
-	<span style="color:#75715e">#Days start at 0 for monday</span>
-        days<span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;monday&#34;</span>,<span style="color:#e6db74">&#34;tuesday&#34;</span>,<span style="color:#e6db74">&#34;wednesday&#34;</span>,<span style="color:#e6db74">&#34;thursday&#34;</span>,<span style="color:#e6db74">&#34;friday&#34;</span>,<span style="color:#e6db74">&#34;saturday&#34;</span>,<span style="color:#e6db74">&#34;sunday&#34;</span>]
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;Today is day number </span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">%</span> wd
-        <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;which is a &#34;</span> <span style="color:#f92672">+</span> days[wd]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> time
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">main</span>():
+ 	<span style="color:#998;font-style:italic">##DATETIME OBJECTS</span>
+    <span style="color:#998;font-style:italic">#Get today&#39;s date from datetime class</span>
+	today<span style="color:#000;font-weight:bold">=</span>datetime<span style="color:#000;font-weight:bold">.</span>now()
+	<span style="color:#998;font-style:italic">#print today</span>
+	<span style="color:#998;font-style:italic"># Get the current time</span>
+	<span style="color:#998;font-style:italic">#t = datetime.time(datetime.now())</span>
+	<span style="color:#998;font-style:italic">#print &#34;The current time is&#34;, t</span>
+	<span style="color:#998;font-style:italic">#weekday returns 0 (monday) through 6 (sunday)</span>
+        wd <span style="color:#000;font-weight:bold">=</span> date<span style="color:#000;font-weight:bold">.</span>weekday(today)
+	<span style="color:#998;font-style:italic">#Days start at 0 for monday</span>
+        days<span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;monday&#34;</span>,<span style="color:#d14">&#34;tuesday&#34;</span>,<span style="color:#d14">&#34;wednesday&#34;</span>,<span style="color:#d14">&#34;thursday&#34;</span>,<span style="color:#d14">&#34;friday&#34;</span>,<span style="color:#d14">&#34;saturday&#34;</span>,<span style="color:#d14">&#34;sunday&#34;</span>]
+        <span style="color:#000;font-weight:bold">print</span> <span style="color:#d14">&#34;Today is day number </span><span style="color:#d14">%d</span><span style="color:#d14">&#34;</span> <span style="color:#000;font-weight:bold">%</span> wd
+        <span style="color:#000;font-weight:bold">print</span> <span style="color:#d14">&#34;which is a &#34;</span> <span style="color:#000;font-weight:bold">+</span> days[wd]
 
-<span style="color:#66d9ef">if</span> __name__<span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-    main()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e">#</span>
-<span style="color:#75715e">#Example file for formatting time and date output</span>
-<span style="color:#75715e">#</span>
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
-   <span style="color:#75715e">#Times and dates can be formatted using a set of predefined string</span>
-   <span style="color:#75715e">#Control codes</span>
-      now<span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now() <span style="color:#75715e">#get the current date and time</span>
-      <span style="color:#75715e">#%c - local date and time, %x-local&#39;s date, %X- local&#39;s time</span>
-      <span style="color:#66d9ef">print</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%c</span><span style="color:#e6db74">&#34;</span>)
-      <span style="color:#66d9ef">print</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%x</span><span style="color:#e6db74">&#34;</span>)
-      <span style="color:#66d9ef">print</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%X</span><span style="color:#e6db74">&#34;</span>)
-<span style="color:#75715e">##### Time Formatting ####   </span>
-      <span style="color:#75715e">#%I/%H - 12/24 Hour, %M - minute, %S - second, %p - local&#39;s AM/PM</span>
-      <span style="color:#66d9ef">print</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%I:%M:%S %p&#34;</span>) <span style="color:#75715e"># 12-Hour:Minute:Second:AM</span>
-      <span style="color:#66d9ef">print</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%H:%M&#34;</span>) <span style="color:#75715e"># 24-Hour:Minute   </span>
+<span style="color:#000;font-weight:bold">if</span> __name__<span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;__main__&#34;</span>:
+    main()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic">#</span>
+<span style="color:#998;font-style:italic">#Example file for formatting time and date output</span>
+<span style="color:#998;font-style:italic">#</span>
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">main</span>():
+   <span style="color:#998;font-style:italic">#Times and dates can be formatted using a set of predefined string</span>
+   <span style="color:#998;font-style:italic">#Control codes</span>
+      now<span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>now() <span style="color:#998;font-style:italic">#get the current date and time</span>
+      <span style="color:#998;font-style:italic">#%c - local date and time, %x-local&#39;s date, %X- local&#39;s time</span>
+      <span style="color:#000;font-weight:bold">print</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%c</span><span style="color:#d14">&#34;</span>)
+      <span style="color:#000;font-weight:bold">print</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%x</span><span style="color:#d14">&#34;</span>)
+      <span style="color:#000;font-weight:bold">print</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%X</span><span style="color:#d14">&#34;</span>)
+<span style="color:#998;font-style:italic">##### Time Formatting ####   </span>
+      <span style="color:#998;font-style:italic">#%I/%H - 12/24 Hour, %M - minute, %S - second, %p - local&#39;s AM/PM</span>
+      <span style="color:#000;font-weight:bold">print</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%I:%M:%S %p&#34;</span>) <span style="color:#998;font-style:italic"># 12-Hour:Minute:Second:AM</span>
+      <span style="color:#000;font-weight:bold">print</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%H:%M&#34;</span>) <span style="color:#998;font-style:italic"># 24-Hour:Minute   </span>
 
-<span style="color:#66d9ef">if</span> __name__<span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
-    main()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e">#</span>
-<span style="color:#75715e"># Example file for working with timedelta objects</span>
-<span style="color:#75715e">#</span>
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> time
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-<span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> timedelta
+<span style="color:#000;font-weight:bold">if</span> __name__<span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;__main__&#34;</span>:
+    main()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic">#</span>
+<span style="color:#998;font-style:italic"># Example file for working with timedelta objects</span>
+<span style="color:#998;font-style:italic">#</span>
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> time
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
+<span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> timedelta
 
-<span style="color:#75715e"># construct a basic timedelta and print it</span>
-<span style="color:#66d9ef">print</span> timedelta(days<span style="color:#f92672">=</span><span style="color:#ae81ff">365</span>, hours<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, minutes<span style="color:#f92672">=</span><span style="color:#ae81ff">15</span>)
-<span style="color:#75715e"># print today&#39;s date</span>
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;today is: &#34;</span> <span style="color:#f92672">+</span> str(datetime<span style="color:#f92672">.</span>now())
-<span style="color:#75715e"># print today&#39;s date one year from now</span>
-<span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;one year from now it will be:&#34;</span> <span style="color:#f92672">+</span> str(datetime<span style="color:#f92672">.</span>now() <span style="color:#f92672">+</span> timedelta(days<span style="color:#f92672">=</span><span style="color:#ae81ff">365</span>))
-<span style="color:#75715e"># create a timedelta that uses more than one argument</span>
-<span style="color:#75715e"># print &#34;in one week and 4 days it will be &#34; + str(datetime.now() + timedelta(weeks=1, days=4))</span>
-<span style="color:#75715e"># How many days until New Year&#39;s Day?</span>
-today <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>today()  <span style="color:#75715e"># get todays date</span>
-nyd <span style="color:#f92672">=</span> date(today<span style="color:#f92672">.</span>year, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)  <span style="color:#75715e"># get New Year Day for the same year</span>
-<span style="color:#75715e"># use date comparison to see if New Year Day has already gone for this year</span>
-<span style="color:#75715e"># if it has, use the replace() function to get the date for next year</span>
-<span style="color:#66d9ef">if</span> nyd <span style="color:#f92672">&lt;</span> today:
-    <span style="color:#66d9ef">print</span> <span style="color:#e6db74">&#34;New Year day is already went by </span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> days ago&#34;</span> <span style="color:#f92672">%</span> ((today <span style="color:#f92672">-</span> nyd)<span style="color:#f92672">.</span>days)</code></pre></div>
+<span style="color:#998;font-style:italic"># construct a basic timedelta and print it</span>
+<span style="color:#000;font-weight:bold">print</span> timedelta(days<span style="color:#000;font-weight:bold">=</span><span style="color:#099">365</span>, hours<span style="color:#000;font-weight:bold">=</span><span style="color:#099">8</span>, minutes<span style="color:#000;font-weight:bold">=</span><span style="color:#099">15</span>)
+<span style="color:#998;font-style:italic"># print today&#39;s date</span>
+<span style="color:#000;font-weight:bold">print</span> <span style="color:#d14">&#34;today is: &#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(datetime<span style="color:#000;font-weight:bold">.</span>now())
+<span style="color:#998;font-style:italic"># print today&#39;s date one year from now</span>
+<span style="color:#000;font-weight:bold">print</span> <span style="color:#d14">&#34;one year from now it will be:&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(datetime<span style="color:#000;font-weight:bold">.</span>now() <span style="color:#000;font-weight:bold">+</span> timedelta(days<span style="color:#000;font-weight:bold">=</span><span style="color:#099">365</span>))
+<span style="color:#998;font-style:italic"># create a timedelta that uses more than one argument</span>
+<span style="color:#998;font-style:italic"># print &#34;in one week and 4 days it will be &#34; + str(datetime.now() + timedelta(weeks=1, days=4))</span>
+<span style="color:#998;font-style:italic"># How many days until New Year&#39;s Day?</span>
+today <span style="color:#000;font-weight:bold">=</span> date<span style="color:#000;font-weight:bold">.</span>today()  <span style="color:#998;font-style:italic"># get todays date</span>
+nyd <span style="color:#000;font-weight:bold">=</span> date(today<span style="color:#000;font-weight:bold">.</span>year, <span style="color:#099">1</span>, <span style="color:#099">1</span>)  <span style="color:#998;font-style:italic"># get New Year Day for the same year</span>
+<span style="color:#998;font-style:italic"># use date comparison to see if New Year Day has already gone for this year</span>
+<span style="color:#998;font-style:italic"># if it has, use the replace() function to get the date for next year</span>
+<span style="color:#000;font-weight:bold">if</span> nyd <span style="color:#000;font-weight:bold">&lt;</span> today:
+    <span style="color:#000;font-weight:bold">print</span> <span style="color:#d14">&#34;New Year day is already went by </span><span style="color:#d14">%d</span><span style="color:#d14"> days ago&#34;</span> <span style="color:#000;font-weight:bold">%</span> ((today <span style="color:#000;font-weight:bold">-</span> nyd)<span style="color:#000;font-weight:bold">.</span>days)</code></pre></div>
 <h3 ref="summary" >Summary</h3><a class="anchor" id="summary"></a>
 
 <p>For manipulating dates and times in both simple and complex ways datetime module supplies different classes or categories like</p>

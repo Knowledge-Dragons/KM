@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:37 &#43;07">
 <meta name="description" content="">
 
 
@@ -1491,40 +1491,40 @@
 <p>หลายคนอาจเคยได้ยินคำนี้ครั้งแรกกันตอนเรียนคณิตศาสตร์ชั้นมัธยมศึกษา</p>
 
 <p>คำว่าฟังก์ชันในทางคณิตศาสตร์หมายถึงสิ่งที่แสดงความสัมพันธ์ระหว่างจำนวน โดยใส่ค่าตัวเลขลงไปจำนวนหนึ่ง แล้วจะได้ค่าตัวเลขอีกจำนวนหนึ่งคืนกลับมา เช่น</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">f(x) <span style="color:#f92672">=</span> (x<span style="color:#f92672">+</span><span style="color:#ae81ff">0.5</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">f(x) <span style="color:#000;font-weight:bold">=</span> (x<span style="color:#000;font-weight:bold">+</span><span style="color:#099">0.5</span>)<span style="color:#000;font-weight:bold">/</span><span style="color:#099">10</span></code></pre></div>
 <p>ในที่นี้ f เป็นฟังก์ชัน และ x คืออาร์กิวเมนต์ของฟังก์ชัน  อาร์กิวเมนต์ คือค่าที่อยู่ในวงเล็บหลังฟังก์ชัน เป็นค่าที่ป้อนให้กับฟังก์ชัน เพื่อให้ฟังก์ชัน นำค่านั้นไปดำเนินการทำอะไรบางอย่าง  ในที่นี้หากป้อนค่า x เป็น 0.5 ค่านี้ก็จะถูกนำไปคำนวณ</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">f(<span style="color:#ae81ff">0.5</span>) <span style="color:#f92672">=</span> (<span style="color:#ae81ff">0.5</span><span style="color:#f92672">+</span><span style="color:#ae81ff">0.5</span>)<span style="color:#f92672">/</span><span style="color:#ae81ff">10</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">f(<span style="color:#099">0.5</span>) <span style="color:#000;font-weight:bold">=</span> (<span style="color:#099">0.5</span><span style="color:#000;font-weight:bold">+</span><span style="color:#099">0.5</span>)<span style="color:#000;font-weight:bold">/</span><span style="color:#099">10</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.1</span></code></pre></div>
 <p>ผลที่ได้คือฟังก์ชันนี้คืน 0.1 ออกมา ค่า 0.1 นี้จะเรียกว่าค่าคืนกลับ (return)<br />
 ฟังก์ชันในทางภาษาคอมพิวเตอร์ ก็มีลักษณะคล้ายกันนี้ คือใส่ค่าอะไรบางอย่าง (อาร์กิวเมนต์) ลงไปแล้วก็จะมีค่าคืนกลับออกมา</p>
 
 <p>ในบทที่แล้วได้พูดถึงคำสั่ง int float str bool ซึ่งใช้แปลงชนิดของข้อมูลเพื่อให้เป็นชนิดตามนั้น โดยใส่ข้อมูลชนิดเก่าลงไปแล้วได้ค่าคืนกลับเป็นข้อมูลชนิดใหม่ เช่น</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#f92672">=</span> <span style="color:#ae81ff">1.111</span>  
-b <span style="color:#f92672">=</span>  int(a)  
-<span style="color:#66d9ef">print</span>(b)  <span style="color:#75715e"># ได้ 1</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1.111</span>  
+b <span style="color:#000;font-weight:bold">=</span>  <span style="color:#0086b3">int</span>(a)  
+<span style="color:#000;font-weight:bold">print</span>(b)  <span style="color:#998;font-style:italic"># ได้ 1</span></code></pre></div>
 <p>ในตัวอย่างนี้ a เป็นจำนวนจริงซึ่งมีเลขทศนิยม แต่ใช้คำสั่ง int เพื่อแปลงเป็นจำนวนเต็มแล้วคืนค่ากลับมาแล้วเก็บค่าไว้ใน b ผลก็คือ b ได้ค่าเป็น 1 โดยเศษถูกปัดทิ้งหมด  คำสั่งที่ใช้แปลงชนิดข้อมูลเหล่านี้ถือว่าเป็นฟังก์ชันชนิดหนึ่งในภาษาไพธอน<br />
 ที่จริงหากว่ากันในรายละเอียดจริงๆแล้ว int float str bool เป็นชื่อคลาส (ชื่อชนิดข้อมูล) อย่างไรก็ตามชื่อคลาสสามารถใช้ทำหน้าที่เหมือนเป็นฟังก์ชันเพื่อสร้างออบเจกต์ในคลาสนั้นอยู่แล้ว จึงถือว่าเป็นฟังก์ชันด้วย  หรืออีกตัวอย่างหนึ่งคือฟังก์ชันที่ชือว่า len ซึ่งมีไว้สำหรับหาความยาวของสายอักขระ</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">len(<span style="color:#e6db74">&#39;sawatdi&#39;</span>)  <span style="color:#75715e"># ได้ 7</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#0086b3">len</span>(<span style="color:#d14">&#39;sawatdi&#39;</span>)  <span style="color:#998;font-style:italic"># ได้ 7</span></code></pre></div>
 <p>ในที่นี้ &lsquo;sawatdi&rsquo; เป็นอาร์กิวเมนต์ของฟังก์ชัน len แล้ว 7 เป็นค่าคืนกลับที่ได้มา  อย่างไรก็ตามฟังก์ชัน ในภาษาคอมพิวเตอร์นั้น นอกจากจะมีหน้าที่คืนค่ากลับมาแล้วก็ยัง มีอีกหน้าที่ที่สำคัญ นั่นคือดำเนินการบางอย่างให้เกิดผลอะไรบางอย่างขึ้น โดยอาจจะไม่มีการคืนค่ากลับมาเลยก็ได้  เช่นคำสั่ง print ซึ่งใช้มาตั้งแต่<a href="https://phyblas.hinaboshi.com/tsuchinoko02">บทที่ ๒</a> แล้ว ก็ถือเป็นฟังก์ชันชนิดหนึ่ง ซึ่งกรณีของ print นั้น อาร์กิวเมนต์ที่ใส่เข้าไปคือสิ่งที่เราต้องการให้แสดงผลออกมา เช่น</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;sawatdi&#39;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;sawatdi&#39;</span>)</code></pre></div>
 <p>ในที่นี้ &lsquo;sawatdi&rsquo; คืออาร์กิวเมนต์ เมื่อใส่ลงไปในฟังก์ชัน print ฟังก์ชันก็จะทำข้อความ ไปแสดงผลออกมาทางหน้าจอ  จะเห็นว่าไม่ว่าฟังก์ชันไหนก็ตาม จะมีรูปแบบเหมือนกันก็คือ ชื่อฟังก์ชัน ตามด้วยวงเล็บเปิดและปิด ( ) ซึ่งภายในวงเล็บจะใส่อาร์กิวเมนต์ที่ฟังก์ชันต้องการ  และฟังก์ชันก็จะนำค่าอาร์กิวเมนต์ไปทำอะไรบางอย่างและอาจมีการคืนค่ากลับมาหรือไม่ก็ได้<br />
 อีกอย่างที่ต้องเน้นสักหน่อยก็คืออาร์กิวเมนต์อาจเป็นค่าข้อมูลหรือตัวแปรที่เก็บข้อมูลอยู่ก็ได้<br />
 ตัวแปรที่ถูกใช้เป็นอาร์กิวเมนต์ในฟังก์ชันมักจะไม่มีการเปลี่ยนแปลงอะไร แค่ถูกนำค่าไปใช้เท่านั้น เช่น</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">c <span style="color:#f92672">=</span> <span style="color:#ae81ff">2.222</span>  
-d <span style="color:#f92672">=</span> str(c)  
-<span style="color:#66d9ef">print</span>(d)  <span style="color:#75715e"># ได้ &#39;2.222&#39;  </span>
-<span style="color:#66d9ef">print</span>(c)  <span style="color:#75715e"># ได้ 2.222</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">c <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2.222</span>  
+d <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(c)  
+<span style="color:#000;font-weight:bold">print</span>(d)  <span style="color:#998;font-style:italic"># ได้ &#39;2.222&#39;  </span>
+<span style="color:#000;font-weight:bold">print</span>(c)  <span style="color:#998;font-style:italic"># ได้ 2.222</span></code></pre></div>
 <p>จะเห็นว่า c ถูกใช้ในฟังก์ชัน str เพื่อให้ได้ค่า d เป็นสายอักขระ แต่ว่า c ยังเป็นตัวเลขอยู่เหมือนเดิมไม่เปลี่ยนแปลง  อย่างไรก็ตาม ฟังก์ชันที่ทำให้เกิดความเปลี่ยนแปลงกับอาร์กิวเมนต์ที่ใส่เข้าไปก็มีอยู่เช่นกัน</p>
 
 <h2 ref="อาร-ก-วเมนต-หลายต-ว" ><strong>อาร์กิวเมนต์หลายตัว</strong></h2><a class="anchor" id="อาร-ก-วเมนต-หลายต-ว"></a>
 
 <p>อาร์กิวเมนต์ไม่จำเป็นที่จะต้องมีแค่ตัวเดียว อาจมีหลายตัวก็ได้ หากมีหลายตัวก็ ต้องคั่นด้วยเครื่องหมายจุลภาค , เช่น</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;a =&#39;</span>, <span style="color:#ae81ff">1</span>,  <span style="color:#e6db74">&#39;, b =&#39;</span>, <span style="color:#ae81ff">2</span>)  <span style="color:#75715e"># ได้ a = 1 , b = 2</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;a =&#39;</span>, <span style="color:#099">1</span>,  <span style="color:#d14">&#39;, b =&#39;</span>, <span style="color:#099">2</span>)  <span style="color:#998;font-style:italic"># ได้ a = 1 , b = 2</span></code></pre></div>
 <p>จะเห็นกว่าในนี้มีการใส่อาร์กิวเมนต์ถึง ๔ ตัว โดยแต่ละตัวก็คือสิ่งที่ต้องการให้แสดงผลออกมา โดยทั่วไปแล้วฟังก์ชัน print สามารถนำออกข้อมูลได้กี่อันก็ได้ จึงถือว่ามีอาร์กิวเมนต์ แบบไม่จำกัดจำนวน  จำนวนอาร์กิวเมนต์ที่แต่ละฟังก์ชันต้องการนั้นอาจไม่เท่ากัน บางฟังก์ชันอาจต้องการหลายตัว หรือบางฟังก์ชันอาจไม่ต้องใช้อาร์กิวเมนต์เลย ซึ่งในกรณีนั้นจะใส่เป็นวงเล็บเปิดแล้วก็ปิดทันที () เช่นฟังก์ชัน input ซึ่งจะยกตัวอย่างให้เห็นต่อไป</p>
 
 <h2 ref="ค-ย-เว-ร-ดของฟ-งก-ช-น" ><strong>คีย์เวิร์ดของฟังก์ชัน</strong></h2><a class="anchor" id="ค-ย-เว-ร-ดของฟ-งก-ช-น"></a>
 
 <p>นอกจาก อาร์กิวเมนต์แล้ว ฟังก์ชันยังอาจประกอบด้วยสิ่งที่เรียกว่าคีย์เวิร์ด (keyword) ซึ่งเป็นอีกสิ่งหนึ่งที่สามารถป้อนให้กับฟังก์ชันได้ แต่ต่างจากอาร์กิวเมนต์ตรงที่ว่า การป้อนคีย์เวิร์ดจะต้องใส่ชื่อของ คีย์เวิร์ดนั้น  ยกตัวอย่างการใช้คีย์เวิร์ดในฟังก์ชัน print</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;ฉันมีความสุข&#39;</span>,<span style="color:#e6db74">&#39;555&#39;</span>,<span style="color:#e6db74">&#39;๕๕๕&#39;</span>,<span style="color:#e6db74">&#39;อยากหัวเราะดังๆ&#39;</span>,sep<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;(^_^)&#39;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;ฉันมีความสุข&#39;</span>,<span style="color:#d14">&#39;555&#39;</span>,<span style="color:#d14">&#39;๕๕๕&#39;</span>,<span style="color:#d14">&#39;อยากหัวเราะดังๆ&#39;</span>,sep<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;(^_^)&#39;</span>)</code></pre></div>
 <p>ผลลัพธ์</p>
 
 <pre><code>ฉันมีความสุข(^_^)555(^_^)๕๕๕(^_^)อยากหัวเราะดังๆ
@@ -1532,10 +1532,10 @@ d <span style="color:#f92672">=</span> str(c)
 
 <p>ตัวอย่าง นี้จะเห็นว่าประกอบไปด้วยอาร์กิวเมนต์ ๔ ตัว และด้านหลังอาร์กิวเมนต์ หลังจุลภาคตัวสุดท้ายจะเห็น sep=&lsquo;(^<em>^)&rsquo; ซึ่ง sep นี้ก็คือคีย์เวิร์ดที่ใส่เพิ่มลงไปนั่นเอง<br />
 ความหมายของ sep ในฟังก์ชัน print ก็คือคำที่ใช้แยกระหว่างอาร์กิวเมนต์แต่ละตัวที่ใส่ลงไป ดังนั้นจึงจะเห็นได้ว่ามี (^</em>^) ปรากฏขึ้นมาแทรก  โดยปกติแล้วถ้าหาก ไม่พิมพ์ sep ลงไปฟังก์ชันก็ยังทำงานได้ปกติ เพียงแต่ตัวคั่นระหว่างแต่ละอาร์กิวเมนต์จะกลายเป็นการเว้นวรรค ดังที่เห็นในตัวอย่างที่แล้ว การเพิ่มคีย์เวิร์ดเข้ามาจึงเป็นแค่การแต่งเสริมเพิ่มเติม  นอกจาก sep แล้วก็ยังมีคีย์เวิร์ดสำคัญอีกตัวคือ end ซึ่งเป็นตัวกำหนดการสิ้นสุดประโยค</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;การฝึกฝนที่ไม่มีความเจ็บปวดมันไม่มีความหมาย&#39;</span>,end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)  
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;เพราะคนเราไม่สามารถได้อะไรมาโดยที่ไม่ต้องเสียสละอะไร&#39;</span>,end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39; &#39;</span>)  
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;แต่ว่าเมื่อทนความเจ็บปวดนั้นและก้าวผ่านมันไปได้&#39;</span>,end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)  
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;ถึงตอนนั้นคนเราก็จะมีจิตใจที่แกร่งกล้าไม่แพ้ใครๆ&#39;</span>,end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;!&#39;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;การฝึกฝนที่ไม่มีความเจ็บปวดมันไม่มีความหมาย&#39;</span>,end<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39; &#39;</span>)  
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;เพราะคนเราไม่สามารถได้อะไรมาโดยที่ไม่ต้องเสียสละอะไร&#39;</span>,end<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39; &#39;</span>)  
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;แต่ว่าเมื่อทนความเจ็บปวดนั้นและก้าวผ่านมันไปได้&#39;</span>,end<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;&#39;</span>)  
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;ถึงตอนนั้นคนเราก็จะมีจิตใจที่แกร่งกล้าไม่แพ้ใครๆ&#39;</span>,end<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;!&#39;</span>)</code></pre></div>
 <p>(<a href="http://hinaboshi.com/walidet/628020490550059">ที่มาของประโยค</a>)</p>
 
 <p>ผลลัพธ์</p>
@@ -1558,11 +1558,11 @@ d <span style="color:#f92672">=</span> str(c)
 <h2 ref="ฟ-งก-ช-น-input" ><strong>ฟังก์ชัน input</strong></h2><a class="anchor" id="ฟ-งก-ช-น-input"></a>
 
 <p>สิ่งที่ตรงข้ามกับการส่งออกข้อมูลก็คือการป้อนเข้า (input)  ในภาษาไพธอนฟังก์ชัน ที่ใช้ในการป้อนเข้าข้อมูลชื่อฟังก์ชัน input ตัวอย่างการใช้ ลองพิมพ์ตามนี้ลงในเชล</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#f92672">=</span>  input()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#000;font-weight:bold">=</span>  <span style="color:#0086b3">input</span>()</code></pre></div>
 <p>เสร็จแล้วโปรแกรมก็จะให้เราพิมพ์ข้อความอะไรบางอย่างใส่เพิ่มลงไป ก็ให้พิมพ์อะไรก็ได้ลงไปแล้วกด enter  เสร็จแล้วข้อความที่ใส่ลงไปนั้นก็จะถูกเก็บอยู่ในตัวแปร a  จากนั้นลองใช้คำสั่ง print เพื่อพิมพ์สิ่งที่เก็บอยู่ในตัวแปร a ออกมา</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;a คือ&#39;</span>,a)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;a คือ&#39;</span>,a)</code></pre></div>
 <p>ก็จะได้ข้อความที่เราพิมพ์ลงไปนั้นออกมา  นี่เป็นวิธีการใช้ฟังก์ชัน input เพื่อรับค่ามาเก็บไว้ในตัวแปร ในที่นี้จะเห็นว่า input ป็นฟังก์ชัน ที่ทำหน้าที่ทั้งดำเนินการอะไรบางอย่างซึ่งในที่นี้คือสั่งให้ รับค่าจากคีย์บอร์ด และสุดท้ายก็ยังคืนค่ากลับออกมาด้วย  อย่างไรก็ตามฟังก์ชัน input นั้นที่จริงแล้วไม่ได้ทำหน้าที่แค่รับค่าเพียงอย่างเดียว แต่ยังสามารถทำหน้าที่แสดงผลข้อความไปด้วยในเวลาเดียวกันด้วย  ในตัวอย่างข้างต้น จะเห็นว่าในวงเล็บหลัง input นั้นว่างเปล่า ไม่ได้ใส่อะไรลงไป แต่ที่จริงแล้วฟังก์ชัน input เองก็สามารถใส่อาร์กิวเมนต์ลงไปได้ ซึ่งพอใส่ลงไปแล้ว สิ่งนั้นจะกลายเป็น ข้อความที่เราต้องการให้แสดงผลออกมาก่อนที่จะให้ป้อนข้อความ  โดยทั่วไปเหมือนเป็น ข้อความที่ใช้บอกให้ผู้ใช้รู้ว่าจะต้องป้อนอะไร ขอยกตัวอย่างการใช้ เช่น ลองพิมพ์</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#f92672">=</span>  input(<span style="color:#e6db74">&#39;จงป้อนค่าอะไรสักอย่าง: &#39;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#000;font-weight:bold">=</span>  <span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;จงป้อนค่าอะไรสักอย่าง: &#39;</span>)</code></pre></div>
 <p>จากนั้นก็จะมีข้อความขึ้นว่า</p>
 
 <pre><code>จงป้อนค่าอะไรสักอย่าง:
@@ -1570,7 +1570,7 @@ d <span style="color:#f92672">=</span> str(c)
 </code></pre>
 
 <p>แล้วจึงตามด้วยส่วนที่ให้พิมพ์ข้อความอยู่ทางขวาของข้อความ  การทำงานของ input ก็เป็นอย่างที่เห็นนี้ อาจชวนให้สับสนได้ง่าย ต้องจำไว้ว่าข้อความในอาร์กิวเมนต์ของ input เป็นเพียงแค่ข้อความที่สื่อสาร กับผู้ใช้ว่าควรจะกรอกข้อมูลอะไร แต่ไม่ได้มีผลอะไรกับข้อมูลที่ป้อนเข้าไป  สิ่งที่ต้องเน้นอีกอย่าง คือ ข้อมูลที่ป้อนเข้าไปด้วยฟังก์ชัน input นี้จะเป็นสายอักขระ หากต้องการจะได้ค่าเป็นจำนวนจริงหรือจำนวนเต็มก็จะต้องแปลงอีกที เช่น</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#f92672">=</span>  float(input(<span style="color:#e6db74">&#39;จงป้อนตัวเลขลงไป: &#39;</span>))</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">a <span style="color:#000;font-weight:bold">=</span>  <span style="color:#0086b3">float</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#39;จงป้อนตัวเลขลงไป: &#39;</span>))</code></pre></div>
 <p>จากนั้นก็ลองป้อนค่าตัวเลขอะไรบางอย่างเข้าไป<br />
 แต่ถ้าป้อนค่าที่ไม่ใช่ตัวเลขลงไป เช่นใส่ตัวหนังสือปนลงไปด้วยก็จะขัดข้องทันที<br />
 ทั้งหมดที่ว่ามานี้เป็นเรื่องของไพธอน 3 ส่วนในไพธอน 2 จะมีความแตกต่างออกไปพอสมควร<br />
@@ -1581,10 +1581,10 @@ d <span style="color:#f92672">=</span> str(c)
 <p>ในภาษาไพธอนและอีกหลายภาษาที่เน้นการเขียนโปรแกรมเชิงวัตถุนั้นนอกจากฟังก์ชันแล้วยังมีคำสั่งอีกอีกชนิดหนึ่งซึ่งซึ่งมีลักษณะพิเศษเฉพาะ เรียกว่า<strong>เมธอด (method)</strong> ซึ่งก็อาจถือเป็นฟังก์ชันชนิดหนึ่ง เพียงแต่จะมีความจำเพาะต่อออบเจ็กต์</p>
 
 <p>เมธอดจะถูกนิยามควบคู่ไปกับออบเจ็กต์แต่ละชนิด โดยออบเจ็กต์แต่ละชนิดจะมีเมธอดไม่เหมือนกัน เมธอดจะไม่ปรากฏขึ้นเดี่ยวๆเหมือนอย่างฟังก์ชันทั่วไป  เวลาเขียนเมธอดจะเขียน ตามหลังวัตถุที่ต้องการใช้เมธอดนั้น โดยใช้จุด . คั่น  ขอยกตัวอย่างเช่น ออบเจ็กต์ชนิดจำนวนจริงมีเมธอดที่ชื่อว่า is_integer() คือเมธอดสำหรับตรวจว่าค่าของจำนวนจริงนั้นเป็นจำนวนเต็มในทางคณิตศาสตร์หรือ ไม่ (คือมีค่าเลขทศนิยมเป็น 0 หรือไม่) ถ้าเป็นก็คืนค่า True ถ้าไม่ใช่ก็คืนค่า False</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.0</span>  
-x<span style="color:#f92672">.</span>is_integer()  <span style="color:#75715e"># ได้ผลเป็น True</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">3.0</span>  
+x<span style="color:#000;font-weight:bold">.</span>is_integer()  <span style="color:#998;font-style:italic"># ได้ผลเป็น True</span></code></pre></div>
 <p>แต่</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">(<span style="color:#ae81ff">3.1</span>)<span style="color:#f92672">.</span>is_integer()  <span style="color:#75715e"># ได้ผลเป็น False แต่ถ้าใช้เมธอดกับวัตถุผิดชนิด</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">(<span style="color:#ae81ff">3</span>)<span style="color:#f92672">.</span>is_integer()  <span style="color:#75715e"># จะได้ AttributeError: &#39;int&#39; object has no attribute &#39;is_integer&#39;</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">(<span style="color:#099">3.1</span>)<span style="color:#000;font-weight:bold">.</span>is_integer()  <span style="color:#998;font-style:italic"># ได้ผลเป็น False แต่ถ้าใช้เมธอดกับวัตถุผิดชนิด</span></code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">(<span style="color:#099">3</span>)<span style="color:#000;font-weight:bold">.</span>is_integer()  <span style="color:#998;font-style:italic"># จะได้ AttributeError: &#39;int&#39; object has no attribute &#39;is_integer&#39;</span></code></pre></div>
 <p>เพราะข้อมูลชนิดจำนวนเต็มไม่มีเมธอด is_integer ต้องเป็นข้อมูลชนิดจำนวนจริงเท่านั้นถึงจะมี</p>
 
 <p>วงเล็บที่อยู่ด้านหลังนั้นสามารถใส่อาร์กิวเมนต์หรือคีย์เวิร์ดลงไปได้เช่นกันหากเมธอดนั้นเป็นเมธอดที่ต้องการหรือสามารถใส่เพิ่มอาร์กิวเมนต์หรือคีย์เวิร์ดได้</p>

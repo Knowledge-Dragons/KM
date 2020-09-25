@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1490,8 +1490,8 @@
 <p>Furthermore, it avoids repetition and makes the code reusable.</p>
 
 <h3 ref="syntax-of-function" >Syntax of Function</h3><a class="anchor" id="syntax-of-function"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">function_name</span>(parameters):
-	<span style="color:#e6db74">&#34;&#34;&#34;docstring&#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">function_name</span>(parameters):
+	<span style="color:#d14">&#34;&#34;&#34;docstring&#34;&#34;&#34;</span>
 	statement(s)</code></pre></div>
 <p>Above shown is a function definition that consists of the following components.</p>
 
@@ -1506,28 +1506,28 @@
 </ol>
 
 <h3 ref="example-of-a-function" >Example of a function</h3><a class="anchor" id="example-of-a-function"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(name):
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    This function greets to
-</span><span style="color:#e6db74">    the person passed in as
-</span><span style="color:#e6db74">    a parameter
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. Good morning!&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(name):
+    <span style="color:#d14">&#34;&#34;&#34;
+</span><span style="color:#d14">    This function greets to
+</span><span style="color:#d14">    the person passed in as
+</span><span style="color:#d14">    a parameter
+</span><span style="color:#d14">    &#34;&#34;&#34;</span>
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Hello, &#34;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;. Good morning!&#34;</span>)</code></pre></div>
 <h3 ref="how-to-call-a-function-in-python" >How to call a function in python?</h3><a class="anchor" id="how-to-call-a-function-in-python"></a>
 
 <p>Once we have defined a function, we can call it from another function, program or even the Python prompt. To call a function we simply type the function name with appropriate parameters.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> greet(<span style="color:#e6db74">&#39;Paul&#39;</span>)
-Hello, Paul<span style="color:#f92672">.</span> Good morning<span style="color:#960050;background-color:#1e0010">!</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> greet(<span style="color:#d14">&#39;Paul&#39;</span>)
+Hello, Paul<span style="color:#000;font-weight:bold">.</span> Good morning<span style="color:#a61717;background-color:#e3d2d2">!</span></code></pre></div>
 <p><strong>Note:</strong>  Try running the above code in the Python program with the function definition to see the output.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(name):
-    <span style="color:#e6db74">&#34;&#34;&#34;
-</span><span style="color:#e6db74">    This function greets to
-</span><span style="color:#e6db74">    the person passed in as
-</span><span style="color:#e6db74">    a parameter
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Hello, &#34;</span> <span style="color:#f92672">+</span> name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;. Good morning!&#34;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(name):
+    <span style="color:#d14">&#34;&#34;&#34;
+</span><span style="color:#d14">    This function greets to
+</span><span style="color:#d14">    the person passed in as
+</span><span style="color:#d14">    a parameter
+</span><span style="color:#d14">    &#34;&#34;&#34;</span>
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Hello, &#34;</span> <span style="color:#000;font-weight:bold">+</span> name <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;. Good morning!&#34;</span>)
 
-greet(<span style="color:#e6db74">&#39;Paul&#39;</span>)</code></pre></div>
+greet(<span style="color:#d14">&#39;Paul&#39;</span>)</code></pre></div>
 <hr />
 
 <h2 ref="docstrings" >Docstrings</h2><a class="anchor" id="docstrings"></a>
@@ -1541,10 +1541,10 @@ greet(<span style="color:#e6db74">&#39;Paul&#39;</span>)</code></pre></div>
 <p><strong>For example</strong>:</p>
 
 <p>Try running the following into the Python shell to see the output.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">print</span>(greet<span style="color:#f92672">.</span>__doc__)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">print</span>(greet<span style="color:#000;font-weight:bold">.</span>__doc__)
 
     This function greets to
-    the person passed <span style="color:#f92672">in</span> <span style="color:#66d9ef">as</span>
+    the person passed <span style="color:#000;font-weight:bold">in</span> <span style="color:#000;font-weight:bold">as</span>
     a parameter</code></pre></div>
 <p>To learn more about docstrings in Python, visit  <a href="https://www.programiz.com/python-programming/docstrings">Python Docstrings</a>.</p>
 
@@ -1561,27 +1561,27 @@ greet(<span style="color:#e6db74">&#39;Paul&#39;</span>)</code></pre></div>
 <p>This statement can contain an expression that gets evaluated and the value is returned. If there is no expression in the statement or the  <code>return</code>  statement itself is not present inside a function, then the function will return the  <code>None</code>  object.</p>
 
 <p><strong>For example:</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#66d9ef">print</span>(greet(<span style="color:#e6db74">&#34;May&#34;</span>))
-Hello, May<span style="color:#f92672">.</span> Good morning<span style="color:#960050;background-color:#1e0010">!</span>
-None</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#000;font-weight:bold">print</span>(greet(<span style="color:#d14">&#34;May&#34;</span>))
+Hello, May<span style="color:#000;font-weight:bold">.</span> Good morning<span style="color:#a61717;background-color:#e3d2d2">!</span>
+<span style="color:#999">None</span></code></pre></div>
 <p>Here,  <code>None</code>  is the returned value since  <code>greet()</code>  directly prints the name and no  <code>return</code>  statement is used.</p>
 
 <hr />
 
 <h3 ref="example-of-return" >Example of return</h3><a class="anchor" id="example-of-return"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">absolute_value</span>(num):
-    <span style="color:#e6db74">&#34;&#34;&#34;This function returns the absolute
-</span><span style="color:#e6db74">    value of the entered number&#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">absolute_value</span>(num):
+    <span style="color:#d14">&#34;&#34;&#34;This function returns the absolute
+</span><span style="color:#d14">    value of the entered number&#34;&#34;&#34;</span>
 
-    <span style="color:#66d9ef">if</span> num <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">0</span>:
-        <span style="color:#66d9ef">return</span> num
-    <span style="color:#66d9ef">else</span>:
-        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>num
+    <span style="color:#000;font-weight:bold">if</span> num <span style="color:#000;font-weight:bold">&gt;=</span> <span style="color:#099">0</span>:
+        <span style="color:#000;font-weight:bold">return</span> num
+    <span style="color:#000;font-weight:bold">else</span>:
+        <span style="color:#000;font-weight:bold">return</span> <span style="color:#000;font-weight:bold">-</span>num
 
 
-<span style="color:#66d9ef">print</span>(absolute_value(<span style="color:#ae81ff">2</span>))
+<span style="color:#000;font-weight:bold">print</span>(absolute_value(<span style="color:#099">2</span>))
 
-<span style="color:#66d9ef">print</span>(absolute_value(<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>))</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(absolute_value(<span style="color:#000;font-weight:bold">-</span><span style="color:#099">4</span>))</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>2
@@ -1607,13 +1607,13 @@ None</code></pre></div>
 <p>They are destroyed once we return from the function. Hence, a function does not remember the value of a variable from its previous calls.</p>
 
 <p>Here is an example to illustrate the scope of a variable inside a function.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">my_func</span>():
-	x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-	<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Value inside function:&#34;</span>,x)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">my_func</span>():
+	x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
+	<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Value inside function:&#34;</span>,x)
 
-x <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">20</span>
 my_func()
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Value outside function:&#34;</span>,x)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Value outside function:&#34;</span>,x)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Value inside function: 10

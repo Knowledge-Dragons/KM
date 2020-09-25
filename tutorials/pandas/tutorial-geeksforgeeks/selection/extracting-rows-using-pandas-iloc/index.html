@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1494,20 +1494,20 @@
 <p><strong>Example 1:</strong>  Extracting single row and comparing with .loc[]</p>
 
 <p>In this example, same index number row is extracted by both .iloc[] and.loc[] method and compared. Since the index column by default is numeric, hence the index label will also be integers.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>) 
 
-<span style="color:#75715e"># retrieving rows by loc method </span>
-row1 <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[<span style="color:#ae81ff">3</span>] 
+<span style="color:#998;font-style:italic"># retrieving rows by loc method </span>
+row1 <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[<span style="color:#099">3</span>] 
 
-<span style="color:#75715e"># retrieving rows by iloc method </span>
-row2 <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">3</span>] 
+<span style="color:#998;font-style:italic"># retrieving rows by iloc method </span>
+row2 <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">3</span>] 
 
-<span style="color:#75715e"># checking if values are equal </span>
-row1 <span style="color:#f92672">==</span> row2 </code></pre></div>
+<span style="color:#998;font-style:italic"># checking if values are equal </span>
+row1 <span style="color:#000;font-weight:bold">==</span> row2 </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output image, the results returned by both the methods are same.<br />
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/out1-23.jpg" alt="" title="Click to enlarge" /></p>
@@ -1515,20 +1515,20 @@ As shown in the output image, the results returned by both the methods are same.
 <p><strong>Example #2:</strong> Extracting multiple rows with index</p>
 
 <p>In this example, multiple rows are extracted first by passing a list and then by passing integers to extract rows between that range. After that, both the values are compared.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>) 
 
-<span style="color:#75715e"># retrieving rows by loc method </span>
-row1 <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>iloc[[<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>]] 
+<span style="color:#998;font-style:italic"># retrieving rows by loc method </span>
+row1 <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>iloc[[<span style="color:#099">4</span>, <span style="color:#099">5</span>, <span style="color:#099">6</span>, <span style="color:#099">7</span>]] 
 
-<span style="color:#75715e"># retrieving rows by loc method </span>
-row2 <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">4</span>:<span style="color:#ae81ff">8</span>] 
+<span style="color:#998;font-style:italic"># retrieving rows by loc method </span>
+row2 <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">4</span>:<span style="color:#099">8</span>] 
 
-<span style="color:#75715e"># comparing values </span>
-row1 <span style="color:#f92672">==</span> row2 </code></pre></div>
+<span style="color:#998;font-style:italic"># comparing values </span>
+row1 <span style="color:#000;font-weight:bold">==</span> row2 </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output image, the results returned by both the methods are same. All values are True except values in college column since those were NaN values.</p>
 

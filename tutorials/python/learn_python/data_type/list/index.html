@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1502,17 +1502,17 @@
 <p>In Python programming, a list is created by placing all the items (elements) inside square brackets  <code>[]</code>, separated by commas.</p>
 
 <p>It can have any number of items and they may be of different types (integer, float, string etc.).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># empty list</span>
-my_list <span style="color:#f92672">=</span> []
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># empty list</span>
+my_list <span style="color:#000;font-weight:bold">=</span> []
 
-<span style="color:#75715e"># list of integers</span>
-my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]
+<span style="color:#998;font-style:italic"># list of integers</span>
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">2</span>, <span style="color:#099">3</span>]
 
-<span style="color:#75715e"># list with mixed data types</span>
-my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;Hello&#34;</span>, <span style="color:#ae81ff">3.4</span>]</code></pre></div>
+<span style="color:#998;font-style:italic"># list with mixed data types</span>
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#d14">&#34;Hello&#34;</span>, <span style="color:#099">3.4</span>]</code></pre></div>
 <p>A list can also have another list as an item. This is called a nested list.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># nested list</span>
-my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;mouse&#34;</span>, [<span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>], [<span style="color:#e6db74">&#39;a&#39;</span>]]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># nested list</span>
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;mouse&#34;</span>, [<span style="color:#099">8</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>], [<span style="color:#d14">&#39;a&#39;</span>]]</code></pre></div>
 <hr />
 
 <h2 ref="how-to-access-elements-from-a-list" >How to access elements from a list?</h2><a class="anchor" id="how-to-access-elements-from-a-list"></a>
@@ -1526,29 +1526,29 @@ my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;m
 <p>Trying to access indexes other than these will raise an  <code>IndexError</code>. The index must be an integer. We can&rsquo;t use float or other types, this will result in  <code>TypeError</code>.</p>
 
 <p>Nested lists are accessed using nested indexing.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># List indexing</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># List indexing</span>
 
-my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>]
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;p&#39;</span>, <span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;o&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;e&#39;</span>]
 
-<span style="color:#75715e"># Output: p</span>
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">0</span>])
+<span style="color:#998;font-style:italic"># Output: p</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#099">0</span>])
 
-<span style="color:#75715e"># Output: o</span>
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">2</span>])
+<span style="color:#998;font-style:italic"># Output: o</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#099">2</span>])
 
-<span style="color:#75715e"># Output: e</span>
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">4</span>])
+<span style="color:#998;font-style:italic"># Output: e</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#099">4</span>])
 
-<span style="color:#75715e"># Nested List</span>
-n_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Happy&#34;</span>, [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>]]
+<span style="color:#998;font-style:italic"># Nested List</span>
+n_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;Happy&#34;</span>, [<span style="color:#099">2</span>, <span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">5</span>]]
 
-<span style="color:#75715e"># Nested indexing</span>
-<span style="color:#66d9ef">print</span>(n_list[<span style="color:#ae81ff">0</span>][<span style="color:#ae81ff">1</span>])
+<span style="color:#998;font-style:italic"># Nested indexing</span>
+<span style="color:#000;font-weight:bold">print</span>(n_list[<span style="color:#099">0</span>][<span style="color:#099">1</span>])
 
-<span style="color:#66d9ef">print</span>(n_list[<span style="color:#ae81ff">1</span>][<span style="color:#ae81ff">3</span>])
+<span style="color:#000;font-weight:bold">print</span>(n_list[<span style="color:#099">1</span>][<span style="color:#099">3</span>])
 
-<span style="color:#75715e"># Error! Only integer can be used for indexing</span>
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">4.0</span>])</code></pre></div>
+<span style="color:#998;font-style:italic"># Error! Only integer can be used for indexing</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#099">4.0</span>])</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>p
@@ -1566,12 +1566,12 @@ TypeError: list indices must be integers or slices, not float
 <h3 ref="negative-indexing" >Negative indexing</h3><a class="anchor" id="negative-indexing"></a>
 
 <p>Python allows negative indexing for its sequences. The index of -1 refers to the last item, -2 to the second last item and so on.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Negative indexing in lists</span>
-my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p&#39;</span>,<span style="color:#e6db74">&#39;r&#39;</span>,<span style="color:#e6db74">&#39;o&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#e6db74">&#39;e&#39;</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Negative indexing in lists</span>
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;p&#39;</span>,<span style="color:#d14">&#39;r&#39;</span>,<span style="color:#d14">&#39;o&#39;</span>,<span style="color:#d14">&#39;b&#39;</span>,<span style="color:#d14">&#39;e&#39;</span>]
 
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>])
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>])
 
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>])</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#000;font-weight:bold">-</span><span style="color:#099">5</span>])</code></pre></div>
 <p>When we run the above program, we will get the following output:</p>
 
 <p>e
@@ -1586,21 +1586,21 @@ p</p>
 <h2 ref="how-to-slice-lists-in-python" >How to slice lists in Python?</h2><a class="anchor" id="how-to-slice-lists-in-python"></a>
 
 <p>We can access a range of items in a list by using the slicing operator  <code>:</code>(colon).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># List slicing in Python</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># List slicing in Python</span>
 
-my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p&#39;</span>,<span style="color:#e6db74">&#39;r&#39;</span>,<span style="color:#e6db74">&#39;o&#39;</span>,<span style="color:#e6db74">&#39;g&#39;</span>,<span style="color:#e6db74">&#39;r&#39;</span>,<span style="color:#e6db74">&#39;a&#39;</span>,<span style="color:#e6db74">&#39;m&#39;</span>,<span style="color:#e6db74">&#39;i&#39;</span>,<span style="color:#e6db74">&#39;z&#39;</span>]
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;p&#39;</span>,<span style="color:#d14">&#39;r&#39;</span>,<span style="color:#d14">&#39;o&#39;</span>,<span style="color:#d14">&#39;g&#39;</span>,<span style="color:#d14">&#39;r&#39;</span>,<span style="color:#d14">&#39;a&#39;</span>,<span style="color:#d14">&#39;m&#39;</span>,<span style="color:#d14">&#39;i&#39;</span>,<span style="color:#d14">&#39;z&#39;</span>]
 
-<span style="color:#75715e"># elements 3rd to 5th</span>
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">5</span>])
+<span style="color:#998;font-style:italic"># elements 3rd to 5th</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#099">2</span>:<span style="color:#099">5</span>])
 
-<span style="color:#75715e"># elements beginning to 4th</span>
-<span style="color:#66d9ef">print</span>(my_list[:<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span>])
+<span style="color:#998;font-style:italic"># elements beginning to 4th</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[:<span style="color:#000;font-weight:bold">-</span><span style="color:#099">5</span>])
 
-<span style="color:#75715e"># elements 6th to end</span>
-<span style="color:#66d9ef">print</span>(my_list[<span style="color:#ae81ff">5</span>:])
+<span style="color:#998;font-style:italic"># elements 6th to end</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[<span style="color:#099">5</span>:])
 
-<span style="color:#75715e"># elements beginning to end</span>
-<span style="color:#66d9ef">print</span>(my_list[:])</code></pre></div>
+<span style="color:#998;font-style:italic"># elements beginning to end</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list[:])</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>['o', 'g', 'r']
@@ -1622,18 +1622,18 @@ my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p
 <p>Lists are mutable, meaning their elements can be changed unlike  <a href="https://www.programiz.com/python-programming/string">string</a>  or  <a href="https://www.programiz.com/python-programming/tuple">tuple</a>.</p>
 
 <p>We can use the assignment operator (<code>=</code>) to change an item or a range of items.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Correcting mistake values in a list</span>
-odd <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Correcting mistake values in a list</span>
+odd <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">2</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>, <span style="color:#099">8</span>]
 
-<span style="color:#75715e"># change the 1st item    </span>
-odd[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>            
+<span style="color:#998;font-style:italic"># change the 1st item    </span>
+odd[<span style="color:#099">0</span>] <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>            
 
-<span style="color:#66d9ef">print</span>(odd)
+<span style="color:#000;font-weight:bold">print</span>(odd)
 
-<span style="color:#75715e"># change 2nd to 4th items</span>
-odd[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>]  
+<span style="color:#998;font-style:italic"># change 2nd to 4th items</span>
+odd[<span style="color:#099">1</span>:<span style="color:#099">4</span>] <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">7</span>]  
 
-<span style="color:#66d9ef">print</span>(odd)                   </code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(odd)                   </code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>[1, 4, 6, 8]
@@ -1641,16 +1641,16 @@ odd[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">4</span>] <
 </code></pre>
 
 <p>We can add one item to a list using the  <code>append()</code>  method or add several items using  <code>extend()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Appending and Extending lists in Python</span>
-odd <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Appending and Extending lists in Python</span>
+odd <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>]
 
-odd<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">7</span>)
+odd<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#099">7</span>)
 
-<span style="color:#66d9ef">print</span>(odd)
+<span style="color:#000;font-weight:bold">print</span>(odd)
 
-odd<span style="color:#f92672">.</span>extend([<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">13</span>])
+odd<span style="color:#000;font-weight:bold">.</span>extend([<span style="color:#099">9</span>, <span style="color:#099">11</span>, <span style="color:#099">13</span>])
 
-<span style="color:#66d9ef">print</span>(odd)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(odd)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>[1, 3, 5, 7]
@@ -1660,12 +1660,12 @@ odd<span style="color:#f92672">.</span>extend([<span style="color:#ae81ff">9</sp
 <p>We can also use  <code>+</code>  operator to combine two lists. This is also called concatenation.</p>
 
 <p>The  <code>*</code>  operator repeats a list for the given number of times.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Concatenating and repeating lists</span>
-odd <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Concatenating and repeating lists</span>
+odd <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>]
 
-<span style="color:#66d9ef">print</span>(odd <span style="color:#f92672">+</span> [<span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>])
+<span style="color:#000;font-weight:bold">print</span>(odd <span style="color:#000;font-weight:bold">+</span> [<span style="color:#099">9</span>, <span style="color:#099">7</span>, <span style="color:#099">5</span>])
 
-<span style="color:#66d9ef">print</span>([<span style="color:#e6db74">&#34;re&#34;</span>] <span style="color:#f92672">*</span> <span style="color:#ae81ff">3</span>)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>([<span style="color:#d14">&#34;re&#34;</span>] <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">3</span>)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>[1, 3, 5, 9, 7, 5]
@@ -1673,15 +1673,15 @@ odd <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, 
 </code></pre>
 
 <p>Furthermore, we can insert one item at a desired location by using the method  <code>insert()</code>  or insert multiple items by squeezing it into an empty slice of a list.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Demonstration of list insert() method</span>
-odd <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">9</span>]
-odd<span style="color:#f92672">.</span>insert(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Demonstration of list insert() method</span>
+odd <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">9</span>]
+odd<span style="color:#000;font-weight:bold">.</span>insert(<span style="color:#099">1</span>,<span style="color:#099">3</span>)
 
-<span style="color:#66d9ef">print</span>(odd)
+<span style="color:#000;font-weight:bold">print</span>(odd)
 
-odd[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> [<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>]
+odd[<span style="color:#099">2</span>:<span style="color:#099">2</span>] <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">5</span>, <span style="color:#099">7</span>]
 
-<span style="color:#66d9ef">print</span>(odd)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(odd)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>[1, 3, 9]
@@ -1693,24 +1693,24 @@ odd[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">2</span>] <
 <h2 ref="how-to-delete-or-remove-elements-from-a-list" >How to delete or remove elements from a list?</h2><a class="anchor" id="how-to-delete-or-remove-elements-from-a-list"></a>
 
 <p>We can delete one or more items from a list using the keyword  <code>del</code>. It can even delete the list entirely.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Deleting list items</span>
-my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39;m&#39;</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Deleting list items</span>
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;p&#39;</span>, <span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;o&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;l&#39;</span>, <span style="color:#d14">&#39;e&#39;</span>, <span style="color:#d14">&#39;m&#39;</span>]
 
-<span style="color:#75715e"># delete one item</span>
-<span style="color:#66d9ef">del</span> my_list[<span style="color:#ae81ff">2</span>]
+<span style="color:#998;font-style:italic"># delete one item</span>
+<span style="color:#000;font-weight:bold">del</span> my_list[<span style="color:#099">2</span>]
 
-<span style="color:#66d9ef">print</span>(my_list)
+<span style="color:#000;font-weight:bold">print</span>(my_list)
 
-<span style="color:#75715e"># delete multiple items</span>
-<span style="color:#66d9ef">del</span> my_list[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">5</span>]
+<span style="color:#998;font-style:italic"># delete multiple items</span>
+<span style="color:#000;font-weight:bold">del</span> my_list[<span style="color:#099">1</span>:<span style="color:#099">5</span>]
 
-<span style="color:#66d9ef">print</span>(my_list)
+<span style="color:#000;font-weight:bold">print</span>(my_list)
 
-<span style="color:#75715e"># delete entire list</span>
-<span style="color:#66d9ef">del</span> my_list
+<span style="color:#998;font-style:italic"># delete entire list</span>
+<span style="color:#000;font-weight:bold">del</span> my_list
 
-<span style="color:#75715e"># Error: List not defined</span>
-<span style="color:#66d9ef">print</span>(my_list)</code></pre></div>
+<span style="color:#998;font-style:italic"># Error: List not defined</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>['p', 'r', 'b', 'l', 'e', 'm']
@@ -1725,28 +1725,28 @@ NameError: name 'my_list' is not defined
 <p>The  <code>pop()</code>  method removes and returns the last item if the index is not provided. This helps us implement lists as stacks (first in, last out data structure).</p>
 
 <p>We can also use the  <code>clear()</code>  method to empty a list.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p&#39;</span>,<span style="color:#e6db74">&#39;r&#39;</span>,<span style="color:#e6db74">&#39;o&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#e6db74">&#39;l&#39;</span>,<span style="color:#e6db74">&#39;e&#39;</span>,<span style="color:#e6db74">&#39;m&#39;</span>]
-my_list<span style="color:#f92672">.</span>remove(<span style="color:#e6db74">&#39;p&#39;</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;p&#39;</span>,<span style="color:#d14">&#39;r&#39;</span>,<span style="color:#d14">&#39;o&#39;</span>,<span style="color:#d14">&#39;b&#39;</span>,<span style="color:#d14">&#39;l&#39;</span>,<span style="color:#d14">&#39;e&#39;</span>,<span style="color:#d14">&#39;m&#39;</span>]
+my_list<span style="color:#000;font-weight:bold">.</span>remove(<span style="color:#d14">&#39;p&#39;</span>)
 
-<span style="color:#75715e"># Output: [&#39;r&#39;, &#39;o&#39;, &#39;b&#39;, &#39;l&#39;, &#39;e&#39;, &#39;m&#39;]</span>
-<span style="color:#66d9ef">print</span>(my_list)
+<span style="color:#998;font-style:italic"># Output: [&#39;r&#39;, &#39;o&#39;, &#39;b&#39;, &#39;l&#39;, &#39;e&#39;, &#39;m&#39;]</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list)
 
-<span style="color:#75715e"># Output: &#39;o&#39;</span>
-<span style="color:#66d9ef">print</span>(my_list<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">1</span>))
+<span style="color:#998;font-style:italic"># Output: &#39;o&#39;</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list<span style="color:#000;font-weight:bold">.</span>pop(<span style="color:#099">1</span>))
 
-<span style="color:#75715e"># Output: [&#39;r&#39;, &#39;b&#39;, &#39;l&#39;, &#39;e&#39;, &#39;m&#39;]</span>
-<span style="color:#66d9ef">print</span>(my_list)
+<span style="color:#998;font-style:italic"># Output: [&#39;r&#39;, &#39;b&#39;, &#39;l&#39;, &#39;e&#39;, &#39;m&#39;]</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list)
 
-<span style="color:#75715e"># Output: &#39;m&#39;</span>
-<span style="color:#66d9ef">print</span>(my_list<span style="color:#f92672">.</span>pop())
+<span style="color:#998;font-style:italic"># Output: &#39;m&#39;</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list<span style="color:#000;font-weight:bold">.</span>pop())
 
-<span style="color:#75715e"># Output: [&#39;r&#39;, &#39;b&#39;, &#39;l&#39;, &#39;e&#39;]</span>
-<span style="color:#66d9ef">print</span>(my_list)
+<span style="color:#998;font-style:italic"># Output: [&#39;r&#39;, &#39;b&#39;, &#39;l&#39;, &#39;e&#39;]</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list)
 
-my_list<span style="color:#f92672">.</span>clear()
+my_list<span style="color:#000;font-weight:bold">.</span>clear()
 
-<span style="color:#75715e"># Output: []</span>
-<span style="color:#66d9ef">print</span>(my_list)</code></pre></div>
+<span style="color:#998;font-style:italic"># Output: []</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>['r', 'o', 'b', 'l', 'e', 'm']
@@ -1758,13 +1758,13 @@ m
 </code></pre>
 
 <p>Finally, we can also delete items in a list by assigning an empty list to a slice of elements.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p&#39;</span>,<span style="color:#e6db74">&#39;r&#39;</span>,<span style="color:#e6db74">&#39;o&#39;</span>,<span style="color:#e6db74">&#39;b&#39;</span>,<span style="color:#e6db74">&#39;l&#39;</span>,<span style="color:#e6db74">&#39;e&#39;</span>,<span style="color:#e6db74">&#39;m&#39;</span>]
-<span style="color:#f92672">&gt;&gt;&gt;</span> my_list[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">3</span>] <span style="color:#f92672">=</span> []
-<span style="color:#f92672">&gt;&gt;&gt;</span> my_list
-[<span style="color:#e6db74">&#39;p&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39;m&#39;</span>]
-<span style="color:#f92672">&gt;&gt;&gt;</span> my_list[<span style="color:#ae81ff">2</span>:<span style="color:#ae81ff">5</span>] <span style="color:#f92672">=</span> []
-<span style="color:#f92672">&gt;&gt;&gt;</span> my_list
-[<span style="color:#e6db74">&#39;p&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;m&#39;</span>]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;p&#39;</span>,<span style="color:#d14">&#39;r&#39;</span>,<span style="color:#d14">&#39;o&#39;</span>,<span style="color:#d14">&#39;b&#39;</span>,<span style="color:#d14">&#39;l&#39;</span>,<span style="color:#d14">&#39;e&#39;</span>,<span style="color:#d14">&#39;m&#39;</span>]
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_list[<span style="color:#099">2</span>:<span style="color:#099">3</span>] <span style="color:#000;font-weight:bold">=</span> []
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_list
+[<span style="color:#d14">&#39;p&#39;</span>, <span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;l&#39;</span>, <span style="color:#d14">&#39;e&#39;</span>, <span style="color:#d14">&#39;m&#39;</span>]
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_list[<span style="color:#099">2</span>:<span style="color:#099">5</span>] <span style="color:#000;font-weight:bold">=</span> []
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> my_list
+[<span style="color:#d14">&#39;p&#39;</span>, <span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;m&#39;</span>]</code></pre></div>
 <hr />
 
 <h2 ref="python-list-methods" >Python List Methods</h2><a class="anchor" id="python-list-methods"></a>
@@ -1798,24 +1798,24 @@ m
 <p><a href="https://www.programiz.com/python-programming/methods/list/copy"><strong>copy()</strong></a> <a href="https://www.programiz.com/python-programming/methods/list/copy">- R</a><a href="https://www.programiz.com/python-programming/methods/list/copy">eturns a shallow copy of the list</a></p>
 
 <p>Some examples of Python list methods:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Python list methods</span>
-my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">4</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Python list methods</span>
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">3</span>, <span style="color:#099">8</span>, <span style="color:#099">1</span>, <span style="color:#099">6</span>, <span style="color:#099">0</span>, <span style="color:#099">8</span>, <span style="color:#099">4</span>]
 
-<span style="color:#75715e"># Output: 1</span>
-<span style="color:#66d9ef">print</span>(my_list<span style="color:#f92672">.</span>index(<span style="color:#ae81ff">8</span>))
+<span style="color:#998;font-style:italic"># Output: 1</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list<span style="color:#000;font-weight:bold">.</span>index(<span style="color:#099">8</span>))
 
-<span style="color:#75715e"># Output: 2</span>
-<span style="color:#66d9ef">print</span>(my_list<span style="color:#f92672">.</span>count(<span style="color:#ae81ff">8</span>))
+<span style="color:#998;font-style:italic"># Output: 2</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list<span style="color:#000;font-weight:bold">.</span>count(<span style="color:#099">8</span>))
 
-my_list<span style="color:#f92672">.</span>sort()
+my_list<span style="color:#000;font-weight:bold">.</span>sort()
 
-<span style="color:#75715e"># Output: [0, 1, 3, 4, 6, 8, 8]</span>
-<span style="color:#66d9ef">print</span>(my_list)
+<span style="color:#998;font-style:italic"># Output: [0, 1, 3, 4, 6, 8, 8]</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list)
 
-my_list<span style="color:#f92672">.</span>reverse()
+my_list<span style="color:#000;font-weight:bold">.</span>reverse()
 
-<span style="color:#75715e"># Output: [8, 8, 6, 4, 3, 1, 0]</span>
-<span style="color:#66d9ef">print</span>(my_list)</code></pre></div>
+<span style="color:#998;font-style:italic"># Output: [8, 8, 6, 4, 3, 1, 0]</span>
+<span style="color:#000;font-weight:bold">print</span>(my_list)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>1
@@ -1833,26 +1833,26 @@ my_list<span style="color:#f92672">.</span>reverse()
 <p>A list comprehension consists of an expression followed by  <a href="https://www.programiz.com/python-programming/for-loop">for statement</a>  inside square brackets.</p>
 
 <p>Here is an example to make a list with each item being increasing power of 2.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">pow2 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>)]
-<span style="color:#66d9ef">print</span>(pow2)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">pow2 <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">2</span> <span style="color:#000;font-weight:bold">**</span> x <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">10</span>)]
+<span style="color:#000;font-weight:bold">print</span>(pow2)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>[1, 2, 4, 8, 16, 32, 64, 128, 256, 512]
 </code></pre>
 
 <p>This code is equivalent to:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">pow2 <span style="color:#f92672">=</span> []
-<span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>):
-   pow2<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> x)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">pow2 <span style="color:#000;font-weight:bold">=</span> []
+<span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">10</span>):
+   pow2<span style="color:#000;font-weight:bold">.</span>append(<span style="color:#099">2</span> <span style="color:#000;font-weight:bold">**</span> x)</code></pre></div>
 <p>A list comprehension can optionally contain more  <code>for</code>  or  <a href="https://www.programiz.com/python-programming/if-elif-else">if statements</a>. An optional  <code>if</code>  statement can filter out items for the new list. Here are some examples.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> pow2 <span style="color:#f92672">=</span> [<span style="color:#ae81ff">2</span> <span style="color:#f92672">**</span> x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">10</span>) <span style="color:#66d9ef">if</span> x <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">5</span>]
-<span style="color:#f92672">&gt;&gt;&gt;</span> pow2
-[<span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">128</span>, <span style="color:#ae81ff">256</span>, <span style="color:#ae81ff">512</span>]
-<span style="color:#f92672">&gt;&gt;&gt;</span> odd <span style="color:#f92672">=</span> [x <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">20</span>) <span style="color:#66d9ef">if</span> x <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>]
-<span style="color:#f92672">&gt;&gt;&gt;</span> odd
-[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">17</span>, <span style="color:#ae81ff">19</span>]
-<span style="color:#f92672">&gt;&gt;&gt;</span> [x<span style="color:#f92672">+</span>y <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;Python &#39;</span>,<span style="color:#e6db74">&#39;C &#39;</span>] <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;Language&#39;</span>,<span style="color:#e6db74">&#39;Programming&#39;</span>]]
-[<span style="color:#e6db74">&#39;Python Language&#39;</span>, <span style="color:#e6db74">&#39;Python Programming&#39;</span>, <span style="color:#e6db74">&#39;C Language&#39;</span>, <span style="color:#e6db74">&#39;C Programming&#39;</span>]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> pow2 <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">2</span> <span style="color:#000;font-weight:bold">**</span> x <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">10</span>) <span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">5</span>]
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> pow2
+[<span style="color:#099">64</span>, <span style="color:#099">128</span>, <span style="color:#099">256</span>, <span style="color:#099">512</span>]
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> odd <span style="color:#000;font-weight:bold">=</span> [x <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">20</span>) <span style="color:#000;font-weight:bold">if</span> x <span style="color:#000;font-weight:bold">%</span> <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">1</span>]
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> odd
+[<span style="color:#099">1</span>, <span style="color:#099">3</span>, <span style="color:#099">5</span>, <span style="color:#099">7</span>, <span style="color:#099">9</span>, <span style="color:#099">11</span>, <span style="color:#099">13</span>, <span style="color:#099">15</span>, <span style="color:#099">17</span>, <span style="color:#099">19</span>]
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> [x<span style="color:#000;font-weight:bold">+</span>y <span style="color:#000;font-weight:bold">for</span> x <span style="color:#000;font-weight:bold">in</span> [<span style="color:#d14">&#39;Python &#39;</span>,<span style="color:#d14">&#39;C &#39;</span>] <span style="color:#000;font-weight:bold">for</span> y <span style="color:#000;font-weight:bold">in</span> [<span style="color:#d14">&#39;Language&#39;</span>,<span style="color:#d14">&#39;Programming&#39;</span>]]
+[<span style="color:#d14">&#39;Python Language&#39;</span>, <span style="color:#d14">&#39;Python Programming&#39;</span>, <span style="color:#d14">&#39;C Language&#39;</span>, <span style="color:#d14">&#39;C Programming&#39;</span>]</code></pre></div>
 <hr />
 
 <h2 ref="other-list-operations-in-python" >Other List Operations in Python</h2><a class="anchor" id="other-list-operations-in-python"></a>
@@ -1860,16 +1860,16 @@ my_list<span style="color:#f92672">.</span>reverse()
 <h3 ref="list-membership-test" >List Membership Test</h3><a class="anchor" id="list-membership-test"></a>
 
 <p>We can test if an item exists in a list or not, using the keyword  <code>in</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">my_list <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;p&#39;</span>, <span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#e6db74">&#39;o&#39;</span>, <span style="color:#e6db74">&#39;b&#39;</span>, <span style="color:#e6db74">&#39;l&#39;</span>, <span style="color:#e6db74">&#39;e&#39;</span>, <span style="color:#e6db74">&#39;m&#39;</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;p&#39;</span>, <span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;o&#39;</span>, <span style="color:#d14">&#39;b&#39;</span>, <span style="color:#d14">&#39;l&#39;</span>, <span style="color:#d14">&#39;e&#39;</span>, <span style="color:#d14">&#39;m&#39;</span>]
 
-<span style="color:#75715e"># Output: True</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;p&#39;</span> <span style="color:#f92672">in</span> my_list)
+<span style="color:#998;font-style:italic"># Output: True</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;p&#39;</span> <span style="color:#000;font-weight:bold">in</span> my_list)
 
-<span style="color:#75715e"># Output: False</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;a&#39;</span> <span style="color:#f92672">in</span> my_list)
+<span style="color:#998;font-style:italic"># Output: False</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;a&#39;</span> <span style="color:#000;font-weight:bold">in</span> my_list)
 
-<span style="color:#75715e"># Output: True</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;c&#39;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> my_list)</code></pre></div>
+<span style="color:#998;font-style:italic"># Output: True</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;c&#39;</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#000;font-weight:bold">in</span> my_list)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>True
@@ -1882,8 +1882,8 @@ True
 <h3 ref="iterating-through-a-list" >Iterating Through a List</h3><a class="anchor" id="iterating-through-a-list"></a>
 
 <p>Using a  <code>for</code>  loop we can iterate through each item in a list.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">for</span> fruit <span style="color:#f92672">in</span> [<span style="color:#e6db74">&#39;apple&#39;</span>,<span style="color:#e6db74">&#39;banana&#39;</span>,<span style="color:#e6db74">&#39;mango&#39;</span>]:
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;I like&#34;</span>,fruit)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">for</span> fruit <span style="color:#000;font-weight:bold">in</span> [<span style="color:#d14">&#39;apple&#39;</span>,<span style="color:#d14">&#39;banana&#39;</span>,<span style="color:#d14">&#39;mango&#39;</span>]:
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;I like&#34;</span>,fruit)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>I like apple

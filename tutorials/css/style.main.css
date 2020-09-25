@@ -217,7 +217,7 @@ article section.page {
     margin-bottom: 0px;
     line-height: 1.05;
     letter-spacing: -.05em;
-    font-weight: 800; }
+    font-weight: 700; }
     article section.page h1:first-of-type span {
       font-size: 90%;
       font-weight: 500; }
@@ -228,7 +228,9 @@ article section.page {
         content: "⊷"; }
 
 article section.page div.content {
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  /* test code */
+  /* test code */ }
   article section.page div.content a.anchor {
     display: block;
     position: relative;
@@ -244,7 +246,7 @@ article section.page div.content {
   article section.page div.content h1 {
     color: #4d4d4d;
     font-variant-ligatures: none;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -0.75px;
     line-height: 32px; }
   article section.page div.content h2 {
@@ -282,7 +284,7 @@ article section.page div.content {
       padding: 0; }
   article section.page div.content img {
     border: 0;
-    max-width: 100%;
+    max-width: 90%;
     margin: 1.5rem auto;
     display: block;
     text-align: center; }
@@ -297,17 +299,31 @@ article section.page div.content {
     article section.page div.content img.inline {
       display: inline !important;
       vertical-align: bottom; }
+  article section.page div.content code {
+    background-color: #e9edf0;
+    border-radius: .3rem;
+    padding: .125rem .2rem; }
+  article section.page div.content code[class*=language-],
+  article section.page div.content pre[class*=language-] {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.125rem; }
+  article section.page div.content figure.highlight pre:not([class*=language-]) {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    background-color: #e9edf0; }
   article section.page div.content div.highlight pre {
     display: block;
     white-space: pre-wrap;
     overflow: inherit !important; }
     article section.page div.content div.highlight pre code {
       color: inherit !important;
-      font-size: 75%;
+      font-size: 110%;
       display: block;
       margin-left: -1.5rem;
       margin-right: -1.5rem;
       padding: 10px;
-      border: 0px;
+      border-radius: .5rem;
       font-weight: inherit;
-      background-color: inherit; }
+      background-color: #e9edf0;
+      border: 1px solid #a6a6a6; }

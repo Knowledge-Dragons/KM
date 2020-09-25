@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:15 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1496,17 +1496,17 @@
 <p><strong>Example #1:</strong>  Extracting single Row</p>
 
 <p>In this example, Name column is made as the index column and then two single rows are extracted one by one in the form of series using index label of rows.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Name&#34;</span>) 
 
-<span style="color:#75715e"># retrieving row by loc method </span>
-first <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;Avery Bradley&#34;</span>] 
-second <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;R.J. Hunter&#34;</span>] 
+<span style="color:#998;font-style:italic"># retrieving row by loc method </span>
+first <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[<span style="color:#d14">&#34;Avery Bradley&#34;</span>] 
+second <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[<span style="color:#d14">&#34;R.J. Hunter&#34;</span>] 
 
-<span style="color:#66d9ef">print</span>(first, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n\n</span><span style="color:#e6db74">&#34;</span>, second) </code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(first, <span style="color:#d14">&#34;</span><span style="color:#d14">\n\n\n</span><span style="color:#d14">&#34;</span>, second) </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output image, two series were returned since there was only one parameter both of the times.<br />
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/out1-22.jpg" alt="" title="Click to enlarge" /></p>
@@ -1514,19 +1514,19 @@ As shown in the output image, two series were returned since there was only one 
 <p><strong>Example #2:</strong> Multiple parameters</p>
 
 <p>In this example, Name column is made as the index column and then two single rows are extracted at the same time by passing a list as parameter.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Name&#34;</span>) 
 
-<span style="color:#75715e"># retrieving rows by loc method </span>
-rows <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[[<span style="color:#e6db74">&#34;Avery Bradley&#34;</span>, <span style="color:#e6db74">&#34;R.J. Hunter&#34;</span>]] 
+<span style="color:#998;font-style:italic"># retrieving rows by loc method </span>
+rows <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[[<span style="color:#d14">&#34;Avery Bradley&#34;</span>, <span style="color:#d14">&#34;R.J. Hunter&#34;</span>]] 
 
-<span style="color:#75715e"># checking data type of rows </span>
-<span style="color:#66d9ef">print</span>(type(rows)) 
+<span style="color:#998;font-style:italic"># checking data type of rows </span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#0086b3">type</span>(rows)) 
 
-<span style="color:#75715e"># display </span>
+<span style="color:#998;font-style:italic"># display </span>
 rows </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output image, this time the data type of returned value is a data frame. Both of the rows were extracted and displayed like a new data frame.<br />
@@ -1535,19 +1535,19 @@ As shown in the output image, this time the data type of returned value is a dat
 <p><strong>Example #3:</strong> Extracting multiple rows with same index</p>
 
 <p>In this example, Team name is made as the index column and one team name is passed to .loc method to check if all values with same team name have been returned or not.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Team&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Team&#34;</span>) 
 
-<span style="color:#75715e"># retrieving rows by loc method </span>
-rows <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;Utah Jazz&#34;</span>] 
+<span style="color:#998;font-style:italic"># retrieving rows by loc method </span>
+rows <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[<span style="color:#d14">&#34;Utah Jazz&#34;</span>] 
 
-<span style="color:#75715e"># checking data type of rows </span>
-<span style="color:#66d9ef">print</span>(type(rows)) 
+<span style="color:#998;font-style:italic"># checking data type of rows </span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#0086b3">type</span>(rows)) 
 
-<span style="color:#75715e"># display </span>
+<span style="color:#998;font-style:italic"># display </span>
 rows </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output image, All rows with team name “Utah Jazz” were returned in the form of a data frame.<br />
@@ -1556,19 +1556,19 @@ As shown in the output image, All rows with team name “Utah Jazz” were retur
 <p><strong>Example #4:</strong> Extracting rows between two index labels</p>
 
 <p>In this example, two index label of rows are passed and all the rows that fall between those two index label have been returned (Both index labels Inclusive).</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Name&#34;</span>) 
 
-<span style="color:#75715e"># retrieving rows by loc method </span>
-rows <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;Avery Bradley&#34;</span>:<span style="color:#e6db74">&#34;Isaiah Thomas&#34;</span>] 
+<span style="color:#998;font-style:italic"># retrieving rows by loc method </span>
+rows <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[<span style="color:#d14">&#34;Avery Bradley&#34;</span>:<span style="color:#d14">&#34;Isaiah Thomas&#34;</span>] 
 
-<span style="color:#75715e"># checking data type of rows </span>
-<span style="color:#66d9ef">print</span>(type(rows)) 
+<span style="color:#998;font-style:italic"># checking data type of rows </span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#0086b3">type</span>(rows)) 
 
-<span style="color:#75715e"># display </span>
+<span style="color:#998;font-style:italic"># display </span>
 rows </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output image, all the rows that fall between passed two index labels are returned in the form of a data frame.<br />

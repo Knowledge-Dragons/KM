@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1513,10 +1513,10 @@
 <h3 ref="example-of-lambda-function-in-python" >Example of Lambda Function in python</h3><a class="anchor" id="example-of-lambda-function-in-python"></a>
 
 <p>Here is an example of lambda function that doubles the input value.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Program to show the use of lambda functions</span>
-double <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Program to show the use of lambda functions</span>
+double <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">lambda</span> x: x <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span>
 
-<span style="color:#66d9ef">print</span>(double(<span style="color:#ae81ff">5</span>))</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(double(<span style="color:#099">5</span>))</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>10
@@ -1525,12 +1525,12 @@ double <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</
 <p>In the above program,  <code>lambda x: x * 2</code>  is the lambda function. Here  x  is the argument and  <code>x * 2</code>  is the expression that gets evaluated and returned.</p>
 
 <p>This function has no name. It returns a function object which is assigned to the identifier  <code>double</code>. We can now call it as a normal function. The statement</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">double <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">double <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">lambda</span> x: x <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span>
 
-<span style="color:#f92672">is</span> nearly the same <span style="color:#66d9ef">as</span>:
+<span style="color:#000;font-weight:bold">is</span> nearly the same <span style="color:#000;font-weight:bold">as</span>:
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">double</span>(x):
-   <span style="color:#66d9ef">return</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span></code></pre></div>
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">double</span>(x):
+   <span style="color:#000;font-weight:bold">return</span> x <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span></code></pre></div>
 <hr />
 
 <h2 ref="use-of-lambda-function-in-python" >Use of Lambda Function in python</h2><a class="anchor" id="use-of-lambda-function-in-python"></a>
@@ -1546,12 +1546,12 @@ double <span style="color:#f92672">=</span> <span style="color:#66d9ef">lambda</
 <p>The function is called with all the items in the list and a new list is returned which contains items for which the function evaluates to  <code>True</code>.</p>
 
 <p>Here is an example use of  <code>filter()</code>  function to filter out only even numbers from a list.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Program to filter out only the even items from a list</span>
-my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">12</span>]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Program to filter out only the even items from a list</span>
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">5</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>, <span style="color:#099">8</span>, <span style="color:#099">11</span>, <span style="color:#099">3</span>, <span style="color:#099">12</span>]
 
-new_list <span style="color:#f92672">=</span> list(filter(<span style="color:#66d9ef">lambda</span> x: (x<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) , my_list))
+new_list <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">list</span>(<span style="color:#0086b3">filter</span>(<span style="color:#000;font-weight:bold">lambda</span> x: (x<span style="color:#000;font-weight:bold">%</span><span style="color:#099">2</span> <span style="color:#000;font-weight:bold">==</span> <span style="color:#099">0</span>) , my_list))
 
-<span style="color:#66d9ef">print</span>(new_list)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(new_list)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>[4, 6, 8, 12]
@@ -1564,13 +1564,13 @@ new_list <span style="color:#f92672">=</span> list(filter(<span style="color:#66
 <p>The function is called with all the items in the list and a new list is returned which contains items returned by that function for each item.</p>
 
 <p>Here is an example use of  <code>map()</code>  function to double all the items in a list.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Program to double each item in a list using map()</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Program to double each item in a list using map()</span>
 
-my_list <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">12</span>]
+my_list <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>, <span style="color:#099">5</span>, <span style="color:#099">4</span>, <span style="color:#099">6</span>, <span style="color:#099">8</span>, <span style="color:#099">11</span>, <span style="color:#099">3</span>, <span style="color:#099">12</span>]
 
-new_list <span style="color:#f92672">=</span> list(map(<span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span> , my_list))
+new_list <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">list</span>(<span style="color:#0086b3">map</span>(<span style="color:#000;font-weight:bold">lambda</span> x: x <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span> , my_list))
 
-<span style="color:#66d9ef">print</span>(new_list)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(new_list)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>[2, 10, 8, 12, 16, 22, 6, 24]

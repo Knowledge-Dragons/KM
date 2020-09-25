@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:15 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1519,10 +1519,10 @@
 <hr />
 
 <h3 ref="example-1-get-current-date-and-time" >Example 1: Get Current Date and Time</h3><a class="anchor" id="example-1-get-current-date-and-time"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">datetime</span>
 
-datetime_object <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>datetime<span style="color:#f92672">.</span>now()
-<span style="color:#66d9ef">print</span>(datetime_object)</code></pre></div>
+datetime_object <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>datetime<span style="color:#000;font-weight:bold">.</span>now()
+<span style="color:#000;font-weight:bold">print</span>(datetime_object)</code></pre></div>
 <p>When you run the program, the output will be something like:</p>
 
 <pre><code>2018-12-19 09:26:03.478039
@@ -1535,10 +1535,10 @@ datetime_object <span style="color:#f92672">=</span> datetime<span style="color:
 <hr />
 
 <h3 ref="example-2-get-current-date" >Example 2: Get Current Date</h3><a class="anchor" id="example-2-get-current-date"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">datetime</span>
 
-date_object <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>date<span style="color:#f92672">.</span>today()
-<span style="color:#66d9ef">print</span>(date_object)</code></pre></div>
+date_object <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>date<span style="color:#000;font-weight:bold">.</span>today()
+<span style="color:#000;font-weight:bold">print</span>(date_object)</code></pre></div>
 <p>When you run the program, the output will be something like:</p>
 
 <pre><code>2018-12-19
@@ -1551,9 +1551,9 @@ date_object <span style="color:#f92672">=</span> datetime<span style="color:#f92
 <p><strong>What&rsquo;s inside datetime?</strong></p>
 
 <p>We can use  <a href="https://www.programiz.com/python-programming/methods/built-in/dir">dir()</a>  function to get a list containing all attributes of a module.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">datetime</span>
 
-<span style="color:#66d9ef">print</span>(dir(datetime))</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#0086b3">dir</span>(datetime))</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code> ['MAXYEAR', 'MINYEAR', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '_divide_and_round', 'date', 'datetime', 'datetime_CAPI', 'time', 'timedelta', 'timezone', 'tzinfo'] 
@@ -1579,10 +1579,10 @@ date_object <span style="color:#f92672">=</span> datetime<span style="color:#f92
 <hr />
 
 <h3 ref="example-3-date-object-to-represent-a-date" >Example 3: Date object to represent a date</h3><a class="anchor" id="example-3-date-object-to-represent-a-date"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">datetime</span>
 
-d <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>date(<span style="color:#ae81ff">2019</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">13</span>)
-<span style="color:#66d9ef">print</span>(d)</code></pre></div>
+d <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>date(<span style="color:#099">2019</span>, <span style="color:#099">4</span>, <span style="color:#099">13</span>)
+<span style="color:#000;font-weight:bold">print</span>(d)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>2019-04-13
@@ -1595,29 +1595,29 @@ d <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</sp
 <hr />
 
 <p>We can only import  <code>date</code>  class from the  <code>datetime</code>  module. Here&rsquo;s how:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
 
-a <span style="color:#f92672">=</span> date(<span style="color:#ae81ff">2019</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">13</span>)
-<span style="color:#66d9ef">print</span>(a)</code></pre></div>
+a <span style="color:#000;font-weight:bold">=</span> date(<span style="color:#099">2019</span>, <span style="color:#099">4</span>, <span style="color:#099">13</span>)
+<span style="color:#000;font-weight:bold">print</span>(a)</code></pre></div>
 <hr />
 
 <h3 ref="example-4-get-current-date" >Example 4: Get current date</h3><a class="anchor" id="example-4-get-current-date"></a>
 
 <p>You can create a  <code>date</code>  object containing the current date by using a classmethod named  <code>today()</code>. Here&rsquo;s how:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
 
-today <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>today()
+today <span style="color:#000;font-weight:bold">=</span> date<span style="color:#000;font-weight:bold">.</span>today()
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Current date =&#34;</span>, today)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Current date =&#34;</span>, today)</code></pre></div>
 <hr />
 
 <h3 ref="example-5-get-date-from-a-timestamp" >Example 5: Get date from a timestamp</h3><a class="anchor" id="example-5-get-date-from-a-timestamp"></a>
 
 <p>We can also create  <code>date</code>  objects from a timestamp. A Unix timestamp is the number of seconds between a particular date and January 1, 1970 at UTC. You can convert a timestamp to date using  <code>fromtimestamp()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
 
-timestamp <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>fromtimestamp(<span style="color:#ae81ff">1326244364</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Date =&#34;</span>, timestamp)</code></pre></div>
+timestamp <span style="color:#000;font-weight:bold">=</span> date<span style="color:#000;font-weight:bold">.</span>fromtimestamp(<span style="color:#099">1326244364</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Date =&#34;</span>, timestamp)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>Date = 2012-01-11
@@ -1628,14 +1628,14 @@ timestamp <span style="color:#f92672">=</span> date<span style="color:#f92672">.
 <h3 ref="example-6-print-today-s-year-month-and-day" >Example 6: Print today&rsquo;s year, month and day</h3><a class="anchor" id="example-6-print-today-s-year-month-and-day"></a>
 
 <p>We can get year, month, day, day of the week etc. from the date object easily. Here&rsquo;s how:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> date
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> date
 
-<span style="color:#75715e"># date object of today&#39;s date</span>
-today <span style="color:#f92672">=</span> date<span style="color:#f92672">.</span>today() 
+<span style="color:#998;font-style:italic"># date object of today&#39;s date</span>
+today <span style="color:#000;font-weight:bold">=</span> date<span style="color:#000;font-weight:bold">.</span>today() 
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Current year:&#34;</span>, today<span style="color:#f92672">.</span>year)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Current month:&#34;</span>, today<span style="color:#f92672">.</span>month)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Current day:&#34;</span>, today<span style="color:#f92672">.</span>day)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Current year:&#34;</span>, today<span style="color:#000;font-weight:bold">.</span>year)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Current month:&#34;</span>, today<span style="color:#000;font-weight:bold">.</span>month)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Current day:&#34;</span>, today<span style="color:#000;font-weight:bold">.</span>day)</code></pre></div>
 <hr />
 
 <h2 ref="datetime-time" >datetime.time</h2><a class="anchor" id="datetime-time"></a>
@@ -1645,23 +1645,23 @@ today <span style="color:#f92672">=</span> date<span style="color:#f92672">.</sp
 <hr />
 
 <h3 ref="example-7-time-object-to-represent-time" >Example 7: Time object to represent time</h3><a class="anchor" id="example-7-time-object-to-represent-time"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> time
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> time
 
-<span style="color:#75715e"># time(hour = 0, minute = 0, second = 0)</span>
-a <span style="color:#f92672">=</span> time()
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;a =&#34;</span>, a)
+<span style="color:#998;font-style:italic"># time(hour = 0, minute = 0, second = 0)</span>
+a <span style="color:#000;font-weight:bold">=</span> time()
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;a =&#34;</span>, a)
 
-<span style="color:#75715e"># time(hour, minute and second)</span>
-b <span style="color:#f92672">=</span> time(<span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">56</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;b =&#34;</span>, b)
+<span style="color:#998;font-style:italic"># time(hour, minute and second)</span>
+b <span style="color:#000;font-weight:bold">=</span> time(<span style="color:#099">11</span>, <span style="color:#099">34</span>, <span style="color:#099">56</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;b =&#34;</span>, b)
 
-<span style="color:#75715e"># time(hour, minute and second)</span>
-c <span style="color:#f92672">=</span> time(hour <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>, minute <span style="color:#f92672">=</span> <span style="color:#ae81ff">34</span>, second <span style="color:#f92672">=</span> <span style="color:#ae81ff">56</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;c =&#34;</span>, c)
+<span style="color:#998;font-style:italic"># time(hour, minute and second)</span>
+c <span style="color:#000;font-weight:bold">=</span> time(hour <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">11</span>, minute <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">34</span>, second <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">56</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;c =&#34;</span>, c)
 
-<span style="color:#75715e"># time(hour, minute, second, microsecond)</span>
-d <span style="color:#f92672">=</span> time(<span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">56</span>, <span style="color:#ae81ff">234566</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;d =&#34;</span>, d)</code></pre></div>
+<span style="color:#998;font-style:italic"># time(hour, minute, second, microsecond)</span>
+d <span style="color:#000;font-weight:bold">=</span> time(<span style="color:#099">11</span>, <span style="color:#099">34</span>, <span style="color:#099">56</span>, <span style="color:#099">234566</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;d =&#34;</span>, d)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>a = 00:00:00
@@ -1675,14 +1675,14 @@ d = 11:34:56.234566
 <h3 ref="example-8-print-hour-minute-second-and-microsecond" >Example 8: Print hour, minute, second and microsecond</h3><a class="anchor" id="example-8-print-hour-minute-second-and-microsecond"></a>
 
 <p>Once you create a  <code>time</code>  object, you can easily print its attributes such as  hour,  minute  etc.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> time
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> time
 
-a <span style="color:#f92672">=</span> time(<span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">56</span>)
+a <span style="color:#000;font-weight:bold">=</span> time(<span style="color:#099">11</span>, <span style="color:#099">34</span>, <span style="color:#099">56</span>)
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;hour =&#34;</span>, a<span style="color:#f92672">.</span>hour)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;minute =&#34;</span>, a<span style="color:#f92672">.</span>minute)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;second =&#34;</span>, a<span style="color:#f92672">.</span>second)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;microsecond =&#34;</span>, a<span style="color:#f92672">.</span>microsecond)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;hour =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>hour)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;minute =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>minute)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;second =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>second)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;microsecond =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>microsecond)</code></pre></div>
 <p>When you run the example, the output will be:</p>
 
 <pre><code>hour = 11
@@ -1702,15 +1702,15 @@ microsecond = 0
 <hr />
 
 <h3 ref="example-9-python-datetime-object" >Example 9: Python datetime object</h3><a class="anchor" id="example-9-python-datetime-object"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-<span style="color:#75715e">#datetime(year, month, day)</span>
-a <span style="color:#f92672">=</span> datetime(<span style="color:#ae81ff">2018</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">28</span>)
-<span style="color:#66d9ef">print</span>(a)
+<span style="color:#998;font-style:italic">#datetime(year, month, day)</span>
+a <span style="color:#000;font-weight:bold">=</span> datetime(<span style="color:#099">2018</span>, <span style="color:#099">11</span>, <span style="color:#099">28</span>)
+<span style="color:#000;font-weight:bold">print</span>(a)
 
-<span style="color:#75715e"># datetime(year, month, day, hour, minute, second, microsecond)</span>
-b <span style="color:#f92672">=</span> datetime(<span style="color:#ae81ff">2017</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">28</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">55</span>, <span style="color:#ae81ff">59</span>, <span style="color:#ae81ff">342380</span>)
-<span style="color:#66d9ef">print</span>(b)</code></pre></div>
+<span style="color:#998;font-style:italic"># datetime(year, month, day, hour, minute, second, microsecond)</span>
+b <span style="color:#000;font-weight:bold">=</span> datetime(<span style="color:#099">2017</span>, <span style="color:#099">11</span>, <span style="color:#099">28</span>, <span style="color:#099">23</span>, <span style="color:#099">55</span>, <span style="color:#099">59</span>, <span style="color:#099">342380</span>)
+<span style="color:#000;font-weight:bold">print</span>(b)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>2018-11-28 00:00:00
@@ -1722,14 +1722,14 @@ b <span style="color:#f92672">=</span> datetime(<span style="color:#ae81ff">2017
 <hr />
 
 <h3 ref="example-10-print-year-month-hour-minute-and-timestamp" >Example 10: Print year, month, hour, minute and timestamp</h3><a class="anchor" id="example-10-print-year-month-hour-minute-and-timestamp"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-a <span style="color:#f92672">=</span> datetime(<span style="color:#ae81ff">2017</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">28</span>, <span style="color:#ae81ff">23</span>, <span style="color:#ae81ff">55</span>, <span style="color:#ae81ff">59</span>, <span style="color:#ae81ff">342380</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;year =&#34;</span>, a<span style="color:#f92672">.</span>year)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;month =&#34;</span>, a<span style="color:#f92672">.</span>month)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;hour =&#34;</span>, a<span style="color:#f92672">.</span>hour)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;minute =&#34;</span>, a<span style="color:#f92672">.</span>minute)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;timestamp =&#34;</span>, a<span style="color:#f92672">.</span>timestamp())</code></pre></div>
+a <span style="color:#000;font-weight:bold">=</span> datetime(<span style="color:#099">2017</span>, <span style="color:#099">11</span>, <span style="color:#099">28</span>, <span style="color:#099">23</span>, <span style="color:#099">55</span>, <span style="color:#099">59</span>, <span style="color:#099">342380</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;year =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>year)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;month =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>month)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;hour =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>hour)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;minute =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>minute)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;timestamp =&#34;</span>, a<span style="color:#000;font-weight:bold">.</span>timestamp())</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>year = 2017
@@ -1749,20 +1749,20 @@ timestamp = 1511913359.34238
 <hr />
 
 <h3 ref="example-11-difference-between-two-dates-and-times" >Example 11: Difference between two dates and times</h3><a class="anchor" id="example-11-difference-between-two-dates-and-times"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime, date
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime, date
 
-t1 <span style="color:#f92672">=</span> date(year <span style="color:#f92672">=</span> <span style="color:#ae81ff">2018</span>, month <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, day <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>)
-t2 <span style="color:#f92672">=</span> date(year <span style="color:#f92672">=</span> <span style="color:#ae81ff">2017</span>, month <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>, day <span style="color:#f92672">=</span> <span style="color:#ae81ff">23</span>)
-t3 <span style="color:#f92672">=</span> t1 <span style="color:#f92672">-</span> t2
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;t3 =&#34;</span>, t3)
+t1 <span style="color:#000;font-weight:bold">=</span> date(year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2018</span>, month <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>, day <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">12</span>)
+t2 <span style="color:#000;font-weight:bold">=</span> date(year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2017</span>, month <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">12</span>, day <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">23</span>)
+t3 <span style="color:#000;font-weight:bold">=</span> t1 <span style="color:#000;font-weight:bold">-</span> t2
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;t3 =&#34;</span>, t3)
 
-t4 <span style="color:#f92672">=</span> datetime(year <span style="color:#f92672">=</span> <span style="color:#ae81ff">2018</span>, month <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, day <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>, hour <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>, minute <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>, second <span style="color:#f92672">=</span> <span style="color:#ae81ff">33</span>)
-t5 <span style="color:#f92672">=</span> datetime(year <span style="color:#f92672">=</span> <span style="color:#ae81ff">2019</span>, month <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>, day <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>, hour <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, minute <span style="color:#f92672">=</span> <span style="color:#ae81ff">55</span>, second <span style="color:#f92672">=</span> <span style="color:#ae81ff">13</span>)
-t6 <span style="color:#f92672">=</span> t4 <span style="color:#f92672">-</span> t5
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;t6 =&#34;</span>, t6)
+t4 <span style="color:#000;font-weight:bold">=</span> datetime(year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2018</span>, month <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>, day <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">12</span>, hour <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">7</span>, minute <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">9</span>, second <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">33</span>)
+t5 <span style="color:#000;font-weight:bold">=</span> datetime(year <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2019</span>, month <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>, day <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>, hour <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>, minute <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">55</span>, second <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">13</span>)
+t6 <span style="color:#000;font-weight:bold">=</span> t4 <span style="color:#000;font-weight:bold">-</span> t5
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;t6 =&#34;</span>, t6)
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;type of t3 =&#34;</span>, type(t3)) 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;type of t6 =&#34;</span>, type(t6))  </code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;type of t3 =&#34;</span>, <span style="color:#0086b3">type</span>(t3)) 
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;type of t6 =&#34;</span>, <span style="color:#0086b3">type</span>(t6))  </code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code> t3 = 201 days, 0:00:00
@@ -1776,13 +1776,13 @@ type of t6 = &lt;class 'datetime.timedelta'&gt;
 <hr />
 
 <h3 ref="example-12-difference-between-two-timedelta-objects" >Example 12: Difference between two timedelta objects</h3><a class="anchor" id="example-12-difference-between-two-timedelta-objects"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> timedelta
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> timedelta
 
-t1 <span style="color:#f92672">=</span> timedelta(weeks <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>, days <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, hours <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, seconds <span style="color:#f92672">=</span> <span style="color:#ae81ff">33</span>)
-t2 <span style="color:#f92672">=</span> timedelta(days <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, hours <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>, minutes <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>, seconds <span style="color:#f92672">=</span> <span style="color:#ae81ff">54</span>)
-t3 <span style="color:#f92672">=</span> t1 <span style="color:#f92672">-</span> t2
+t1 <span style="color:#000;font-weight:bold">=</span> timedelta(weeks <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">2</span>, days <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>, hours <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, seconds <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">33</span>)
+t2 <span style="color:#000;font-weight:bold">=</span> timedelta(days <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>, hours <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">11</span>, minutes <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">4</span>, seconds <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">54</span>)
+t3 <span style="color:#000;font-weight:bold">=</span> t1 <span style="color:#000;font-weight:bold">-</span> t2
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;t3 =&#34;</span>, t3)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;t3 =&#34;</span>, t3)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code> t3 = 14 days, 13:55:39 
@@ -1793,14 +1793,14 @@ t3 <span style="color:#f92672">=</span> t1 <span style="color:#f92672">-</span> 
 <hr />
 
 <h3 ref="example-13-printing-negative-timedelta-object" >Example 13: Printing negative timedelta object</h3><a class="anchor" id="example-13-printing-negative-timedelta-object"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> timedelta
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> timedelta
 
-t1 <span style="color:#f92672">=</span> timedelta(seconds <span style="color:#f92672">=</span> <span style="color:#ae81ff">33</span>)
-t2 <span style="color:#f92672">=</span> timedelta(seconds <span style="color:#f92672">=</span> <span style="color:#ae81ff">54</span>)
-t3 <span style="color:#f92672">=</span> t1 <span style="color:#f92672">-</span> t2
+t1 <span style="color:#000;font-weight:bold">=</span> timedelta(seconds <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">33</span>)
+t2 <span style="color:#000;font-weight:bold">=</span> timedelta(seconds <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">54</span>)
+t3 <span style="color:#000;font-weight:bold">=</span> t1 <span style="color:#000;font-weight:bold">-</span> t2
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;t3 =&#34;</span>, t3)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;t3 =&#34;</span>, abs(t3))</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;t3 =&#34;</span>, t3)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;t3 =&#34;</span>, <span style="color:#0086b3">abs</span>(t3))</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>t3 = -1 day, 23:59:39
@@ -1812,10 +1812,10 @@ t3 = 0:00:21
 <h3 ref="example-14-time-duration-in-seconds" >Example 14: Time duration in seconds</h3><a class="anchor" id="example-14-time-duration-in-seconds"></a>
 
 <p>You can get the total number of seconds in a timedelta object using  <code>total_seconds()</code>  method.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> timedelta
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> timedelta
 
-t <span style="color:#f92672">=</span> timedelta(days <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>, hours <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, seconds <span style="color:#f92672">=</span> <span style="color:#ae81ff">33</span>, microseconds <span style="color:#f92672">=</span> <span style="color:#ae81ff">233423</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;total seconds =&#34;</span>, t<span style="color:#f92672">.</span>total_seconds())</code></pre></div>
+t <span style="color:#000;font-weight:bold">=</span> timedelta(days <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>, hours <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, seconds <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">33</span>, microseconds <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">233423</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;total seconds =&#34;</span>, t<span style="color:#000;font-weight:bold">.</span>total_seconds())</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code> total seconds = 435633.233423 
@@ -1842,21 +1842,21 @@ t <span style="color:#f92672">=</span> timedelta(days <span style="color:#f92672
 <hr />
 
 <h3 ref="example-15-format-date-using-strftime" >Example 15: Format date using strftime()</h3><a class="anchor" id="example-15-format-date-using-strftime"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-<span style="color:#75715e"># current date and time</span>
-now <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now()
+<span style="color:#998;font-style:italic"># current date and time</span>
+now <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>now()
 
-t <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%H:%M:%S&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;time:&#34;</span>, t)
+t <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%H:%M:%S&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;time:&#34;</span>, t)
 
-s1 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y, %H:%M:%S&#34;</span>)
-<span style="color:#75715e"># mm/dd/YY H:M:S format</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;s1:&#34;</span>, s1)
+s1 <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y, %H:%M:%S&#34;</span>)
+<span style="color:#998;font-style:italic"># mm/dd/YY H:M:S format</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;s1:&#34;</span>, s1)
 
-s2 <span style="color:#f92672">=</span> now<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%m/%Y, %H:%M:%S&#34;</span>)
-<span style="color:#75715e"># dd/mm/YY H:M:S format</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;s2:&#34;</span>, s2)</code></pre></div>
+s2 <span style="color:#000;font-weight:bold">=</span> now<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14">/%m/%Y, %H:%M:%S&#34;</span>)
+<span style="color:#998;font-style:italic"># dd/mm/YY H:M:S format</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;s2:&#34;</span>, s2)</code></pre></div>
 <p>When you run the program, the output will be something like:</p>
 
 <pre><code> time: 04:34:52
@@ -1888,13 +1888,13 @@ s2: 26/12/2018, 04:34:52
 <hr />
 
 <h3 ref="example-16-strptime" >Example 16: strptime()</h3><a class="anchor" id="example-16-strptime"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-date_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;21 June, 2018&#34;</span>
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;date_string =&#34;</span>, date_string)
+date_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;21 June, 2018&#34;</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;date_string =&#34;</span>, date_string)
 
-date_object <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(date_string, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %B, %Y&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;date_object =&#34;</span>, date_object)</code></pre></div>
+date_object <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>strptime(date_string, <span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14"> %B, %Y&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;date_object =&#34;</span>, date_object)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>date_string = 21 June, 2018
@@ -1917,20 +1917,20 @@ date_object = 2018-06-21 00:00:00
 <h2 ref="handling-timezone-in-python" >Handling timezone in Python</h2><a class="anchor" id="handling-timezone-in-python"></a>
 
 <p>Suppose, you are working on a project and need to display date and time based on their timezone. Rather than trying to handle timezone yourself, we suggest you to use a third-party  <a href="http://pytz.sourceforge.net/">pytZ module</a>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
-<span style="color:#f92672">import</span> pytz
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pytz</span>
 
-local <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now()
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Local:&#34;</span>, local<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y, %H:%M:%S&#34;</span>))
+local <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>now()
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Local:&#34;</span>, local<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y, %H:%M:%S&#34;</span>))
 
 
-tz_NY <span style="color:#f92672">=</span> pytz<span style="color:#f92672">.</span>timezone(<span style="color:#e6db74">&#39;America/New_York&#39;</span>) 
-datetime_NY <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now(tz_NY)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;NY:&#34;</span>, datetime_NY<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y, %H:%M:%S&#34;</span>))
+tz_NY <span style="color:#000;font-weight:bold">=</span> pytz<span style="color:#000;font-weight:bold">.</span>timezone(<span style="color:#d14">&#39;America/New_York&#39;</span>) 
+datetime_NY <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>now(tz_NY)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;NY:&#34;</span>, datetime_NY<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y, %H:%M:%S&#34;</span>))
 
-tz_London <span style="color:#f92672">=</span> pytz<span style="color:#f92672">.</span>timezone(<span style="color:#e6db74">&#39;Europe/London&#39;</span>)
-datetime_London <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>now(tz_London)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;London:&#34;</span>, datetime_London<span style="color:#f92672">.</span>strftime(<span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y, %H:%M:%S&#34;</span>))</code></pre></div>
+tz_London <span style="color:#000;font-weight:bold">=</span> pytz<span style="color:#000;font-weight:bold">.</span>timezone(<span style="color:#d14">&#39;Europe/London&#39;</span>)
+datetime_London <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>now(tz_London)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;London:&#34;</span>, datetime_London<span style="color:#000;font-weight:bold">.</span>strftime(<span style="color:#d14">&#34;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y, %H:%M:%S&#34;</span>))</code></pre></div>
 <p>When you run the program, the output will be something like:</p>
 
 <pre><code> Local time: 2018-12-20 13:10:44.260462

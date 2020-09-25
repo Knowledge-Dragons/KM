@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:37 &#43;07">
 <meta name="description" content="">
 
 
@@ -1489,19 +1489,19 @@
 <h2 ref="creating-custom-exceptions" >Creating Custom Exceptions</h2><a class="anchor" id="creating-custom-exceptions"></a>
 
 <p>In Python, users can define custom exceptions by creating a new class. This exception class has to be derived, either directly or indirectly, from the built-in  <code>Exception</code>  class. Most of the built-in exceptions are also derived from this class.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomError</span>(<span style="color:#a6e22e">Exception</span>):
-<span style="color:#f92672">...</span>     <span style="color:#66d9ef">pass</span>
-<span style="color:#f92672">...</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">CustomError</span>(<span style="color:#900;font-weight:bold">Exception</span>):
+<span style="color:#000;font-weight:bold">...</span>     <span style="color:#000;font-weight:bold">pass</span>
+<span style="color:#000;font-weight:bold">...</span>
 
- <span style="color:#66d9ef">raise</span> CustomError
+ <span style="color:#000;font-weight:bold">raise</span> CustomError
 Traceback (most recent call last):
-<span style="color:#f92672">...</span>
-__main__<span style="color:#f92672">.</span>CustomError
+<span style="color:#000;font-weight:bold">...</span>
+__main__<span style="color:#000;font-weight:bold">.</span>CustomError
 
- <span style="color:#66d9ef">raise</span> CustomError(<span style="color:#e6db74">&#34;An error occurred&#34;</span>)
+ <span style="color:#000;font-weight:bold">raise</span> CustomError(<span style="color:#d14">&#34;An error occurred&#34;</span>)
 Traceback (most recent call last):
-<span style="color:#f92672">...</span>
-__main__<span style="color:#f92672">.</span>CustomError: An error occurred</code></pre></div>
+<span style="color:#000;font-weight:bold">...</span>
+__main__<span style="color:#000;font-weight:bold">.</span>CustomError: An error occurred</code></pre></div>
 <p>Here, we have created a user-defined exception called  <code>CustomError</code>  which inherits from the  <code>Exception</code>  class. This new exception, like other exceptions, can be raised using the  <code>raise</code>  statement with an optional error message.</p>
 
 <p>When we are developing a large Python program, it is a good practice to place all the user-defined exceptions that our program raises in a separate file. Many standard modules do this. They define their exceptions separately as  <code>exceptions.py</code>  or  <code>errors.py</code>  (generally but not always).</p>
@@ -1515,42 +1515,42 @@ __main__<span style="color:#f92672">.</span>CustomError: An error occurred</code
 <p>In this example, we will illustrate how user-defined exceptions can be used in a program to raise and catch errors.</p>
 
 <p>This program will ask the user to enter a number until they guess a stored number correctly. To help them figure it out, a hint is provided whether their guess is greater than or less than the stored number.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># define Python user-defined exceptions</span>
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Error</span>(<span style="color:#a6e22e">Exception</span>):
-    <span style="color:#e6db74">&#34;&#34;&#34;Base class for other exceptions&#34;&#34;&#34;</span>
-    <span style="color:#66d9ef">pass</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># define Python user-defined exceptions</span>
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Error</span>(<span style="color:#900;font-weight:bold">Exception</span>):
+    <span style="color:#d14">&#34;&#34;&#34;Base class for other exceptions&#34;&#34;&#34;</span>
+    <span style="color:#000;font-weight:bold">pass</span>
 
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ValueTooSmallError</span>(Error):
-    <span style="color:#e6db74">&#34;&#34;&#34;Raised when the input value is too small&#34;&#34;&#34;</span>
-    <span style="color:#66d9ef">pass</span>
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ValueTooSmallError</span>(Error):
+    <span style="color:#d14">&#34;&#34;&#34;Raised when the input value is too small&#34;&#34;&#34;</span>
+    <span style="color:#000;font-weight:bold">pass</span>
 
 
-<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ValueTooLargeError</span>(Error):
-    <span style="color:#e6db74">&#34;&#34;&#34;Raised when the input value is too large&#34;&#34;&#34;</span>
-    <span style="color:#66d9ef">pass</span>
+<span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ValueTooLargeError</span>(Error):
+    <span style="color:#d14">&#34;&#34;&#34;Raised when the input value is too large&#34;&#34;&#34;</span>
+    <span style="color:#000;font-weight:bold">pass</span>
 
 
-<span style="color:#75715e"># you need to guess this number</span>
-number <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<span style="color:#998;font-style:italic"># you need to guess this number</span>
+number <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
 
-<span style="color:#75715e"># user guesses a number until he/she gets it right</span>
-<span style="color:#66d9ef">while</span> True:
-    <span style="color:#66d9ef">try</span>:
-        i_num <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Enter a number: &#34;</span>))
-        <span style="color:#66d9ef">if</span> i_num <span style="color:#f92672">&lt;</span> number:
-            <span style="color:#66d9ef">raise</span> ValueTooSmallError
-        <span style="color:#66d9ef">elif</span> i_num <span style="color:#f92672">&gt;</span> number:
-            <span style="color:#66d9ef">raise</span> ValueTooLargeError
-        <span style="color:#66d9ef">break</span>
-    <span style="color:#66d9ef">except</span> ValueTooSmallError:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This value is too small, try again!&#34;</span>)
-        <span style="color:#66d9ef">print</span>()
-    <span style="color:#66d9ef">except</span> ValueTooLargeError:
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;This value is too large, try again!&#34;</span>)
-        <span style="color:#66d9ef">print</span>()
+<span style="color:#998;font-style:italic"># user guesses a number until he/she gets it right</span>
+<span style="color:#000;font-weight:bold">while</span> <span style="color:#999">True</span>:
+    <span style="color:#000;font-weight:bold">try</span>:
+        i_num <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;Enter a number: &#34;</span>))
+        <span style="color:#000;font-weight:bold">if</span> i_num <span style="color:#000;font-weight:bold">&lt;</span> number:
+            <span style="color:#000;font-weight:bold">raise</span> ValueTooSmallError
+        <span style="color:#000;font-weight:bold">elif</span> i_num <span style="color:#000;font-weight:bold">&gt;</span> number:
+            <span style="color:#000;font-weight:bold">raise</span> ValueTooLargeError
+        <span style="color:#000;font-weight:bold">break</span>
+    <span style="color:#000;font-weight:bold">except</span> ValueTooSmallError:
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;This value is too small, try again!&#34;</span>)
+        <span style="color:#000;font-weight:bold">print</span>()
+    <span style="color:#000;font-weight:bold">except</span> ValueTooLargeError:
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;This value is too large, try again!&#34;</span>)
+        <span style="color:#000;font-weight:bold">print</span>()
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Congratulations! You guessed it correctly.&#34;</span>)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Congratulations! You guessed it correctly.&#34;</span>)</code></pre></div>
 <p>Here is a sample run of this program.</p>
 
 <pre><code>Enter a number: 12
@@ -1581,23 +1581,23 @@ Congratulations! You guessed it correctly.
 <p>Visit  <a href="https://www.programiz.com/python-programming/object-oriented-programming">Python Object Oriented Programming</a>  to start learning about Object-Oriented programming in Python.</p>
 
 <p>Let&rsquo;s look at one example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SalaryNotInRangeError</span>(<span style="color:#a6e22e">Exception</span>):
-    <span style="color:#e6db74">&#34;&#34;&#34;Exception raised for errors in the input salary.
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">    Attributes:
-</span><span style="color:#e6db74">        salary -- input salary which caused the error
-</span><span style="color:#e6db74">        message -- explanation of the error
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">SalaryNotInRangeError</span>(<span style="color:#900;font-weight:bold">Exception</span>):
+    <span style="color:#d14">&#34;&#34;&#34;Exception raised for errors in the input salary.
+</span><span style="color:#d14">
+</span><span style="color:#d14">    Attributes:
+</span><span style="color:#d14">        salary -- input salary which caused the error
+</span><span style="color:#d14">        message -- explanation of the error
+</span><span style="color:#d14">    &#34;&#34;&#34;</span>
 
-    <span style="color:#66d9ef">def</span> __init__(self, salary, message<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Salary is not in (5000, 15000) range&#34;</span>):
-        self<span style="color:#f92672">.</span>salary <span style="color:#f92672">=</span> salary
-        self<span style="color:#f92672">.</span>message <span style="color:#f92672">=</span> message
-        super()<span style="color:#f92672">.</span>__init__(self<span style="color:#f92672">.</span>message)
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, salary, message<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Salary is not in (5000, 15000) range&#34;</span>):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>salary <span style="color:#000;font-weight:bold">=</span> salary
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>message <span style="color:#000;font-weight:bold">=</span> message
+        <span style="color:#0086b3">super</span>()<span style="color:#000;font-weight:bold">.</span>__init__(<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>message)
 
 
-salary <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Enter salary amount: &#34;</span>))
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> <span style="color:#ae81ff">5000</span> <span style="color:#f92672">&lt;</span> salary <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">15000</span>:
-    <span style="color:#66d9ef">raise</span> SalaryNotInRangeError(salary)</code></pre></div>
+salary <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;Enter salary amount: &#34;</span>))
+<span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#099">5000</span> <span style="color:#000;font-weight:bold">&lt;</span> salary <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">15000</span>:
+    <span style="color:#000;font-weight:bold">raise</span> SalaryNotInRangeError(salary)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Enter salary amount: 2000
@@ -1614,26 +1614,26 @@ __main__.SalaryNotInRangeError: Salary is not in (5000, 15000) range
 <p>The inherited  <code>__str__</code>  method of the  <code>Exception</code>  class is then used to display the corresponding message when  <code>SalaryNotInRangeError</code>  is raised.</p>
 
 <p>We can also customize the  <code>__str__</code>  method itself by overriding it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">SalaryNotInRangeError</span>(<span style="color:#a6e22e">Exception</span>):
-    <span style="color:#e6db74">&#34;&#34;&#34;Exception raised for errors in the input salary.
-</span><span style="color:#e6db74">
-</span><span style="color:#e6db74">    Attributes:
-</span><span style="color:#e6db74">        salary -- input salary which caused the error
-</span><span style="color:#e6db74">        message -- explanation of the error
-</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">SalaryNotInRangeError</span>(<span style="color:#900;font-weight:bold">Exception</span>):
+    <span style="color:#d14">&#34;&#34;&#34;Exception raised for errors in the input salary.
+</span><span style="color:#d14">
+</span><span style="color:#d14">    Attributes:
+</span><span style="color:#d14">        salary -- input salary which caused the error
+</span><span style="color:#d14">        message -- explanation of the error
+</span><span style="color:#d14">    &#34;&#34;&#34;</span>
 
-    <span style="color:#66d9ef">def</span> __init__(self, salary, message<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Salary is not in (5000, 15000) range&#34;</span>):
-        self<span style="color:#f92672">.</span>salary <span style="color:#f92672">=</span> salary
-        self<span style="color:#f92672">.</span>message <span style="color:#f92672">=</span> message
-        super()<span style="color:#f92672">.</span>__init__(self<span style="color:#f92672">.</span>message)
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, salary, message<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Salary is not in (5000, 15000) range&#34;</span>):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>salary <span style="color:#000;font-weight:bold">=</span> salary
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>message <span style="color:#000;font-weight:bold">=</span> message
+        <span style="color:#0086b3">super</span>()<span style="color:#000;font-weight:bold">.</span>__init__(<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>message)
 
-    <span style="color:#66d9ef">def</span> __str__(self):
-        <span style="color:#66d9ef">return</span> f<span style="color:#e6db74">&#39;{self.salary} -&gt; {self.message}&#39;</span>
+    <span style="color:#000;font-weight:bold">def</span> __str__(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">return</span> f<span style="color:#d14">&#39;{self.salary} -&gt; {self.message}&#39;</span>
 
 
-salary <span style="color:#f92672">=</span> int(input(<span style="color:#e6db74">&#34;Enter salary amount: &#34;</span>))
-<span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> <span style="color:#ae81ff">5000</span> <span style="color:#f92672">&lt;</span> salary <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">15000</span>:
-    <span style="color:#66d9ef">raise</span> SalaryNotInRangeError(salary)</code></pre></div>
+salary <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">int</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;Enter salary amount: &#34;</span>))
+<span style="color:#000;font-weight:bold">if</span> <span style="color:#000;font-weight:bold">not</span> <span style="color:#099">5000</span> <span style="color:#000;font-weight:bold">&lt;</span> salary <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">15000</span>:
+    <span style="color:#000;font-weight:bold">raise</span> SalaryNotInRangeError(salary)</code></pre></div>
 <p><strong>Output</strong></p>
 
 <pre><code>Enter salary amount: 2000

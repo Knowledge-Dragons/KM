@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:15 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1493,63 +1493,63 @@
 
 <p><strong><a href="https://www.geeksforgeeks.org/how-to-select-multiple-columns-in-a-pandas-dataframe/">Column Selection</a>:</strong><br />
 In Order to select a column in Pandas DataFrame, we can either access the columns by calling them by their columns name.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Import pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Import pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># Define a dictionary containing employee data </span>
-data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Name&#39;</span>:[<span style="color:#e6db74">&#39;Jai&#39;</span>, <span style="color:#e6db74">&#39;Princi&#39;</span>, <span style="color:#e6db74">&#39;Gaurav&#39;</span>, <span style="color:#e6db74">&#39;Anuj&#39;</span>], 
-		<span style="color:#e6db74">&#39;Age&#39;</span>:[<span style="color:#ae81ff">27</span>, <span style="color:#ae81ff">24</span>, <span style="color:#ae81ff">22</span>, <span style="color:#ae81ff">32</span>], 
-		<span style="color:#e6db74">&#39;Address&#39;</span>:[<span style="color:#e6db74">&#39;Delhi&#39;</span>, <span style="color:#e6db74">&#39;Kanpur&#39;</span>, <span style="color:#e6db74">&#39;Allahabad&#39;</span>, <span style="color:#e6db74">&#39;Kannauj&#39;</span>], 
-		<span style="color:#e6db74">&#39;Qualification&#39;</span>:[<span style="color:#e6db74">&#39;Msc&#39;</span>, <span style="color:#e6db74">&#39;MA&#39;</span>, <span style="color:#e6db74">&#39;MCA&#39;</span>, <span style="color:#e6db74">&#39;Phd&#39;</span>]} 
+<span style="color:#998;font-style:italic"># Define a dictionary containing employee data </span>
+data <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;Name&#39;</span>:[<span style="color:#d14">&#39;Jai&#39;</span>, <span style="color:#d14">&#39;Princi&#39;</span>, <span style="color:#d14">&#39;Gaurav&#39;</span>, <span style="color:#d14">&#39;Anuj&#39;</span>], 
+		<span style="color:#d14">&#39;Age&#39;</span>:[<span style="color:#099">27</span>, <span style="color:#099">24</span>, <span style="color:#099">22</span>, <span style="color:#099">32</span>], 
+		<span style="color:#d14">&#39;Address&#39;</span>:[<span style="color:#d14">&#39;Delhi&#39;</span>, <span style="color:#d14">&#39;Kanpur&#39;</span>, <span style="color:#d14">&#39;Allahabad&#39;</span>, <span style="color:#d14">&#39;Kannauj&#39;</span>], 
+		<span style="color:#d14">&#39;Qualification&#39;</span>:[<span style="color:#d14">&#39;Msc&#39;</span>, <span style="color:#d14">&#39;MA&#39;</span>, <span style="color:#d14">&#39;MCA&#39;</span>, <span style="color:#d14">&#39;Phd&#39;</span>]} 
 
-<span style="color:#75715e"># Convert the dictionary into DataFrame </span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data) 
+<span style="color:#998;font-style:italic"># Convert the dictionary into DataFrame </span>
+df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(data) 
 
-<span style="color:#75715e"># select two columns </span>
-<span style="color:#66d9ef">print</span>(df[[<span style="color:#e6db74">&#39;Name&#39;</span>, <span style="color:#e6db74">&#39;Qualification&#39;</span>]]) </code></pre></div>
+<span style="color:#998;font-style:italic"># select two columns </span>
+<span style="color:#000;font-weight:bold">print</span>(df[[<span style="color:#d14">&#39;Name&#39;</span>, <span style="color:#d14">&#39;Qualification&#39;</span>]]) </code></pre></div>
 <p><strong>Output:</strong><br />
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/df_col1.png" alt="" title="Click to enlarge" /><br />
 For more examples refer to  <a href="https://www.geeksforgeeks.org/how-to-select-multiple-columns-in-a-pandas-dataframe/">How to select multiple columns in a pandas dataframe</a></p>
 
 <p><strong><a href="https://www.geeksforgeeks.org/adding-new-column-to-existing-dataframe-in-pandas/">Column Addition</a>:</strong><br />
 In Order to add a column in Pandas DataFrame, we can declare a new list as a column and add to a existing Dataframe.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># Import pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># Import pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># Define a dictionary containing Students data </span>
-data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Name&#39;</span>: [<span style="color:#e6db74">&#39;Jai&#39;</span>, <span style="color:#e6db74">&#39;Princi&#39;</span>, <span style="color:#e6db74">&#39;Gaurav&#39;</span>, <span style="color:#e6db74">&#39;Anuj&#39;</span>], 
-		<span style="color:#e6db74">&#39;Height&#39;</span>: [<span style="color:#ae81ff">5.1</span>, <span style="color:#ae81ff">6.2</span>, <span style="color:#ae81ff">5.1</span>, <span style="color:#ae81ff">5.2</span>], 
-		<span style="color:#e6db74">&#39;Qualification&#39;</span>: [<span style="color:#e6db74">&#39;Msc&#39;</span>, <span style="color:#e6db74">&#39;MA&#39;</span>, <span style="color:#e6db74">&#39;Msc&#39;</span>, <span style="color:#e6db74">&#39;Msc&#39;</span>]} 
+<span style="color:#998;font-style:italic"># Define a dictionary containing Students data </span>
+data <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;Name&#39;</span>: [<span style="color:#d14">&#39;Jai&#39;</span>, <span style="color:#d14">&#39;Princi&#39;</span>, <span style="color:#d14">&#39;Gaurav&#39;</span>, <span style="color:#d14">&#39;Anuj&#39;</span>], 
+		<span style="color:#d14">&#39;Height&#39;</span>: [<span style="color:#099">5.1</span>, <span style="color:#099">6.2</span>, <span style="color:#099">5.1</span>, <span style="color:#099">5.2</span>], 
+		<span style="color:#d14">&#39;Qualification&#39;</span>: [<span style="color:#d14">&#39;Msc&#39;</span>, <span style="color:#d14">&#39;MA&#39;</span>, <span style="color:#d14">&#39;Msc&#39;</span>, <span style="color:#d14">&#39;Msc&#39;</span>]} 
 
-<span style="color:#75715e"># Convert the dictionary into DataFrame </span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data) 
+<span style="color:#998;font-style:italic"># Convert the dictionary into DataFrame </span>
+df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(data) 
 
-<span style="color:#75715e"># Declare a list that is to be converted into a column </span>
-address <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Delhi&#39;</span>, <span style="color:#e6db74">&#39;Bangalore&#39;</span>, <span style="color:#e6db74">&#39;Chennai&#39;</span>, <span style="color:#e6db74">&#39;Patna&#39;</span>] 
+<span style="color:#998;font-style:italic"># Declare a list that is to be converted into a column </span>
+address <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#39;Delhi&#39;</span>, <span style="color:#d14">&#39;Bangalore&#39;</span>, <span style="color:#d14">&#39;Chennai&#39;</span>, <span style="color:#d14">&#39;Patna&#39;</span>] 
 
-<span style="color:#75715e"># Using &#39;Address&#39; as the column name </span>
-<span style="color:#75715e"># and equating it to the list </span>
-df[<span style="color:#e6db74">&#39;Address&#39;</span>] <span style="color:#f92672">=</span> address 
+<span style="color:#998;font-style:italic"># Using &#39;Address&#39; as the column name </span>
+<span style="color:#998;font-style:italic"># and equating it to the list </span>
+df[<span style="color:#d14">&#39;Address&#39;</span>] <span style="color:#000;font-weight:bold">=</span> address 
 
-<span style="color:#75715e"># Observe the result </span>
-<span style="color:#66d9ef">print</span>(df) </code></pre></div>
+<span style="color:#998;font-style:italic"># Observe the result </span>
+<span style="color:#000;font-weight:bold">print</span>(df) </code></pre></div>
 <p><strong>Output:</strong><br />
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/add_column1.png" alt="" title="Click to enlarge" /><br />
 For more examples refer to  <a href="https://www.geeksforgeeks.org/adding-new-column-to-existing-dataframe-in-pandas/">Adding new column to existing DataFrame in Pandas</a></p>
 
 <p><strong><a href="https://www.geeksforgeeks.org/python-delete-rows-columns-from-dataframe-using-pandas-drop/">Column Deletion</a>:</strong><br />
 In Order to delete a column in Pandas DataFrame, we can use the  <code>drop()</code>  method. Columns is deleted by dropping columns with column names.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas module </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas module </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span> ) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Name&#34;</span> ) 
 
-<span style="color:#75715e"># dropping passed columns </span>
-data<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#34;Team&#34;</span>, <span style="color:#e6db74">&#34;Weight&#34;</span>], axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, inplace <span style="color:#f92672">=</span> True) 
+<span style="color:#998;font-style:italic"># dropping passed columns </span>
+data<span style="color:#000;font-weight:bold">.</span>drop([<span style="color:#d14">&#34;Team&#34;</span>, <span style="color:#d14">&#34;Weight&#34;</span>], axis <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, inplace <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">True</span>) 
 
-<span style="color:#75715e"># display </span>
-<span style="color:#66d9ef">print</span>(data) </code></pre></div>
+<span style="color:#998;font-style:italic"># display </span>
+<span style="color:#000;font-weight:bold">print</span>(data) </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output images, the new output doesn’t have the passed columns. Those values were dropped since axis was set equal to 1 and the changes were made in the original data frame since inplace was True.</p>
 
@@ -1566,18 +1566,18 @@ For more examples refer to  <a href="https://www.geeksforgeeks.org/python-delete
 
 <p><strong><a href="https://www.geeksforgeeks.org/python-pandas-extracting-rows-using-loc/">Row Selection</a>:</strong><br />
 Pandas provide a unique method to retrieve rows from a Data frame.<code>[DataFrame.loc[]](https://www.geeksforgeeks.org/python-pandas-extracting-rows-using-loc/)</code>  method is used to retrieve rows from Pandas DataFrame. Rows can also be selected by passing integer location to an  <a href="https://www.geeksforgeeks.org/python-extracting-rows-using-pandas-iloc/">iloc[]</a>  function.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas package </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas package </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Name&#34;</span>) 
 
-<span style="color:#75715e"># retrieving row by loc method </span>
-first <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;Avery Bradley&#34;</span>] 
-second <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>loc[<span style="color:#e6db74">&#34;R.J. Hunter&#34;</span>] 
+<span style="color:#998;font-style:italic"># retrieving row by loc method </span>
+first <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[<span style="color:#d14">&#34;Avery Bradley&#34;</span>] 
+second <span style="color:#000;font-weight:bold">=</span> data<span style="color:#000;font-weight:bold">.</span>loc[<span style="color:#d14">&#34;R.J. Hunter&#34;</span>] 
 
 
-<span style="color:#66d9ef">print</span>(first, <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n\n</span><span style="color:#e6db74">&#34;</span>, second) </code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(first, <span style="color:#d14">&#34;</span><span style="color:#d14">\n\n\n</span><span style="color:#d14">&#34;</span>, second) </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output image, two series were returned since there was only one parameter both of the times.<br />
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/out1-22.jpg" alt="" title="Click to enlarge" /><br />
@@ -1585,21 +1585,21 @@ For more examples refer to  <a href="https://www.geeksforgeeks.org/python-pandas
 
 <p><strong><a href="https://www.geeksforgeeks.org/add-a-row-at-top-in-pandas-dataframe/">Row Addition</a>:</strong><br />
 In Order to add a Row in Pandas DataFrame, we can concat the old dataframe with new one.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas module </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas module </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 	
-<span style="color:#75715e"># making data frame </span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span>) 
+<span style="color:#998;font-style:italic"># making data frame </span>
+df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Name&#34;</span>) 
 
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">10</span>) 
+df<span style="color:#000;font-weight:bold">.</span>head(<span style="color:#099">10</span>) 
 
-new_row <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;Name&#39;</span>:<span style="color:#e6db74">&#39;Geeks&#39;</span>, <span style="color:#e6db74">&#39;Team&#39;</span>:<span style="color:#e6db74">&#39;Boston&#39;</span>, <span style="color:#e6db74">&#39;Number&#39;</span>:<span style="color:#ae81ff">3</span>, 
-						<span style="color:#e6db74">&#39;Position&#39;</span>:<span style="color:#e6db74">&#39;PG&#39;</span>, <span style="color:#e6db74">&#39;Age&#39;</span>:<span style="color:#ae81ff">33</span>, <span style="color:#e6db74">&#39;Height&#39;</span>:<span style="color:#e6db74">&#39;6-2&#39;</span>, 
-						<span style="color:#e6db74">&#39;Weight&#39;</span>:<span style="color:#ae81ff">189</span>, <span style="color:#e6db74">&#39;College&#39;</span>:<span style="color:#e6db74">&#39;MIT&#39;</span>, <span style="color:#e6db74">&#39;Salary&#39;</span>:<span style="color:#ae81ff">99999</span>}, 
-															index <span style="color:#f92672">=</span>[<span style="color:#ae81ff">0</span>]) 
-<span style="color:#75715e"># simply concatenate both dataframes </span>
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat([new_row, df])<span style="color:#f92672">.</span>reset_index(drop <span style="color:#f92672">=</span> True) 
-df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>) </code></pre></div>
+new_row <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame({<span style="color:#d14">&#39;Name&#39;</span>:<span style="color:#d14">&#39;Geeks&#39;</span>, <span style="color:#d14">&#39;Team&#39;</span>:<span style="color:#d14">&#39;Boston&#39;</span>, <span style="color:#d14">&#39;Number&#39;</span>:<span style="color:#099">3</span>, 
+						<span style="color:#d14">&#39;Position&#39;</span>:<span style="color:#d14">&#39;PG&#39;</span>, <span style="color:#d14">&#39;Age&#39;</span>:<span style="color:#099">33</span>, <span style="color:#d14">&#39;Height&#39;</span>:<span style="color:#d14">&#39;6-2&#39;</span>, 
+						<span style="color:#d14">&#39;Weight&#39;</span>:<span style="color:#099">189</span>, <span style="color:#d14">&#39;College&#39;</span>:<span style="color:#d14">&#39;MIT&#39;</span>, <span style="color:#d14">&#39;Salary&#39;</span>:<span style="color:#099">99999</span>}, 
+															index <span style="color:#000;font-weight:bold">=</span>[<span style="color:#099">0</span>]) 
+<span style="color:#998;font-style:italic"># simply concatenate both dataframes </span>
+df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>concat([new_row, df])<span style="color:#000;font-weight:bold">.</span>reset_index(drop <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">True</span>) 
+df<span style="color:#000;font-weight:bold">.</span>head(<span style="color:#099">5</span>) </code></pre></div>
 <p><strong>Output:</strong></p>
 
 <p><strong>Data Frame before Adding Row-</strong><br />
@@ -1612,17 +1612,17 @@ df<span style="color:#f92672">.</span>head(<span style="color:#ae81ff">5</span>)
 
 <p><strong><a href="https://www.geeksforgeeks.org/python-delete-rows-columns-from-dataframe-using-pandas-drop/">Row Deletion</a>:</strong><br />
 In Order to delete a row in Pandas DataFrame, we can use the drop() method. Rows is deleted by dropping Rows by index label.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#75715e"># importing pandas module </span>
-<span style="color:#f92672">import</span> pandas <span style="color:#f92672">as</span> pd 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#998;font-style:italic"># importing pandas module </span>
+<span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span> 
 
-<span style="color:#75715e"># making data frame from csv file </span>
-data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;nba.csv&#34;</span>, index_col <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Name&#34;</span> ) 
+<span style="color:#998;font-style:italic"># making data frame from csv file </span>
+data <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;nba.csv&#34;</span>, index_col <span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Name&#34;</span> ) 
 
-<span style="color:#75715e"># dropping passed values </span>
-data<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#34;Avery Bradley&#34;</span>, <span style="color:#e6db74">&#34;John Holland&#34;</span>, <span style="color:#e6db74">&#34;R.J. Hunter&#34;</span>, 
-							<span style="color:#e6db74">&#34;R.J. Hunter&#34;</span>], inplace <span style="color:#f92672">=</span> True) 
+<span style="color:#998;font-style:italic"># dropping passed values </span>
+data<span style="color:#000;font-weight:bold">.</span>drop([<span style="color:#d14">&#34;Avery Bradley&#34;</span>, <span style="color:#d14">&#34;John Holland&#34;</span>, <span style="color:#d14">&#34;R.J. Hunter&#34;</span>, 
+							<span style="color:#d14">&#34;R.J. Hunter&#34;</span>], inplace <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">True</span>) 
 
-<span style="color:#75715e"># display </span>
+<span style="color:#998;font-style:italic"># display </span>
 data </code></pre></div>
 <p><strong>Output:</strong><br />
 As shown in the output images, the new output doesn’t have the passed values. Those values were dropped and the changes were made in the original data frame since inplace was True.</p>

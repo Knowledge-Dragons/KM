@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:37 &#43;07">
 <meta name="description" content="">
 
 
@@ -1502,26 +1502,26 @@
 <p>Let&rsquo;s see an example of how a global variable is created in Python.</p>
 
 <h3 ref="example-1-create-a-global-variable" >Example 1: Create a Global Variable</h3><a class="anchor" id="example-1-create-a-global-variable"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;global&#34;</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>():
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;x inside:&#34;</span>, x)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;global&#34;</span>
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">foo</span>():
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;x inside:&#34;</span>, x)
 foo()
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;x outside:&#34;</span>, x)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;x outside:&#34;</span>, x)</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">x inside: global
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">x inside: global
 x outside: global</code></pre></div>
 <p>In the above code, we created  x  as a global variable and defined a  <code>foo()</code>  to print the global variable  x. Finally, we call the  <code>foo()</code>  which will print the value of  x.</p>
 
 <p>What if you want to change the value of  x  inside a function?</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;global&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;global&#34;</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>():
-    x <span style="color:#f92672">=</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
-    <span style="color:#66d9ef">print</span>(x)
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">foo</span>():
+    x <span style="color:#000;font-weight:bold">=</span> x <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span>
+    <span style="color:#000;font-weight:bold">print</span>(x)
 
 foo()</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">UnboundLocalError: local variable &#39;x&#39; referenced before assignment</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">UnboundLocalError: local variable &#39;x&#39; referenced before assignment</code></pre></div>
 <p>The output shows an error because Python treats  x  as a local variable and  x  is also not defined inside  <code>foo()</code>.</p>
 
 <p>To make this work, we use the  <code>global</code>  keyword. Visit  <a href="https://www.programiz.com/python-programming/global-keyword">Python Global Keyword</a>  to learn more.</p>
@@ -1533,12 +1533,12 @@ foo()</code></pre></div>
 <p>A variable declared inside the function&rsquo;s body or in the local scope is known as a local variable.</p>
 
 <h3 ref="example-2-accessing-local-variable-outside-the-scope" >Example 2: Accessing local variable outside the scope</h3><a class="anchor" id="example-2-accessing-local-variable-outside-the-scope"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>():
-    y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;local&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">foo</span>():
+    y <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;local&#34;</span>
 foo()
-<span style="color:#66d9ef">print</span>(y)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(y)</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">NameError: name &#39;y&#39; is not defined</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">NameError: name &#39;y&#39; is not defined</code></pre></div>
 <p>The output shows an error because we are trying to access a local variable  y  in a global scope whereas the local variable only works inside  <code>foo()</code>  or local scope.</p>
 
 <hr />
@@ -1548,13 +1548,13 @@ foo()
 <h3 ref="example-3-create-a-local-variable" >Example 3: Create a Local Variable</h3><a class="anchor" id="example-3-create-a-local-variable"></a>
 
 <p>Normally, we declare a variable inside the function to create a local variable.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>():
-    y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;local&#34;</span>
-    <span style="color:#66d9ef">print</span>(y)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">foo</span>():
+    y <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;local&#34;</span>
+    <span style="color:#000;font-weight:bold">print</span>(y)
 
 foo()</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">local</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">local</code></pre></div>
 <p>Let&rsquo;s take a look at the  <a href="https://www.programiz.com/python-programming/global-local-nonlocal-variables#change-x">earlier problem</a>  where  x  was a global variable and we wanted to modify  x  inside  <code>foo()</code>.</p>
 
 <hr />
@@ -1564,18 +1564,18 @@ foo()</code></pre></div>
 <p>Here, we will show how to use global variables and local variables in the same code.</p>
 
 <h3 ref="example-4-using-global-and-local-variables-in-the-same-code" >Example 4: Using Global and Local variables in the same code</h3><a class="anchor" id="example-4-using-global-and-local-variables-in-the-same-code"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;global &#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;global &#34;</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>():
-    <span style="color:#66d9ef">global</span> x
-    y <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;local&#34;</span>
-    x <span style="color:#f92672">=</span> x <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>
-    <span style="color:#66d9ef">print</span>(x)
-    <span style="color:#66d9ef">print</span>(y)
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">foo</span>():
+    <span style="color:#000;font-weight:bold">global</span> x
+    y <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;local&#34;</span>
+    x <span style="color:#000;font-weight:bold">=</span> x <span style="color:#000;font-weight:bold">*</span> <span style="color:#099">2</span>
+    <span style="color:#000;font-weight:bold">print</span>(x)
+    <span style="color:#000;font-weight:bold">print</span>(y)
 
 foo()</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">global global 
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">global global 
 local</code></pre></div>
 <p>In the above code, we declare  x  as a global and  y  as a local variable in the  <code>foo()</code>. Then, we use multiplication operator  <code>*</code>  to modify the global variable  x  and we print both  x  and  y.</p>
 
@@ -1584,17 +1584,17 @@ local</code></pre></div>
 <hr />
 
 <h3 ref="example-5-global-variable-and-local-variable-with-same-name" >Example 5: Global variable and Local variable with same name</h3><a class="anchor" id="example-5-global-variable-and-local-variable-with-same-name"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">5</span>
 
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">foo</span>():
-    x <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;local x:&#34;</span>, x)
+<span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">foo</span>():
+    x <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;local x:&#34;</span>, x)
 
 
 foo()
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;global x:&#34;</span>, x)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;global x:&#34;</span>, x)</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">local x: 10
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">local x: 10
 global x: 5</code></pre></div>
 <p>In the above code, we used the same name  x  for both global variable and local variable. We get a different result when we print the same variable because the variable is declared in both scopes, i.e. the local scope inside  <code>foo()</code>  and global scope outside  <code>foo()</code>.</p>
 
@@ -1613,21 +1613,21 @@ global x: 5</code></pre></div>
 <p>We use  <code>nonlocal</code>  keywords to create nonlocal variables.</p>
 
 <h3 ref="example-6-create-a-nonlocal-variable" >Example 6: Create a nonlocal variable</h3><a class="anchor" id="example-6-create-a-nonlocal-variable"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">outer</span>():
-    x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;local&#34;</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">outer</span>():
+    x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;local&#34;</span>
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">inner</span>():
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">inner</span>():
         nonlocal x
-        x <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;nonlocal&#34;</span>
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;inner:&#34;</span>, x)
+        x <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;nonlocal&#34;</span>
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;inner:&#34;</span>, x)
 
     inner()
-    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;outer:&#34;</span>, x)
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;outer:&#34;</span>, x)
 
 
 outer()</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">inner: nonlocal
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">inner: nonlocal
 outer: nonlocal</code></pre></div>
 <p>In the above code, there is a nested  <code>inner()</code>  function. We use  <code>nonlocal</code>  keywords to create a nonlocal variable. The  <code>inner()</code>  function is defined in the scope of another function  <code>outer()</code>.</p>
 

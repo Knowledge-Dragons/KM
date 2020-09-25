@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1499,34 +1499,34 @@
 <p>The first string inside the class is called docstring and has a brief description about the class. Although not mandatory, this is highly recommended.</p>
 
 <p>Here is a simple class definition.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MyNewClass</span>:
-    <span style="color:#e6db74">&#39;&#39;&#39;This is a docstring. I have created a new class&#39;&#39;&#39;</span>
-    <span style="color:#66d9ef">pass</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">MyNewClass</span>:
+    <span style="color:#d14">&#39;&#39;&#39;This is a docstring. I have created a new class&#39;&#39;&#39;</span>
+    <span style="color:#000;font-weight:bold">pass</span></code></pre></div>
 <p>A class creates a new local  <a href="https://www.programiz.com/python-programming/namespace">namespace</a>  where all its attributes are defined. Attributes may be data or functions.</p>
 
 <p>There are also special attributes in it that begins with double underscores  <code>__</code>. For example,  <code>__doc__</code>  gives us the docstring of that class.</p>
 
 <p>As soon as we define a class, a new class object is created with the same name. This class object allows us to access the different attributes as well as to instantiate new objects of that class.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>:
-    <span style="color:#e6db74">&#34;This is a person class&#34;</span>
-    age <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Person</span>:
+    <span style="color:#d14">&#34;This is a person class&#34;</span>
+    age <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Hello&#39;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;Hello&#39;</span>)
 
 
-<span style="color:#75715e"># Output: 10</span>
-<span style="color:#66d9ef">print</span>(Person<span style="color:#f92672">.</span>age)
+<span style="color:#998;font-style:italic"># Output: 10</span>
+<span style="color:#000;font-weight:bold">print</span>(Person<span style="color:#000;font-weight:bold">.</span>age)
 
-<span style="color:#75715e"># Output: &lt;function Person.greet&gt;</span>
-<span style="color:#66d9ef">print</span>(Person<span style="color:#f92672">.</span>greet)
+<span style="color:#998;font-style:italic"># Output: &lt;function Person.greet&gt;</span>
+<span style="color:#000;font-weight:bold">print</span>(Person<span style="color:#000;font-weight:bold">.</span>greet)
 
-<span style="color:#75715e"># Output: &#39;This is my second class&#39;</span>
-<span style="color:#66d9ef">print</span>(Person<span style="color:#f92672">.</span>__doc__)</code></pre></div>
+<span style="color:#998;font-style:italic"># Output: &#39;This is my second class&#39;</span>
+<span style="color:#000;font-weight:bold">print</span>(Person<span style="color:#000;font-weight:bold">.</span>__doc__)</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#ae81ff">10</span>
-<span style="color:#f92672">&lt;</span>function Person<span style="color:#f92672">.</span>greet at <span style="color:#ae81ff">0x7fc78c6e8160</span><span style="color:#f92672">&gt;</span>
-This <span style="color:#f92672">is</span> a person class</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#099">10</span>
+<span style="color:#000;font-weight:bold">&lt;</span>function Person<span style="color:#000;font-weight:bold">.</span>greet at <span style="color:#099">0x7fc78c6e8160</span><span style="color:#000;font-weight:bold">&gt;</span>
+This <span style="color:#000;font-weight:bold">is</span> a person class</code></pre></div>
 <hr />
 
 <h2 ref="creating-an-object-in-python" >Creating an Object in Python</h2><a class="anchor" id="creating-an-object-in-python"></a>
@@ -1534,34 +1534,34 @@ This <span style="color:#f92672">is</span> a person class</code></pre></div>
 <p>We saw that the class object could be used to access different attributes.</p>
 
 <p>It can also be used to create new object instances (instantiation) of that class. The procedure to create an object is similar to a  <a href="https://www.programiz.com/python-programming/function">function</a>  call.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">harry <span style="color:#f92672">=</span> Person()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">harry <span style="color:#000;font-weight:bold">=</span> Person()</code></pre></div>
 <p>This will create a new object instance named  harry. We can access the attributes of objects using the object name prefix.</p>
 
 <p>Attributes may be data or method. Methods of an object are corresponding functions of that class.</p>
 
 <p>This means to say, since  <code>Person.greet</code>  is a function object (attribute of class),  <code>Person.greet</code>  will be a method object.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>:
-    <span style="color:#e6db74">&#34;This is a person class&#34;</span>
-    age <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Person</span>:
+    <span style="color:#d14">&#34;This is a person class&#34;</span>
+    age <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">greet</span>(self):
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;Hello&#39;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">greet</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;Hello&#39;</span>)
 
 
-<span style="color:#75715e"># create a new object of Person class</span>
-harry <span style="color:#f92672">=</span> Person()
+<span style="color:#998;font-style:italic"># create a new object of Person class</span>
+harry <span style="color:#000;font-weight:bold">=</span> Person()
 
-<span style="color:#75715e"># Output: &lt;function Person.greet&gt;</span>
-<span style="color:#66d9ef">print</span>(Person<span style="color:#f92672">.</span>greet)
+<span style="color:#998;font-style:italic"># Output: &lt;function Person.greet&gt;</span>
+<span style="color:#000;font-weight:bold">print</span>(Person<span style="color:#000;font-weight:bold">.</span>greet)
 
-<span style="color:#75715e"># Output: &lt;bound method Person.greet of &lt;__main__.Person object&gt;&gt;</span>
-<span style="color:#66d9ef">print</span>(harry<span style="color:#f92672">.</span>greet)
+<span style="color:#998;font-style:italic"># Output: &lt;bound method Person.greet of &lt;__main__.Person object&gt;&gt;</span>
+<span style="color:#000;font-weight:bold">print</span>(harry<span style="color:#000;font-weight:bold">.</span>greet)
 
-<span style="color:#75715e"># Calling object&#39;s greet() method</span>
-<span style="color:#75715e"># Output: Hello</span>
-harry<span style="color:#f92672">.</span>greet()</code></pre></div>
+<span style="color:#998;font-style:italic"># Calling object&#39;s greet() method</span>
+<span style="color:#998;font-style:italic"># Output: Hello</span>
+harry<span style="color:#000;font-weight:bold">.</span>greet()</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">&lt;function Person.greet at 0x7fd288e4e160&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">&lt;function Person.greet at 0x7fd288e4e160&gt;
 &lt;bound method Person.greet of &lt;__main__.Person object at 0x7fd288e9fa30&gt;&gt;
 Hello</code></pre></div>
 <p>You may have noticed the  <code>self</code>  parameter in function definition inside the class but we called the method simply as  <code>harry.greet()</code>  without any  <a href="https://www.programiz.com/python-programming/function-argument">arguments</a>. It still worked.</p>
@@ -1583,35 +1583,35 @@ Hello</code></pre></div>
 <p>Of one particular interest is the  <code>__init__()</code>  function. This special function gets called whenever a new object of that class is instantiated.</p>
 
 <p>This type of function is also called constructors in Object Oriented Programming (OOP). We normally use it to initialize all the variables.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ComplexNumber</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, r<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>):
-        self<span style="color:#f92672">.</span>real <span style="color:#f92672">=</span> r
-        self<span style="color:#f92672">.</span>imag <span style="color:#f92672">=</span> i
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">ComplexNumber</span>:
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, r<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>, i<span style="color:#000;font-weight:bold">=</span><span style="color:#099">0</span>):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>real <span style="color:#000;font-weight:bold">=</span> r
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>imag <span style="color:#000;font-weight:bold">=</span> i
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_data</span>(self):
-        <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#39;{self.real}+{self.imag}j&#39;</span>)
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">get_data</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">print</span>(f<span style="color:#d14">&#39;{self.real}+{self.imag}j&#39;</span>)
 
 
-<span style="color:#75715e"># Create a new ComplexNumber object</span>
-num1 <span style="color:#f92672">=</span> ComplexNumber(<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>)
+<span style="color:#998;font-style:italic"># Create a new ComplexNumber object</span>
+num1 <span style="color:#000;font-weight:bold">=</span> ComplexNumber(<span style="color:#099">2</span>, <span style="color:#099">3</span>)
 
-<span style="color:#75715e"># Call get_data() method</span>
-<span style="color:#75715e"># Output: 2+3j</span>
-num1<span style="color:#f92672">.</span>get_data()
+<span style="color:#998;font-style:italic"># Call get_data() method</span>
+<span style="color:#998;font-style:italic"># Output: 2+3j</span>
+num1<span style="color:#000;font-weight:bold">.</span>get_data()
 
-<span style="color:#75715e"># Create another ComplexNumber object</span>
-<span style="color:#75715e"># and create a new attribute &#39;attr&#39;</span>
-num2 <span style="color:#f92672">=</span> ComplexNumber(<span style="color:#ae81ff">5</span>)
-num2<span style="color:#f92672">.</span>attr <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+<span style="color:#998;font-style:italic"># Create another ComplexNumber object</span>
+<span style="color:#998;font-style:italic"># and create a new attribute &#39;attr&#39;</span>
+num2 <span style="color:#000;font-weight:bold">=</span> ComplexNumber(<span style="color:#099">5</span>)
+num2<span style="color:#000;font-weight:bold">.</span>attr <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">10</span>
 
-<span style="color:#75715e"># Output: (5, 0, 10)</span>
-<span style="color:#66d9ef">print</span>((num2<span style="color:#f92672">.</span>real, num2<span style="color:#f92672">.</span>imag, num2<span style="color:#f92672">.</span>attr))
+<span style="color:#998;font-style:italic"># Output: (5, 0, 10)</span>
+<span style="color:#000;font-weight:bold">print</span>((num2<span style="color:#000;font-weight:bold">.</span>real, num2<span style="color:#000;font-weight:bold">.</span>imag, num2<span style="color:#000;font-weight:bold">.</span>attr))
 
-<span style="color:#75715e"># but c1 object doesn&#39;t have attribute &#39;attr&#39;</span>
-<span style="color:#75715e"># AttributeError: &#39;ComplexNumber&#39; object has no attribute &#39;attr&#39;</span>
-<span style="color:#66d9ef">print</span>(num1<span style="color:#f92672">.</span>attr)</code></pre></div>
+<span style="color:#998;font-style:italic"># but c1 object doesn&#39;t have attribute &#39;attr&#39;</span>
+<span style="color:#998;font-style:italic"># AttributeError: &#39;ComplexNumber&#39; object has no attribute &#39;attr&#39;</span>
+<span style="color:#000;font-weight:bold">print</span>(num1<span style="color:#000;font-weight:bold">.</span>attr)</code></pre></div>
 <p><strong>Output</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2+3j
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">2+3j
 (5, 0, 10)
 Traceback (most recent call last):
   File &#34;&lt;string&gt;&#34;, line 27, in &lt;module&gt;
@@ -1626,20 +1626,20 @@ AttributeError: &#39;ComplexNumber&#39; object has no attribute &#39;attr&#39;</
 <h2 ref="deleting-attributes-and-objects" >Deleting Attributes and Objects</h2><a class="anchor" id="deleting-attributes-and-objects"></a>
 
 <p>Any attribute of an object can be deleted anytime, using the  <code>del</code>  statement. Try the following on the Python shell to see the output.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">num1 <span style="color:#f92672">=</span> ComplexNumber(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>)
-<span style="color:#66d9ef">del</span> num1<span style="color:#f92672">.</span>imag
-num1<span style="color:#f92672">.</span>get_data()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">num1 <span style="color:#000;font-weight:bold">=</span> ComplexNumber(<span style="color:#099">2</span>,<span style="color:#099">3</span>)
+<span style="color:#000;font-weight:bold">del</span> num1<span style="color:#000;font-weight:bold">.</span>imag
+num1<span style="color:#000;font-weight:bold">.</span>get_data()</code></pre></div>
 <p>Traceback (most recent call last):</p>
 
 <p>AttributeError: &lsquo;ComplexNumber&rsquo; object has no attribute &lsquo;imag&rsquo;</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">del</span> ComplexNumber<span style="color:#f92672">.</span>get_data
-num1<span style="color:#f92672">.</span>get_data()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">del</span> ComplexNumber<span style="color:#000;font-weight:bold">.</span>get_data
+num1<span style="color:#000;font-weight:bold">.</span>get_data()</code></pre></div>
 <p>Traceback (most recent call last):
 &hellip;
 AttributeError: &lsquo;ComplexNumber&rsquo; object has no attribute &lsquo;get_data&rsquo;
 We can even delete the object itself, using the del statement.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">c1 <span style="color:#f92672">=</span> ComplexNumber(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">3</span>)
-<span style="color:#66d9ef">del</span> c1
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py">c1 <span style="color:#000;font-weight:bold">=</span> ComplexNumber(<span style="color:#099">1</span>,<span style="color:#099">3</span>)
+<span style="color:#000;font-weight:bold">del</span> c1
 c1</code></pre></div>
 <p>Traceback (most recent call last):
 &hellip;

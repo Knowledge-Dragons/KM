@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:14 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:35 &#43;07">
 <meta name="description" content="">
 
 
@@ -1513,14 +1513,14 @@
 <p>Before we move on with the code for understanding the features of Pandas, let’s get Pandas installed in your system. I advise you to create a virtual environment and install Pandas inside the virtualenv.</p>
 
 <h4 ref="create-virtualenv" >Create virtualenv</h4><a class="anchor" id="create-virtualenv"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">virtualenv <span style="color:#f92672">-</span>p python3 venv
-source venv<span style="color:#f92672">/</span>bin<span style="color:#f92672">/</span>activate</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">virtualenv <span style="color:#000;font-weight:bold">-</span>p python3 venv
+source venv<span style="color:#000;font-weight:bold">/</span><span style="color:#0086b3">bin</span><span style="color:#000;font-weight:bold">/</span>activate</code></pre></div>
 <h4 ref="install-pandas" >Install Pandas</h4><a class="anchor" id="install-pandas"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install pandas</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install pandas</code></pre></div>
 <h4 ref="jupyter-notebook" >Jupyter Notebook</h4><a class="anchor" id="jupyter-notebook"></a>
 
 <p>If you are learning Pandas, I would advise you to dive in and use a jupyter notebook for the same. The visualization of data in jupyter notebooks makes it easier to understand what is going on at each step.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install jupyter
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">pip install jupyter
 jupyter notebook</code></pre></div>
 <p>Jupyter by default runs in your system-wide installation of python. In order to run it in your virtualenv follow the link and create a user level kernel  <a href="https://anbasile.github.io/programming/2017/06/25/jupyter-venv/?ref=hackernoon.com">https://anbasile.github.io/programming/2017/06/25/jupyter-venv/</a></p>
 
@@ -1535,29 +1535,29 @@ jupyter notebook</code></pre></div>
 <p>With Pandas, we can load data from different sources. Few of them are loading from CSV or a remote URL or from a database. The loaded data is stored in a Pandas data structure called DataFrame. DataFrame’s are usually refered by the variable name df . So, anytime you see df from here on you should be associating it with Dataframe.</p>
 
 <h4 ref="from-csv-file" >From CSV File</h4><a class="anchor" id="from-csv-file"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas
-df <span style="color:#f92672">=</span> pandas<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;path_to_csv&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span>
+df <span style="color:#000;font-weight:bold">=</span> pandas<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;path_to_csv&#34;</span>)</code></pre></div>
 <h4 ref="from-remote-url" >From Remote URL</h4><a class="anchor" id="from-remote-url"></a>
 
 <p>You can pass a remote URL to the CSV file in read_csv.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> pandas
-df <span style="color:#f92672">=</span> pandas<span style="color:#f92672">.</span>read_csv(<span style="color:#e6db74">&#34;remote/url/path/pointing/to/csv&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span>
+df <span style="color:#000;font-weight:bold">=</span> pandas<span style="color:#000;font-weight:bold">.</span>read_csv(<span style="color:#d14">&#34;remote/url/path/pointing/to/csv&#34;</span>)</code></pre></div>
 <h4 ref="from-db" >From DB</h4><a class="anchor" id="from-db"></a>
 
 <p>In order to read from Database, read the data from DB into a python list and use DataFrame() to create one</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">db <span style="color:#f92672">=</span> <span style="color:#75715e"># Create DB connection object </span>
-cur <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>cursor()
-cur<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;SELECT * FROM &lt;TABLE&gt;&#34;</span>)
-df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(cur<span style="color:#f92672">.</span>fetchall())</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">db <span style="color:#000;font-weight:bold">=</span> <span style="color:#998;font-style:italic"># Create DB connection object </span>
+cur <span style="color:#000;font-weight:bold">=</span> db<span style="color:#000;font-weight:bold">.</span>cursor()
+cur<span style="color:#000;font-weight:bold">.</span>execute(<span style="color:#d14">&#34;SELECT * FROM &lt;TABLE&gt;&#34;</span>)
+df <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>DataFrame(cur<span style="color:#000;font-weight:bold">.</span>fetchall())</code></pre></div>
 <p>Each of the above snippets reads data from a source and loads it into Pandas’ internal data structure called DataFrame</p>
 
 <h3 ref="understanding-data" >Understanding Data</h3><a class="anchor" id="understanding-data"></a>
 
 <p>Now that we have the Dataframe ready let’s go through it and understand what’s inside it</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 1. shows you a gist of the data</span>
-df<span style="color:#f92672">.</span>head()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 2. Some statistical information about your data</span>
-df<span style="color:#f92672">.</span>describe()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 3. List of columns headers</span>
-df<span style="color:#f92672">.</span>columns<span style="color:#f92672">.</span>values</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 1. shows you a gist of the data</span>
+df<span style="color:#000;font-weight:bold">.</span>head()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 2. Some statistical information about your data</span>
+df<span style="color:#000;font-weight:bold">.</span>describe()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 3. List of columns headers</span>
+df<span style="color:#000;font-weight:bold">.</span>columns<span style="color:#000;font-weight:bold">.</span>values</code></pre></div>
 <p><img src="https://hackernoon.com/hn-images/1*XJDBjuBY4LK-VyKq2HDNUw.png" alt="" /></p>
 
 <h3 ref="pick-choose-your-data" >Pick &amp; Choose your Data</h3><a class="anchor" id="pick-choose-your-data"></a>
@@ -1569,83 +1569,83 @@ df<span style="color:#f92672">.</span>columns<span style="color:#f92672">.</span
 <p>Indexes are labels used to refer to your data. These labels are usually your column headers. For eg., Country, Region, Quantity Etc.,</p>
 
 <h4 ref="selecting-columns" >Selecting Columns</h4><a class="anchor" id="selecting-columns"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 1. Create a list of columns to be selected</span>
-columns_to_be_selected <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;Total&#34;</span>, <span style="color:#e6db74">&#34;Quantity&#34;</span>, <span style="color:#e6db74">&#34;Country&#34;</span>]</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 2. Use it as an index to the DataFrame</span>
-df[columns_to_be_selected]</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 3. Using loc method</span>
-df<span style="color:#f92672">.</span>loc[columns_to_be_selected]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 1. Create a list of columns to be selected</span>
+columns_to_be_selected <span style="color:#000;font-weight:bold">=</span> [<span style="color:#d14">&#34;Total&#34;</span>, <span style="color:#d14">&#34;Quantity&#34;</span>, <span style="color:#d14">&#34;Country&#34;</span>]</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 2. Use it as an index to the DataFrame</span>
+df[columns_to_be_selected]</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 3. Using loc method</span>
+df<span style="color:#000;font-weight:bold">.</span>loc[columns_to_be_selected]</code></pre></div>
 <p><img src="https://hackernoon.com/hn-images/1*Fes_TGhxHtR-4Xktq8-opw.png" alt="" /></p>
 
 <h4 ref="selecting-rows" >Selecting Rows</h4><a class="anchor" id="selecting-rows"></a>
 
 <p>Unlike the columns, our current DataFrame does not have a label which we can use to refer the row data. But like arrays, DataFrame provides numerical indexing(0, 1, 2…) by default.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 1. using numerical indexes - iloc</span>
-df<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>, :]</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 2. using labels as index - loc</span>
-row_index_to_select <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
-df<span style="color:#f92672">.</span>loc[row_index_to_select]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 1. using numerical indexes - iloc</span>
+df<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">0</span>:<span style="color:#099">3</span>, :]</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 2. using labels as index - loc</span>
+row_index_to_select <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">0</span>, <span style="color:#099">1</span>, <span style="color:#099">4</span>, <span style="color:#099">5</span>]
+df<span style="color:#000;font-weight:bold">.</span>loc[row_index_to_select]</code></pre></div>
 <p><img src="https://hackernoon.com/hn-images/1*faazKZaQGHnckMhM8XrG4A.png" alt="" /></p>
 
 <h4 ref="filtering-rows" >Filtering Rows</h4><a class="anchor" id="filtering-rows"></a>
 
 <p>Now, in a real-time scenario, you would most probably not want to select rows based on an index. An actual real-life requirement would be to filter out the rows that satisfy a certain condition. With respect to our dataset, we can filter by any of the following conditions</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">1.</span> Total sales <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">200000</span>
-df[df[<span style="color:#e6db74">&#34;Total&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">200000</span>]</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#ae81ff">2.</span> Total sales <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">200000</span> <span style="color:#f92672">and</span> <span style="color:#f92672">in</span> UK
-df[(df[<span style="color:#e6db74">&#34;Total&#34;</span>] <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">200000</span>) <span style="color:#f92672">&amp;</span> (df[<span style="color:#e6db74">&#34;Country&#34;</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;UK&#34;</span>)]</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#099">1.</span> Total sales <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">200000</span>
+df[df[<span style="color:#d14">&#34;Total&#34;</span>] <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">200000</span>]</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#099">2.</span> Total sales <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">200000</span> <span style="color:#000;font-weight:bold">and</span> <span style="color:#000;font-weight:bold">in</span> UK
+df[(df[<span style="color:#d14">&#34;Total&#34;</span>] <span style="color:#000;font-weight:bold">&gt;</span> <span style="color:#099">200000</span>) <span style="color:#000;font-weight:bold">&amp;</span> (df[<span style="color:#d14">&#34;Country&#34;</span>] <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#34;UK&#34;</span>)]</code></pre></div>
 <h3 ref="playing-with-dates" >Playing With Dates</h3><a class="anchor" id="playing-with-dates"></a>
 
 <p>Most of the times when dealing with date fields we don’t use them as it is. Pandas make it really easy for you to project Date/Month/Year from it and perform operations on top of it</p>
 
 <p>In our sample dataset, the Date_of_purchase is of type string, hence the first step would be to convert them to the DateTime type.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> type(df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>]<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>])
-str</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">type</span>(df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>]<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">0</span>])
+<span style="color:#0086b3">str</span></code></pre></div>
 <h4 ref="converting-column-to-datetime-object" >Converting Column to DateTime Object</h4><a class="anchor" id="converting-column-to-datetime-object"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>] <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>to_datetime(df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>])
-<span style="color:#f92672">&gt;&gt;&gt;</span> type(df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>]<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>])
-pandas<span style="color:#f92672">.</span>_libs<span style="color:#f92672">.</span>tslibs<span style="color:#f92672">.</span>timestamps<span style="color:#f92672">.</span>Timestamp</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>] <span style="color:#000;font-weight:bold">=</span> pd<span style="color:#000;font-weight:bold">.</span>to_datetime(df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>])
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">type</span>(df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>]<span style="color:#000;font-weight:bold">.</span>iloc[<span style="color:#099">0</span>])
+pandas<span style="color:#000;font-weight:bold">.</span>_libs<span style="color:#000;font-weight:bold">.</span>tslibs<span style="color:#000;font-weight:bold">.</span>timestamps<span style="color:#000;font-weight:bold">.</span>Timestamp</code></pre></div>
 <p><strong>Extracting Date, Month &amp; Year</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>]<span style="color:#f92672">.</span>dt<span style="color:#f92672">.</span>date    <span style="color:#75715e"># 11-09-2018</span>
-df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>]<span style="color:#f92672">.</span>dt<span style="color:#f92672">.</span>day     <span style="color:#75715e"># 11</span>
-df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>]<span style="color:#f92672">.</span>dt<span style="color:#f92672">.</span>month   <span style="color:#75715e"># 09</span>
-df[<span style="color:#e6db74">&#39;Date of Purchase&#39;</span>]<span style="color:#f92672">.</span>dt<span style="color:#f92672">.</span>year    <span style="color:#75715e"># 2018</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>]<span style="color:#000;font-weight:bold">.</span>dt<span style="color:#000;font-weight:bold">.</span>date    <span style="color:#998;font-style:italic"># 11-09-2018</span>
+df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>]<span style="color:#000;font-weight:bold">.</span>dt<span style="color:#000;font-weight:bold">.</span>day     <span style="color:#998;font-style:italic"># 11</span>
+df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>]<span style="color:#000;font-weight:bold">.</span>dt<span style="color:#000;font-weight:bold">.</span>month   <span style="color:#998;font-style:italic"># 09</span>
+df[<span style="color:#d14">&#39;Date of Purchase&#39;</span>]<span style="color:#000;font-weight:bold">.</span>dt<span style="color:#000;font-weight:bold">.</span>year    <span style="color:#998;font-style:italic"># 2018</span></code></pre></div>
 <h3 ref="grouping" >Grouping</h3><a class="anchor" id="grouping"></a>
 
 <h4 ref="statistical-operations" >Statistical operations</h4><a class="anchor" id="statistical-operations"></a>
 
 <p>You can perform statistical operations such as min, max, mean etc., over one or more columns of a Dataframe.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#e6db74">&#34;Total&#34;</span>]<span style="color:#f92672">.</span>sum()
-df[[<span style="color:#e6db74">&#34;Total&#34;</span>, <span style="color:#e6db74">&#34;Quantity&#34;</span>]]<span style="color:#f92672">.</span>mean()
-df[[<span style="color:#e6db74">&#34;Total&#34;</span>, <span style="color:#e6db74">&#34;Quantity&#34;</span>]]<span style="color:#f92672">.</span>min()
-df[[<span style="color:#e6db74">&#34;Total&#34;</span>, <span style="color:#e6db74">&#34;Quantity&#34;</span>]]<span style="color:#f92672">.</span>max()
-df[[<span style="color:#e6db74">&#34;Total&#34;</span>, <span style="color:#e6db74">&#34;Quantity&#34;</span>]]<span style="color:#f92672">.</span>median()
-df[[<span style="color:#e6db74">&#34;Total&#34;</span>, <span style="color:#e6db74">&#34;Quantity&#34;</span>]]<span style="color:#f92672">.</span>mode()</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">df[<span style="color:#d14">&#34;Total&#34;</span>]<span style="color:#000;font-weight:bold">.</span>sum()
+df[[<span style="color:#d14">&#34;Total&#34;</span>, <span style="color:#d14">&#34;Quantity&#34;</span>]]<span style="color:#000;font-weight:bold">.</span>mean()
+df[[<span style="color:#d14">&#34;Total&#34;</span>, <span style="color:#d14">&#34;Quantity&#34;</span>]]<span style="color:#000;font-weight:bold">.</span>min()
+df[[<span style="color:#d14">&#34;Total&#34;</span>, <span style="color:#d14">&#34;Quantity&#34;</span>]]<span style="color:#000;font-weight:bold">.</span>max()
+df[[<span style="color:#d14">&#34;Total&#34;</span>, <span style="color:#d14">&#34;Quantity&#34;</span>]]<span style="color:#000;font-weight:bold">.</span>median()
+df[[<span style="color:#d14">&#34;Total&#34;</span>, <span style="color:#d14">&#34;Quantity&#34;</span>]]<span style="color:#000;font-weight:bold">.</span>mode()</code></pre></div>
 <p>Now in a real-world application, the raw use of these statistical functions are rare, often you might want to group data based on specific parameters and derive a gist of the data.</p>
 
 <p>Let’s look at an example where we look at the country-wise, country &amp; Region-wise sales.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 1. Country wise sales and Quantity</span>
-df<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#34;Country&#34;</span>)<span style="color:#f92672">.</span>sum()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 2. Quantity of sales over each country &amp; Region</span>
-df<span style="color:#f92672">.</span>groupby([<span style="color:#e6db74">&#34;Country&#34;</span>, <span style="color:#e6db74">&#34;Region&#34;</span>])[<span style="color:#e6db74">&#34;Quantity&#34;</span>]<span style="color:#f92672">.</span>sum()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 3. More than one aggregation</span>
-df<span style="color:#f92672">.</span>groupby([<span style="color:#e6db74">&#34;Country&#34;</span>, <span style="color:#e6db74">&#34;Region&#34;</span>])<span style="color:#f92672">.</span>agg(
-                     {<span style="color:#e6db74">&#39;Total&#39;</span>:[<span style="color:#e6db74">&#39;sum&#39;</span>, <span style="color:#e6db74">&#39;max&#39;</span>], 
-                      <span style="color:#e6db74">&#39;Quantity&#39;</span>:<span style="color:#e6db74">&#39;mean&#39;</span>})</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 1. Country wise sales and Quantity</span>
+df<span style="color:#000;font-weight:bold">.</span>groupby(<span style="color:#d14">&#34;Country&#34;</span>)<span style="color:#000;font-weight:bold">.</span>sum()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 2. Quantity of sales over each country &amp; Region</span>
+df<span style="color:#000;font-weight:bold">.</span>groupby([<span style="color:#d14">&#34;Country&#34;</span>, <span style="color:#d14">&#34;Region&#34;</span>])[<span style="color:#d14">&#34;Quantity&#34;</span>]<span style="color:#000;font-weight:bold">.</span>sum()</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># 3. More than one aggregation</span>
+df<span style="color:#000;font-weight:bold">.</span>groupby([<span style="color:#d14">&#34;Country&#34;</span>, <span style="color:#d14">&#34;Region&#34;</span>])<span style="color:#000;font-weight:bold">.</span>agg(
+                     {<span style="color:#d14">&#39;Total&#39;</span>:[<span style="color:#d14">&#39;sum&#39;</span>, <span style="color:#d14">&#39;max&#39;</span>], 
+                      <span style="color:#d14">&#39;Quantity&#39;</span>:<span style="color:#d14">&#39;mean&#39;</span>})</code></pre></div>
 <p><img src="https://hackernoon.com/hn-images/1*tib5Q6c4SzDbtGq_XnTt8A.png" alt="" /></p>
 
 <h3 ref="pivot-table" >Pivot Table</h3><a class="anchor" id="pivot-table"></a>
 
 <p>Pivot Table is an advanced version of groupby, where you can stack dimensions over both rows and columns. i.e., as the data grows the groupby above is going to grow in length and will become hard to derive insights, hence a well-defined way to look at it would be Pivot tables</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
-df<span style="color:#f92672">.</span>pivot_table(index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Country&#34;</span>], 
-               columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Region&#34;</span>], 
-               values<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Quantity&#34;</span>], 
-               aggfunc<span style="color:#f92672">=</span>[np<span style="color:#f92672">.</span>sum])</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">numpy</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">np</span>
+df<span style="color:#000;font-weight:bold">.</span>pivot_table(index<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#34;Country&#34;</span>], 
+               columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#34;Region&#34;</span>], 
+               values<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#34;Quantity&#34;</span>], 
+               aggfunc<span style="color:#000;font-weight:bold">=</span>[np<span style="color:#000;font-weight:bold">.</span>sum])</code></pre></div>
 <p><img src="https://hackernoon.com/hn-images/1*bHLja1_fsEsRUtMjOcg3iQ.png" alt="" /></p>
 
 <p>Another advantage of the Pivot Table is that you can add as many dimensions and functions you want. It also calculates a grand total value for you</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
-df<span style="color:#f92672">.</span>pivot_table(index<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Country&#34;</span>], 
-               columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Region&#34;</span>,<span style="color:#e6db74">&#34;Requester&#34;</span>], 
-               values<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Quantity&#34;</span>], 
-               aggfunc<span style="color:#f92672">=</span>[np<span style="color:#f92672">.</span>sum], 
-               margins<span style="color:#f92672">=</span>True,
-               margins_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Grand Total&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#000;font-weight:bold">import</span> <span style="color:#555">numpy</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">np</span>
+df<span style="color:#000;font-weight:bold">.</span>pivot_table(index<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#34;Country&#34;</span>], 
+               columns<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#34;Region&#34;</span>,<span style="color:#d14">&#34;Requester&#34;</span>], 
+               values<span style="color:#000;font-weight:bold">=</span>[<span style="color:#d14">&#34;Quantity&#34;</span>], 
+               aggfunc<span style="color:#000;font-weight:bold">=</span>[np<span style="color:#000;font-weight:bold">.</span>sum], 
+               margins<span style="color:#000;font-weight:bold">=</span><span style="color:#999">True</span>,
+               margins_name<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#34;Grand Total&#34;</span>)</code></pre></div>
 <p><img src="https://hackernoon.com/hn-images/1*iRd4MKEk4hElhE3UXABq3g.png" alt="" /></p>
 
 <p>Okay, that was a lot of information in 5 minutes. Take some time in trying out the above exercises. In the next blog, I will walk you through some more deeper concepts and magical visualizations that you can create with Pandas.</p>

@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1493,17 +1493,17 @@
 <hr />
 
 <h2 ref="example-1-string-to-datetime-object" >Example 1: string to datetime object</h2><a class="anchor" id="example-1-string-to-datetime-object"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-date_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;21 June, 2018&#34;</span>
+date_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;21 June, 2018&#34;</span>
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;date_string =&#34;</span>, date_string)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;type of date_string =&#34;</span>, type(date_string))
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;date_string =&#34;</span>, date_string)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;type of date_string =&#34;</span>, <span style="color:#0086b3">type</span>(date_string))
 
-date_object <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(date_string, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %B, %Y&#34;</span>)
+date_object <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>strptime(date_string, <span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14"> %B, %Y&#34;</span>)
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;date_object =&#34;</span>, date_object)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;type of date_object =&#34;</span>, type(date_object))</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;date_object =&#34;</span>, date_object)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;type of date_object =&#34;</span>, <span style="color:#0086b3">type</span>(date_object))</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>date_string = 21 June, 2018
@@ -1540,17 +1540,17 @@ type of date_object = &lt;class 'datetime.datetime'&gt;
 <hr />
 
 <h2 ref="example-2-string-to-datetime-object" >Example 2: string to datetime object</h2><a class="anchor" id="example-2-string-to-datetime-object"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-dt_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;12/11/2018 09:15:32&#34;</span>
+dt_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;12/11/2018 09:15:32&#34;</span>
 
-<span style="color:#75715e"># Considering date is in dd/mm/yyyy format</span>
-dt_object1 <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(dt_string, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%m/%Y %H:%M:%S&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dt_object1 =&#34;</span>, dt_object1)
+<span style="color:#998;font-style:italic"># Considering date is in dd/mm/yyyy format</span>
+dt_object1 <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>strptime(dt_string, <span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14">/%m/%Y %H:%M:%S&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;dt_object1 =&#34;</span>, dt_object1)
 
-<span style="color:#75715e"># Considering date is in mm/dd/yyyy format</span>
-dt_object2 <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(dt_string, <span style="color:#e6db74">&#34;%m/</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">/%Y %H:%M:%S&#34;</span>)
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;dt_object2 =&#34;</span>, dt_object2)</code></pre></div>
+<span style="color:#998;font-style:italic"># Considering date is in mm/dd/yyyy format</span>
+dt_object2 <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>strptime(dt_string, <span style="color:#d14">&#34;%m/</span><span style="color:#d14">%d</span><span style="color:#d14">/%Y %H:%M:%S&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;dt_object2 =&#34;</span>, dt_object2)</code></pre></div>
 <p>When you run the program, the output will be:</p>
 
 <pre><code>dt_object1 = 2018-11-12 09:15:32
@@ -1772,12 +1772,12 @@ dt_object2 = 2018-12-11 09:15:32
 <h3 ref="valueerror-in-strptime" >ValueError in strptime()</h3><a class="anchor" id="valueerror-in-strptime"></a>
 
 <p>If the string (first argument) and the format code (second argument) passed to the  <code>strptime()</code>  doesn&rsquo;t match, you will get  <code>ValueError</code>. For example:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">from</span> datetime <span style="color:#f92672">import</span> datetime
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">from</span> <span style="color:#555">datetime</span> <span style="color:#000;font-weight:bold">import</span> datetime
 
-date_string <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;12/11/2018&#34;</span>
-date_object <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>strptime(date_string, <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %m %Y&#34;</span>)
+date_string <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;12/11/2018&#34;</span>
+date_object <span style="color:#000;font-weight:bold">=</span> datetime<span style="color:#000;font-weight:bold">.</span>strptime(date_string, <span style="color:#d14">&#34;</span><span style="color:#d14">%d</span><span style="color:#d14"> %m %Y&#34;</span>)
 
-<span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;date_object =&#34;</span>, date_object)</code></pre></div>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;date_object =&#34;</span>, date_object)</code></pre></div>
 <p>If you run this program, you will get an error.</p>
 
 <pre><code>ValueError: time data '12/11/2018' does not match format '%d %m %Y' 

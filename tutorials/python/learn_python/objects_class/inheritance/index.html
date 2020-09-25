@@ -8,7 +8,7 @@
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="revised" content="2020-09-25T15:00:16 &#43;07">
+<meta name="revised" content="2020-09-25T17:22:36 &#43;07">
 <meta name="description" content="">
 
 
@@ -1486,9 +1486,9 @@
 <hr />
 
 <h3 ref="python-inheritance-syntax" >Python Inheritance Syntax</h3><a class="anchor" id="python-inheritance-syntax"></a>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BaseClass</span>:
-  Body of base <span style="color:#66d9ef">class</span>
-<span style="color:#a6e22e">class</span> DerivedClass(BaseClass):
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">BaseClass</span>:
+  Body of base <span style="color:#000;font-weight:bold">class</span>
+<span style="color:#458;font-weight:bold">class</span> DerivedClass(BaseClass):
   Body of derived class</code></pre></div>
 <p>Derived class inherits features from the base class where new features can be added to it. This results in re-usability of code.</p>
 
@@ -1499,17 +1499,17 @@
 <p>To demonstrate the use of inheritance, let us take an example.</p>
 
 <p>A polygon is a closed figure with 3 or more sides. Say, we have a class called  <code>Polygon</code>  defined as follows.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Polygon</span>:
-    <span style="color:#66d9ef">def</span> __init__(self, no_of_sides):
-        self<span style="color:#f92672">.</span>n <span style="color:#f92672">=</span> no_of_sides
-        self<span style="color:#f92672">.</span>sides <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(no_of_sides)]
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Polygon</span>:
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>, no_of_sides):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>n <span style="color:#000;font-weight:bold">=</span> no_of_sides
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>sides <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">0</span> <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(no_of_sides)]
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">inputSides</span>(self):
-        self<span style="color:#f92672">.</span>sides <span style="color:#f92672">=</span> [float(input(<span style="color:#e6db74">&#34;Enter side &#34;</span><span style="color:#f92672">+</span>str(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#e6db74">&#34; : &#34;</span>)) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(self<span style="color:#f92672">.</span>n)]
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">inputSides</span>(<span style="color:#999">self</span>):
+        <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>sides <span style="color:#000;font-weight:bold">=</span> [<span style="color:#0086b3">float</span>(<span style="color:#0086b3">input</span>(<span style="color:#d14">&#34;Enter side &#34;</span><span style="color:#000;font-weight:bold">+</span><span style="color:#0086b3">str</span>(i<span style="color:#000;font-weight:bold">+</span><span style="color:#099">1</span>)<span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#34; : &#34;</span>)) <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>n)]
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dispSides</span>(self):
-        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(self<span style="color:#f92672">.</span>n):
-            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Side&#34;</span>,i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#34;is&#34;</span>,self<span style="color:#f92672">.</span>sides[i])</code></pre></div>
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">dispSides</span>(<span style="color:#999">self</span>):
+        <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>n):
+            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;Side&#34;</span>,i<span style="color:#000;font-weight:bold">+</span><span style="color:#099">1</span>,<span style="color:#d14">&#34;is&#34;</span>,<span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>sides[i])</code></pre></div>
 <p>This class has data attributes to store the number of sides  n  and magnitude of each side as a list called  sides.</p>
 
 <p>The  <code>inputSides()</code>  method takes in the magnitude of each side and  <code>dispSides()</code>  displays these side lengths.</p>
@@ -1517,31 +1517,31 @@
 <p>A triangle is a polygon with 3 sides. So, we can create a class called  Triangle  which inherits from  Polygon. This makes all the attributes of  Polygon  class available to the  Triangle  class.</p>
 
 <p>We don&rsquo;t need to define them again (code reusability).  Triangle  can be defined as follows.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Triangle</span>(Polygon):
-    <span style="color:#66d9ef">def</span> __init__(self):
-        Polygon<span style="color:#f92672">.</span>__init__(self,<span style="color:#ae81ff">3</span>)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Triangle</span>(Polygon):
+    <span style="color:#000;font-weight:bold">def</span> __init__(<span style="color:#999">self</span>):
+        Polygon<span style="color:#000;font-weight:bold">.</span>__init__(<span style="color:#999">self</span>,<span style="color:#099">3</span>)
 
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findArea</span>(self):
-        a, b, c <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>sides
-        <span style="color:#75715e"># calculate the semi-perimeter</span>
-        s <span style="color:#f92672">=</span> (a <span style="color:#f92672">+</span> b <span style="color:#f92672">+</span> c) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>
-        area <span style="color:#f92672">=</span> (s<span style="color:#f92672">*</span>(s<span style="color:#f92672">-</span>a)<span style="color:#f92672">*</span>(s<span style="color:#f92672">-</span>b)<span style="color:#f92672">*</span>(s<span style="color:#f92672">-</span>c)) <span style="color:#f92672">**</span> <span style="color:#ae81ff">0.5</span>
-        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#39;The area of the triangle is </span><span style="color:#e6db74">%0.2f</span><span style="color:#e6db74">&#39;</span> <span style="color:#f92672">%</span>area)</code></pre></div>
+    <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">findArea</span>(<span style="color:#999">self</span>):
+        a, b, c <span style="color:#000;font-weight:bold">=</span> <span style="color:#999">self</span><span style="color:#000;font-weight:bold">.</span>sides
+        <span style="color:#998;font-style:italic"># calculate the semi-perimeter</span>
+        s <span style="color:#000;font-weight:bold">=</span> (a <span style="color:#000;font-weight:bold">+</span> b <span style="color:#000;font-weight:bold">+</span> c) <span style="color:#000;font-weight:bold">/</span> <span style="color:#099">2</span>
+        area <span style="color:#000;font-weight:bold">=</span> (s<span style="color:#000;font-weight:bold">*</span>(s<span style="color:#000;font-weight:bold">-</span>a)<span style="color:#000;font-weight:bold">*</span>(s<span style="color:#000;font-weight:bold">-</span>b)<span style="color:#000;font-weight:bold">*</span>(s<span style="color:#000;font-weight:bold">-</span>c)) <span style="color:#000;font-weight:bold">**</span> <span style="color:#099">0.5</span>
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;The area of the triangle is </span><span style="color:#d14">%0.2f</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">%</span>area)</code></pre></div>
 <p>However, class  <code>Triangle</code>  has a new method  <code>findArea()</code>  to find and print the area of the triangle. Here is a sample run.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> t <span style="color:#f92672">=</span> Triangle()
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> t <span style="color:#000;font-weight:bold">=</span> Triangle()
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> t<span style="color:#f92672">.</span>inputSides()
-Enter side <span style="color:#ae81ff">1</span> : <span style="color:#ae81ff">3</span>
-Enter side <span style="color:#ae81ff">2</span> : <span style="color:#ae81ff">5</span>
-Enter side <span style="color:#ae81ff">3</span> : <span style="color:#ae81ff">4</span>
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> t<span style="color:#000;font-weight:bold">.</span>inputSides()
+Enter side <span style="color:#099">1</span> : <span style="color:#099">3</span>
+Enter side <span style="color:#099">2</span> : <span style="color:#099">5</span>
+Enter side <span style="color:#099">3</span> : <span style="color:#099">4</span>
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> t<span style="color:#f92672">.</span>dispSides()
-Side <span style="color:#ae81ff">1</span> <span style="color:#f92672">is</span> <span style="color:#ae81ff">3.0</span>
-Side <span style="color:#ae81ff">2</span> <span style="color:#f92672">is</span> <span style="color:#ae81ff">5.0</span>
-Side <span style="color:#ae81ff">3</span> <span style="color:#f92672">is</span> <span style="color:#ae81ff">4.0</span>
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> t<span style="color:#000;font-weight:bold">.</span>dispSides()
+Side <span style="color:#099">1</span> <span style="color:#000;font-weight:bold">is</span> <span style="color:#099">3.0</span>
+Side <span style="color:#099">2</span> <span style="color:#000;font-weight:bold">is</span> <span style="color:#099">5.0</span>
+Side <span style="color:#099">3</span> <span style="color:#000;font-weight:bold">is</span> <span style="color:#099">4.0</span>
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> t<span style="color:#f92672">.</span>findArea()
-The area of the triangle <span style="color:#f92672">is</span> <span style="color:#ae81ff">6.00</span></code></pre></div>
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> t<span style="color:#000;font-weight:bold">.</span>findArea()
+The area of the triangle <span style="color:#000;font-weight:bold">is</span> <span style="color:#099">6.00</span></code></pre></div>
 <p>We can see that even though we did not define methods like  <code>inputSides()</code>  or  <code>dispSides()</code>  for class  <code>Triangle</code>  separately, we were able to use them.</p>
 
 <p>If an attribute is not found in the class itself, the search continues to the base class. This repeats recursively, if the base class is itself derived from other classes.</p>
@@ -1559,26 +1559,26 @@ The area of the triangle <span style="color:#f92672">is</span> <span style="colo
 <p>Two built-in functions  <code>isinstance()</code>  and  <code>issubclass()</code>  are used to check inheritances.</p>
 
 <p>The function  <code>isinstance()</code>  returns  <code>True</code>  if the object is an instance of the class or other classes derived from it. Each and every class in Python inherits from the base class  <code>object</code>.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> isinstance(t,Triangle)
-True
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">isinstance</span>(t,Triangle)
+<span style="color:#999">True</span>
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> isinstance(t,Polygon)
-True
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">isinstance</span>(t,Polygon)
+<span style="color:#999">True</span>
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> isinstance(t,int)
-False
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">isinstance</span>(t,<span style="color:#0086b3">int</span>)
+<span style="color:#999">False</span>
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> isinstance(t,object)
-True</code></pre></div>
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">isinstance</span>(t,<span style="color:#0086b3">object</span>)
+<span style="color:#999">True</span></code></pre></div>
 <p>Similarly,  <code>issubclass()</code>  is used to check for class inheritance.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#f92672">&gt;&gt;&gt;</span> issubclass(Polygon,Triangle)
-False
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-py" data-lang="py"><span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">issubclass</span>(Polygon,Triangle)
+<span style="color:#999">False</span>
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> issubclass(Triangle,Polygon)
-True
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">issubclass</span>(Triangle,Polygon)
+<span style="color:#999">True</span>
 
-<span style="color:#f92672">&gt;&gt;&gt;</span> issubclass(bool,int)
-True</code></pre></div>
+<span style="color:#000;font-weight:bold">&gt;&gt;&gt;</span> <span style="color:#0086b3">issubclass</span>(<span style="color:#0086b3">bool</span>,<span style="color:#0086b3">int</span>)
+<span style="color:#999">True</span></code></pre></div>
 <blockquote>
 <p>Reference : <a href="https://www.programiz.com/python-programming/inheritance">https://www.programiz.com/python-programming/inheritance</a></p>
 </blockquote>
