@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+     A Little Book of BIG DATA and Machine Learning | 
+    Hugo Themes
+  
+</title><meta name="description" content="หนังสือ A Little Book of BIG DATA and Machine Learning ของ ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เล่มนี้เหมาะกับคนที่พอจะมีความรู้ความเข้าใจเรื่อง Data มาในระดับหนึ่ง เหมาะกับคนที่เข้าใจภาพรวมแบบกว้างๆ เช่นนักการตลาดแบบผมที่อยากจะเข้าใจเชิงลึกลงบ้างอีกนิดหน่อยว่าโดยเทคนิคและวิธีการแล้วมีอะไรบ้าง แต่สิ่งหนึ่งที่บอกได้เลยคือแม้หน้าปกอาจจะดูมีความขึงขังจริงจังไปนิดสำหรับนักการตลาด แต่พอได้อ่านเนื้อหาข้างในแล้วรู้สึกเลยว่าสมูทมาก แทบไม่มีสะดุดเพราะ ดร.เอกสิทธิ์ เขียนอธิบายบรรดาเทคนิคทั้งหลายไว้อย่างดีผ่านการเล่าเรื่องเทียบกับชีวิตประจำวันใกล้ตัว ดังนั้นนี่เป็นหนังสือด้าน Big Data อีกหนึ่งเล่มที่อยากแนะนำให้คนที่พอมีพื้นดีและรู้คอนเซปในวงกว้างอยู่แล้วได้ลองหาอ่านดูครับ"><meta name="author" content="admin">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://example.com/post/a-little-book-of-big-data/"><meta property="og:title" content="A Little Book of BIG DATA and Machine Learning" />
+<meta property="og:description" content="หนังสือ A Little Book of BIG DATA and Machine Learning ของ ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เล่มนี้เหมาะกับคนที่พอจะมีความรู้ความเข้าใจเรื่อง Data มาในระดับหนึ่ง เหมาะกับคนที่เข้าใจภาพรวมแบบกว้างๆ เช่นนักการตลาดแบบผมที่อยากจะเข้าใจเชิงลึกลงบ้างอีกนิดหน่อยว่าโดยเทคนิคและวิธีการแล้วมีอะไรบ้าง แต่สิ่งหนึ่งที่บอกได้เลยคือแม้หน้าปกอาจจะดูมีความขึงขังจริงจังไปนิดสำหรับนักการตลาด แต่พอได้อ่านเนื้อหาข้างในแล้วรู้สึกเลยว่าสมูทมาก แทบไม่มีสะดุดเพราะ ดร.เอกสิทธิ์ เขียนอธิบายบรรดาเทคนิคทั้งหลายไว้อย่างดีผ่านการเล่าเรื่องเทียบกับชีวิตประจำวันใกล้ตัว ดังนั้นนี่เป็นหนังสือด้าน Big Data อีกหนึ่งเล่มที่อยากแนะนำให้คนที่พอมีพื้นดีและรู้คอนเซปในวงกว้างอยู่แล้วได้ลองหาอ่านดูครับ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/post/a-little-book-of-big-data/" />
+<meta property="og:image" content="https://example.com/a-little-book-of-big-data.jpg" />
+<meta property="article:published_time" content="2020-09-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-09-27T00:00:00+00:00" />
+
+<meta itemprop="name" content="A Little Book of BIG DATA and Machine Learning">
+<meta itemprop="description" content="หนังสือ A Little Book of BIG DATA and Machine Learning ของ ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เล่มนี้เหมาะกับคนที่พอจะมีความรู้ความเข้าใจเรื่อง Data มาในระดับหนึ่ง เหมาะกับคนที่เข้าใจภาพรวมแบบกว้างๆ เช่นนักการตลาดแบบผมที่อยากจะเข้าใจเชิงลึกลงบ้างอีกนิดหน่อยว่าโดยเทคนิคและวิธีการแล้วมีอะไรบ้าง แต่สิ่งหนึ่งที่บอกได้เลยคือแม้หน้าปกอาจจะดูมีความขึงขังจริงจังไปนิดสำหรับนักการตลาด แต่พอได้อ่านเนื้อหาข้างในแล้วรู้สึกเลยว่าสมูทมาก แทบไม่มีสะดุดเพราะ ดร.เอกสิทธิ์ เขียนอธิบายบรรดาเทคนิคทั้งหลายไว้อย่างดีผ่านการเล่าเรื่องเทียบกับชีวิตประจำวันใกล้ตัว ดังนั้นนี่เป็นหนังสือด้าน Big Data อีกหนึ่งเล่มที่อยากแนะนำให้คนที่พอมีพื้นดีและรู้คอนเซปในวงกว้างอยู่แล้วได้ลองหาอ่านดูครับ">
+<meta itemprop="datePublished" content="2020-09-27T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-09-27T00:00:00+00:00" />
+<meta itemprop="wordCount" content="457">
+<meta itemprop="image" content="https://example.com/a-little-book-of-big-data.jpg">
+
+
+
+<meta itemprop="keywords" content="Big Data,Business," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/a-little-book-of-big-data.jpg"/>
+
+<meta name="twitter:title" content="A Little Book of BIG DATA and Machine Learning"/>
+<meta name="twitter:description" content="หนังสือ A Little Book of BIG DATA and Machine Learning ของ ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เล่มนี้เหมาะกับคนที่พอจะมีความรู้ความเข้าใจเรื่อง Data มาในระดับหนึ่ง เหมาะกับคนที่เข้าใจภาพรวมแบบกว้างๆ เช่นนักการตลาดแบบผมที่อยากจะเข้าใจเชิงลึกลงบ้างอีกนิดหน่อยว่าโดยเทคนิคและวิธีการแล้วมีอะไรบ้าง แต่สิ่งหนึ่งที่บอกได้เลยคือแม้หน้าปกอาจจะดูมีความขึงขังจริงจังไปนิดสำหรับนักการตลาด แต่พอได้อ่านเนื้อหาข้างในแล้วรู้สึกเลยว่าสมูทมาก แทบไม่มีสะดุดเพราะ ดร.เอกสิทธิ์ เขียนอธิบายบรรดาเทคนิคทั้งหลายไว้อย่างดีผ่านการเล่าเรื่องเทียบกับชีวิตประจำวันใกล้ตัว ดังนั้นนี่เป็นหนังสือด้าน Big Data อีกหนึ่งเล่มที่อยากแนะนำให้คนที่พอมีพื้นดีและรู้คอนเซปในวงกว้างอยู่แล้วได้ลองหาอ่านดูครับ"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://example.com">Hugo Themes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">September 27, 2020</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>457 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>3 mins read</span>
+                        </div>
+
+                        <h1>A Little Book of BIG DATA and Machine Learning</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/admin/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/admin/hugo-authors_hu196091cf616efafabd0feaaf62c18c4a_14862_64x0_resize_box_2.png 1x, /authors/admin/hugo-authors_hu196091cf616efafabd0feaaf62c18c4a_14862_128x0_resize_q100_box_2.png 2x, /authors/admin/hugo-authors_hu196091cf616efafabd0feaaf62c18c4a_14862_192x0_resize_q100_box_2.png 3x">
+                                        <img src="/authors/admin/hugo-authors_hu196091cf616efafabd0feaaf62c18c4a_14862_64x0_resize_box_2.png" class="rounded-circle" alt="admin">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/admin/" class="small">admin</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@hugo_authors">@hugo_authors</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/a-little-book-of-big-data_hu46c2a882f1fe2619d73222bdb54184e0_186065_700x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="A Little Book of BIG DATA and Machine Learning">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>หนังสือ A Little Book of BIG DATA and Machine Learning ของ ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เล่มนี้เหมาะกับคนที่พอจะมีความรู้ความเข้าใจเรื่อง Data มาในระดับหนึ่ง เหมาะกับคนที่เข้าใจภาพรวมแบบกว้างๆ เช่นนักการตลาดแบบผมที่อยากจะเข้าใจเชิงลึกลงบ้างอีกนิดหน่อยว่าโดยเทคนิคและวิธีการแล้วมีอะไรบ้าง แต่สิ่งหนึ่งที่บอกได้เลยคือแม้หน้าปกอาจจะดูมีความขึงขังจริงจังไปนิดสำหรับนักการตลาด(เช่นผม) แต่พอได้อ่านเนื้อหาข้างในแล้วรู้สึกเลยว่าสมูทมาก แทบไม่มีสะดุดเพราะ ดร.เอกสิทธิ์ เขียนอธิบายบรรดาเทคนิคทั้งหลายไว้อย่างดีผ่านการเล่าเรื่องเทียบกับชีวิตประจำวันใกล้ตัว ดังนั้นนี่เป็นหนังสือด้าน Big Data อีกหนึ่งเล่มที่อยากแนะนำให้คนที่พอมีพื้นดีและรู้คอนเซปในวงกว้างอยู่แล้วได้ลองหาอ่านดูครับ</p>
+<p>ถ้าเปรียบนักการตลาดหรือเจ้าของธุรกิจเป็นสถาปนิกนักออกแบบอาคาร หนังสือเล่มนี้ก็เหมือนการให้ความรู้ในฝ่ายวิศวกรรมว่ากว่าจะเป็นตึกสวยงามได้นั้นต้องประกอบด้วยอะไรบ้าง หนังสือเล่มนี้จะทำให้เราเข้าใจเทคนิคหรือศัพท์แสงที่จะเอาไว้คุยกับ Data Scientist หรือ Dev ได้ลื่นขึ้นเวลาต้องทำโปรเจคร่วมกัน เชื่อมั้ยครับว่าการเข้าใจกันและกันว่าแต่ละฝ่ายทำงานอย่างไรคือหัวใจสำคัญของการทำให้โปรเจคเป็นไปอย่างราบรื่นเลยทีเดียว</p>
+<p>หนังสือเล่มนี้แบ่งออกเป็น 6 บทใหญ่ที่เต็มไปด้วยภาพประกอบมากมาย เรียกได้ว่าอ่านแล้วไม่อึดอัด ไม่รู้สึกงง แล้วก็ไม่ได้ยากจนไม่เข้าใจสำหรับนักการตลาดที่พอเข้าใจเรื่อง Data มาบ้างครับ</p>
+<p>สิ่งที่ผมชอบในหนังสือเล่มนี้คือการอธิบายว่า 5G หรือ 6G นั้นสำคัญอย่างไรกับชีวิตประจำวันของเรา หลายคนอาจนึกภาพไม่ออกว่าการที่อินเทอร์เน็ตเร็วขึ้นมากๆ แล้วยังไง เราจะดูหนัง HD ได้เร็วขึ้นเป็น 4K อย่างนั้นหรอ แต่ในความเป็นจริงแล้วอินเทอร์เน็ตที่เร็วขึ้นส่งผลต่อการใช้ชีวิตพื้นฐานเราทุกด้าน และในด้านหนึ่งที่สำคัญมากก็คือรถยนต์ที่วิ่งเองได้ หรือ self driving แบบ Tesla นั่นเองครับ</p>
+<h2 id="5g-สวถชวตใหมทขาดเนตเหมอนขาดใจ">5G สู่วิถีชีวิตใหม่ที่ขาดเน็ตเหมือนขาดใจ</h2>
+<p><img src="https://miro.medium.com/max/821/1*G5_-7Vj2zOYwmKf6N39F5g.jpeg" alt="5G technology will radically make driverless cars more efficient | by  Revolutionary Entrepreneur | Revolutionary Entrepreneur | Medium"></p>
+<p>ต้องบอกว่าการที่รถยนต์จะสามารถวิ่งด้วยตัวเองโดยไม่ชนกับรถข้างๆ หรือคนเดินตัดหน้าได้นั้นต้องใช้การรับข้อมูลรอบตัวที่ไหลผ่านเข้ามาอย่างมหาศาล จากนั้นก็ต้องส่งออกไปประมวลผลเพื่อให้รถยนต์เข้าไปว่ารอบตัวในแต่ละเสี้ยววินาทีนั้นมีอะไร ควรต้องเร่งคามเร็วขึ้นอีกนิด หรือเบรกกระทันหัน และจากการเอา Data รอบรถทั้งหลายมาประมวลผลก็ต้องใช้ความสามารถในการประมวลผลที่มหาศาล ซึ่งนั่นก็หมายความว่าถ้ารถยนต์คันนั้นไม่มี CPU หรือ หน่วยประมวลผลที่แรงมากๆ ในตัวรถต้องส่งขึ้น Cloud ไปประมวลผลนั่นเอง</p>
+<p>และการส่ง Data จำนวนมหาศาลขึ้นไปประมวลผลแล้วต้องได้รับข้อมูลป้อนกลับมาเพื่อให้ระบบใช้ตัดสินใจภายในเสี้ยววินาทีนั่นเองที่อินเทอร์เน็ตความเร็วสูง 5G หรือ 6G สำคัญมาก นั่นส่งผลต่อว่าถ้าพื้นที่ไหนอินเทอร์เน็ตไม่แรงพอหรือ 5G ไม่ครอบคลุมก็จะทำให้รถยนต์ขับเคลื่อนด้วยตัวเองเกิดปัญหาได้</p>
+<p>เป็นอย่างไรครับกับตัวอย่างความสำคัญของ 5G ที่ทำให้เราเข้าใจภาพได้ง่ายๆ ว่าเราจะ 5G ไปทำไม ซึ่งถ้าให้นึกย้อนกลับไปอีกหน่อยของ 3G และ 4G ที่ผ่านมาเราก็ไม่เคยรู้เลยว่าแต่ละ G จะเปลี่ยนชีวิตเราไปขนาดไหน</p>
+<p>ก่อน 3G จะใช้งานได้ครอบคลุมเมื่อสิบปีก่อน คนส่วนใหญ่ก็ยังนึกภาพออกแค่ว่า 3G ก็แค่โทรศัพท์แล้วเห็นหน้า และคนส่วนใหญ่ก็บอกว่าไม่ต้องการหรอก ใครจะอยากให้คนอื่นรู้ว่าตัวเองอยู่ที่ไหนตลอดเวลา หรือพอบอกว่าดูทีวีผ่านออนไลน์ได้ คนส่วนใหญ่ก็ยังไม่เข้าใจว่าการดูทีวีผ่านมือถือหน้าจอเล็กๆ มันจะไปสนุกอย่างไร</p>
+<p>แต่พอ 3G เข้ามาสิ่งที่เกิดขึ้นคือการบูมของ Social media ที่ทำให้เราสามารถอัพโหลดรูปภาพ สเตตัส หรือเข้าถึง Google ได้ทุกที่ทุกเวลาจริงๆ และนั่นเองก็ก่อให้เกิดยุคของ Big Data เพราะเราเริ่มมี Data เยอะเกินกว่าความสามารถในการนำข้อมูลทั้งหมดมาใช้หรือวิเคราะห์ได้ทัน</p>
+<p>แล้วพอ 4G เข้ามาสิ่งที่เปลี่ยนไปคือ Video Conetent บูมมาก เป็นยุคแจ้งเกิดของ Video Streaming ทั้งหลายไม่ว่าจะ Netflix หรือ YouTube เดิมทีเราต้องใช้เน็ตบ้านเพื่อดูวิดีโอออนไลน์ แต่พอวันนี้เราอยากดูตอนไหนก็ได้ทั้งนั้น และนั่นก็คือการเข้าสู่ยุค Personalized Content หรือเราทุกคนได้ดูในสิ่งที่เราอยากดูโดยไม่ต้องแคร์ใคร</p>
+<p>หนังสือ A Little Book of BIG DATA and Machine Learning เล่มนี้ยังทำให้ผมเข้าใจแง่มุมของ Customer 360 กับการส่งผลต่อธุรกิจ Retail หรือการค้าขายมากขึ้น</p>
+<p>เพราะเมื่อเรามี Data ลูกค้ามากพอเราสามารถเอา Customer Data มาประกอบกันไม่ว่าจะทั้งออฟไลน์ ออนไลน์ หรือเอาออนไลน์ทุกช่องทางมาประกอบกันเป็น Custoemr 360 เพื่อจะได้เข้าใจลูกค้าให้มากที่สุดในแบบที่ไม่เคยเป็นมาก่อน (เรื่องนี้ศึกษาเรื่อง CDP เพิ่มเติมได้ครับ) แล้วเมื่อการทำ Customer 360 เกิดขึ้นได้จริงก็ทำให้การทำ Omni-channel เกิดขึ้นได้จริงในแบบที่ควรจะเป็น</p>
+<h2 id="omni-channel-ไมใช-multi-channel">Omni-channel ไม่ใช่ Multi-channel</h2>
+<p><img src="https://www.digitalbusinessconsult.asia/wp-content/uploads/2020/01/%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%82%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%AA%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B8%B2%E0%B8%A2-%E0%B8%82%E0%B8%A2%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-Omni-Channel-02.png" alt="สร้างโอกาสการขาย ขยายรายได้ด้วย Omni-Channel - Digital Business Consult"></p>
+<p>ในฐานะนักการตลาดเราได้ยินคำว่า Omni-channel มานานมาก แต่ในความเป็นจริงที่เกิดขึ้นคือน้อยแบรนด์มากที่สามารถทำ Omni-channel ให้เกิดขึ้นได้จริง เพราะธุรกิจส่วนใหญ่ยังคงทำอยู่แค่ในระดับของ Multi-channel คือเพิ่มช่องทางในการติดต่อกับลูกค้าออกมามากมาย แต่ทุกช่องทางที่มีกลับไม่เคยเอา Customer data ลูกค้ามาเชื่อมต่อประกอบกันเพื่อเข้าใจลูกค้ามากขึ้นเลย</p>
+<p>ตัวอย่างเช่น ถ้าคุณเคยทักแชทถามแบรนด์ผ่านทาง LINE หรือ Facebook Messenger เมื่อคุณเข้าไปที่ร้านค้าคุณก็ต้องป้อนข้อมูลให้พนักงานแบบเดิมว่าคุณต้องการอะไร หรือถ้าคุณใช้บริการผ่านแอปหนึ่ง แล้วพอคุณโทรหา Call-center พนักงานปลายสายก็จะถามคุณเหมือนเดิมว่า “มีอะไรให้ช่วยบ้างคะ?”</p>
+<p>ทั้งๆ ที่แบรนด์มีข้อมูลเราอยู่แล้ว แต่ข้อมูลทั้งหมดดังกล่าวกลับถูกแยกส่วนไม่รวมกัน ทำให้แต่ละแผนกก็มีข้อมูลลูกค้าเป็นชิ้นๆ พอไม่เคยเอาข้อมูลลูกค้าทั้งหมดมาเชื่อมต่อกันก็ทำให้ลูกค้านี่แหละต้องคอยป้อนข้อมูลเดิมๆ ซ้ำๆ ให้แบรนด์อยู่เสมอ</p>
+<p>ดังนั้น Big Data จะช่วยให้ธุรกิจรู้ว่าลูกค้าคนนี้เคยทำอะไรกับเรามาแล้วบ้าง พอเค้าติดต่อเข้ามาครั้งนี้เค้าน่าจะต้องการให้เราช่วยอะไร ฟังดูเหมือนเป็นเรื่องง่าย แต่เชื่อมั้ยครับว่าน้อยบริษัทในไทยที่จะทำ Customer 360 ให้เกิดขึ้นได้จริงๆ</p>
+<h2 id="data-driven-entertainment-จาก-case-study-ของ-netflix">Data-Driven Entertainment จาก case study ของ Netflix</h2>
+<p><img src="https://image.slidesharecdn.com/ggv-bigdatabiginvestmentopportunitiesfordataweek09-151014050927-lva1-app6892/95/big-data-big-investment-13-638.jpg?cb=1444839015" alt="How is Big Data Being"></p>
+<p>ในเล่มนี้มาการพูดถึง Netflix ที่เอา Data ไปใช้ต่อยอดธุรกิจมากมาย จนบอกได้เลยว่า Netflix ในวันนี้ไม่ใช่ธุรกิจวิดีโอออนไลน์ หรือ Entertainment แต่เป็นธุรกิจ Data ไปแล้วครับ</p>
+<p>เพราะทุกครั้งที่เราเลือกดู ดูจนจบหรือไม่จบ ดูถึงจุดไหน ดูแล้วไปดูอะไรต่อ ดูแล้วให้คะแนนอย่างไร หรือเก็บเรื่องไหนไว้ใน My List บ้าง ทั้งหมดนี้ล้วนเป็น Data ที่ทำให้ Netflix เรียนรู้พฤติกรรมความชอบของลูกค้าจนสามารถเอามาเป็นแนวทางในการทำซีรีส์ยอดนิยมที่คนอเมริกันติดงอมแงมอย่าง House of Cards ได้</p>
+<p>House of Cards คือซีรีส์เกี่ยวกับการเมืองที่โด่งดังมากในอเมริกา ซีรีส์เรืองนี้มาจากการวิเคราะห์ Data พฤติกรรมการดูของคนใน Netflix ว่าพวกเขาชอบโครงเรื่องแบบไหน ชอบนักแสดงชายแบบไหน นักแสดงหญิงอย่างไร ผู้กำกับคนไหนที่เขาชอบ จนออกมาเป็น House of Cards ซีรีส์ยอดนิยมที่ใช้ Data-Driven นั่นเองครับ</p>
+<h2 id="rfm-model-ทสำคญในการทำ-crm-ใหไมใชแค-loylty-program">RFM Model ที่สำคัญในการทำ CRM ให้ไม่ใช่แค่ Loylty program</h2>
+<p><img src="https://www.libraryhub.in.th/wp-content/uploads/2018/11/rfm-segmentation.jpg" alt=""></p>
+<p>Source:  <a href="http://www.libraryhub.in.th/2018/11/15/data-driven-in-library-work-part-1-rfm/">http://www.libraryhub.in.th/2018/11/15/data-driven-in-library-work-part-1-rfm/</a></p>
+<p>ก่อนอื่นต้องบอกเลยว่าจากที่ผมเจอมานักการตลาดและเจ้าของธุรกิจส่วนใหญ่ยังคงเข้าใจคำว่า CRM แบบผิดๆ จากเวลาที่ไปสอนเรื่อง Data for Marketing กับเหล่าผู้ประกอบการมาพบว่าพวกเขาเข้าใจว่า CRM คือการเก็บคะแนนและสะสมแต้มเท่านั้น</p>
+<p>แต่ในความเป็นจริงแล้ว CRM คือ Customer Relationship Management หรือการทำอย่างไรให้ลูกค้าอยู่กับเรานานที่สุด ประทับใจเรามากที่สุด และก็อยากใช้เงินกับเรามากขึ้น</p>
+<p>ดังนั้นการทำ CRM ที่ถูกต้องไม่ใช่แค่การสะสมแต้มแล้วให้อะไรกลับไปก็ได้ หรือให้โปรโมชั่นที่เหมือนๆ กัน แต่ต้องมีการเอา Customer Data มาวิเคราะห์ว่าลูกค้าแต่ละคนควรถูกจัดอยู่กลุ่มไหน แล้วเมื่อเราแบ่ง Segment ลูกค้าได้เราก็จะรู้ว่าเราจะต้องทำการตลาดแบบไหนกลับไปถึงจะทำให้ลูกค้าประทับใจเรายิ่งขึ้น ที่สำคัญส่งผลต่อยอดขายหรือกำไรบริษัทอีกด้วยครับ</p>
+<p>เช่น ถ้าเป็นลูกค้าประจำสายช้อปหนักที่ใช้รหัส RFM555 คือทั้งมาประจำ มาถี่ และช้อปหนัก คนกลุ่มนี้อาจจะต้องหาของพิเศษหรือของดีๆ มาขายให้เค้าก่อน การลดอาจจะไม่จำเป็นเพราะอย่างไรก็ช้อปหนักอยู่แล้ว</p>
+<p>แต่กลับกลุ่มที่นานๆ ซื้อที่แต่มาซื้อทีหมดหน้าตัก ลูกค้ากลุ่มนี้เราควรทำการตลาดให้เค้าแวะมาหาเราบ่อยขึ้น</p>
+<p>จริงๆ แล้วการวิเคราะห์ข้อมูลโดยใช้ RFM Model ก็นับเป็นจุดเริ่มต้นในการทำ Personalization เหมือนกัน ในวันที่เทคโนโลยีพร้อมและก็มี Data มากมาย คุณต้องรีบหาทางเก็บข้อมูลมาวิเคราะห์แล้วทำ RFM Model ที่แม่นยำออกมาให้ไวที่สุดนะครับ</p>
+<h2 id="k-means-เทคนคการวเคาะหขอมลของการแบง-segmentation-ของลกคา">K-means เทคนิคการวิเคาะห์ข้อมูลของการแบ่ง Segmentation ของลูกค้า</h2>
+<p><img src="https://miro.medium.com/max/1080/1*fz-rjYPPRlGEMdTI-RLbDg.png" alt="K Mean. K mean is an unsupervised machine… | by Piyush Tyagi | Medium"></p>
+<p>Source:  <a href="https://medium.com/@pytyagi/k-mean-522e2b741e4a">https://medium.com/@pytyagi/k-mean-522e2b741e4a</a></p>
+<p>RFM Model ก็เป็นวิธีในการแบ่งลูกค้าออกมาเป็นกลุ่มๆ ตามพฤติกรรมการซื้อ แต่ถ้าจะทำ Customer Analyst ให้ลึกขึ้นก็ต้องมีการวิเคาะห์ตามลักษณะการซื้ออีกด้วย เช่น ซื้ออะไรคู่กับอะไรบ้าง ชอบมาซื้อวันหรือเวลาไหนเป็นพิเศษ โปรแบบไหนที่ชอบ หรืออื่นๆ</p>
+<p>เมื่อธุรกิจที่ฉลาดในการเก็บ Data สามารถเก็บได้ถูกต้องและครอบคลุมในสิ่งที่ต้องนำไปใช้ ก็ควรรู้เทคนิคการจัดกลุ่มข้อมูลด้วย K-means</p>
+<p>และสิ่งที่ผมชอบมากในหนังสือเล่มนี้คือ ดร.เอกสิทธิ์ แก้วาดภาพอธิบายเรื่อง K-means ไว้ให้นักการตลาดอย่างผมเข้าใจได้โดยง่าย แม้ก่อนหน้านี้จะพอรู้ว่า K-means คือการแบ่งกลุ่มที่ดูมีความใกล้เคียงกัน แต่พอเห็นภาพอธิบายทีละขั้นตอนจากหนังสือเล่มนี้ก็ทำให้เข้าใจยิ่งขึ้นไปอีกครับ</p>
+<p>หรือพอได้โมเดลออกมาแล้วก็ต้องอย่าลืมเอาไปทดสอบความแม่นยำ</p>
+<p>หนังสือเล่มนี้ก็บอกว่าเทคนิคการทดสอบ Model ที่ได้มีอย่างไรบ้าง ตั้งแต่การแบ่ง Data อีกชุดนึงไว้ไม่เอาไปใช้ในการสร้างโมเดล หรือการเอาข้อมูลทั้งหมดไปใช้ในการสร้างโมเดล แล้วแบ่งข้อมูลบางส่วนที่ใช้สร้างโมเดลออกมาทดสอบความแม่นยำไปเรื่อยๆ</p>
+<p>สำหรับผมในฐานะนักการตลาดและที่ปรึกษาด้านนี้ ที่ไม่มีความสามารถด้าน Dev หรือ Coding ก็รู้สึกดีมากที่ได้อ่านหนังสือเล่มนี้ เพราะช่วยให้ผมเข้าใจแง่มุมต่างๆ ของการทำงานกับ Data มากขึ้น ทำให้เข้าใจว่าคนต้อง Dev หรือ Data Scientists เขามีเทคนิคอย่างไร หรือใช้ภาษาแบบไหน</p>
+<p>เพราะสุดท้ายแล้วการทำงานกับ Data ก็ต้องใช้การสื่อสารกันอย่างมากระหว่างหลายๆ ฝ่าย มันก็เหมือนกับการส่งต่อ Data ระหว่างกัน ระหว่างนัก Domain expert กับ Data expert นั่นเองครับ</p>
+<p><strong>สรุปหนังสือ</strong> A Little Book of BIG DATA and Machine Learning<br>
+ทำไมข้อมูลระดับ Big Data จึงสำคัญ และทำไมการทำ Machine learning จึงเป็นอาวุธที่ทรงอานุภาพที่สุดในการแข่งขันทางธุรกิจในยุคปัจจุบัน<br>
+ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เขียน<br>
+ภีรพล คชาเจริญ บรรณาธิการ<br>
+สำนักพิมพ์ INFOPRESS</p>
+<blockquote>
+<p>Source : <a href="https://www.summaread.net/big-data/a-little-book-of-big-data-and-machine-learning/">https://www.summaread.net/big-data/a-little-book-of-big-data-and-machine-learning/</a></p>
+</blockquote>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/big-data">
+                                    <i class="fas fa-tag mr-2"></i>Big Data
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/business">
+                                    <i class="fas fa-tag mr-2"></i>Business
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fexample.com%2fpost%2fa-little-book-of-big-data%2f&text=A%20Little%20Book%20of%20BIG%20DATA%20and%20Machine%20Learning">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fexample.com%2fpost%2fa-little-book-of-big-data%2f&title=A%20Little%20Book%20of%20BIG%20DATA%20and%20Machine%20Learning">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fexample.com%2fpost%2fa-little-book-of-big-data%2f&t=A%20Little%20Book%20of%20BIG%20DATA%20and%20Machine%20Learning">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fexample.com%2fpost%2fa-little-book-of-big-data%2f&title=A%20Little%20Book%20of%20BIG%20DATA%20and%20Machine%20Learning">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div><div class="row justify-content-center my-3">
+                    <div class="col-lg-8">
+                        <div id="commento"></div>
+                        <script src="https://commento.io"></script>
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:example@example.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://keybase.io/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-keybase fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://medium.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://pinterest.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://reddit.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.weibo.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

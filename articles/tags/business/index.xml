@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business on Hugo Themes</title>
+    <link>https://example.com/tags/business/</link>
+    <description>Recent content in Business on Hugo Themes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Little Book of BIG DATA and Machine Learning</title>
+      <link>https://example.com/post/a-little-book-of-big-data/</link>
+      <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/a-little-book-of-big-data/</guid>
+      <description>&lt;p&gt;หนังสือ A Little Book of BIG DATA and Machine Learning ของ ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เล่มนี้เหมาะกับคนที่พอจะมีความรู้ความเข้าใจเรื่อง Data มาในระดับหนึ่ง เหมาะกับคนที่เข้าใจภาพรวมแบบกว้างๆ เช่นนักการตลาดแบบผมที่อยากจะเข้าใจเชิงลึกลงบ้างอีกนิดหน่อยว่าโดยเทคนิคและวิธีการแล้วมีอะไรบ้าง แต่สิ่งหนึ่งที่บอกได้เลยคือแม้หน้าปกอาจจะดูมีความขึงขังจริงจังไปนิดสำหรับนักการตลาด(เช่นผม) แต่พอได้อ่านเนื้อหาข้างในแล้วรู้สึกเลยว่าสมูทมาก แทบไม่มีสะดุดเพราะ ดร.เอกสิทธิ์ เขียนอธิบายบรรดาเทคนิคทั้งหลายไว้อย่างดีผ่านการเล่าเรื่องเทียบกับชีวิตประจำวันใกล้ตัว ดังนั้นนี่เป็นหนังสือด้าน Big Data อีกหนึ่งเล่มที่อยากแนะนำให้คนที่พอมีพื้นดีและรู้คอนเซปในวงกว้างอยู่แล้วได้ลองหาอ่านดูครับ&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
