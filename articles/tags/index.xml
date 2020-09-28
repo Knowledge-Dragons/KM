@@ -2,153 +2,153 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hugo Themes</title>
-    <link>https://knowledge-dragons.github.io/KM/tutorials/tags/</link>
+    <link>https://knowledge-dragons.github.io/KM/articles/tags/</link>
     <description>Recent content in Tags on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/tutorials/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Big Data</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/big-data/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/big-data/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/big-data/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/big-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Business</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/business/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/business/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/business/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/business/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mindset</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/mindset/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/mindset/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/mindset/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/mindset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>psychology</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/psychology/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/psychology/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/psychology/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/psychology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>trend</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/trend/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/trend/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/trend/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/trend/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gallery</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/gallery/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/gallery/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/gallery/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/gallery/</guid>
       <description></description>
     </item>
     
     <item>
       <title>lightbox</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/lightbox/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/lightbox/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/lightbox/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/lightbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>css</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/css/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/css/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
       <title>html</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/html/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/html/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>markdown</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/markdown/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/markdown/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/markdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>themes</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/themes/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/themes/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/themes/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/themes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>privacy</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/privacy/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/privacy/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shortcodes</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/shortcodes/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/shortcodes/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/shortcodes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>text</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/text/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/text/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emoji</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/emoji/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/emoji/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/emoji/</guid>
       <description></description>
     </item>
     
     <item>
       <title>index</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/tags/index/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/tags/index/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/index/</guid>
       <description></description>
     </item>
     

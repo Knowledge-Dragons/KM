@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Hugo Themes</title>
-    <link>https://knowledge-dragons.github.io/KM/tutorials/authors/</link>
+    <link>https://knowledge-dragons.github.io/KM/articles/authors/</link>
     <description>Recent content in Authors on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/tutorials/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/authors/admin/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/authors/admin/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/authors/admin/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/authors/admin/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam odio justo, interdum eu ex sit amet, rhoncus interdum magna. Nullam at magna tempor, suscipit ipsum ac, egestas tellus. Maecenas non orci ut velit consectetur feugiat. Proin dignissim ullamcorper eros, at commodo orci eleifend at. Donec luctus diam et interdum finibus. Nullam vel elit hendrerit, aliquet massa eget, vestibulum arcu. Etiam fermentum, sem in interdum scelerisque, massa risus rhoncus turpis, quis efficitur nibh dolor vel dolor.</description>
     </item>
     
     <item>
       <title>Hugo Authors</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/authors/hugo-authors/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/authors/hugo-authors/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/authors/hugo-authors/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/authors/hugo-authors/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/authors/jane-smith/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/authors/jane-smith/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/authors/jane-smith/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/authors/jane-smith/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam odio justo, interdum eu ex sit amet, rhoncus interdum magna. Nullam at magna tempor, suscipit ipsum ac, egestas tellus. Maecenas non orci ut velit consectetur feugiat. Proin dignissim ullamcorper eros, at commodo orci eleifend at. Donec luctus diam et interdum finibus. Nullam vel elit hendrerit, aliquet massa eget, vestibulum arcu. Etiam fermentum, sem in interdum scelerisque, massa risus rhoncus turpis, quis efficitur nibh dolor vel dolor.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/authors/john-doe/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/authors/john-doe/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/authors/john-doe/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/authors/john-doe/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam odio justo, interdum eu ex sit amet, rhoncus interdum magna. Nullam at magna tempor, suscipit ipsum ac, egestas tellus. Maecenas non orci ut velit consectetur feugiat. Proin dignissim ullamcorper eros, at commodo orci eleifend at. Donec luctus diam et interdum finibus. Nullam vel elit hendrerit, aliquet massa eget, vestibulum arcu. Etiam fermentum, sem in interdum scelerisque, massa risus rhoncus turpis, quis efficitur nibh dolor vel dolor.</description>
     </item>
     

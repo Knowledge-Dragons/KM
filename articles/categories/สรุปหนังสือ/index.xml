@@ -2,44 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>สรุปหนังสือ on Hugo Themes</title>
-    <link>https://knowledge-dragons.github.io/KM/tutorials/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/</link>
+    <link>https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/</link>
     <description>Recent content in สรุปหนังสือ on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/tutorials/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Little Book of BIG DATA and Machine Learning</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/post/a-little-book-of-big-data/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/a-little-book-of-big-data/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/post/a-little-book-of-big-data/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/a-little-book-of-big-data/</guid>
       <description>&lt;p&gt;หนังสือ A Little Book of BIG DATA and Machine Learning ของ ดร.เอกสิทธิ์ พัชรวงศ์ศักดา เล่มนี้เหมาะกับคนที่พอจะมีความรู้ความเข้าใจเรื่อง Data มาในระดับหนึ่ง เหมาะกับคนที่เข้าใจภาพรวมแบบกว้าง ๆ เช่นนักการตลาดแบบผมที่อยากจะเข้าใจเชิงลึกลงบ้างอีกนิดหน่อยว่าโดยเทคนิคและวิธีการแล้วมีอะไรบ้าง&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Whole New Mind ทักษะด้านไหน “ชนะ” ในโลกอนาคต</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/post/a-whole-new-mind/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/a-whole-new-mind/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/post/a-whole-new-mind/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/a-whole-new-mind/</guid>
       <description>&lt;p&gt;ในโลกสมัยใหม่ที่หุ่นยนต์เข้ามาทำงานแทนคนได้แทบทุกด้าน คุณจะแน่ใจได้ยังไงว่าตัวเองจะไม่ถูกทิ้งไว้ข้างหลัง? ทักษะของคุณกำลังล้าสมัยหรือไม่? ทักษะอะไรจะเป็นที่ต้องการในอนาคต? บริษัทสมัยใหม่อย่าง  &lt;a href=&#34;https://stackedit.io/%5Bhttps://bingobook.co/book-summary/how-google-works%5D(https://bingobook.co/book-summary/how-google-works)&#34;&gt;Google&lt;/a&gt;  และ  &lt;a href=&#34;https://stackedit.io/%5Bhttps://bingobook.co/book-summary/think-like-zuck/%5D(https://bingobook.co/book-summary/think-like-zuck/)&#34;&gt;Facebook&lt;/a&gt;  อยากจ้างคนแบบไหน? ในโลกที่มีวิธีทำงานแบบใหม่ (&lt;a href=&#34;https://stackedit.io/%5Bhttps://bingobook.co/book-summary/deep-work%5D(https://bingobook.co/book-summary/deep-work)&#34;&gt;Deep Work&lt;/a&gt;) คุณจะปรับตัวเข้ากับมันอย่างไร?&lt;/p&gt;
 &lt;p&gt;หนังสือ  &lt;strong&gt;A Whole New Mind&lt;/strong&gt;  เล่มนี้มีคำตอบครับ&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>แผนระยะยาวของ Toyota เมื่อถึงวันที่โลกเมินเครื่องยนต์ และคนไม่ซื้อรถ</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/post/toyota-reveals-future-strategy/</link>
-      <pubDate>Wed, 30 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/post/toyota-reveals-future-strategy/</guid>
-      <description>บทความและภาพโดย Pan Paitoonpong.
-  บทความคุณภาพ อาจจะยาว แต่อยากให้อ่านครับ ได้ความรู้ (และไม่ใช่การโฆษณาประชาสัมพันธ์) เมื่อโลกจะไม่มีเครื่องยนต์สันดาปภายใน..เมื่อคนซื้อรถน้อยลง และคนที่ซื้อก็ไม่ได้อยากขับ Toyota จะเตรียม “เล่นกับอนาคต” ในแบบนั้นไว้อย่างไรบ้าง บทความนี้มีคำตอบ เมื่ออ่านจบ เราจะมองเห็นแนวโน้มของอนาคตอันใกล้ ซึ่งจะเปลี่ยนแปลงวิธีที่เรามองรถไปอย่างสิ้นเชิง
- ความเปลี่ยนแปลงเกิดขึ้นรอบตัวเราอยู่เสมอ และเมื่อมีหนึ่งอย่างที่เปลี่ยนไป อีกสิบอย่างก็จะต้องเปลี่ยนตามอย่างเลี่ยงมิได้
-วันหนึ่ง เราใช้นาฬิกาไก่ขันเพื่อปลุกให้ตื่น ฟังวิทยุจาก Walkman พาหญิงที่คุณแอบชอบไปถ่ายรูปแถวเซ็นเตอร์พอยท์ด้วยกล้องฟิล์ม กลับบ้านไปจะโทรคุยเล่าให้เพื่อนฟังก็ต้องใช้โทรศัพท์บ้าน นั่นคือถ้าพี่สาวคนโตของคุณไม่ได้ใช้มันอยู่ อยากดูทีวีก็ต้องตบตีกับน้อง อยากดูวิดิโอก็ต้องไปเช่าจากร้านหน้าปากซอย โทรศัพท์มือถือทั้งบ้านมีเครื่องเดียว คือของพ่อ เครื่องละเกือบแสนบาท อันเท่าท่อนแขนและทำได้แค่ใช้โทร และเห็นได้ชัดว่าพ่อไม่ได้ใช้มันเพื่อโทรหาแม่หรอก
-อีกวันหนึ่งเราตื่นมา แล้วก็นึกขึ้นได้ว่า ทุกอย่างที่เราเคยทำเมื่อ 30 ปีก่อน ด้วยอุปกรณ์มากมายหลายชิ้น ณ บัดนี้สามารถทำได้ด้วย สมาร์ทโฟนแบนๆเครื่องเดียว
-ใครบางคนเคยพูดไว้เมื่อกว่า 10 ปีที่แล้วว่า ไปรษณีย์จะตาย ..แล้ว Fast Forward มาปี 2019 ไปรษณีย์ตายมั้ย? ไม่ตาย แถมถุงกระเป๋าของบุรุษไปรษณีย์ประจำซอยชินเขตของเราเมื่อก่อนลีบเล็ก มีแต่จดหมาย ทุกวันนี้พองราวลูกนิมิตยักษ์ห้อยออกมาจากสองข้างของมอเตอร์ไซค์ มีแต่พัสดุ สินค้า สารพัดอย่าง ทำเอาค่าสัมประสิทธิ์แรงเสียดทานอากาศสูงปรี๊ด
-คุณจะเห็นได้ว่าเทคโนโลยี ทำได้ทั้งก่อกำเนิดสิ่งใหม่ และส่งเสริมให้สิ่งเก่าๆถูกกลืนกินไปกับเวลาอย่างช้าๆ แต่ถ้ามีการปรับตัวให้ทันการ คุณจะลอยอยู่เหนือคลื่นกาลเวลาอย่างสง่างามแถมอาจจะรุ่งกว่าเดิมเสียด้วยซ้ำ</description>
     </item>
     
   </channel>

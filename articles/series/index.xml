@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Series on Hugo Themes</title>
-    <link>https://knowledge-dragons.github.io/KM/tutorials/series/</link>
+    <link>https://knowledge-dragons.github.io/KM/articles/series/</link>
     <description>Recent content in Series on Hugo Themes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/tutorials/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Look Forward</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/series/look-forward/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/series/look-forward/</link>
       <pubDate>Sun, 27 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/series/look-forward/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/series/look-forward/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Themes Guide</title>
-      <link>https://knowledge-dragons.github.io/KM/tutorials/series/themes-guide/</link>
+      <link>https://knowledge-dragons.github.io/KM/articles/series/themes-guide/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://knowledge-dragons.github.io/KM/tutorials/series/themes-guide/</guid>
+      <guid>https://knowledge-dragons.github.io/KM/articles/series/themes-guide/</guid>
       <description></description>
     </item>
     
