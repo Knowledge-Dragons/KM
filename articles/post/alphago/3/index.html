@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;700&display=swap" rel="stylesheet">
+<title>
+  
+     Alphago : ตอนที่ 3 | 
+    Hugo Themes
+  
+</title><meta name="description" content="Alphago  : หมากตาที่ 78 และหนึ่งเกมแห่งชัยชนะของลี เซดอล (ตอนที่ 3)"><meta name="author" content="admin">
+
+<link rel="apple-touch-icon" href="/KM/articles/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/KM/articles/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/KM/articles/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/KM/articles/manifest.json">
+<link rel="mask-icon" href="/KM/articles/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/KM/articles/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/KM/articles/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+
+
+<link rel="canonical" href="https://knowledge-dragons.github.io/KM/articles/post/alphago/3/"><meta property="og:title" content="Alphago : ตอนที่ 3" />
+<meta property="og:description" content="Alphago  : หมากตาที่ 78 และหนึ่งเกมแห่งชัยชนะของลี เซดอล (ตอนที่ 3)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://knowledge-dragons.github.io/KM/articles/post/alphago/3/" />
+<meta property="og:image" content="https://knowledge-dragons.github.io/KM/articles/alphago.jpg" />
+<meta property="article:published_time" content="2019-12-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-12-20T00:00:00+00:00" />
+
+<meta itemprop="name" content="Alphago : ตอนที่ 3">
+<meta itemprop="description" content="Alphago  : หมากตาที่ 78 และหนึ่งเกมแห่งชัยชนะของลี เซดอล (ตอนที่ 3)">
+<meta itemprop="datePublished" content="2019-12-20T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-12-20T00:00:00+00:00" />
+<meta itemprop="wordCount" content="424">
+<meta itemprop="image" content="https://knowledge-dragons.github.io/KM/articles/alphago.jpg">
+
+
+
+<meta itemprop="keywords" content="AlphaGo,Deep Learning," />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://knowledge-dragons.github.io/KM/articles/alphago.jpg"/>
+
+<meta name="twitter:title" content="Alphago : ตอนที่ 3"/>
+<meta name="twitter:description" content="Alphago  : หมากตาที่ 78 และหนึ่งเกมแห่งชัยชนะของลี เซดอล (ตอนที่ 3)"/>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://knowledge-dragons.github.io/KM/articles">Hugo Themes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/KM/articles/KM/articles/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/KM/articles/KM/articles/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">December 20, 2019</p>
+                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>424 words</span>
+                            <span><i class="fas fa-clock mr-2"></i>2 mins read</span>
+                        </div>
+
+                        <h1>Alphago : ตอนที่ 3</h1>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/KM/articles/authors/admin/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/KM/articles/authors/admin/little_dragon_hu6a02119f2232573bf266353d1a7aa9fd_19369_64x0_resize_q75_box.jpg 1x, /KM/articles/authors/admin/little_dragon_hu6a02119f2232573bf266353d1a7aa9fd_19369_128x0_resize_q100_box.jpg 2x, /KM/articles/authors/admin/little_dragon_hu6a02119f2232573bf266353d1a7aa9fd_19369_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/KM/articles/authors/admin/little_dragon_hu6a02119f2232573bf266353d1a7aa9fd_19369_64x0_resize_q75_box.jpg" class="rounded-circle" alt="admin">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/KM/articles/authors/admin/" class="small">admin</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://twitter.com/@little-dragon">@Little Dragon</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/KM/articles/images/alphago_hu2c539d00ca39a03f5c691329b09e4681_48108_700x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Alphago : ตอนที่ 3">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <p>หลังแพ้มาสองเกม&hellip;</p>
+<p>ตอนนี้ลี เซดอลรู้แล้วว่าอัลฟ่าโกะไม่ใช่โปรแกรมหมากล้อมแบบที่เขาเคยเจอ มันอัจฉริยะและสามารถสร้างสรรค์เกมรูปแบบใหม่ๆที่ไม่เคยมีมนุษย์คนไหนทำได้มาก่อน</p>
+<p>เกมสามนี้เขาต้องสู้แบบหลังชนฝา</p>
+<p>หากแพ้เกมนี้ เขาจะแพ้แมตช์นี้ทันที แต่หากพลิกกลับมาชนะได้ มนุษย์ก็ยังมีความหวังในเกมต่อไป</p>
+<p>เกมที่ 3 : ชัยชนะที่ง่ายดาย</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd4c0f5ec02244089c893_800x0xcover_N5teWZ77.jpg" alt=""></p>
+<p>ลี เซดอล ได้หยุดพักหนึ่งวันเต็มๆก่อนแข่งเกมนี้&hellip;แต่เขาไม่ได้พักหรอก เขาใช้เวลาวันหยุดไปกับการวิเคราะห์เกมที่เกิดขึ้นร่วมกับผู้เชี่ยวชาญด้านโกะหลายคนเพื่อหากลยุทธ์ในการแข่งเกมที่สาม</p>
+<p>อัลฟ่าโกะทำได้ดีตั้งแต่ต้นเกม&hellip;</p>
+<p>มันทำคะแนนทิ้งห่างไปหลังจากตาเดินที่ 50 ถึงตอนนี้อัตราชนะของอัลฟ่าโกะพุ่งสูงมาก</p>
+<p>โกะมีความแปลกอยู่อย่างหนึ่ง คือ เมื่อไหร่ที่คุณอยากชนะ คุณมักจะแพ้ วันนี้ลี เซดอล เล่นด้วยความกดดัน ความอยากชนะทำให้เขาพลาด</p>
+<p>การแก้หมากของลี เซดอล ในวันนี้คือ แก้ไปตรงๆ สู้กันซึ่งหน้า&hellip;นั่นไม่ใช่สไตล์การเล่นของเขา</p>
+<p>เกมวันนี้ใช้เวลาไม่มาก&hellip;หมากขาวของอัลฟ่าโกะสามารถครองพื้นที่ได้เต็มกระดาน&hellip;และลี เซดอลก็ยอมแพ้ไปในที่สุด</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd53ff2ba5325298bc281_800x0xcover_Ny_aFoof.jpg" alt=""></p>
+<p>&quot; มันวิเศษมากที่เราชนะ แต่ก็เป็นเรื่องใหญ่สำหรับฉันด้วย การได้เห็นผู้ชายคนนี้พยายามอย่างหนักและต้องผิดหวังอย่างหนักด้วยเช่นกัน &quot;</p>
+<p>คำสัมภาษณ์จากหนึ่งในสมาชิกทีมดีฟมายด์</p>
+<p>&quot; ก่อนอื่นผมคิดว่าผมควรต้องกล่าวคำขอโทษ ถ้าผมสามารถเล่นได้ดีกว่านี้หรือฉลาดกว่านี้ ผลลัพธ์อาจต่างออกไป</p>
+<p>ผมคิดว่าผมทำให้พวกคุณผิดหวัง ผมอยากขอโทษที่ทำอะไรไม่ได้ ผมไม่เคยกดดันเท่านี้มาก่อน มันกดดันมาก ผมคงอ่อนแอเกินกว่าจะเอาชนะมันได้ ผมไม่อยากเชื่อว่าจะเกิดเรื่องแบบนี้ขึ้น</p>
+<p>เมื่อดูจากระดับของคู่แข่งตอนนี้ ผมอาจจะไม่ได้แพ้แค่สามต่อศูนย์ แต่อาจเป็นห้าต่อศูนย์ การแพ้ห้าต่อศูนย์เกม คงทำให้ความภาคภูมิใจของผมสั่นคลอน &quot; ลี เซดอลให้สัมภาษณ์</p>
+<p>&quot; พวกเราเป็นนักเล่นโกะ ในประเทศจีน เกาหลี หรือญี่ปุ่น เรามองว่าโกะเป็นศิลปะ พวกเราคือศิลปิน เราเต็มที่กับการเล่นโกะอยู่แล้ว เพราะฉะนั้นโปรดเห็นใจลี เซดอลด้วย เขาเป็นผู้เล่นที่เก่งมาก เป็นสุดยอดผู้เล่น ผมอยู่ในห้องนั้น ผมมองที่เขา ลี เซดอลอยากชนะ เขาพยายามทุกทางแล้ว เราแค่ทำไม่ได้&hellip;มันก็แค่นั้น &quot; ฟาน ฮุย แชมป์ยุโรปสามสมัยกล่าวหลังจบเกม</p>
+<p>เป็นที่แน่นอนแล้วว่ามนุษย์แพ้เอไอ</p>
+<p>อีกสองเกมที่เหลือคือการลุ้นว่ามนุษย์จะสามารถเอาชนะเอไอได้สักเกมไหม ?</p>
+<p>เกมที่ 4 : ตาเดินที่ 78</p>
+<p>เกมที่สี่นี้ ลี เซดอลดูผ่อนคลายขึ้น</p>
+<p>ผู้บรรยายกล่าวแบบติดตลกก่อนเริ่มเกมว่า ถ้าเขาได้แข่งกับอัลฟ่าโกะ เขาจะดึงปลั๊กออก&hellip;.</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd5d6dbd0040cf3d3857f_800x0xcover_KRyH7HnV.jpg" alt=""></p>
+<p>วันนี้ลี เซดอล เลือกที่จะเล่นแบบตั้งรับ</p>
+<p>เกมส่วนใหญ่ยังเป็นของหมากดำ(อัลฟ่าโกะ) แต่เมื่อยิ่งเล่นไป ลี เซดอลก็ตีตื้นขึ้นมาเรื่อยๆ เขากลับมาเล่นสไตล์ที่ถนัด&hellip;เริ่มตั้งรับจากพื้นที่เล็กๆในกระดาน</p>
+<p>แต่อัลฟ่าโกะก็ไม่หวั่นมันรุกไล่กดดันอย่างต่อเนื่อง&hellip;จนลี เซดอล เสียเปรียบอีกครั้ง</p>
+<p>นักวิเคราะห์ทุกคนเห็นตรงกันว่า เขากำลังตกอยู่ในสถานการณ์ลำบาก หมากขาวเสียตำแหน่งไปเรื่อยๆจนแทบไม่มีตาเดิน แต่ลี เซดอล ยังนิ่ง เขามีสมาธิกับเกมมาก&hellip;</p>
+<p>ตาที่จ้องมองกระดานกับสายตาครุ่นคิด&hellip;เหมือนกับว่าเขากำลังรอจังหวะจู่โจม ?</p>
+<p>และเมื่อหมากตาหนึ่งของลี เซดอล ถูกทิ้งลงบนกระดาน อยู่ดีๆอัตราชนะของอัลฟ่าโกะก็ลดลงไปแปดเปอร์เซนต์&hellip;เป็นการลดลงแบบที่ไม่เคยเกิดขึ้นมาก่อน</p>
+<p>หลังจากนั้นการเดินหมากของมันก็แปลกไป&hellip;</p>
+<p>จำเรื่องราวในบทความตอนที่หนึ่งได้ไหมครับ ?</p>
+<p>ก่อนการแข่งฟาน ฮุย พบว่าอัลฟ่าโกะจะเข้าใจผิดเมื่อต้องเจอกับสถานการณ์ที่มันไม่คุ้นเคย เมื่อมันเจอการวางหมากที่ไม่มีในฐานข้อมูล อัลฟ่าโกะอาจพาตัวเองไปสู่มุมอับเพราะหลงคิดว่าไปต่อได้</p>
+<p>ทีมดีฟมายด์แก้ไขข้อบกพร่องนี้ไม่ทัน แต่โอกาสที่จะเกิดเหตุการณ์นี้มีน้อยมาก พวกเขาจึงปล่อยไป</p>
+<p>สถานการณ์ที่กำลังเกิดขึ้นตอนนี้&hellip;คือโอกาสอันน้อยนิดนั้น ในที่สุด ลี เซดอน ก็พบจุดอ่อนของอัลฟ่าโกะ</p>
+<p>ถึงจุดนี้ อัลฟ่าโกะใช้เวลาเดินหมากนานมาก&hellip;และเมื่อหมากดำถูกวางลง ก็เป็นตำแหน่งการวางที่ตลกและไม่สมเหตุสมผลเอาเสียเลย (หนึ่งในผู้บรรยายถึงกลับหลุดขำออกมาในจังหวะนี้)</p>
+<p>ลี เซดอล ยัง งง กับการเดินของมันเลย&hellip;</p>
+<p>สำหรับเขา คงกำลังสับสนว่ามันเล่นอะไร ? มีแผนการอะไรอยู่ ? แต่ในห้องข้อมูลของทีมดีฟมายด์ไม่ได้คิดเช่นนั้น&hellip;ตอนนี้อัตราชนะลดลงไปมาก โอกาสชนะมีเพียง 45 เปอร์เซนต์เท่านั้น</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd662dbd0040cf3d43ee0_800x0xcover_wDcV4Xu7.jpg" alt=""></p>
+<p>ตลอดเกมที่ผ่านมาอัลฟ่าโกะได้เปรียบมาตลอด&hellip;แต่หลังตาเดินตาหนึ่งของลี เซดอล ทุกอย่างก็เปลี่ยนไป ตาเดินนั้น&hellip;คือการวางหมากตาที่ 78 เป็นการเดินของหมากกลางกระดานที่เปลี่ยนแปลงทุกสิ่งในตาเดียว</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfce3286a33310cf5fb189b_800x0xcover_kU9CJbpD.jpg" alt=""></p>
+<p>ตาเดินที่ 78 ของลี เซดอล (หมากขาว)</p>
+<p>แม้ทุกอย่างดูเหมือนว่าจะไปได้ดี แต่ลี เซดอลไม่ประมาท</p>
+<p>เขามองกระดานและครุ่นคิดอย่างใจเย็น</p>
+<p>ตอนนี้อัตราชนะของอัลฟ่าโกะเหลือเพียง 18.2 เปอร์เซนต์ &hellip;.แล้วมันก็ยอมแพ้</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd69cf2ba5325298d6b70_800x0xcover_8o4RtVI3.jpg" alt=""></p>
+<p>เขาทำสำเร็จ ลี เซดอล สามารถชนะเอไอได้ในเกมที่สี่</p>
+<p>เสียงโห่ร้องดีใจ&hellip;ดังไปทั่วห้องถ่ายทอดสด</p>
+<p>&quot; ผมได้ยินเสียงคนโห่ร้อง ตอนที่รู้ว่าอัลฟ่าโกะแพ้เกมนี้แน่นอนแล้ว ผมรู้เลยว่าทำไม ผู้คนรู้สึกหมดหวังและหวาดกลัว ดูเหมือนว่ามนุษย์เราช่างอ่อนแอและเปราะบางเหลือเกิน</p>
+<p>ชัยชนะครั้งนี้มีความหมายว่า เรายังคงยืนหยัดต่อไปได้ เมื่อเวลาผ่านไป การเอาชนะเอไอคงยากมาก แต่การชนะเพียงหนึ่งครั้งก็เพียงพอแล้ว&hellip;.ครั้งเดียวก็เพียงพอแล้ว &quot;</p>
+<p>&quot; ชัยชนะครั้งนี้มีค่ามาก ผมไม่ยอมแลกมันกับอะไรในโลกเด็ดขาด &quot; นี่คือบทสัมภาษณ์ของลี เซดอลหลังเอาชนะอัลฟ่าโกะได้ (เกมที่ 4) และเป็นครั้งแรกที่ผมเห็นรอยยิ้มของลี เซดอลในการให้สัมภาษณ์</p>
+<p>ลี เซดอล ยกระดับการเดินตานี้ได้ซับซ้อนจนอัลฟ่าโกะคาดไม่ถึง เขาบอกว่าเขาพยายามหาวิธีการเดินในแบบที่อัลฟ่าโกะจะเดาไม่ได้ และมันก็ไม่ได้นึกถึงวิธีการเดินแทรกแบบนี้</p>
+<p>ในห้องสัมภาษณ์ นักข่าวคนหนึ่งถามลี เซดอลว่า</p>
+<p>&quot; ในตาเดินที่ 78 นี้ กูลี่ สุดยอดนักเล่นโกะชาวจีนบอกว่ามันเป็นการเดินที่เทพมาก คุณคิดอะไรอยู่ในการเดินตานั้น ?&rdquo;</p>
+<p>&quot; ในตอนนั้น นี่คือทางเดียวที่ผมคิดออก การเดินตาที่ 78 ไม่มีตำแหน่งอื่นอีกแล้ว มันเป็นทางเลือกเดียวของผมที่ต้องลงตรงนี้ ผมไม่แน่ใจว่าผมคู่ควรกับคำชมมากมายที่ได้รับหรือเปล่า ? &quot; ลี ตอบนักข่าว</p>
+<p>ในหนทางที่ดูเหมือนจะเป็นไปไม่ได้นี้ ลี เซดอลทำให้มันเกิดขึ้นแล้ว</p>
+<p>ทีมพัฒนาของดีฟมายด์ต้องหาคำตอบในความผิดพลาดนี้ให้ได้ พวกเขาไล่วิเคราะห์การเดินของอัลฟ่าโกะทีละตาและดูว่ามันคิดอะไรในตอนนั้น</p>
+<p>ปรากฏว่าอัลฟ่าโกะแพ้เพราะก่อนการเดินตาที่ 78 นี้ อัตราชนะของลี เซดอลที่อัลฟ่าโกะคำนวณได้มีเพียง 0.007 เปอร์เซนต์ และการเดินตาที่ 78 นี้ โอกาสที่มนุษย์จะลงหมากในตำแหน่งนี้มีเพียงหนึ่งในหมื่นเท่านั้น</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd72f6a33310cf5e69d3c_800x0xcover_U6sa1p0P.jpg" alt=""></p>
+<p>หากใครเคยอ่านการ์ตูนเรื่อง &ldquo;ฮิคารุเซียนโกะ&rdquo; มีการกล่าวถึงสุดยอดเป้าหมายที่นักเล่นโกะปรารถนานั่นคือการเล่นในระดับ &quot; หัตถ์เทวะ &quot;</p>
+<p>หัตถ์เทวะ คือ ระดับการเล่นโกะที่มนุษย์สามารถเล่นกับพระเจ้าได้ ( พระเจ้าคือผู้รอบรู้ทุกสรรพสิ่ง) พระเจ้าสร้างโกะเพื่อหามนุษย์ผู้คู่ควรคนนั้น หากเปรียบอัลฟ่าโกะเป็นพระเจ้าในเกมโกะ&hellip;ตานี้ของลี เซดอล คือ &quot; หัตถ์เทวะ &quot; นั่นเอง</p>
+<p>&quot; โอกาสที่มนุษย์จะลงหมากตำแหน่งนี้มีเพียงหนึ่งในหมื่น &quot; อัลฟ่าโกะจึงมองข้ามการเดินนี้ อัลฟ่าโกะมองไม่เห็น &quot; บ่วงอิก &quot; ของเกมนี้</p>
+<p>หมายเหตุจากผู้เขียน : ผู้เชี่ยวชาญหมากล้อมบอกกับผมว่าการเดินตาที่ 78 นี้ ภาษาโกะเรียกว่า Trick move ถ้าเป็นผู้เล่นระดับโปรคงหาทางแก้หมากตานี้ได้ แต่ความหลงผิดจาก Bug ในระบบของ AlphaGoทำให้มันเดินพลาดและแพ้ไปในที่สุด ถึงอย่างนั้นหมากตานี้ของลี เซดอลก็ยังสุดยอดอยู่ดี เพราะตอนนั้นไม่มีใครคิดถึงการเดินแบบนี้เลย&hellip; มีเพียงลี เซดอลเท่านั้นที่มองเห็น</p>
+<p>เกมที่ 5 : บทเรียนจากอัลฟ่าโกะ</p>
+<p>หลังความพ่ายแพ้เป็นครั้งแรกของอัลฟ่าโกะ ทำให้เกมนี้ได้รับความสนใจอย่างมาก</p>
+<p>ความท้าทายในเกมนี้คือ เมื่อเรารู้จุดอ่อนของอัลฟ่าโกะจนชนะได้ครั้งหนึ่งแล้ว เรายังจะมีโอกาสนั้นอีกไหม ?</p>
+<p>โอกาสที่มอดลงจนใกล้ดับถูกจุดให้ลุกโชนขึ้นอีกครั้ง</p>
+<p>เกมนี้อัลฟ่าโกะเดินหมากแปลกๆตั้งแต่ต้นเกม ผู้บรรยายให้ความเห็นว่ามันอาจจะยังไม่หาย งง กับเกมเมื่อวาน แต่ละตาที่ลงหมาก มันเดินได้ไม่ดีนัก (ทัศนะผู้บรรยาย) จนผ่านไปเกินครึ่งกระดาน มันก็ยังเดินแปลกๆอยู่</p>
+<p>โอกาสชนะในตอนนี้มี 91 เปอร์เซนต์ ( ถือว่าไม่ดีนักเมื่อเทียบกับมาตรฐานโดยปกติของอัลฟ่าโกะ)</p>
+<p>หลายคนเริ่มคิดว่าอัลฟ่าโกะคงจะแพ้แบบขายหน้าอีกครั้งในเกมนี้ มันเดินเกมแปลกประหลาดจนไม่มีใครเข้าใจมันได้แล้ว</p>
+<p>การวางหมากของมันไม่ลงในตำแหน่งที่ควรจะลง</p>
+<p>แต่กลับลงในตำแหน่งที่ไม่จำเป็น เหมือนกับว่ามันเดินหมากไปงั้นๆไม่ได้คิดอะไร แต่เมื่อเข้าสู่ท้ายเกม หมากของอัลฟ่าโกะก็กลับมาสูสีอีกครั้ง และเฉือนเอาชนะไปในที่สุด ( ลี เซดอล ตามหลังประมาณสองแต้มครึ่ง)</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd7e9dbd0040cf3d656b0_800x0xcover_31xGu-ks.jpg" alt=""></p>
+<p>สรุปผลการแข่งขันห้าเกม อัลฟ่าโกะสามารถชนะ ลี เซดอลไปได้ 4 ต่อ 1 เกม</p>
+<p>&quot; ผมคิดว่าอัลฟ่าโกะกำลังสอนเราครับ ที่ผ่านมาเราใช้แต้มเป็นตัวแทนของโอกาสในการชนะ เราเลยพยายามครองพื้นที่ให้ได้มากเพื่อทำให้แน่ใจว่าเราจะชนะ แต่อัลฟ่าโกะบอกกับพวกเราว่า นั่นไม่สำคัญ&hellip;</p>
+<p>ใครจะได้กี่แต้มก็ตาม การได้คะแนนมากกว่าแค่แต้มเดียวก็ถือว่าชนะแล้ว ฉันจะยึดพื้นที่มากมายไปทำไม ?</p>
+<p>นั่นคือสิ่งที่อัลฟ่าโกะต้องการจะบอก และนั่นจะเป็นแนวทางการเล่นโกะต่อไปในอนาคตอีกนับพันปี &quot; ผู้เชี่ยวชาญหมากล้อมให้ความเห็น</p>
+<p>ลี เซดอล ก็เห็นตรงกัน เขากล่าวว่า</p>
+<p>&quot; ผมรู้สึกประหลาดใจมาก อัลฟ่าโกะทำให้เราเห็นว่า การเดินหมากที่มนุษย์คิดว่าสร้างสรรค์นั้น แท้จริงแล้วไม่ใช่เรื่องใหม่เลย ผมคิดว่าสิ่งนี้จะนำมาซึ่งการเล่นโกะรูปแบบใหม่ๆ &quot;</p>
+<p>ลี เซดอลเติบโตขึ้นจากประสบการณ์ที่ได้เล่นกับอัลฟ่าโกะห้าเกม สองเดือนหลังการแข่งขันกับอัลฟ่าโกะ ลี เซดอลชนะในทุกรายการที่เขาลงแข่ง กระแสการเล่นโกะเกิดขึ้นทั่วโลก&hellip;.</p>
+<p>เช่นเดียวกัน รูปแบบการเล่นของอัลฟ่าโกะในเกมที่ห้า ก็เกิดจากการแพ้ในเกมที่สี่ ลี เซดอล มอบบทเรียนบางอย่างให้กับมันเช่นกัน</p>
+<p>หมากห้าเกมนี้คือบันทึกหน้าหนึ่งในประวัติศาสตร์ของมนุษยชาติ คือจุดเริ่มของปัญญาประดิษฐ์ที่จะมีเรื่องราวตามมาอีกมากมาย</p>
+<p><img src="https://t1.bdtcdn.net/photos/2019/12/5dfcd86f6a33310cf5e887db_800x0xcover_egwZ4F1e.jpg" alt=""></p>
+<p>ถ้า&rdquo; บ่วงอิก &ldquo;เปรียบเสมือนหมากดำ และมันคือโอกาสที่จะเกิดขึ้นเพียงน้อยนิดของเหตุการณ์ที่สร้างความเสียหายได้มหาศ่าล หมากขาวคงหมายถึงขั้วตรงข้ามอย่าง &quot; โอกาสที่มีเพียงน้อยนิดของเหตุการณ์ที่สร้างความเปลี่ยนแปลงในทางที่ดีได้มหาศาล &quot;</p>
+<p>ปัญญาประดิษฐ์เป็นเรื่องที่ได้รับถกเถียงกันมากว่า มันคือ &quot; โอกาส &quot; หรือ &quot; หายนะ &quot;</p>
+<p>คงไม่มีใครตัดสินเรื่องนี้ได้ ขึ้นอยู่กับว่าคุณจะเลือกเดิน &quot; หมากดำ &quot; หรือ &quot; หมากขาว &quot;</p>
+<p>บางครั้ง &quot; หมากเม็ดเดียว&rdquo; ก็สร้างแรงสั่นสะเทือนไปทั่วทั้งกระดาน</p>
+<p>เครดิตข้อมูล :</p>
+<p>สารคดีชุด AlphaGo(2017)</p>
+<p>บทสัมภาษณ์คุณไกรสร จันศิริ สรุปจากหนังสือ &quot; ดีที่สุดในสิ่งที่เป็น &quot; ของหนุ่มเมืองจันท์</p>
+<p><a href="https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol">https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol</a></p>
+<p>ภาพประกอบจาก :</p>
+<p><a href="https://www.alphagomovie.com/">https://www.alphagomovie.com</a></p>
+<p><a href="https://deepmind.com/alphago-korea">https://deepmind.com/alphago-korea</a></p>
+<p><a href="https://blog.google/topics/machine-learning/alphagos-ultimate-challenge">https://blog.google/topics/machine-learning/alphagos-ultimate-challenge</a></p>
+<blockquote>
+<p>Reference : <a href="https://www.blockdit.com/articles/5dfcd8b4dbd0040cf3d800c6/#">https://www.blockdit.com/หนังหลายมิติ/</a></p>
+</blockquote>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/KM/articles/tags/alphago">
+                                    <i class="fas fa-tag mr-2"></i>AlphaGo
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/KM/articles/tags/deep-learning">
+                                    <i class="fas fa-tag mr-2"></i>Deep Learning
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fknowledge-dragons.github.io%2fKM%2farticles%2fpost%2falphago%2f3%2f&text=Alphago%20%3a%20%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88%203">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fknowledge-dragons.github.io%2fKM%2farticles%2fpost%2falphago%2f3%2f&title=Alphago%20%3a%20%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88%203">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fknowledge-dragons.github.io%2fKM%2farticles%2fpost%2falphago%2f3%2f&t=Alphago%20%3a%20%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88%203">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fknowledge-dragons.github.io%2fKM%2farticles%2fpost%2falphago%2f3%2f&title=Alphago%20%3a%20%e0%b8%95%e0%b8%ad%e0%b8%99%e0%b8%97%e0%b8%b5%e0%b9%88%203">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div></article>
+        </div>
+    </div>
+
+    <div class="related-content row mt-5 row-cols-1 row-cols-lg-3"><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/KM/articles/post/alphago/1/" class="d-block"><img data-src="/KM/articles/images/alphago_hu2c539d00ca39a03f5c691329b09e4681_48108_500x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Alphago : ตอนที่ 1"><div class="card-body">
+            <h4 class="card-title">Alphago : ตอนที่ 1</h4>
+            <p class="card-text text-muted text-uppercase">December 20, 2019</p>
+            <div class="card-text">
+                Alphago(2017) คือหนังสารคดีที่ถ่ายทอดความเป็นมาของ &amp;quot; อัลฟ่าโกะ &amp;quot; (Alphago) ในช่วงของการพัฒนาโปรแกรมเพื่อเตรียมตัวเข้าแข่งขันกับนักกีฬาโกะมืออาชีพระดับ 9 ดั้ง อย่าง ลี เซดอล (Lee Sedol)ผู้มีดีกรีแชมป์โลก 18 สมัย
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div><div class="col mb-3">
+                <div class="card h-100">
+    
+    <a href="/KM/articles/post/alphago/2/" class="d-block"><img data-src="/KM/articles/images/alphago_hu2c539d00ca39a03f5c691329b09e4681_48108_500x350_resize_q75_box.jpg" class="card-img-top mx-auto d-block" alt="Alphago : ตอนที่ 2"><div class="card-body">
+            <h4 class="card-title">Alphago : ตอนที่ 2</h4>
+            <p class="card-text text-muted text-uppercase">December 20, 2019</p>
+            <div class="card-text">
+                สิ่งที่เราจะกล่าวถึงในตอนที่ 2 จะเป็นรายละเอียดของเกมทั้ง 5 เกม ที่ ลี เซดอน นักเล่นโกะมืออาชีพ 9 ดั้ง แชมป์โลก 18 สมัย แข่งกับเอไออัจฉริยะอย่าง AlphaGo โดยเพิ่มมิติทางอารมณ์ของผู้เล่นจากภาพยนตร์สารคดีเรื่อง Alphagoเข้าไป
+
+            </div>
+        </div>
+    </a>
+</div>
+
+            </div></div>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://knowledge-dragons.github.io/KM/articles/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:example@example.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://gitlab.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-gitlab fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://keybase.io/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-keybase fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://linkedin.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://mastodon.social" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://medium.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://pinterest.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-pinterest fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://reddit.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-reddit fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.weibo.com" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-weibo fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with <a href="https://github.com/puresyntax71/hugo-theme-chunky-poster" target="_blank">Chunky Poster</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/KM/articles/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-XXXX', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+</body>
+</html>

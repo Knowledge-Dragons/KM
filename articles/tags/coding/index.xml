@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Coding on Hugo Themes</title>
+    <link>https://knowledge-dragons.github.io/KM/articles/tags/coding/</link>
+    <description>Recent content in Coding on Hugo Themes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>บทเรียน 10 ข้อจากคนอายุเกือบ 50 ที่หัดเขียนโปรแกรมด้วยตนเอง</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/10-lessons-from-programming/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/10-lessons-from-programming/</guid>
+      <description>&lt;p&gt;ยุคนี้ ใครๆ ก็บอกว่า การเข้าใจคอมพิวเตอร์เป็นเรื่องสำคัญ กระทรวงศึกษาธิการได้บรรจุวิชา “วิทยาการคำนวณ” ในหลักสูตรที่ต้องเรียนตั้งแต่ประถม&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
