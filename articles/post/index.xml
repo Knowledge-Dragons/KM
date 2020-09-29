@@ -28,6 +28,30 @@
     </item>
     
     <item>
+      <title>Algorithmic Trading for Beginners</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/algorithmic-trading-in-python/</link>
+      <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/algorithmic-trading-in-python/</guid>
+      <description>Python for Finance – Algorithmic Trading Tutorial for Beginners Technology has become an asset in finance. Financial institutions are now evolving into technology companies rather than just staying occupied with the financial aspects of the field.
+Mathematical Algorithms bring about innovation and speed. They can help us gain a competitive advantage in the market.
+The speed and frequency of financial transactions, together with the large data volumes, has drawn a lot of attention towards technology from all the big financial institutions.</description>
+    </item>
+    
+    <item>
+      <title>Scrape Wikipedia Articles</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/scraping-wikipedia-articles/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/scraping-wikipedia-articles/</guid>
+      <description>&lt;h2 id=&#34;how-to-scrape-wikipedia-articles-with-python&#34;&gt;How to Scrape Wikipedia Articles with Python&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.freecodecamp.org/news/content/images/size/w2000/2020/08/artem-maltsev-vgQFlPq8tVQ-unsplash-1.jpg&#34; alt=&#34;enter image description here&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this article I&amp;rsquo;m going to create a web scraper in Python that will scrape Wikipedia pages.&lt;/p&gt;
+&lt;p&gt;The scraper will go to a Wikipedia page, scrape the title, and follow a random link to the next Wikipedia page.&lt;/p&gt;
+&lt;p&gt;I think it will be fun to see what random Wikipedia pages this scraper will visit!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Image Gallery</title>
       <link>https://knowledge-dragons.github.io/KM/articles/post/image-gallery/</link>
       <pubDate>Thu, 02 Jan 2020 00:00:00 +0000</pubDate>

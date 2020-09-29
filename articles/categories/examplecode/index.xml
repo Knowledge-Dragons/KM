@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ExampleCode on Hugo Themes</title>
+    <link>https://knowledge-dragons.github.io/KM/articles/categories/examplecode/</link>
+    <description>Recent content in ExampleCode on Hugo Themes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/categories/examplecode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scrape Wikipedia Articles</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/scraping-wikipedia-articles/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/scraping-wikipedia-articles/</guid>
+      <description>&lt;h2 id=&#34;how-to-scrape-wikipedia-articles-with-python&#34;&gt;How to Scrape Wikipedia Articles with Python&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.freecodecamp.org/news/content/images/size/w2000/2020/08/artem-maltsev-vgQFlPq8tVQ-unsplash-1.jpg&#34; alt=&#34;enter image description here&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In this article I&amp;rsquo;m going to create a web scraper in Python that will scrape Wikipedia pages.&lt;/p&gt;
+&lt;p&gt;The scraper will go to a Wikipedia page, scrape the title, and follow a random link to the next Wikipedia page.&lt;/p&gt;
+&lt;p&gt;I think it will be fun to see what random Wikipedia pages this scraper will visit!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
