@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Overview on Hugo Themes</title>
+    <title>Alphago on Articles</title>
     <link>https://knowledge-dragons.github.io/KM/articles/post/alphago/</link>
-    <description>Recent content in Overview on Hugo Themes</description>
+    <description>Recent content in Alphago on Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
@@ -36,6 +36,16 @@
 &lt;p&gt;ตอนนี้ลี เซดอลรู้แล้วว่าอัลฟ่าโกะไม่ใช่โปรแกรมหมากล้อมแบบที่เขาเคยเจอ มันอัจฉริยะและสามารถสร้างสรรค์เกมรูปแบบใหม่ๆที่ไม่เคยมีมนุษย์คนไหนทำได้มาก่อน&lt;/p&gt;
 &lt;p&gt;เกมสามนี้เขาต้องสู้แบบหลังชนฝา&lt;/p&gt;
 &lt;p&gt;หากแพ้เกมนี้ เขาจะแพ้แมตช์นี้ทันที แต่หากพลิกกลับมาชนะได้ มนุษย์ก็ยังมีความหวังในเกมต่อไป&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>AlphaGo Overview</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/alphago/overview/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/alphago/overview/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;./alphago_zero.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;แอลฟาโกะ (AlphaGo) เป็นโปรแกรมคอมพิวเตอร์ที่เล่นเกมกระดานหมากล้อม ที่ได้รับการพัฒนาโดยกูเกิล ดีปไมด์ ของแอลฟาเบต อิงก์ ในกรุงลอนดอน แอลฟาโกะมีรุ่นสืบทอดที่มีอานุภาพมากกว่าถึงสามรุ่น ได้แก่ แอลฟาโกะ มาสเตอร์, แอลฟาโกะ ซีโร และแอลฟาซีโร&lt;/p&gt;</description>
     </item>
     
   </channel>

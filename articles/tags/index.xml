@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo Themes</title>
+    <title>Tags on Articles</title>
     <link>https://knowledge-dragons.github.io/KM/articles/tags/</link>
-    <description>Recent content in Tags on Hugo Themes</description>
+    <description>Recent content in Tags on Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interview</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/interview/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/tags/productivity/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Big Data</title>
       <link>https://knowledge-dragons.github.io/KM/articles/tags/big-data/</link>

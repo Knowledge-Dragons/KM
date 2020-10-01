@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Trading on Hugo Themes</title>
+    <title>Trading on Articles</title>
     <link>https://knowledge-dragons.github.io/KM/articles/tags/trading/</link>
-    <description>Recent content in Trading on Hugo Themes</description>
+    <description>Recent content in Trading on Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
@@ -14,9 +14,8 @@
       <pubDate>Thu, 24 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://knowledge-dragons.github.io/KM/articles/post/algorithmic-trading-in-python/</guid>
-      <description>Python for Finance – Algorithmic Trading Tutorial for Beginners Technology has become an asset in finance. Financial institutions are now evolving into technology companies rather than just staying occupied with the financial aspects of the field.
-Mathematical Algorithms bring about innovation and speed. They can help us gain a competitive advantage in the market.
-The speed and frequency of financial transactions, together with the large data volumes, has drawn a lot of attention towards technology from all the big financial institutions.</description>
+      <description>&lt;h2 id=&#34;python-for-finance--algorithmic-trading-tutorial-for-beginners&#34;&gt;Python for Finance – Algorithmic Trading Tutorial for Beginners&lt;/h2&gt;
+&lt;p&gt;Technology has become an asset in finance. Financial institutions are now evolving into technology companies rather than just staying occupied with the financial aspects of the field.&lt;/p&gt;</description>
     </item>
     
   </channel>

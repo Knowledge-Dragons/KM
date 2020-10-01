@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>สรุปหนังสือ on Hugo Themes</title>
+    <title>สรุปหนังสือ on Articles</title>
     <link>https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/</link>
-    <description>Recent content in สรุปหนังสือ on Hugo Themes</description>
+    <description>Recent content in สรุปหนังสือ on Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SUPER PRODUCTIVE</title>
+      <link>https://knowledge-dragons.github.io/KM/articles/post/super-productive/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://knowledge-dragons.github.io/KM/articles/post/super-productive/</guid>
+      <description>&lt;p&gt;สรุปหนังสือ Super Productive ของคุณรวิศ หาญอุตสาหะ เล่มนี้เป็นหนังสือที่เรียกว่าผมต้องลัดคิวขึ้นมาอ่านในฐานะที่ผมแฟนคลับของคุณรวิศ และยิ่งเป็นเกียรติมากที่คุณรวิศอุตส่าห์เขียนคำนิยมให้กับ&lt;a href=&#34;http://bit.ly/PersonalizedMarketingEverydayMarketing&#34;&gt;หนังสือการตลาดแบบรู้ใจ Personalized Marketing&lt;/a&gt;  ของผมครับ และเมื่ออ่านหนังสือเล่มนี้จบก็รู้สึกว่า ขออ่านเล่มสองต่อเลยได้มั้ย ไม่อยากให้จบแล้วจริงๆ&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>A Little Book of BIG DATA and Machine Learning</title>
       <link>https://knowledge-dragons.github.io/KM/articles/post/a-little-book-of-big-data/</link>

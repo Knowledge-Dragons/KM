@@ -4,12 +4,52 @@
   
   <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/authors/admin/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/authors/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/categories/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/tags/interview/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/post/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/tags/productivity/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/post/super-productive/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/tags/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/</loc>
+    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -19,11 +59,6 @@
   
   <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/post/a-whole-new-mind/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/authors/</loc>
     <lastmod>2020-09-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,22 +73,12 @@
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/series/look-forward/</loc>
     <lastmod>2020-09-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/tags/mindset/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/</loc>
     <lastmod>2020-09-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,17 +93,7 @@
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/tags/trend/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/</loc>
     <lastmod>2020-09-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -153,6 +168,11 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/</loc>
+    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/1/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
   </url>
@@ -168,17 +188,17 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/overview/</loc>
+    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/tags/deep-learning/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://knowledge-dragons.github.io/KM/articles/categories/documentary/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/</loc>
     <lastmod>2019-12-20T00:00:00+00:00</lastmod>
   </url>
   
