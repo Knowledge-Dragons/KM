@@ -3,9 +3,9 @@ article section.page h1:first-of-type {
     font-family:"Kanit",sans-serif;
     font-size: 2.6rem;
     margin-top: 1.5rem !important;
-    color: #dc3545!important;
+    color: #2E4A62!important;
     margin-bottom: 0px;
-    line-height: 1.05;    
+    line-height: 1.25;    
     font-weight: 700;
     letter-spacing: -1px;
    
@@ -15,7 +15,7 @@ h2,h3 {
     font-family:"Kanit",sans-serif;
     text-transform: none;
     color:#262f39;
-    line-height: 1.05;    
+    line-height: 1.25;    
     font-weight: 700;
     
 }
@@ -23,16 +23,16 @@ h2,h3 {
 /*  Header Articles (H1)   */
 
 article section.page {
-    line-height: 24px;
-    color: rgba(0, 0, 0, .85) !important;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, .85)!important;
 }
 
 article section.page h1:first-of-type {
     font-size: 2.6rem;
     margin-top: 1.5rem !important;
-    color: #dc3545;
+    color: #262f39;
     margin-bottom: 0px;
-    line-height: 1.05;
+    line-height: 1.65;
     
     font-weight: 700;
 }
@@ -51,7 +51,10 @@ article section.page h1:first-of-type span:before {
 
 article section.page div.content p {
     font-family: 'Sarabun', sans-serif;
-    color: rgba(0, 0, 0, .85) !important;
+    color: rgba(0, 0, 0, .9) !important;
+    font-size:1.1em;
+    line-height: 1.5;
+    letter-spacing: .01em;
     
 }
 

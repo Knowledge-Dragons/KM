@@ -3,317 +3,396 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/</loc>
+    <lastmod>2020-08-20T16:42:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/authors/admin/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/short_introduction/10-minutes/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/authors/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/short_introduction/essential_snippets/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/quick_guide/a-81-python-code-snippet/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/interview/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/basic_syntax/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/short_introduction/basic-to-beyond/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/productivity/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/dictionary/dict_beginner/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/super-productive/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/short_introduction/cheatsheet-pandas/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/date-time/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD/</loc>
-    <lastmod>2020-10-01T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/datetime_module/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/a-little-book-of-big-data/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/tutorial-geeksforgeeks/selection/dealing-with-rows-and-columns/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/a-whole-new-mind/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/function/function_arguments/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/big-data/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/advance_topic/iterators/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/business/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/series/look-forward/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/mindset/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/objects_class/oop/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/psychology/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/files/intro/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/series/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/cookbook/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/trend/</loc>
-    <lastmod>2020-09-27T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/date-time/pendulum/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/algorithmic-trading-in-python/</loc>
-    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/finance/</loc>
-    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/files/file_operations/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/python/</loc>
-    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/w3resource/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/trading/</loc>
-    <lastmod>2020-09-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/w3resource/bytes/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/examplecode/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/quick_guide/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/scraping-wikipedia-articles/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/w3resource/regular_expression/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/web-scraping/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/resources/quick_reference_cards/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/wikipedia/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/resources/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/gallery/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/short_introduction/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/authors/hugo-authors/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/pythonstandardlibrary/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/image-gallery/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/pythonstandardlibrary/text/string/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/lightbox/</loc>
-    <lastmod>2020-01-02T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/pythonstandardlibrary/text/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/alphago/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/tutorial-geeksforgeeks/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/series/alphago/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/date-time/overview/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/1/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/</loc>
+    <lastmod>2020-08-20T16:42:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/2/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/date-time/center/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/3/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-loc/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/alphago/overview/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/advance_topic/generators/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/deep-learning/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/list/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/documentary/</loc>
-    <lastmod>2019-12-20T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/dictionary/merge-two-dictionaries/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/toyota-reveals-future-strategy/</loc>
-    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/objects_class/class/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/coding/</loc>
-    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/10-lessons-from-programming/</loc>
-    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/files/directory/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/strftime/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/dictionary/</loc>
+    <lastmod>2020-08-20T16:42:11+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/tutorial-geeksforgeeks/selection/extracting-rows-using-pandas-iloc/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/function/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/files/exceptions/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/objects_class/inheritance/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/series/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/data_type/list/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/authors/jane-smith/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/data_type/tuble/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/strptime/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/date-time/time-delta-striftime/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/advance/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/program-struct/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/function/lambda_functions/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/data_type/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/authors/john-doe/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/current-datetime/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/beginner/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/post/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/data_type/string/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/tutorial-geeksforgeeks/selection/</loc>
   </url>
   
   <url>
-    <loc>https://knowledge-dragons.github.io/KM/articles/tags/index/</loc>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/variables-and-types/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/basic_functin/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/files/exception-handling/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/files/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/function/global_variables/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/data_type/set/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/timestamp_datetime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/files/user-defined-exception/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/objects_class/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/data_type/dictionary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/time_module/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/advance_topic/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/sleep/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/datetime/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/date-time/time-module/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/string_output/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/string_format/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/list/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/list/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/dictionary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/dictionary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/module/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/read_files/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/write_files/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/create_function/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/recursive_function/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/lambda/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/inheritance/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/404.html</loc>
+    <lastmod>2020-09-08T20:40:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/</loc>
+    <lastmod>2020-08-20T16:42:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/_layout/</loc>
+    <lastmod>2020-08-20T15:41:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/_layout/footer/</loc>
+    <lastmod>2020-08-20T15:41:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/_layout/sidebar-before/</loc>
+    <lastmod>2020-08-20T11:08:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/_layout/sidebar-after/</loc>
+    <lastmod>2020-08-20T11:07:48+00:00</lastmod>
   </url>
   
 </urlset>

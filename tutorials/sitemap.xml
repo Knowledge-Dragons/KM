@@ -60,6 +60,10 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/</loc>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/objects_class/oop/</loc>
   </url>
   
@@ -222,6 +226,10 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/program-struct/</loc>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/python/learn_python/function/lambda_functions/</loc>
   </url>
   
@@ -243,6 +251,10 @@
   
   <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/pandas/tutorial-geeksforgeeks/selection/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/variables-and-types/</loc>
   </url>
   
   <url>
@@ -298,6 +310,10 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/function/</loc>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/python/tutorials/date-time/time-module/</loc>
   </url>
   
@@ -310,11 +326,23 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/list/</loc>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/list/</loc>
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/list_methods/</loc>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/beginer/dictionary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/dictionary/</loc>
   </url>
   
   <url>
@@ -326,6 +354,10 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/module/</loc>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/write_files/</loc>
   </url>
   
@@ -334,7 +366,15 @@
   </url>
   
   <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/classes_objects/</loc>
+  </url>
+  
+  <url>
     <loc>https://knowledge-dragons.github.io/KM/tutorials/python/phyblas/intermediate/recursive_function/</loc>
+  </url>
+  
+  <url>
+    <loc>https://knowledge-dragons.github.io/KM/tutorials/python/marcuscode/inheritance/</loc>
   </url>
   
   <url>

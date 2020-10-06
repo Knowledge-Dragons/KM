@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math for Kids</title>
+</head>
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./style.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<script>
+  function GetDefault() {
+  
+  var get_min = Number(localStorage.getItem("min"));
+  var get_max = Number(localStorage.getItem("max"));
+  document.getElementById('btn_success').style.display = "none";
+  document.getElementById('btn_error').style.display = "none";
+
+  if (get_min < 1) {
+      localStorage.setItem("min", 10);
+
+  }
+  if (get_max < 1) {
+      localStorage.setItem("max", 50);
+  }
+  document.getElementById("number_min").value = localStorage.getItem("min");
+  document.getElementById("number_max").value =  localStorage.getItem("max");   
+  document.getElementById("myBtn").focus();   
+  txt_answers.style.background = 'white';
+
+}
+</script>
+<body onload = GetDefault()>
+
+ 
+        <div class="w3-container">
+          <a href="#" class="w3-bar-item"
+            ><i
+              id="setting"
+              class="material-icons"
+              style="font-size: 36px"
+              onclick="document.getElementById('id01').style.display= 'block' "
+              >settings</i
+            ></a>
+            <h2 id="numbers" class="w3-display-topright"></h2>
+          <h1 class="w3-display-topmiddle w3-hide-small">
+            Math for Kids
+          </h1>
+  
+         
+          <h2 id="output" class="w3-display-bottommiddle w3-hide-small"></h2>
+        </div>
+    <div class="w3-container">
+    
+
+<div class="flex-container">
+  <div id='one'></div><span>+</span>
+  <div id='two'></div><span>+</span>
+  <div id='three'></div><span>+</span> 
+  <div id='four'></div><span>=</span>
+  <input type="text" id="result" name="myInput" autocomplete="off" >
+</div>
+
+
+
+<!-- btn -->
+<div class="flex-container">  
+   
+      <p>
+       
+        <button id="myBtn" 
+          class="w3-button w3-red  w3-border w3-border-red w3-round-large w3-hover-yellow "
+          onclick="myStart()"
+        >
+          Generate
+        </button>
+      
+        <button id="BtnPause" 
+        class="w3-button w3-yellow  w3-border w3-border-yellow w3-round-large w3-hover-red"
+        onclick="CheckAnswer()">Answer
+        </button>
+        <button id = "btn_success" class="button success"></button>
+        <button id = "btn_error" class="button error"></button>
+      </p>
+      
+    </div>
+    
+  </div>
+  
+  <p>
+
+    <!-- btn -->
+    <div class="flex-container">  
+     
+<div id='txt_results'>
+
+
+
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+<script>
+w3.hide('span')
+
+document.getElementById('result').style.display = 'none';
+
+</script>
+
+     <!--modal-->
+   
+     <div id="id01" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-red">
+                <span onclick="document.getElementById('id01').style.display='none'"  class="w3-button w3-red w3-display-topright">&times;</span>
+                <h2>Setting</h2>
+            </header>
+            <div class="w3-container">
+                <div class="controls">
+                    <p>Min</p>
+                    <input id="number_min" type="number" />
+                    <p>Max</p>
+                    <input id="number_max" type="number" />
+
+                </div>
+            </div>
+            <br>
+            <footer class="w3-container w3-red">
+                <br>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="SaveData()"
+                    >Save</button>
+            </footer>
+        </div>
+
+  </div>
+
+    </div>
+
+
+    <script src="./animate.js"></script>
+ <!---->
+ <script src="./script.js"></script>
+
+</body>
+</html>
