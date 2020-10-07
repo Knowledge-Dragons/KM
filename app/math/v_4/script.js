@@ -36,6 +36,9 @@ input.addEventListener("keyup", function (event) {
 
 
 function myStart() {
+  if (counts > 9) {
+    location.reload();
+  } else {
   txt_answers.innerHTML = ""
   txt_answers.style.background = 'white';
   var space = "";
@@ -76,7 +79,7 @@ function myStart() {
     }
   }
 }
-
+}
 
 function CheckAnswer() {
   document.getElementById('myBtn').style.display = '';

@@ -59,11 +59,11 @@ h1 {
   }
 
 #result {
-    max-width: 15%;
+    max-width: 30%;
     margin: 5px;
     text-align: center;
     
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     letter-spacing: .2em;
     color:green;
@@ -111,9 +111,7 @@ h1 {
       margin: 30px auto 40px;
     }
   }
-  .button {
-   
-  }
+
   .button:focus {
     outline: 0;
   }
