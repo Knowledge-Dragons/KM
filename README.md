@@ -7,5 +7,6 @@
 
 ## Game
 - [Math for Kids](https://knowledge-dragons.github.io/KM/app/math/v_4/)
-- [Subtraction Math](https://knowledge-dragons.github.io/KM/app/math/Subtraction/subtraction_v1/)
+- [เลขลบ](https://knowledge-dragons.github.io/KM/app/math/Subtraction/subtraction_v1/)
+
 
