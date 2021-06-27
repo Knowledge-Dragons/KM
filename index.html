@@ -1,19 +1,82 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - A sky full of stars</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
+  <title>CodePen - Bootstrap 4.1.3 sidebar nav</title>
+
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css'>
+   
+  <link rel="stylesheet" href="./assets/css/sidebar.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div id="starsBox"></div>
 
-<p>e-Library<span>Knowledge Center, by <a href="http://www.julienlejeune.com" target="_blank">Dragon</a></span></p>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+<body>
+  <!-- partial:index.partial.html -->
+  <div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav class="navbar navbar-inverse fixed-top" id="sidebar-wrapper" role="navigation">
+      <ul class="nav sidebar-nav">
+        <div class="sidebar-header">
+          <div class="sidebar-brand">
+            <a href="#">Little Dragon</a></div>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="https://knowledge-dragons.github.io/KM/tutorials">Tutorials</a></li>
+        <li><a href="https://knowledge-dragons.github.io/KM/articles">Articles</a></li>
+        <li><a href="https://knowledge-dragons.github.io/KM/Kids/math/">Math for Kids</a></li>
+         <li><a href="https://knowledge-dragons.github.io/KM/Lab/music-player-101/">Music Player</a></li>
+        <!--
+        <li class="dropdown">
+          <a href="#works" class="dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+          <ul class="dropdown-menu animated fadeInLeft" role="menu">
+            <div class="dropdown-header">Dropdown heading</div>
+            <li><a href="#pictures">Pictures</a></li>
+            <li><a href="#videos">Videeos</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#art">Art</a></li>
+            <li><a href="#awards">Awards</a></li>
+          </ul>
+        </li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#followme">Follow me</a></li>
+        -->
+      </ul>
+    </nav>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+       <button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+      <div class="container">
+
+        <div id="starsBox"></div>
+        <p>e-Library<span>Knowledge Center, by <a href="#" target="_blank">Dragon</a></span></p>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js'></script>
+ <script src="./assets/js/sidebar.js"></script>
+  <script src="./assets/js/script.js"></script>
 
 </body>
+
 </html>

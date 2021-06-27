@@ -54,10 +54,12 @@ p > span > a {
   text-decoration: none;
   color: #d64541;
   padding-bottom: 2px;
-  border-bottom: 0px solid #d64541;
-  transition: 0.5s;
+  
+  
 }
 p > span > a:hover {
-  padding-bottom: 5px;
+   text-decoration: none;
+   color: #fff;
   border-bottom: 2px solid #d64541;
+  transition: 0.5s;
 }
